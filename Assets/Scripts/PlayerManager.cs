@@ -13,7 +13,7 @@ public class PlayerManager : MonoBehaviour
     private bool moveLeft = false;
     public GameObject leftLimit;
     public GameObject rightLimit;
-   
+    public Rigidbody rigidBody;
  
     [Header("AgentProperties")]
 
@@ -41,35 +41,40 @@ public class PlayerManager : MonoBehaviour
 
     private void DetectButtonPress()
     {
+        Vector3 addForce = Vector3.zero;
 
-
+        float forwardAmount = 0f;
+        Vector3 localRotationParent = transform.localEulerAngles;
+        Vector3 localRotationBody = transform.localEulerAngles;
         if (Input.GetKey(KeyCode.W) )
         {
 
-            transform.DOMove(transform.position + Vector3.left*0.3f, .3f);
+            forwardAmount = 1;
         }
 
 
         if (Input.GetKey(KeyCode.S) )
         {
 
-            transform.DOMove(transform.position + Vector3.right*0.3f, .3f);
+            forwardAmount = -1;
 
         }
         if (Input.GetKey(KeyCode.D) )
         {
 
-            transform.DOMove(transform.position + Vector3.forward*0.3f, .3f);
+            transform.localEulerAngles += Vector3.up;
+            localRotationBody.z -= 1;
         }
 
 
         if (Input.GetKey(KeyCode.A) )
         {
-
-            transform.DOMove(transform.position + Vector3.back*0.3f, .3f);
-
+            transform.localEulerAngles += Vector3.down;
+            localRotationBody.z += 1;
         }
-
+      
+       
+        rigidBody.velocity = transform.forward * forwardAmount*2;
 
 
     }

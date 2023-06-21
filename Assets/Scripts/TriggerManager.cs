@@ -5,17 +5,18 @@ using UnityEngine;
 
 public class TriggerManager : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        if ( collision.gameObject.CompareTag("Small"))
+        
+        if ( other.CompareTag("In"))
         {
-            Debug.Log("small hit");
-        }
-        if ( collision.gameObject.CompareTag("Big"))
-        {
-            Debug.Log("big hit");
+            other.gameObject.tag = "Pick";
+            GameManager.Instance.inCount--;
+            Debug.Log("Count --");
+
         }
 
     }
-    
 }
