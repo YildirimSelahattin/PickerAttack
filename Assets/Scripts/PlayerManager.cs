@@ -43,17 +43,30 @@ public class PlayerManager : MonoBehaviour
     {
 
 
-        if (Input.GetKey(KeyCode.A) )
+        if (Input.GetKey(KeyCode.W) )
         {
 
-            transform.DOMove(transform.position + Vector3.left*0.02f, .3f);
+            transform.DOMove(transform.position + Vector3.left*0.3f, .3f);
         }
 
 
+        if (Input.GetKey(KeyCode.S) )
+        {
+
+            transform.DOMove(transform.position + Vector3.right*0.3f, .3f);
+
+        }
         if (Input.GetKey(KeyCode.D) )
         {
 
-            transform.DOMove(transform.position + Vector3.right*0.02f, .3f);
+            transform.DOMove(transform.position + Vector3.forward*0.3f, .3f);
+        }
+
+
+        if (Input.GetKey(KeyCode.A) )
+        {
+
+            transform.DOMove(transform.position + Vector3.back*0.3f, .3f);
 
         }
 
