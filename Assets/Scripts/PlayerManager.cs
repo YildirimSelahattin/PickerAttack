@@ -74,7 +74,7 @@ public class PlayerManager : MonoBehaviour
         }
       
        
-        rigidBody.velocity = transform.forward * forwardAmount*2;
+        rigidBody.velocity = transform.forward * forwardAmount*GameManager.Instance.speed;
 
 
     }
