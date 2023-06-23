@@ -11,7 +11,18 @@ public class TriggerIn : MonoBehaviour
                {
                    other.gameObject.tag = "In";
                    GameManager.Instance.inCount++;
-                   GameManager.Instance.objectList.Add(other.gameObject);
+                   if (other.gameObject.GetComponent<PeopleManager>().index == 0)
+                   {
+                       GameManager.Instance.objectList.Add(other.gameObject.GetComponent<PeopleManager>().index);
+                   }
+                   if (other.gameObject.GetComponent<PeopleManager>().index == 1)
+                   {
+                       GameManager.Instance.objectList.Add(other.gameObject.GetComponent<PeopleManager>().index);
+                   }
+                   if (other.gameObject.GetComponent<PeopleManager>().index == 2)
+                   {
+                       GameManager.Instance.objectList.Add(other.gameObject.GetComponent<PeopleManager>().index);
+                   }
                    Debug.Log("Count ++");
                }
     }

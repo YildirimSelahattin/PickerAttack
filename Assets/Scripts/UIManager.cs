@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -37,5 +38,10 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.timer= GameManager.Instance.timer * 1.25f;
         timerText.text = GameManager.Instance.timer.ToString();
 
+    }
+
+    public void sceneChange()
+    {
+        SceneManager.LoadScene(1);
     }
 }

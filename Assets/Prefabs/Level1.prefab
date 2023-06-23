@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2678455629146571427}
   - component: {fileID: 8348736320722407364}
   - component: {fileID: 4293773883236235539}
+  - component: {fileID: 7485725318186902176}
   m_Layer: 0
   m_Name: Sphere (32)
   m_TagString: Pick
@@ -114,6 +115,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7485725318186902176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36983368052681931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &74230104466129406
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +141,7 @@ GameObject:
   - component: {fileID: 8745702553888696769}
   - component: {fileID: 7323354700759733197}
   - component: {fileID: 2376180807795362597}
+  - component: {fileID: 3809089602602166437}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Pick
@@ -228,6 +243,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3809089602602166437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74230104466129406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &87289776809087110
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,6 +269,7 @@ GameObject:
   - component: {fileID: 345461803055775073}
   - component: {fileID: 7993738850477320422}
   - component: {fileID: 2267805740501064245}
+  - component: {fileID: 8369749955887592835}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Pick
@@ -342,6 +371,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8369749955887592835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87289776809087110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &165447991901458995
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +397,7 @@ GameObject:
   - component: {fileID: 2429089585401603195}
   - component: {fileID: 5158796189960862495}
   - component: {fileID: 7825891009645122300}
+  - component: {fileID: 8515942377858174847}
   m_Layer: 0
   m_Name: Sphere (43)
   m_TagString: Pick
@@ -456,6 +499,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8515942377858174847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165447991901458995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &195125726194283046
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +525,7 @@ GameObject:
   - component: {fileID: 726225229083302800}
   - component: {fileID: 2867437193614495913}
   - component: {fileID: 4940092798667971521}
+  - component: {fileID: 2780136517745165139}
   m_Layer: 0
   m_Name: Cylinder (9)
   m_TagString: Pick
@@ -571,6 +628,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &2780136517745165139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195125726194283046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &295367341489272971
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +654,7 @@ GameObject:
   - component: {fileID: 5863013173142171849}
   - component: {fileID: 7002529853793214926}
   - component: {fileID: 3301963583344379497}
+  - component: {fileID: 4731272750014727319}
   m_Layer: 0
   m_Name: Cube (60)
   m_TagString: Pick
@@ -685,6 +756,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4731272750014727319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295367341489272971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &322767095331098646
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +782,7 @@ GameObject:
   - component: {fileID: 3706048819079772351}
   - component: {fileID: 406401794029799711}
   - component: {fileID: 1021630354178919070}
+  - component: {fileID: 4898005847968307440}
   m_Layer: 0
   m_Name: Sphere (6)
   m_TagString: Pick
@@ -799,6 +884,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4898005847968307440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322767095331098646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &335673283074913026
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +910,7 @@ GameObject:
   - component: {fileID: 2352081963444177522}
   - component: {fileID: 7388902996093654246}
   - component: {fileID: 8893801271429617191}
+  - component: {fileID: 4946433015390292876}
   m_Layer: 0
   m_Name: Sphere (13)
   m_TagString: Pick
@@ -913,6 +1012,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4946433015390292876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335673283074913026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &386546940555994702
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +1038,7 @@ GameObject:
   - component: {fileID: 434781090549755065}
   - component: {fileID: 7114989316615232221}
   - component: {fileID: 7998252314349931224}
+  - component: {fileID: 5178173236376096888}
   m_Layer: 0
   m_Name: Cube (45)
   m_TagString: Pick
@@ -1027,6 +1140,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &5178173236376096888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386546940555994702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &421508660294826040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,6 +1166,7 @@ GameObject:
   - component: {fileID: 423674877676025716}
   - component: {fileID: 587848000203162295}
   - component: {fileID: 5653629116310847063}
+  - component: {fileID: 3212786060176394321}
   m_Layer: 0
   m_Name: Sphere (4)
   m_TagString: Pick
@@ -1141,6 +1268,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3212786060176394321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421508660294826040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &423270084877735143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1294,7 @@ GameObject:
   - component: {fileID: 664099543653831110}
   - component: {fileID: 3129261210716803487}
   - component: {fileID: 7634620225791561788}
+  - component: {fileID: 8034520053277280233}
   m_Layer: 0
   m_Name: Sphere (27)
   m_TagString: Pick
@@ -1255,6 +1396,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8034520053277280233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423270084877735143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &532462278673486670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,6 +1422,7 @@ GameObject:
   - component: {fileID: 4327137700497184457}
   - component: {fileID: 912657806636281341}
   - component: {fileID: 6518181589921582470}
+  - component: {fileID: 1041355891338672152}
   m_Layer: 0
   m_Name: Cube (41)
   m_TagString: Pick
@@ -1369,6 +1524,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1041355891338672152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532462278673486670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &551590553474662232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,6 +1550,7 @@ GameObject:
   - component: {fileID: 4772328093791091545}
   - component: {fileID: 4245903441086583655}
   - component: {fileID: 218086720646491581}
+  - component: {fileID: 7516279905917141838}
   m_Layer: 0
   m_Name: Sphere (38)
   m_TagString: Pick
@@ -1483,6 +1652,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7516279905917141838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551590553474662232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &587402263130416919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,6 +1678,7 @@ GameObject:
   - component: {fileID: 2649243054054979456}
   - component: {fileID: 1545747765449525382}
   - component: {fileID: 7845736043711116167}
+  - component: {fileID: 3969438983257767672}
   m_Layer: 0
   m_Name: Cylinder (12)
   m_TagString: Pick
@@ -1598,6 +1781,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &3969438983257767672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587402263130416919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &648224288948281799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,6 +1807,7 @@ GameObject:
   - component: {fileID: 7654643222076087491}
   - component: {fileID: 4265631168795211544}
   - component: {fileID: 2473097242970595355}
+  - component: {fileID: 1599311183203958032}
   m_Layer: 0
   m_Name: Cube (69)
   m_TagString: Pick
@@ -1712,6 +1909,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1599311183203958032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648224288948281799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &747187889960577769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,6 +1935,7 @@ GameObject:
   - component: {fileID: 3072104950949516346}
   - component: {fileID: 822207320127635657}
   - component: {fileID: 3966806223040482977}
+  - component: {fileID: 6069799315161351692}
   m_Layer: 0
   m_Name: Cube (11)
   m_TagString: Pick
@@ -1826,6 +2037,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6069799315161351692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747187889960577769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &788557622834925368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,6 +2063,7 @@ GameObject:
   - component: {fileID: 7691257477977885849}
   - component: {fileID: 7515652224982335332}
   - component: {fileID: 715388006732763322}
+  - component: {fileID: 7464017795131238655}
   m_Layer: 0
   m_Name: Sphere (44)
   m_TagString: Pick
@@ -1940,6 +2165,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7464017795131238655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788557622834925368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &828879037756820495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1953,6 +2191,7 @@ GameObject:
   - component: {fileID: 6077602467412002703}
   - component: {fileID: 8626877498346724386}
   - component: {fileID: 4801343180340127435}
+  - component: {fileID: 4917247688293869492}
   m_Layer: 0
   m_Name: Cube (55)
   m_TagString: Pick
@@ -2054,6 +2293,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4917247688293869492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828879037756820495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &968335161270853300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,6 +2319,7 @@ GameObject:
   - component: {fileID: 5370072175323766621}
   - component: {fileID: 5591340282856297181}
   - component: {fileID: 694881519910324817}
+  - component: {fileID: 6939427633935621512}
   m_Layer: 0
   m_Name: Sphere (3)
   m_TagString: Pick
@@ -2168,6 +2421,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6939427633935621512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968335161270853300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &1294849924839017139
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,6 +2447,7 @@ GameObject:
   - component: {fileID: 8369732989059905066}
   - component: {fileID: 3258189973141061781}
   - component: {fileID: 6424121651659965555}
+  - component: {fileID: 1892551697858616029}
   m_Layer: 0
   m_Name: Cube (40)
   m_TagString: Pick
@@ -2282,6 +2549,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1892551697858616029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294849924839017139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &1333614109454487267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,6 +2575,7 @@ GameObject:
   - component: {fileID: 4951695241109372569}
   - component: {fileID: 241133697379135431}
   - component: {fileID: 918917805553296855}
+  - component: {fileID: 7995394848191585383}
   m_Layer: 0
   m_Name: Sphere (41)
   m_TagString: Pick
@@ -2396,6 +2677,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7995394848191585383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333614109454487267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &1776271431330365330
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,6 +2703,7 @@ GameObject:
   - component: {fileID: 3249594639465331067}
   - component: {fileID: 642402021922141482}
   - component: {fileID: 6149583497923246380}
+  - component: {fileID: 1141208540848124368}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Pick
@@ -2511,6 +2806,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &1141208540848124368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776271431330365330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &1830382009351267492
 GameObject:
   m_ObjectHideFlags: 0
@@ -2524,6 +2832,7 @@ GameObject:
   - component: {fileID: 3221258352558393996}
   - component: {fileID: 7308728974304522595}
   - component: {fileID: 7824071045163011229}
+  - component: {fileID: 6446690608559093042}
   m_Layer: 0
   m_Name: Cube (63)
   m_TagString: Pick
@@ -2625,6 +2934,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6446690608559093042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830382009351267492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &1849522055354502490
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,6 +2960,7 @@ GameObject:
   - component: {fileID: 8802416607119650968}
   - component: {fileID: 4189720327851665065}
   - component: {fileID: 6600147963912132498}
+  - component: {fileID: 5737821079330638332}
   m_Layer: 0
   m_Name: Cylinder (15)
   m_TagString: Pick
@@ -2740,6 +3063,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &5737821079330638332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849522055354502490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &2029851403132671822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2753,6 +3089,7 @@ GameObject:
   - component: {fileID: 6164217922937880136}
   - component: {fileID: 3480158961567989077}
   - component: {fileID: 160168577195608777}
+  - component: {fileID: 6953745087984068631}
   m_Layer: 0
   m_Name: Cube (65)
   m_TagString: Pick
@@ -2854,6 +3191,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6953745087984068631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029851403132671822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &2134008562708338453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,6 +3217,7 @@ GameObject:
   - component: {fileID: 8846657281223357527}
   - component: {fileID: 3813387084480896526}
   - component: {fileID: 3893022198715896779}
+  - component: {fileID: 3693274754581720561}
   m_Layer: 0
   m_Name: Sphere (18)
   m_TagString: Pick
@@ -2968,120 +3319,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
---- !u!1 &2135592866664716651
-GameObject:
+--- !u!114 &3693274754581720561
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2261872140033042496}
-  - component: {fileID: 4472410241665614851}
-  - component: {fileID: 4750016301475005821}
-  - component: {fileID: 6995898543254290645}
-  - component: {fileID: 6466065311243624963}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Pick
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2261872140033042496
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135592866664716651}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.07, y: 0.7, z: 7.67}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 3479846424515508883}
-  m_RootOrder: 48
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4472410241665614851
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135592866664716651}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &4750016301475005821
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135592866664716651}
+  m_GameObject: {fileID: 2134008562708338453}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5efc5ac62eb1fbb4a813ae18e01c38c4, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6995898543254290645
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135592866664716651}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6466065311243624963
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135592866664716651}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0.5
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 4
-  m_CollisionDetection: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &2161634368223653441
 GameObject:
   m_ObjectHideFlags: 0
@@ -3095,6 +3345,7 @@ GameObject:
   - component: {fileID: 1571372871451623849}
   - component: {fileID: 5570787487539866134}
   - component: {fileID: 5190928480894830368}
+  - component: {fileID: 6129252866040804383}
   m_Layer: 0
   m_Name: Cylinder (8)
   m_TagString: Pick
@@ -3197,6 +3448,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &6129252866040804383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2161634368223653441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &2201570386084104496
 GameObject:
   m_ObjectHideFlags: 0
@@ -3210,6 +3474,7 @@ GameObject:
   - component: {fileID: 4916323858425883583}
   - component: {fileID: 7733504881700799298}
   - component: {fileID: 6412754612464970667}
+  - component: {fileID: 8679305668092885891}
   m_Layer: 0
   m_Name: Sphere (45)
   m_TagString: Pick
@@ -3311,6 +3576,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8679305668092885891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2201570386084104496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &2370986287105365252
 GameObject:
   m_ObjectHideFlags: 0
@@ -3324,6 +3602,7 @@ GameObject:
   - component: {fileID: 4460235133827750774}
   - component: {fileID: 2045546467820281171}
   - component: {fileID: 3138400281368540865}
+  - component: {fileID: 5489760662594143420}
   m_Layer: 0
   m_Name: Cube (68)
   m_TagString: Pick
@@ -3425,6 +3704,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &5489760662594143420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370986287105365252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &2427718866521260695
 GameObject:
   m_ObjectHideFlags: 0
@@ -3438,6 +3730,7 @@ GameObject:
   - component: {fileID: 7129529101880608649}
   - component: {fileID: 3262645156708023167}
   - component: {fileID: 3623095448138125523}
+  - component: {fileID: 8799208955876440031}
   m_Layer: 0
   m_Name: Cube (52)
   m_TagString: Pick
@@ -3539,6 +3832,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8799208955876440031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2427718866521260695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &2430753017752236726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3552,6 +3858,7 @@ GameObject:
   - component: {fileID: 7374220923070813315}
   - component: {fileID: 332010775886435494}
   - component: {fileID: 8333073356023190378}
+  - component: {fileID: 7948576946336674823}
   m_Layer: 0
   m_Name: Cube (53)
   m_TagString: Pick
@@ -3653,6 +3960,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7948576946336674823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2430753017752236726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &2437420719874090651
 GameObject:
   m_ObjectHideFlags: 0
@@ -3666,6 +3986,7 @@ GameObject:
   - component: {fileID: 7971386188957656577}
   - component: {fileID: 5966421681562886873}
   - component: {fileID: 260196035952881206}
+  - component: {fileID: 6122547903914332120}
   m_Layer: 0
   m_Name: Sphere (15)
   m_TagString: Pick
@@ -3767,6 +4088,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6122547903914332120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2437420719874090651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &2462079451990351044
 GameObject:
   m_ObjectHideFlags: 0
@@ -3780,6 +4114,7 @@ GameObject:
   - component: {fileID: 8427266889135168335}
   - component: {fileID: 1040657149248175758}
   - component: {fileID: 6923846975675785779}
+  - component: {fileID: 6120449613077493224}
   m_Layer: 0
   m_Name: Cylinder (11)
   m_TagString: Pick
@@ -3882,6 +4217,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &6120449613077493224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462079451990351044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &2514403740188555727
 GameObject:
   m_ObjectHideFlags: 0
@@ -3895,6 +4243,7 @@ GameObject:
   - component: {fileID: 5937438297408755879}
   - component: {fileID: 7090820411341481626}
   - component: {fileID: 772380878933221825}
+  - component: {fileID: 932749738333143470}
   m_Layer: 0
   m_Name: Cube (18)
   m_TagString: Pick
@@ -3996,6 +4345,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &932749738333143470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2514403740188555727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &2544776369688284522
 GameObject:
   m_ObjectHideFlags: 0
@@ -4009,6 +4371,7 @@ GameObject:
   - component: {fileID: 6836587259734608308}
   - component: {fileID: 8689228015456505783}
   - component: {fileID: 7812207314739937785}
+  - component: {fileID: 1349885091747305539}
   m_Layer: 0
   m_Name: Sphere (19)
   m_TagString: Pick
@@ -4110,6 +4473,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1349885091747305539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544776369688284522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &2560990029190417333
 GameObject:
   m_ObjectHideFlags: 0
@@ -4123,6 +4499,7 @@ GameObject:
   - component: {fileID: 3012310522961420131}
   - component: {fileID: 4364185476279737533}
   - component: {fileID: 3538162939411359605}
+  - component: {fileID: 8951143350781961811}
   m_Layer: 0
   m_Name: Sphere (22)
   m_TagString: Pick
@@ -4224,6 +4601,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8951143350781961811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2560990029190417333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &2575466161816134932
 GameObject:
   m_ObjectHideFlags: 0
@@ -4237,6 +4627,7 @@ GameObject:
   - component: {fileID: 105346789907254020}
   - component: {fileID: 8350546284907160506}
   - component: {fileID: 3293750986863443565}
+  - component: {fileID: 4552053005293109359}
   m_Layer: 0
   m_Name: Cylinder (13)
   m_TagString: Pick
@@ -4339,6 +4730,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &4552053005293109359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2575466161816134932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &2588458783576119780
 GameObject:
   m_ObjectHideFlags: 0
@@ -4352,6 +4756,7 @@ GameObject:
   - component: {fileID: 4656423856621984552}
   - component: {fileID: 2034125268719208948}
   - component: {fileID: 2380411455431210569}
+  - component: {fileID: 7599518971874715204}
   m_Layer: 0
   m_Name: Sphere (17)
   m_TagString: Pick
@@ -4453,6 +4858,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7599518971874715204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2588458783576119780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &2619726523096511332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,6 +4884,7 @@ GameObject:
   - component: {fileID: 5957718734869810906}
   - component: {fileID: 4989231712498183652}
   - component: {fileID: 6310027003690242070}
+  - component: {fileID: 990452484597136191}
   m_Layer: 0
   m_Name: Cube (39)
   m_TagString: Pick
@@ -4567,6 +4986,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &990452484597136191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619726523096511332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &2645399593112516401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4580,6 +5012,7 @@ GameObject:
   - component: {fileID: 3759484926747990880}
   - component: {fileID: 1856351683530106030}
   - component: {fileID: 361653521593136877}
+  - component: {fileID: 113711506512193785}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Pick
@@ -4681,6 +5114,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &113711506512193785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2645399593112516401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &2665679565857513188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4694,6 +5140,7 @@ GameObject:
   - component: {fileID: 4970899472733798235}
   - component: {fileID: 174516803775655840}
   - component: {fileID: 7335810609390301348}
+  - component: {fileID: 2753937493585420291}
   m_Layer: 0
   m_Name: Cube (10)
   m_TagString: Pick
@@ -4795,6 +5242,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &2753937493585420291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2665679565857513188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &2735959750332545332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4808,6 +5268,7 @@ GameObject:
   - component: {fileID: 7734507617299151277}
   - component: {fileID: 6729951123875365272}
   - component: {fileID: 3906391148883114807}
+  - component: {fileID: 5852507821263218977}
   m_Layer: 0
   m_Name: Cube (56)
   m_TagString: Pick
@@ -4909,6 +5370,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &5852507821263218977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2735959750332545332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &2841419453952973310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4922,6 +5396,7 @@ GameObject:
   - component: {fileID: 7952876226821838069}
   - component: {fileID: 2417730919565006577}
   - component: {fileID: 3689153728212402602}
+  - component: {fileID: 6251887832907240787}
   m_Layer: 0
   m_Name: Cube (35)
   m_TagString: Pick
@@ -5023,6 +5498,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6251887832907240787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2841419453952973310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &2923273613940609479
 GameObject:
   m_ObjectHideFlags: 0
@@ -5036,6 +5524,7 @@ GameObject:
   - component: {fileID: 1577854083674544419}
   - component: {fileID: 7913062785462002122}
   - component: {fileID: 2612397282710919126}
+  - component: {fileID: 5943790799319466051}
   m_Layer: 0
   m_Name: Sphere (10)
   m_TagString: Pick
@@ -5137,6 +5626,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &5943790799319466051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2923273613940609479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &3043139378074748417
 GameObject:
   m_ObjectHideFlags: 0
@@ -5150,6 +5652,7 @@ GameObject:
   - component: {fileID: 804377957107359746}
   - component: {fileID: 6955322555293117832}
   - component: {fileID: 8013473354544380580}
+  - component: {fileID: 1181721148606107879}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Pick
@@ -5252,6 +5755,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &1181721148606107879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043139378074748417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &3164751457842384557
 GameObject:
   m_ObjectHideFlags: 0
@@ -5265,6 +5781,7 @@ GameObject:
   - component: {fileID: 4229828768708027213}
   - component: {fileID: 4039768233087612567}
   - component: {fileID: 5547836881476708633}
+  - component: {fileID: 2584947293500026432}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Pick
@@ -5366,6 +5883,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &2584947293500026432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3164751457842384557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &3207683844645533277
 GameObject:
   m_ObjectHideFlags: 0
@@ -5379,6 +5909,7 @@ GameObject:
   - component: {fileID: 5736849174981332689}
   - component: {fileID: 2648901623591220035}
   - component: {fileID: 4628851146397561445}
+  - component: {fileID: 9051878501397348251}
   m_Layer: 0
   m_Name: Cylinder (4)
   m_TagString: Pick
@@ -5481,6 +6012,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &9051878501397348251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3207683844645533277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &3223700298810264605
 GameObject:
   m_ObjectHideFlags: 0
@@ -5494,6 +6038,7 @@ GameObject:
   - component: {fileID: 4505964185837694607}
   - component: {fileID: 6493150859878088327}
   - component: {fileID: 8164900254987783605}
+  - component: {fileID: 4059101798385593539}
   m_Layer: 0
   m_Name: Cube (44)
   m_TagString: Pick
@@ -5595,6 +6140,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4059101798385593539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3223700298810264605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &3320338753450630896
 GameObject:
   m_ObjectHideFlags: 0
@@ -5608,6 +6166,7 @@ GameObject:
   - component: {fileID: 5155047751112742771}
   - component: {fileID: 3794096445138929031}
   - component: {fileID: 8957174327724371373}
+  - component: {fileID: 3594251558933848626}
   m_Layer: 0
   m_Name: Sphere (26)
   m_TagString: Pick
@@ -5709,6 +6268,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3594251558933848626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320338753450630896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &3449487512660069993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5722,6 +6294,7 @@ GameObject:
   - component: {fileID: 1733858942178183032}
   - component: {fileID: 3188394054705170462}
   - component: {fileID: 5965331658785645128}
+  - component: {fileID: 578861209195036313}
   m_Layer: 0
   m_Name: Cylinder (7)
   m_TagString: Pick
@@ -5824,120 +6397,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
---- !u!1 &3479846423103597721
-GameObject:
+--- !u!114 &578861209195036313
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3479846423103597796}
-  - component: {fileID: 3479846423103597797}
-  - component: {fileID: 3479846423103597798}
-  - component: {fileID: 3479846423103597799}
-  - component: {fileID: 3479846423103597720}
-  m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Pick
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3479846423103597796
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3479846423103597721}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03808427, y: 0.3, z: 3.3}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 3479846424515508883}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3479846423103597797
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3479846423103597721}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &3479846423103597798
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3479846423103597721}
+  m_GameObject: {fileID: 3449487512660069993}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 042208a3864ea7a42a8213a565410acf, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3479846423103597799
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3479846423103597721}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &3479846423103597720
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3479846423103597721}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0.5
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 4
-  m_CollisionDetection: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &3479846424243567332
 GameObject:
   m_ObjectHideFlags: 0
@@ -5951,6 +6423,7 @@ GameObject:
   - component: {fileID: 3479846424243567329}
   - component: {fileID: 3479846424243567330}
   - component: {fileID: 3479846424243567331}
+  - component: {fileID: 957863012589838849}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Pick
@@ -6052,6 +6525,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &957863012589838849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3479846424243567332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &3479846424515508884
 GameObject:
   m_ObjectHideFlags: 0
@@ -6232,6 +6718,7 @@ GameObject:
   - component: {fileID: 197257902281864749}
   - component: {fileID: 4075823867163962072}
   - component: {fileID: 967673702064948932}
+  - component: {fileID: 6828155926502155845}
   m_Layer: 0
   m_Name: Sphere (23)
   m_TagString: Pick
@@ -6333,6 +6820,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6828155926502155845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3505421180891939872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &3510372128348411347
 GameObject:
   m_ObjectHideFlags: 0
@@ -6346,6 +6846,7 @@ GameObject:
   - component: {fileID: 8559566929792704876}
   - component: {fileID: 2524737537840019419}
   - component: {fileID: 5005961300194235461}
+  - component: {fileID: 4252882015656763965}
   m_Layer: 0
   m_Name: Cube (48)
   m_TagString: Pick
@@ -6447,6 +6948,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4252882015656763965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3510372128348411347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &3551319108615772700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6460,6 +6974,7 @@ GameObject:
   - component: {fileID: 3692779063956718332}
   - component: {fileID: 5095685090015253671}
   - component: {fileID: 1584604580304564505}
+  - component: {fileID: 1166057489980991488}
   m_Layer: 0
   m_Name: Cube (38)
   m_TagString: Pick
@@ -6561,6 +7076,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1166057489980991488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3551319108615772700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &3612921261832623048
 GameObject:
   m_ObjectHideFlags: 0
@@ -6574,6 +7102,7 @@ GameObject:
   - component: {fileID: 4901233837623395316}
   - component: {fileID: 2577574382336675484}
   - component: {fileID: 6937634171849844506}
+  - component: {fileID: 6631685463824790923}
   m_Layer: 0
   m_Name: Cube (17)
   m_TagString: Pick
@@ -6675,6 +7204,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6631685463824790923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3612921261832623048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &3668651527131721487
 GameObject:
   m_ObjectHideFlags: 0
@@ -6688,6 +7230,7 @@ GameObject:
   - component: {fileID: 5551612882989795483}
   - component: {fileID: 5352788801951321309}
   - component: {fileID: 1060415366818044277}
+  - component: {fileID: 2509383342887917671}
   m_Layer: 0
   m_Name: Sphere (36)
   m_TagString: Pick
@@ -6789,6 +7332,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &2509383342887917671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3668651527131721487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &3706789871491345762
 GameObject:
   m_ObjectHideFlags: 0
@@ -6802,6 +7358,7 @@ GameObject:
   - component: {fileID: 3952935556641405985}
   - component: {fileID: 4290525377135495911}
   - component: {fileID: 4641546852642346077}
+  - component: {fileID: 9159290291577944697}
   m_Layer: 0
   m_Name: Sphere (16)
   m_TagString: Pick
@@ -6903,6 +7460,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &9159290291577944697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3706789871491345762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &3792146103376158655
 GameObject:
   m_ObjectHideFlags: 0
@@ -6916,6 +7486,7 @@ GameObject:
   - component: {fileID: 6122808007761637189}
   - component: {fileID: 7862938533277401451}
   - component: {fileID: 2808093120389004493}
+  - component: {fileID: 8326666968038549800}
   m_Layer: 0
   m_Name: Cube (16)
   m_TagString: Pick
@@ -7017,6 +7588,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8326666968038549800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3792146103376158655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &3823819141702827049
 GameObject:
   m_ObjectHideFlags: 0
@@ -7030,6 +7614,7 @@ GameObject:
   - component: {fileID: 3888856878360486906}
   - component: {fileID: 6643769678271700096}
   - component: {fileID: 8137300050938584988}
+  - component: {fileID: 6935670602261962172}
   m_Layer: 0
   m_Name: Cube (37)
   m_TagString: Pick
@@ -7131,6 +7716,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6935670602261962172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3823819141702827049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &3954751737326918766
 GameObject:
   m_ObjectHideFlags: 0
@@ -7144,6 +7742,7 @@ GameObject:
   - component: {fileID: 3778783764961129056}
   - component: {fileID: 4880369126985848666}
   - component: {fileID: 2989041866701227136}
+  - component: {fileID: 8294899061436842108}
   m_Layer: 0
   m_Name: Cube (43)
   m_TagString: Pick
@@ -7245,6 +7844,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8294899061436842108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3954751737326918766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &3972664276174260354
 GameObject:
   m_ObjectHideFlags: 0
@@ -7258,6 +7870,7 @@ GameObject:
   - component: {fileID: 2845440314652476819}
   - component: {fileID: 140134815213428572}
   - component: {fileID: 8503696055212057231}
+  - component: {fileID: 3339145180680253731}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Pick
@@ -7359,6 +7972,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3339145180680253731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3972664276174260354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &4044937910720705757
 GameObject:
   m_ObjectHideFlags: 0
@@ -7372,6 +7998,7 @@ GameObject:
   - component: {fileID: 597308667638562289}
   - component: {fileID: 4002267720803810836}
   - component: {fileID: 6494109077826547531}
+  - component: {fileID: 9179561457641229818}
   m_Layer: 0
   m_Name: Sphere (20)
   m_TagString: Pick
@@ -7473,6 +8100,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &9179561457641229818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044937910720705757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &4132830294162969555
 GameObject:
   m_ObjectHideFlags: 0
@@ -7486,6 +8126,7 @@ GameObject:
   - component: {fileID: 7299062177878002584}
   - component: {fileID: 8516844909367613911}
   - component: {fileID: 2005719710390457114}
+  - component: {fileID: 7067794717681167741}
   m_Layer: 0
   m_Name: Sphere (29)
   m_TagString: Pick
@@ -7587,6 +8228,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7067794717681167741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132830294162969555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &4147160603196955056
 GameObject:
   m_ObjectHideFlags: 0
@@ -7600,6 +8254,7 @@ GameObject:
   - component: {fileID: 8628464276418289382}
   - component: {fileID: 5725276335454146119}
   - component: {fileID: 4845840301757328635}
+  - component: {fileID: 7376103182946825958}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Pick
@@ -7701,6 +8356,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7376103182946825958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147160603196955056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &4274101652254511967
 GameObject:
   m_ObjectHideFlags: 0
@@ -7714,6 +8382,7 @@ GameObject:
   - component: {fileID: 1237651130174992469}
   - component: {fileID: 7619272306741010628}
   - component: {fileID: 2538273741042740462}
+  - component: {fileID: 5393971649713357119}
   m_Layer: 0
   m_Name: Sphere (11)
   m_TagString: Pick
@@ -7815,6 +8484,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &5393971649713357119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4274101652254511967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &4314959224255831793
 GameObject:
   m_ObjectHideFlags: 0
@@ -7828,6 +8510,7 @@ GameObject:
   - component: {fileID: 4155091306516532931}
   - component: {fileID: 747830425417293536}
   - component: {fileID: 4334877238889123825}
+  - component: {fileID: 3754231586411636594}
   m_Layer: 0
   m_Name: Cube (66)
   m_TagString: Pick
@@ -7929,6 +8612,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3754231586411636594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314959224255831793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &4331280351793842421
 GameObject:
   m_ObjectHideFlags: 0
@@ -7942,6 +8638,7 @@ GameObject:
   - component: {fileID: 4647556288851670535}
   - component: {fileID: 5608241985565935592}
   - component: {fileID: 9163753524114219627}
+  - component: {fileID: 6136727454710131577}
   m_Layer: 0
   m_Name: Cube (67)
   m_TagString: Pick
@@ -8043,6 +8740,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6136727454710131577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4331280351793842421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &4356845826696198310
 GameObject:
   m_ObjectHideFlags: 0
@@ -8056,6 +8766,7 @@ GameObject:
   - component: {fileID: 6144331754589487335}
   - component: {fileID: 3342410287408801426}
   - component: {fileID: 8056303706643982895}
+  - component: {fileID: 5710269572529752739}
   m_Layer: 0
   m_Name: Sphere (8)
   m_TagString: Pick
@@ -8157,6 +8868,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &5710269572529752739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4356845826696198310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &4396256921158261570
 GameObject:
   m_ObjectHideFlags: 0
@@ -8170,6 +8894,7 @@ GameObject:
   - component: {fileID: 6697167318016072224}
   - component: {fileID: 4064015675581280378}
   - component: {fileID: 4931640370237457277}
+  - component: {fileID: 3396458034118569096}
   m_Layer: 0
   m_Name: Sphere (14)
   m_TagString: Pick
@@ -8271,6 +8996,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3396458034118569096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4396256921158261570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &4636556275499260057
 GameObject:
   m_ObjectHideFlags: 0
@@ -8284,6 +9022,7 @@ GameObject:
   - component: {fileID: 3970682402616774063}
   - component: {fileID: 3785706158694201504}
   - component: {fileID: 9085185202973431510}
+  - component: {fileID: 5666064595539639601}
   m_Layer: 0
   m_Name: Cube (20)
   m_TagString: Pick
@@ -8385,6 +9124,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &5666064595539639601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4636556275499260057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &4727585107052337194
 GameObject:
   m_ObjectHideFlags: 0
@@ -8398,6 +9150,7 @@ GameObject:
   - component: {fileID: 6313146084749540748}
   - component: {fileID: 925506474689181543}
   - component: {fileID: 353064953096012601}
+  - component: {fileID: 2180100739135702922}
   m_Layer: 0
   m_Name: Cube (54)
   m_TagString: Pick
@@ -8499,6 +9252,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &2180100739135702922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4727585107052337194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &4864222376156305383
 GameObject:
   m_ObjectHideFlags: 0
@@ -8512,6 +9278,7 @@ GameObject:
   - component: {fileID: 2453434827953484070}
   - component: {fileID: 3408951761064940817}
   - component: {fileID: 8553613001562698309}
+  - component: {fileID: 7384054118943816605}
   m_Layer: 0
   m_Name: Cube (32)
   m_TagString: Pick
@@ -8613,6 +9380,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7384054118943816605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4864222376156305383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &5113613938506527474
 GameObject:
   m_ObjectHideFlags: 0
@@ -8626,6 +9406,7 @@ GameObject:
   - component: {fileID: 4963771906650767396}
   - component: {fileID: 5388802135899826007}
   - component: {fileID: 143510633380479122}
+  - component: {fileID: 6094026059666536718}
   m_Layer: 0
   m_Name: Sphere (9)
   m_TagString: Pick
@@ -8727,6 +9508,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6094026059666536718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5113613938506527474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &5121700101556281138
 GameObject:
   m_ObjectHideFlags: 0
@@ -8740,6 +9534,7 @@ GameObject:
   - component: {fileID: 699769615924325699}
   - component: {fileID: 5448940015788885889}
   - component: {fileID: 76742105502346060}
+  - component: {fileID: 8193029347067618861}
   m_Layer: 0
   m_Name: Cylinder (10)
   m_TagString: Pick
@@ -8842,6 +9637,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &8193029347067618861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5121700101556281138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &5316169472358360784
 GameObject:
   m_ObjectHideFlags: 0
@@ -8855,6 +9663,7 @@ GameObject:
   - component: {fileID: 4115086403340656298}
   - component: {fileID: 8376238412286962923}
   - component: {fileID: 751505093870597007}
+  - component: {fileID: 1167837189666229714}
   m_Layer: 0
   m_Name: Cube (47)
   m_TagString: Pick
@@ -8956,6 +9765,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1167837189666229714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5316169472358360784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &5321012999976829109
 GameObject:
   m_ObjectHideFlags: 0
@@ -8969,6 +9791,7 @@ GameObject:
   - component: {fileID: 7878303152491356227}
   - component: {fileID: 2336554506575111540}
   - component: {fileID: 8501216408103289292}
+  - component: {fileID: 58644950744702535}
   m_Layer: 0
   m_Name: Cube (70)
   m_TagString: Pick
@@ -9070,6 +9893,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &58644950744702535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5321012999976829109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &5435643343169221306
 GameObject:
   m_ObjectHideFlags: 0
@@ -9083,6 +9919,7 @@ GameObject:
   - component: {fileID: 1474963204512722836}
   - component: {fileID: 7096385754900940666}
   - component: {fileID: 4239580900891467932}
+  - component: {fileID: 8025684856281990368}
   m_Layer: 0
   m_Name: Cube (31)
   m_TagString: Pick
@@ -9184,6 +10021,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8025684856281990368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5435643343169221306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &5715826462691276156
 GameObject:
   m_ObjectHideFlags: 0
@@ -9197,6 +10047,7 @@ GameObject:
   - component: {fileID: 5299526196311009267}
   - component: {fileID: 2885912885545181272}
   - component: {fileID: 4552263572087904944}
+  - component: {fileID: 2427620825923717374}
   m_Layer: 0
   m_Name: Cube (49)
   m_TagString: Pick
@@ -9298,6 +10149,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &2427620825923717374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5715826462691276156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &5718418497416156620
 GameObject:
   m_ObjectHideFlags: 0
@@ -9311,6 +10175,7 @@ GameObject:
   - component: {fileID: 2429011910745792528}
   - component: {fileID: 4173086480023698913}
   - component: {fileID: 2836990600960771504}
+  - component: {fileID: 8867050629183265524}
   m_Layer: 0
   m_Name: Cube (22)
   m_TagString: Pick
@@ -9412,6 +10277,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8867050629183265524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5718418497416156620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &5770592245989149502
 GameObject:
   m_ObjectHideFlags: 0
@@ -9425,6 +10303,7 @@ GameObject:
   - component: {fileID: 7401094285707618490}
   - component: {fileID: 2508244094359283758}
   - component: {fileID: 2845545184501139305}
+  - component: {fileID: 8844064697539004563}
   m_Layer: 0
   m_Name: Sphere (31)
   m_TagString: Pick
@@ -9526,6 +10405,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8844064697539004563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5770592245989149502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &5801962407053079431
 GameObject:
   m_ObjectHideFlags: 0
@@ -9539,6 +10431,7 @@ GameObject:
   - component: {fileID: 3408709442078466817}
   - component: {fileID: 5978548029526698250}
   - component: {fileID: 740182387642617559}
+  - component: {fileID: 5086911619393572914}
   m_Layer: 0
   m_Name: Sphere (25)
   m_TagString: Pick
@@ -9640,6 +10533,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &5086911619393572914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5801962407053079431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &5859346029472797239
 GameObject:
   m_ObjectHideFlags: 0
@@ -9653,6 +10559,7 @@ GameObject:
   - component: {fileID: 5139208557254618491}
   - component: {fileID: 3713688922913418258}
   - component: {fileID: 1593539200249045048}
+  - component: {fileID: 2709248041032589809}
   m_Layer: 0
   m_Name: Sphere (30)
   m_TagString: Pick
@@ -9754,6 +10661,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &2709248041032589809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5859346029472797239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &5964775856325578585
 GameObject:
   m_ObjectHideFlags: 0
@@ -9767,6 +10687,7 @@ GameObject:
   - component: {fileID: 8687337396735999525}
   - component: {fileID: 8598233605713596318}
   - component: {fileID: 3464353813994078209}
+  - component: {fileID: 5266854411526697081}
   m_Layer: 0
   m_Name: Cube (15)
   m_TagString: Pick
@@ -9868,6 +10789,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &5266854411526697081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5964775856325578585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &5997958367756762736
 GameObject:
   m_ObjectHideFlags: 0
@@ -9881,6 +10815,7 @@ GameObject:
   - component: {fileID: 4013299360773353924}
   - component: {fileID: 7682779788297895181}
   - component: {fileID: 1029790220049686563}
+  - component: {fileID: 4593801681917451405}
   m_Layer: 0
   m_Name: Sphere (39)
   m_TagString: Pick
@@ -9982,6 +10917,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4593801681917451405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5997958367756762736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &6016126453947321921
 GameObject:
   m_ObjectHideFlags: 0
@@ -9995,6 +10943,7 @@ GameObject:
   - component: {fileID: 1319620024631564248}
   - component: {fileID: 8509537868996666653}
   - component: {fileID: 2660127306929969619}
+  - component: {fileID: 1406614219464707490}
   m_Layer: 0
   m_Name: Cylinder (6)
   m_TagString: Pick
@@ -10097,6 +11046,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &1406614219464707490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6016126453947321921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &6034471025722536053
 GameObject:
   m_ObjectHideFlags: 0
@@ -10110,6 +11072,7 @@ GameObject:
   - component: {fileID: 3306114379937898988}
   - component: {fileID: 1687435751836872068}
   - component: {fileID: 3399350911999842509}
+  - component: {fileID: 3319259844580624250}
   m_Layer: 0
   m_Name: Cylinder (14)
   m_TagString: Pick
@@ -10212,6 +11175,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &3319259844580624250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6034471025722536053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &6184387855780160477
 GameObject:
   m_ObjectHideFlags: 0
@@ -10225,6 +11201,7 @@ GameObject:
   - component: {fileID: 6991774353830630184}
   - component: {fileID: 3734589858135851694}
   - component: {fileID: 5024886345708818507}
+  - component: {fileID: 4118740983610140208}
   m_Layer: 0
   m_Name: Cylinder (3)
   m_TagString: Pick
@@ -10327,6 +11304,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &4118740983610140208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6184387855780160477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &6339454222572338688
 GameObject:
   m_ObjectHideFlags: 0
@@ -10340,6 +11330,7 @@ GameObject:
   - component: {fileID: 8243814837665425557}
   - component: {fileID: 766785075333122993}
   - component: {fileID: 8045907970769969931}
+  - component: {fileID: 8343447711137196010}
   m_Layer: 0
   m_Name: Cube (42)
   m_TagString: Pick
@@ -10441,121 +11432,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
---- !u!1 &6373665160852113233
-GameObject:
+--- !u!114 &8343447711137196010
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3172657421194710987}
-  - component: {fileID: 4508384936442330554}
-  - component: {fileID: 509701908639775505}
-  - component: {fileID: 4857648067641426132}
-  - component: {fileID: 9057954942908304345}
-  m_Layer: 0
-  m_Name: Cylinder
-  m_TagString: Pick
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3172657421194710987
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6373665160852113233}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.84, y: 1.19, z: 33.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3479846424515508883}
-  m_RootOrder: 120
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4508384936442330554
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6373665160852113233}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &509701908639775505
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6373665160852113233}
+  m_GameObject: {fileID: 6339454222572338688}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: ebad3b03fc5b5014a9389c76fef6feb3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &4857648067641426132
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6373665160852113233}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!54 &9057954942908304345
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6373665160852113233}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0.5
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &6459820712267500001
 GameObject:
   m_ObjectHideFlags: 0
@@ -10569,6 +11458,7 @@ GameObject:
   - component: {fileID: 5457084181053204527}
   - component: {fileID: 792894283952394490}
   - component: {fileID: 7739938387356188838}
+  - component: {fileID: 1461298350705482739}
   m_Layer: 0
   m_Name: Sphere (47)
   m_TagString: Pick
@@ -10670,6 +11560,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1461298350705482739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6459820712267500001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &6512352347262172071
 GameObject:
   m_ObjectHideFlags: 0
@@ -10683,6 +11586,7 @@ GameObject:
   - component: {fileID: 729890830140937496}
   - component: {fileID: 6915726303753437460}
   - component: {fileID: 2382867153290199394}
+  - component: {fileID: 9082317565525181790}
   m_Layer: 0
   m_Name: Cube (62)
   m_TagString: Pick
@@ -10784,6 +11688,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &9082317565525181790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6512352347262172071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &6557078473140573141
 GameObject:
   m_ObjectHideFlags: 0
@@ -10797,6 +11714,7 @@ GameObject:
   - component: {fileID: 6085220028074880934}
   - component: {fileID: 753509472658710054}
   - component: {fileID: 5211531305737437551}
+  - component: {fileID: 6247364260139610146}
   m_Layer: 0
   m_Name: Cube (28)
   m_TagString: Pick
@@ -10898,6 +11816,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6247364260139610146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557078473140573141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &6569264511933730102
 GameObject:
   m_ObjectHideFlags: 0
@@ -10911,6 +11842,7 @@ GameObject:
   - component: {fileID: 5217858946057172650}
   - component: {fileID: 3944728668133693392}
   - component: {fileID: 5895818194168121360}
+  - component: {fileID: 4410223454671859245}
   m_Layer: 0
   m_Name: Cylinder (5)
   m_TagString: Pick
@@ -11013,6 +11945,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!114 &4410223454671859245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569264511933730102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
 --- !u!1 &6634248106608777274
 GameObject:
   m_ObjectHideFlags: 0
@@ -11026,6 +11971,7 @@ GameObject:
   - component: {fileID: 5783925875670380392}
   - component: {fileID: 7622432960405537141}
   - component: {fileID: 1481094401247061204}
+  - component: {fileID: 7151473259246353114}
   m_Layer: 0
   m_Name: Cube (50)
   m_TagString: Pick
@@ -11127,6 +12073,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7151473259246353114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6634248106608777274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &6667075019867375712
 GameObject:
   m_ObjectHideFlags: 0
@@ -11140,6 +12099,7 @@ GameObject:
   - component: {fileID: 8319078872697580370}
   - component: {fileID: 2085820137768408047}
   - component: {fileID: 5792149087204617101}
+  - component: {fileID: 8831814045406009211}
   m_Layer: 0
   m_Name: Sphere (40)
   m_TagString: Pick
@@ -11241,6 +12201,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8831814045406009211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6667075019867375712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &6783323257998782651
 GameObject:
   m_ObjectHideFlags: 0
@@ -11254,6 +12227,7 @@ GameObject:
   - component: {fileID: 670474782811178952}
   - component: {fileID: 5756865797616774055}
   - component: {fileID: 8013720320788594949}
+  - component: {fileID: 6824643321212315983}
   m_Layer: 0
   m_Name: Cube (36)
   m_TagString: Pick
@@ -11355,6 +12329,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6824643321212315983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6783323257998782651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &6826798460207211524
 GameObject:
   m_ObjectHideFlags: 0
@@ -11368,6 +12355,7 @@ GameObject:
   - component: {fileID: 7712306438390522293}
   - component: {fileID: 7753779382093036087}
   - component: {fileID: 2258985939453585897}
+  - component: {fileID: 2506253901391861281}
   m_Layer: 0
   m_Name: Cube (23)
   m_TagString: Pick
@@ -11469,6 +12457,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &2506253901391861281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6826798460207211524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &6870636765189004709
 GameObject:
   m_ObjectHideFlags: 0
@@ -11482,6 +12483,7 @@ GameObject:
   - component: {fileID: 5998761878190240077}
   - component: {fileID: 4617746053270477436}
   - component: {fileID: 8945526100214253319}
+  - component: {fileID: 7848119054983899779}
   m_Layer: 0
   m_Name: Sphere (24)
   m_TagString: Pick
@@ -11583,6 +12585,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7848119054983899779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6870636765189004709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &6987875677395698151
 GameObject:
   m_ObjectHideFlags: 0
@@ -11596,6 +12611,7 @@ GameObject:
   - component: {fileID: 186383363078161387}
   - component: {fileID: 7394830438114412440}
   - component: {fileID: 3278283724937813426}
+  - component: {fileID: 6378483472666624215}
   m_Layer: 0
   m_Name: Cube (61)
   m_TagString: Pick
@@ -11697,6 +12713,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6378483472666624215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987875677395698151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7055995633321616248
 GameObject:
   m_ObjectHideFlags: 0
@@ -11710,6 +12739,7 @@ GameObject:
   - component: {fileID: 606485122115039735}
   - component: {fileID: 3818560391988196704}
   - component: {fileID: 4051753643229724865}
+  - component: {fileID: 8670191414326046767}
   m_Layer: 0
   m_Name: Sphere (34)
   m_TagString: Pick
@@ -11811,6 +12841,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8670191414326046767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055995633321616248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7166679899473860892
 GameObject:
   m_ObjectHideFlags: 0
@@ -11824,6 +12867,7 @@ GameObject:
   - component: {fileID: 4847760714605524768}
   - component: {fileID: 2903111643873072356}
   - component: {fileID: 5967250868709923970}
+  - component: {fileID: 3495057868042578663}
   m_Layer: 0
   m_Name: Cube (13)
   m_TagString: Pick
@@ -11925,6 +12969,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3495057868042578663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166679899473860892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7192374529192931895
 GameObject:
   m_ObjectHideFlags: 0
@@ -11938,6 +12995,7 @@ GameObject:
   - component: {fileID: 6009879043880627012}
   - component: {fileID: 1381067671862117632}
   - component: {fileID: 1195746883575703464}
+  - component: {fileID: 6326743944121167971}
   m_Layer: 0
   m_Name: Cube (30)
   m_TagString: Pick
@@ -12039,6 +13097,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6326743944121167971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7192374529192931895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7205506812976826662
 GameObject:
   m_ObjectHideFlags: 0
@@ -12052,6 +13123,7 @@ GameObject:
   - component: {fileID: 6509539647274931626}
   - component: {fileID: 8199985222584133923}
   - component: {fileID: 4400584799938027266}
+  - component: {fileID: 1826585493538905169}
   m_Layer: 0
   m_Name: Cube (26)
   m_TagString: Pick
@@ -12153,6 +13225,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1826585493538905169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205506812976826662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7210189177649902174
 GameObject:
   m_ObjectHideFlags: 0
@@ -12166,6 +13251,7 @@ GameObject:
   - component: {fileID: 876347139116259685}
   - component: {fileID: 1249607919627329549}
   - component: {fileID: 8809128197194718768}
+  - component: {fileID: 4308524043910796008}
   m_Layer: 0
   m_Name: Sphere (12)
   m_TagString: Pick
@@ -12267,6 +13353,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4308524043910796008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7210189177649902174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7233666382230430968
 GameObject:
   m_ObjectHideFlags: 0
@@ -12280,6 +13379,7 @@ GameObject:
   - component: {fileID: 7569393399558240176}
   - component: {fileID: 2909279503430732324}
   - component: {fileID: 7850961848316540269}
+  - component: {fileID: 3425030564851154807}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Pick
@@ -12381,6 +13481,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3425030564851154807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7233666382230430968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7400702093221777898
 GameObject:
   m_ObjectHideFlags: 0
@@ -12394,6 +13507,7 @@ GameObject:
   - component: {fileID: 3201928437975843895}
   - component: {fileID: 1010502760001533969}
   - component: {fileID: 6235585789261284070}
+  - component: {fileID: 1578508665246112123}
   m_Layer: 0
   m_Name: Sphere (33)
   m_TagString: Pick
@@ -12495,6 +13609,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1578508665246112123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7400702093221777898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7474060147470319613
 GameObject:
   m_ObjectHideFlags: 0
@@ -12508,6 +13635,7 @@ GameObject:
   - component: {fileID: 7201622202015786089}
   - component: {fileID: 8327031384535305613}
   - component: {fileID: 1526904461434080679}
+  - component: {fileID: 4061996816031667242}
   m_Layer: 0
   m_Name: Sphere (42)
   m_TagString: Pick
@@ -12609,6 +13737,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4061996816031667242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7474060147470319613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7539413610231183098
 GameObject:
   m_ObjectHideFlags: 0
@@ -12622,6 +13763,7 @@ GameObject:
   - component: {fileID: 2256688631434062359}
   - component: {fileID: 4906723764842428269}
   - component: {fileID: 8345265173099892874}
+  - component: {fileID: 3687449219897319832}
   m_Layer: 0
   m_Name: Sphere (35)
   m_TagString: Pick
@@ -12723,6 +13865,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3687449219897319832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7539413610231183098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7540055295110256698
 GameObject:
   m_ObjectHideFlags: 0
@@ -12736,6 +13891,7 @@ GameObject:
   - component: {fileID: 8669543483902244663}
   - component: {fileID: 3077886084805637040}
   - component: {fileID: 5503631961836859560}
+  - component: {fileID: 3962392966601949582}
   m_Layer: 0
   m_Name: Sphere (37)
   m_TagString: Pick
@@ -12837,6 +13993,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3962392966601949582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7540055295110256698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7613244203998605202
 GameObject:
   m_ObjectHideFlags: 0
@@ -12850,6 +14019,7 @@ GameObject:
   - component: {fileID: 8825913256788818174}
   - component: {fileID: 7262813635069557008}
   - component: {fileID: 4754664295901199413}
+  - component: {fileID: 1311056946196575198}
   m_Layer: 0
   m_Name: Cube (58)
   m_TagString: Pick
@@ -12951,6 +14121,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1311056946196575198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7613244203998605202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7638212991231385342
 GameObject:
   m_ObjectHideFlags: 0
@@ -12964,6 +14147,7 @@ GameObject:
   - component: {fileID: 7937163111160764911}
   - component: {fileID: 4851020996674982692}
   - component: {fileID: 6125922266136531894}
+  - component: {fileID: 9198649290373207237}
   m_Layer: 0
   m_Name: Cube (12)
   m_TagString: Pick
@@ -13065,6 +14249,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &9198649290373207237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7638212991231385342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7657706612166920530
 GameObject:
   m_ObjectHideFlags: 0
@@ -13078,6 +14275,7 @@ GameObject:
   - component: {fileID: 5752241363232224929}
   - component: {fileID: 8853736091638822744}
   - component: {fileID: 1881656643892570019}
+  - component: {fileID: 6774177329580887926}
   m_Layer: 0
   m_Name: Sphere (5)
   m_TagString: Pick
@@ -13179,6 +14377,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6774177329580887926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7657706612166920530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7662476631488043504
 GameObject:
   m_ObjectHideFlags: 0
@@ -13192,6 +14403,7 @@ GameObject:
   - component: {fileID: 8020234717791497482}
   - component: {fileID: 825465079007321335}
   - component: {fileID: 3148371672894727386}
+  - component: {fileID: 2495967000973560209}
   m_Layer: 0
   m_Name: Cube (51)
   m_TagString: Pick
@@ -13293,6 +14505,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &2495967000973560209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662476631488043504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7750054112814983160
 GameObject:
   m_ObjectHideFlags: 0
@@ -13306,6 +14531,7 @@ GameObject:
   - component: {fileID: 1969316058883983837}
   - component: {fileID: 825260427836439200}
   - component: {fileID: 2366900451801989324}
+  - component: {fileID: 8653034743006193355}
   m_Layer: 0
   m_Name: Sphere (7)
   m_TagString: Pick
@@ -13407,6 +14633,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8653034743006193355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7750054112814983160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7758938113467997161
 GameObject:
   m_ObjectHideFlags: 0
@@ -13420,6 +14659,7 @@ GameObject:
   - component: {fileID: 7489959188041221536}
   - component: {fileID: 4976840497968415029}
   - component: {fileID: 7729636133502555153}
+  - component: {fileID: 6579542414999812257}
   m_Layer: 0
   m_Name: Cube (25)
   m_TagString: Pick
@@ -13521,6 +14761,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6579542414999812257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7758938113467997161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7764809224686626832
 GameObject:
   m_ObjectHideFlags: 0
@@ -13534,6 +14787,7 @@ GameObject:
   - component: {fileID: 971967544677489276}
   - component: {fileID: 562672517416553357}
   - component: {fileID: 44815821878225813}
+  - component: {fileID: 4071982964106832403}
   m_Layer: 0
   m_Name: Cube (71)
   m_TagString: Pick
@@ -13635,6 +14889,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4071982964106832403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7764809224686626832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7808642712248646125
 GameObject:
   m_ObjectHideFlags: 0
@@ -13648,6 +14915,7 @@ GameObject:
   - component: {fileID: 1274584728554745659}
   - component: {fileID: 2557946811085401437}
   - component: {fileID: 7302234668543449435}
+  - component: {fileID: 7561360495774869393}
   m_Layer: 0
   m_Name: Sphere (21)
   m_TagString: Pick
@@ -13749,6 +15017,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7561360495774869393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7808642712248646125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7871904165527856951
 GameObject:
   m_ObjectHideFlags: 0
@@ -13762,6 +15043,7 @@ GameObject:
   - component: {fileID: 379403521054122368}
   - component: {fileID: 7982787386665397526}
   - component: {fileID: 8771587127700333586}
+  - component: {fileID: 7039763513965559494}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Pick
@@ -13863,6 +15145,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7039763513965559494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871904165527856951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7927377438327824558
 GameObject:
   m_ObjectHideFlags: 0
@@ -13876,6 +15171,7 @@ GameObject:
   - component: {fileID: 7932732176792649292}
   - component: {fileID: 7897273813425259885}
   - component: {fileID: 5491989937910680340}
+  - component: {fileID: 4416544107887826055}
   m_Layer: 0
   m_Name: Cube (59)
   m_TagString: Pick
@@ -13977,6 +15273,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4416544107887826055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927377438327824558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &7969491511747938273
 GameObject:
   m_ObjectHideFlags: 0
@@ -13990,6 +15299,7 @@ GameObject:
   - component: {fileID: 4726535847946209070}
   - component: {fileID: 2060418453418591219}
   - component: {fileID: 3859312572501687166}
+  - component: {fileID: 8793820551610708221}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Pick
@@ -14091,6 +15401,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8793820551610708221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7969491511747938273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &7999482513724279740
 GameObject:
   m_ObjectHideFlags: 0
@@ -14104,6 +15427,7 @@ GameObject:
   - component: {fileID: 7040892887005806688}
   - component: {fileID: 4389242267053437250}
   - component: {fileID: 7172617826978664632}
+  - component: {fileID: 661165122347194247}
   m_Layer: 0
   m_Name: Cube (34)
   m_TagString: Pick
@@ -14205,6 +15529,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &661165122347194247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999482513724279740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &8041840403484679586
 GameObject:
   m_ObjectHideFlags: 0
@@ -14218,6 +15555,7 @@ GameObject:
   - component: {fileID: 3660163507567499102}
   - component: {fileID: 8663935751782920199}
   - component: {fileID: 5146558189476680371}
+  - component: {fileID: 7957406936318941849}
   m_Layer: 0
   m_Name: Cube (19)
   m_TagString: Pick
@@ -14319,6 +15657,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &7957406936318941849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8041840403484679586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &8064347535788809962
 GameObject:
   m_ObjectHideFlags: 0
@@ -14332,6 +15683,7 @@ GameObject:
   - component: {fileID: 5322798984296321621}
   - component: {fileID: 1974745454219022691}
   - component: {fileID: 1325651082455976129}
+  - component: {fileID: 2432253165887309058}
   m_Layer: 0
   m_Name: Cube (33)
   m_TagString: Pick
@@ -14433,6 +15785,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &2432253165887309058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064347535788809962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &8367477556654041034
 GameObject:
   m_ObjectHideFlags: 0
@@ -14446,6 +15811,7 @@ GameObject:
   - component: {fileID: 8082620846719811493}
   - component: {fileID: 6103149515873612593}
   - component: {fileID: 3592238064158813045}
+  - component: {fileID: 2598191806318766343}
   m_Layer: 0
   m_Name: Cube (29)
   m_TagString: Pick
@@ -14547,6 +15913,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &2598191806318766343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8367477556654041034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &8482324628854832972
 GameObject:
   m_ObjectHideFlags: 0
@@ -14560,6 +15939,7 @@ GameObject:
   - component: {fileID: 7436390145864225366}
   - component: {fileID: 4466401392163230118}
   - component: {fileID: 690751193704994955}
+  - component: {fileID: 1035611874116294726}
   m_Layer: 0
   m_Name: Cube (24)
   m_TagString: Pick
@@ -14661,6 +16041,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &1035611874116294726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8482324628854832972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &8605870273556335652
 GameObject:
   m_ObjectHideFlags: 0
@@ -14674,6 +16067,7 @@ GameObject:
   - component: {fileID: 3810773469337805226}
   - component: {fileID: 3324590270083327500}
   - component: {fileID: 6411322552477576416}
+  - component: {fileID: 3822135206194731648}
   m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Pick
@@ -14775,6 +16169,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3822135206194731648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8605870273556335652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &8651062891644971690
 GameObject:
   m_ObjectHideFlags: 0
@@ -14788,6 +16195,7 @@ GameObject:
   - component: {fileID: 9161947015180668631}
   - component: {fileID: 2278517724788892291}
   - component: {fileID: 2431905514816438840}
+  - component: {fileID: 5748789386379760197}
   m_Layer: 0
   m_Name: Sphere (28)
   m_TagString: Pick
@@ -14889,6 +16297,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &5748789386379760197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8651062891644971690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &8853413190571971543
 GameObject:
   m_ObjectHideFlags: 0
@@ -14902,6 +16323,7 @@ GameObject:
   - component: {fileID: 1136568817163960655}
   - component: {fileID: 5908899069968671956}
   - component: {fileID: 2252330919108168663}
+  - component: {fileID: 970378297961862834}
   m_Layer: 0
   m_Name: Cube (46)
   m_TagString: Pick
@@ -15003,6 +16425,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &970378297961862834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853413190571971543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &8910467774463179908
 GameObject:
   m_ObjectHideFlags: 0
@@ -15016,6 +16451,7 @@ GameObject:
   - component: {fileID: 2658150542270599125}
   - component: {fileID: 6464870928920998688}
   - component: {fileID: 4350797588687319204}
+  - component: {fileID: 8961432605088062489}
   m_Layer: 0
   m_Name: Cube (64)
   m_TagString: Pick
@@ -15117,6 +16553,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &8961432605088062489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910467774463179908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &8975284061646040718
 GameObject:
   m_ObjectHideFlags: 0
@@ -15130,6 +16579,7 @@ GameObject:
   - component: {fileID: 7092465046140676027}
   - component: {fileID: 1080147521970255342}
   - component: {fileID: 4724783956636254543}
+  - component: {fileID: 359868970453899810}
   m_Layer: 0
   m_Name: Cube (27)
   m_TagString: Pick
@@ -15231,6 +16681,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &359868970453899810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8975284061646040718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &8994550357251852655
 GameObject:
   m_ObjectHideFlags: 0
@@ -15244,6 +16707,7 @@ GameObject:
   - component: {fileID: 7206169460201251692}
   - component: {fileID: 4921273418351149441}
   - component: {fileID: 8695827873050091034}
+  - component: {fileID: 4097192221024232319}
   m_Layer: 0
   m_Name: Cube (14)
   m_TagString: Pick
@@ -15345,6 +16809,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &4097192221024232319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8994550357251852655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &9048151472344053305
 GameObject:
   m_ObjectHideFlags: 0
@@ -15358,6 +16835,7 @@ GameObject:
   - component: {fileID: 6576084265826536198}
   - component: {fileID: 7040062684450126647}
   - component: {fileID: 7179199112159308935}
+  - component: {fileID: 6802163602159807302}
   m_Layer: 0
   m_Name: Cube (21)
   m_TagString: Pick
@@ -15459,6 +16937,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6802163602159807302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9048151472344053305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &9172485022627967287
 GameObject:
   m_ObjectHideFlags: 0
@@ -15472,6 +16963,7 @@ GameObject:
   - component: {fileID: 4683737111506879726}
   - component: {fileID: 3004785454647776527}
   - component: {fileID: 5592061173370948267}
+  - component: {fileID: 3104690680587104552}
   m_Layer: 0
   m_Name: Cube (57)
   m_TagString: Pick
@@ -15573,6 +17065,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &3104690680587104552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172485022627967287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!1 &9222106765344997648
 GameObject:
   m_ObjectHideFlags: 0
@@ -15586,6 +17091,7 @@ GameObject:
   - component: {fileID: 7916145855986870375}
   - component: {fileID: 4815215687626482432}
   - component: {fileID: 5967478351248860124}
+  - component: {fileID: 6939715844949701676}
   m_Layer: 0
   m_Name: Sphere (46)
   m_TagString: Pick
@@ -15687,3 +17193,241 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 1
+--- !u!114 &6939715844949701676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9222106765344997648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+--- !u!1001 &544247394636108745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3479846424515508883}
+    m_Modifications:
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917037197630117016, guid: c2f831c3515b22146b3e10ee08aa128e,
+        type: 3}
+      propertyPath: m_Name
+      value: Cylinder
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2f831c3515b22146b3e10ee08aa128e, type: 3}
+--- !u!4 &3172657421194710987 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3137325597830077442, guid: c2f831c3515b22146b3e10ee08aa128e,
+    type: 3}
+  m_PrefabInstance: {fileID: 544247394636108745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &910044698445121321
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3479846424515508883}
+    m_Modifications:
+    - target: {fileID: 4389819099242064816, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_Name
+      value: Sphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03808427
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0cfa6236c208e94b839fde6d0ed203d, type: 3}
+--- !u!4 &3479846423103597796 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389819099242064845, guid: c0cfa6236c208e94b839fde6d0ed203d,
+    type: 3}
+  m_PrefabInstance: {fileID: 910044698445121321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3770582802011845967
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3479846424515508883}
+    m_Modifications:
+    - target: {fileID: 3022174220604173348, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_Name
+      value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 340066be67102244ab4d8f6c352b1f58, type: 3}
+--- !u!4 &2261872140033042496 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3111993589611715855, guid: 340066be67102244ab4d8f6c352b1f58,
+    type: 3}
+  m_PrefabInstance: {fileID: 3770582802011845967}
+  m_PrefabAsset: {fileID: 0}
