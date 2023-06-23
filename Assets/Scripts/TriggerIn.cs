@@ -11,6 +11,7 @@ public class TriggerIn : MonoBehaviour
                {
                    other.gameObject.tag = "In";
                    GameManager.Instance.inCount++;
+                   GameManager.Instance.objectList.Add(other.gameObject);
                    Debug.Log("Count ++");
                }
     }

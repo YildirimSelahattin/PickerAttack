@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public float speed=2;
     public float timer=2;
     public Vector3 scale = new Vector3(1,1,1);
+    public List<GameObject> objectList;
+    
+    
     private void Awake()
     {
         if (Instance == null)
@@ -18,7 +21,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
 
-        
+        DontDestroyOnLoad(this);
     }
 
     void Start()
