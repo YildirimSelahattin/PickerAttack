@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject leftLimit;
     public GameObject rightLimit;
     public Rigidbody rigidBody;
+    public float rotationSpeed;
  
     [Header("AgentProperties")]
 
@@ -62,15 +63,15 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetKey(KeyCode.D) )
         {
 
-            transform.localEulerAngles += Vector3.up;
-            localRotationBody.z -= 1;
+            transform.localEulerAngles += Vector3.up*rotationSpeed;
+            
         }
 
 
         if (Input.GetKey(KeyCode.A) )
         {
-            transform.localEulerAngles += Vector3.down;
-            localRotationBody.z += 1;
+            transform.localEulerAngles += Vector3.down*rotationSpeed;
+            
         }
       
        
