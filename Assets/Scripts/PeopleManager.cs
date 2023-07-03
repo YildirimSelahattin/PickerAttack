@@ -22,7 +22,7 @@ public class PeopleManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "BossScene")
         {
-            transform.DOMove(BossManager.Instance.transform.position, 2f).SetSpeedBased(true);
+            transform.DOMove(BossManager.Instance.transform.position, (3-index)*2f).SetSpeedBased(true);
         }
     }
 

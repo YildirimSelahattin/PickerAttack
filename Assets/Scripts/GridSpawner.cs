@@ -51,8 +51,8 @@ public class GridSpawner : MonoBehaviour
        // float distanceBetweenY = Mathf.Abs(topLimit.transform.position.z - botLimit.transform.position.z);
        // xSize = (distanceBetweenX / 5);
        // ySize = (distanceBetweenY / 5);
-        gridHeight =5;
-        gridWidth = 5;
+        gridHeight =30;
+        gridWidth = 30;
         CreateGrid();
     }
 
@@ -91,7 +91,6 @@ public class GridSpawner : MonoBehaviour
             if (index == 2)
             {
                 GameObject temp = Instantiate(LastSceneManager.Instance.cylinder, gridList[((index)*30)+colCounter[index]].transform);
-
             }
             colCounter[index]++;
         }
