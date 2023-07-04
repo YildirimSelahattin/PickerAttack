@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8482740714082889778}
   - component: {fileID: 6144495097544488346}
   - component: {fileID: -6012681289683668419}
+  - component: {fileID: 5931071220976883909}
   m_Layer: 0
   m_Name: CubeRBsiz
   m_TagString: Pick
@@ -110,4 +111,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 6917037197630117016, guid: c2f831c3515b22146b3e10ee08aa128e, type: 3}
   index: 1
+  fireRate: 1
+  canShoot: 1
+  animator: {fileID: 5931071220976883909}
+--- !u!95 &5931071220976883909
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3022174220604173348}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7c9a370aa6e3564f99f93c38b413d35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
