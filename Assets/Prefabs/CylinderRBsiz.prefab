@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 4115320469013032563}
   - component: {fileID: 44856983227492568}
   - component: {fileID: 4964192955424756509}
-  - component: {fileID: 4331627436049472442}
+  - component: {fileID: 4344320701040241567}
   m_Layer: 0
   m_Name: CylinderRBsiz
-  m_TagString: Pick
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,13 +93,13 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6917037197630117016}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &4331627436049472442
+--- !u!114 &4344320701040241567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,7 +108,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6917037197630117016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
+  m_Script: {fileID: 11500000, guid: 14171210a34b10d49b263fa069044a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 2

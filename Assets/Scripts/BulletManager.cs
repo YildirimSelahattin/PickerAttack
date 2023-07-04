@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class BulletManager : MonoBehaviour
 {
+    public int damage;   
     // Start is called before the first frame update
     void Start()
     {
-
+    
     }
 
     // Update is called once per frame
@@ -17,12 +18,13 @@ public class BulletManager : MonoBehaviour
     }
 
 
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("boss"))
         {
-            Destroy(this.gameObject);
-
+           Destroy(this.gameObject);
+           other.GetComponent<BossManager>().health -= damage;
         }
     }
 
