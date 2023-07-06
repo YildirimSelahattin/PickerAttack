@@ -23,7 +23,6 @@ public class TriggerIn : MonoBehaviour
                    {
                        GameManager.Instance.objectList.Add(other.gameObject.GetComponent<PeopleManager>().index);
                    }
-                   Debug.Log("Count ++");
                }
     }
 

@@ -9,7 +9,9 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
 
-    public TextMeshProUGUI timerText;
+    public TextMeshPro timerText;
+    public float maxTimer;
+    public SpriteRenderer fillObject;
 
     private void Start()
     {
@@ -18,8 +20,9 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        GameManager.Instance.timer = GameManager.Instance.timer - Time.deltaTime;
-        timerText.text = GameManager.Instance.timer.ToString();
+        GameManager.Instance.timer =GameManager.Instance.timer - Time.deltaTime;
+        timerText.text =((int) GameManager.Instance.timer).ToString();
+        fillObject.material.SetFloat("_Arc1", ((maxTimer - GameManager.Instance.timer) / maxTimer) * 360);
     }
 
     public void sizeButtonClick()
