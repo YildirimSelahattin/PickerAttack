@@ -1038,8 +1038,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9891699, y: 1.3336494, z: 1.5086094}
-  m_Center: {x: -0.281855, y: 0.093047336, z: 0.25430468}
+  m_Size: {x: 0.98916996, y: 1.3336494, z: 6.37518}
+  m_Center: {x: -0.28185505, y: 0.093047336, z: 1.3553314}
 --- !u!23 &652661058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1152,8 +1152,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0195377, y: 0.3509689, z: 1.62231}
-  m_Center: {x: -0.009768844, y: -0.5831309, z: 0.31115496}
+  m_Size: {x: 1.0195377, y: 0.35096896, z: 6.5738955}
+  m_Center: {x: -0.009768823, y: -0.5831309, z: 1.0270411}
 --- !u!23 &663682294
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2409,8 +2409,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0195377, y: 1.258616, z: 1.62231}
-  m_Center: {x: -0.009768844, y: -0.12930709, z: 0.31115496}
+  m_Size: {x: 1.0195377, y: 1.2586166, z: 6.297749}
+  m_Center: {x: -0.009768844, y: -0.1293071, z: 1.6428087}
 --- !u!23 &1348702184
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3588,8 +3588,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.2997391, z: 1.6243173}
-  m_Center: {x: 0, y: -0.14986923, z: 0.31215858}
+  m_Size: {x: 1, y: 1.2997391, z: 5.7603674}
+  m_Center: {x: 0, y: -0.14986925, z: 1.4559897}
 --- !u!23 &1797435794
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3702,8 +3702,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0195377, y: 0.3509689, z: 1.62231}
-  m_Center: {x: -0.009768844, y: -0.5831309, z: 0.31115496}
+  m_Size: {x: 1.0195377, y: 0.35096893, z: 6.3362927}
+  m_Center: {x: -0.00976923, y: -0.58313096, z: 1.5531387}
 --- !u!23 &1816480078
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4315,7 +4315,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &67312235723332231
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,7 +4450,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &127179452877702720
 Transform:
   m_ObjectHideFlags: 0
@@ -4620,7 +4628,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &226413775381800472
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4696,7 +4708,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &249253911624522843
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4836,7 +4852,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &317145872852682183
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4899,7 +4919,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!135 &333612424817639593
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5042,7 +5066,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &385632662446629518
 GameObject:
   m_ObjectHideFlags: 0
@@ -5298,7 +5326,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!136 &501192791260055927
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5406,7 +5438,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &534618831019185701
 GameObject:
   m_ObjectHideFlags: 0
@@ -5510,7 +5546,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &584964884849914468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5523,7 +5563,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!135 &589036259390156509
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5599,7 +5643,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &632882245226853556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5612,7 +5660,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!135 &638061804219511935
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5724,7 +5776,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!65 &694449249830462278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5987,7 +6043,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!65 &826539244926085567
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6013,7 +6073,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &840824508413771862
 GameObject:
   m_ObjectHideFlags: 0
@@ -6060,7 +6124,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &854674002139375540
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6254,7 +6322,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &957086949139531237
 GameObject:
   m_ObjectHideFlags: 0
@@ -6304,7 +6376,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &986030877901800913
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6514,7 +6590,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &1119869809587798570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6527,7 +6607,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &1152169675593183161
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6696,7 +6780,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &1266927715931313360
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6824,7 +6912,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &1296818960675961564
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7024,7 +7116,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!135 &1334744805105989257
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7050,7 +7146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &1346032046496573288
 GameObject:
   m_ObjectHideFlags: 0
@@ -7092,7 +7192,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &1372707028602391270
 Transform:
   m_ObjectHideFlags: 0
@@ -7211,7 +7315,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &1416074693586782019
 GameObject:
   m_ObjectHideFlags: 0
@@ -7369,7 +7477,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!136 &1479480989372542436
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7601,7 +7713,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &1587595432880907267
 Transform:
   m_ObjectHideFlags: 0
@@ -7629,7 +7745,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &1635576538988765802
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7658,7 +7778,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &1655056080740665208
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8046,7 +8170,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &1991032266271887370
 GameObject:
   m_ObjectHideFlags: 0
@@ -8219,7 +8347,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &2086863953392718522
 GameObject:
   m_ObjectHideFlags: 0
@@ -8476,7 +8608,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!135 &2173063306778949685
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8517,7 +8653,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &2188318607132116596
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8697,7 +8837,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &2274578330148214318
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8739,7 +8883,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &2318426908491615808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8752,7 +8900,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &2321482586816465734
 Transform:
   m_ObjectHideFlags: 0
@@ -8780,7 +8932,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &2341335650263470965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8793,7 +8949,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &2347709396124353624
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9066,7 +9226,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &2489008326556561234
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9123,7 +9287,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &2525003275005929242
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9172,7 +9340,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &2597863373639533908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9185,7 +9357,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &2608422951592325427
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9368,7 +9544,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &2715472728117233540
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9485,7 +9665,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &2790291726602516507
 Transform:
   m_ObjectHideFlags: 0
@@ -9631,7 +9815,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &2946248064870216315
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9696,7 +9884,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &2966807138489842179
 GameObject:
   m_ObjectHideFlags: 0
@@ -9772,7 +9964,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &3050653686693509380
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10070,7 +10266,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &3344219884642881677
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10253,7 +10453,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &3515483712798257772
 GameObject:
   m_ObjectHideFlags: 0
@@ -10455,7 +10659,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &3603213887034674324
 GameObject:
   m_ObjectHideFlags: 0
@@ -10882,7 +11090,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &3803479734987612128
 Transform:
   m_ObjectHideFlags: 0
@@ -11404,7 +11616,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!135 &4062969546802912272
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11528,7 +11744,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &4142677130701836129
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12119,7 +12339,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &4377842350034696049
 Transform:
   m_ObjectHideFlags: 0
@@ -12160,7 +12384,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &4406556697254156387
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12252,7 +12480,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &4464244444873549208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12265,7 +12497,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &4467686679500160644
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12294,7 +12530,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &4483692181430871743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12307,7 +12547,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!136 &4484404126167998505
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12465,7 +12709,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &4624338148491576537
 Transform:
   m_ObjectHideFlags: 0
@@ -12626,7 +12874,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &4758832736188638455
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12762,7 +13014,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &4864737099544443213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12775,7 +13031,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!135 &4870166434819199331
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12861,7 +13121,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!135 &4883427078904730410
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13004,7 +13268,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!65 &4932714371542086220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13193,7 +13461,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!135 &5078666958561412976
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13396,7 +13668,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &5195608329143576976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13451,7 +13727,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &5207386298501673997
 GameObject:
   m_ObjectHideFlags: 0
@@ -13485,7 +13765,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!65 &5221534864313003680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13721,7 +14005,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &5357018623536867704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13734,7 +14022,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &5359085278444739214
 Transform:
   m_ObjectHideFlags: 0
@@ -13896,7 +14188,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &5401654469584803380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13909,7 +14205,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &5406829589101537447
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13961,7 +14261,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &5468129546267206179
 GameObject:
   m_ObjectHideFlags: 0
@@ -14011,7 +14315,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &5502153493875956605
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14048,7 +14356,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &5514797573406067347
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14126,7 +14438,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &5610245100641511582
 GameObject:
   m_ObjectHideFlags: 0
@@ -14176,7 +14492,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &5647489934555056241
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14249,7 +14569,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &5716950415464834270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14262,7 +14586,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &5721494184816131276
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14362,7 +14690,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &5765794068080765579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14375,7 +14707,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &5766623238715163439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14388,7 +14724,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &5767587511040983835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14401,7 +14741,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &5768416675084564925
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14498,7 +14842,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!136 &5822205309311021871
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14630,7 +14978,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!65 &5906952861778158992
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14781,7 +15133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &5942720161703418872
 Transform:
   m_ObjectHideFlags: 0
@@ -14908,7 +15264,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &6024293915643800720
 GameObject:
   m_ObjectHideFlags: 0
@@ -15258,7 +15618,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &6205005055968528932
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15313,7 +15677,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &6222110078646302493
 Transform:
   m_ObjectHideFlags: 0
@@ -15527,7 +15895,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &6321729859898612487
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15582,7 +15954,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &6337646561593221466
 GameObject:
   m_ObjectHideFlags: 0
@@ -15616,7 +15992,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!135 &6342774734514577859
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15657,7 +16037,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &6406737386637346461
 GameObject:
   m_ObjectHideFlags: 0
@@ -15712,7 +16096,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &6431429249151314199
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16345,7 +16733,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &6677504256427388192
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16619,7 +17011,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &6779235926275983954
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16674,7 +17070,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &6794056232121122313
 GameObject:
   m_ObjectHideFlags: 0
@@ -16849,7 +17249,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &6833007012206893382
 GameObject:
   m_ObjectHideFlags: 0
@@ -16967,7 +17371,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &6863193029435925063
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17101,7 +17509,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &6904228096807060229
 GameObject:
   m_ObjectHideFlags: 0
@@ -17344,7 +17756,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &7032584724619941559
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17446,7 +17862,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!65 &7082549811315751539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17893,7 +18313,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &7255985728774926818
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17948,7 +18372,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &7259042852846571903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17961,7 +18389,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &7261134766537441972
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17982,7 +18414,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!65 &7275666099161279894
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18089,7 +18525,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &7298435292386233617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18133,7 +18573,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &7321091713536523642
 GameObject:
   m_ObjectHideFlags: 0
@@ -18232,7 +18676,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &7404944585883311169
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18269,7 +18717,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!4 &7425742995418590540
 Transform:
   m_ObjectHideFlags: 0
@@ -18312,7 +18764,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &7471649790856814759
 GameObject:
   m_ObjectHideFlags: 0
@@ -18503,7 +18959,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &7579497736742824520
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18524,7 +18984,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &7596998050400492244
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18762,7 +19226,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &7712436552588203425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18893,7 +19361,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &7807957945896601245
 GameObject:
   m_ObjectHideFlags: 0
@@ -19024,7 +19496,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &7946693356670554577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19037,7 +19513,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &7949345985618091223
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19079,7 +19559,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &7974337852547995411
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19170,7 +19654,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &8003884305719100162
 GameObject:
   m_ObjectHideFlags: 0
@@ -19639,7 +20127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &8246182173798475262
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19823,7 +20315,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &8343997584774252864
 GameObject:
   m_ObjectHideFlags: 0
@@ -20004,7 +20500,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &8405279425999113551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20017,7 +20517,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &8406032325864447619
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20146,7 +20650,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &8429913270947848254
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20327,7 +20835,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!65 &8574123020577098240
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20432,7 +20944,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &8629052462862567892
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20590,7 +21106,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!1 &8758434864884119671
 GameObject:
   m_ObjectHideFlags: 0
@@ -20793,7 +21313,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!23 &8848642891766268410
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20986,7 +21510,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!54 &8970486711130641843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21245,7 +21773,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 1
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &9153086532881677577
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21321,7 +21853,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!114 &9191047082055683298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21334,7 +21870,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 0
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
 --- !u!33 &9193667787256028577
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21452,4 +21992,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   index: 2
+  fireRate: 0
+  canShoot: 1
+  animator: {fileID: 0}
