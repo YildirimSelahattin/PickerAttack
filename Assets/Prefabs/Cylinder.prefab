@@ -128,8 +128,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
   index: 2
-  fireRate: 0
-  canShoot: 1
-  animator: {fileID: 0}

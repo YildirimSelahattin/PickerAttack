@@ -2,10 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class BossManager : MonoBehaviour
 {
     public static BossManager Instance;
+    public GameObject arena;
+    public int health = 500;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -17,12 +20,24 @@ public class BossManager : MonoBehaviour
 
     void Start()
     {
-        
+        transform.DOMove(arena.transform.position,1f).OnComplete(attack);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
+    public void attack(){
+        transform.DOJump(transform.position,3f,1,1f).OnComplete(()=>{
+        
+
+        attack();
+        });
+    }
+
+    
 }
