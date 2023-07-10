@@ -7,78 +7,72 @@ public class PlayerManager : MonoBehaviour
 {
     [Header("MoveBoundaries")]
     //   public  Transform rightLimit;
-//    public  Transform leftLimit;
-   
+    //    public  Transform leftLimit;
+
     private bool moveRight = false;
     private bool moveLeft = false;
     public GameObject leftLimit;
     public GameObject rightLimit;
     public Rigidbody rigidBody;
     public float rotationSpeed;
- 
+    public GameObject counterObject;
+    public Vector3 touchStartPos;
+    public Vector3 curTouchPosition;
+    public float prevXdif;
+    public float prevYdif;
     [Header("AgentProperties")]
 
     private Rigidbody rb;
- 
+
     public static PlayerManager Instance;
-   
+
     void Start()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
-     
 
-        
+
+
     }
-    
+
     void Update()
     {
-        
-            DetectButtonPress();
-           
+
+        DetectButtonPress();
+        counterObject.transform.position = transform.position;
     }
 
     private void DetectButtonPress()
     {
-        Vector3 addForce = Vector3.zero;
-
-        float forwardAmount = 0f;
-        Vector3 localRotationParent = transform.localEulerAngles;
-        Vector3 localRotationBody = transform.localEulerAngles;
-        if (Input.GetKey(KeyCode.W) )
+        if (Input.touchCount > 0)
         {
+            float forwardAmount = 0f;
+            Vector3 localRotationParent = transform.localEulerAngles;
+            Vector3 localRotationBody = transform.localEulerAngles;
 
-            forwardAmount = 1;
+            if (Input.GetTouch(0).phase == TouchPhase.Began)                // This is actions when finger/cursor hit screen
+            {
+                touchStartPos = Input.GetTouch(0).position;
+            }
+            if (Input.GetTouch(0).phase == TouchPhase.Moved)
+            {
+                curTouchPosition = Input.GetTouch(0).position;
+                Vector3 dir = (curTouchPosition - touchStartPos).normalized;
+                Vector3 targetPos = new Vector3(transform.position.x+dir.x,0,transform.position.z + dir.y);
+                transform.LookAt(targetPos);
+                forwardAmount = 1;
+                rigidBody.velocity = transform.forward * forwardAmount * GameManager.Instance.speed;
+            }
+            if (Input.GetTouch(0).phase == TouchPhase.Ended)
+            {
+                touchStartPos = Vector3.zero;
+                curTouchPosition = Vector3.zero;
+                rigidBody.velocity = Vector3.zero;
+                prevYdif = 0;
+                prevXdif = 0;
+            }
+           
         }
-
-
-        if (Input.GetKey(KeyCode.S) )
-        {
-
-            forwardAmount = -1;
-
-        }
-        if (Input.GetKey(KeyCode.D) )
-        {
-
-            transform.localEulerAngles += Vector3.up*rotationSpeed;
-            
-        }
-
-
-        if (Input.GetKey(KeyCode.A) )
-        {
-            transform.localEulerAngles += Vector3.down*rotationSpeed;
-            
-        }
-      
-       
-        rigidBody.velocity = transform.forward * forwardAmount*GameManager.Instance.speed;
-
-
-    }
-
-
-}
+    }}
