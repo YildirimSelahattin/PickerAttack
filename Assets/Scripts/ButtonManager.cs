@@ -55,6 +55,7 @@ public class ButtonManager : MonoBehaviour
     public void OnPushStarted()
     {
         buttonPressed = true;
+        InstantiateInLoop();
     }
 
     public void OnPushStop()
@@ -98,12 +99,12 @@ public class ButtonManager : MonoBehaviour
         GameObject movingObject = soldier5Grouped[index];
         movingObject.transform.DOJump(soldier5Grouped[0].transform.position, 1, 1, 0.2f).OnComplete(() =>
         {
+            Destroy(movingObject);
             if (index == 1)
             {
                 Instantiate(soldierPrefabs[soldierIndex], soldier5Grouped[0].transform.parent);
                 soldier5Grouped.Clear();
             }
-            Destroy(movingObject);
             });
     }
 }
