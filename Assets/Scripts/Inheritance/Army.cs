@@ -7,6 +7,8 @@ public class Army : MonoBehaviour
     public int health;
     public int damage;
     public int damageTake;
+    public bool picked = false;
+    public GameObject mergeObject;
 
     public void TakeDamage(int damage)
     {
@@ -22,8 +24,12 @@ public class Army : MonoBehaviour
         // Base implementation for dying behavior
         Destroy(gameObject);
     }
-
-
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("army"))
+        {
+        }
+    }
 }
 
 

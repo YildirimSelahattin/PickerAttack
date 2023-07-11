@@ -14,12 +14,6 @@ public class TriggerManager : MonoBehaviour
         {
             other.gameObject.tag = "Pick";
             GameManager.Instance.inCount--;
-            
-            GameManager.Instance.objectList.Remove(other.gameObject.GetComponent<PeopleManager>().index);
-               
-            
-           
-            Debug.Log("Count --");
 
         }
 
