@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 public class Knight : Army
 {
     public int speed;
@@ -24,6 +25,10 @@ public class Knight : Army
 
     }
     private void Start() {
+        if (SceneManager.GetActiveScene().name == "BossScene")
+        {
         transform.DOMove(BossManager.Instance.arena.transform.position, speed).SetSpeedBased(true);
+            
+        }
     }
 }

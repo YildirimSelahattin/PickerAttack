@@ -140,8 +140,8 @@ MonoBehaviour:
   countText: {fileID: 6633741372995323723}
   soldierIndex: 0
   soldierPrefabs:
-  - {fileID: 5257138381498046321, guid: 0968a8230fa0395448e66ec0cdf8c00d, type: 3}
   - {fileID: 4537591594513057165, guid: 2079885b2c79bb241a0a14624655092e, type: 3}
+  - {fileID: 5257138381498046321, guid: 0968a8230fa0395448e66ec0cdf8c00d, type: 3}
   timer: 0
   buttonPressed: 0
   rate: 0.3

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
 public class Archer : Army
@@ -21,11 +22,14 @@ public class Archer : Army
 
     private void Start()
     {
+        
+        if (SceneManager.GetActiveScene().name == "BossScene")
+        {
         bulDMG = damage;
         canShoot = false;
         animator.SetTrigger("Shoot");
         StartCoroutine(Shoot());
-        
+        }
     }
 
     public void archerShoot()
@@ -33,6 +37,8 @@ public class Archer : Army
         if (canShoot)
         {
             GameObject temp = Instantiate(bullet, transform.parent);
+            temp.transform.LookAt(BossManager.Instance.transform);
+            temp.transform.Rotate(180f, 0f, 0f);
             temp.GetComponent<BulletManager>().damage = bulDMG;
             temp.transform.DOMove(BossManager.Instance.transform.position, 5f).SetSpeedBased(true);
             canShoot = false;
