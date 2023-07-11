@@ -61,7 +61,7 @@ public class PlayerManager : MonoBehaviour
                 curTouchPosition = Input.GetTouch(0).position;
                 Vector3 dir = (curTouchPosition - touchStartPos).normalized;
                 Vector3 targetPos = new Vector3(transform.position.x+dir.x,0,transform.position.z + dir.y);
-                transform.LookAt(targetPos);
+                transform.DOLookAt(targetPos,0.1f);
                 forwardAmount = 1;
                 rigidBody.velocity = transform.forward * forwardAmount * GameManager.Instance.speed;
             }

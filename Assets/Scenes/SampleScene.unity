@@ -231,9 +231,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286653524}
-  m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
-  m_LocalPosition: {x: -0.054, y: 0.691, z: -2.859}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.5075384, y: 0, z: 0, w: 0.8616291}
+  m_LocalPosition: {x: -0.054, y: 0.691, z: -2.2}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1358904038}
@@ -241,7 +241,7 @@ Transform:
   - {fileID: 21776185}
   m_Father: {fileID: 921707151}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 61, y: 0, z: 0}
 --- !u!1 &316264621
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,8 +564,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.35346448, y: 0, z: 0, w: 0.935448}
-  m_LocalPosition: {x: 0.22999978, y: 24.1, z: -21.49}
+  m_LocalRotation: {x: 0.5127922, y: 0, z: 0, w: 0.85851276}
+  m_LocalPosition: {x: 1.44, y: 9.48, z: -3.38}
   m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -788,7 +788,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &383162496
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1677,7 +1677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 921707151}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: TimeFanus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1729,12 +1729,12 @@ Rigidbody:
   m_GameObject: {fileID: 1032922179}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!135 &1032922181
 SphereCollider:
@@ -2167,7 +2167,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2258,7 +2258,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245638316}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2970,7 +2970,7 @@ Transform:
   m_GameObject: {fileID: 1423660680}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.44, y: 0, z: -0.68}
-  m_LocalScale: {x: 1.5, y: 1, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1292019903}
@@ -3379,15 +3379,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711602185}
-  m_LocalRotation: {x: 0.35346445, y: -0, z: -0, w: 0.93544793}
-  m_LocalPosition: {x: 0.22999978, y: 24.1, z: -21.49}
+  m_LocalRotation: {x: 0.5127922, y: 0, z: 0, w: 0.85851276}
+  m_LocalPosition: {x: 1.44, y: 9.48, z: -3.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2042370589}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 41.399, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 61.7, y: 0, z: 0}
 --- !u!1 &1712434219
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,7 +4045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: -1.2100003, y: 24.1, z: -20.81}
+  m_FollowOffset: {x: 0, y: 9.48, z: -2.7}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -4126,7 +4126,7 @@ MonoBehaviour:
   inCount: 0
   speed: 4
   timer: 10
-  scale: {x: 0, y: 0, z: 0}
+  scale: {x: 1, y: 1, z: 1}
   archerCount: 0
   knightCount: 0
   smasherCount: 0
@@ -4182,12 +4182,12 @@ Rigidbody:
   m_GameObject: {fileID: 7101545402922340862}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &56881584770315328
 MonoBehaviour:
@@ -4282,12 +4282,12 @@ Rigidbody:
   m_GameObject: {fileID: 1423299377204827410}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &98341360759223973
 Transform:
@@ -4313,12 +4313,12 @@ Rigidbody:
   m_GameObject: {fileID: 4924023615408093549}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &120398022516882581
 MonoBehaviour:
@@ -4365,12 +4365,12 @@ Rigidbody:
   m_GameObject: {fileID: 1295374852628274224}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &153973764809219936
 Transform:
@@ -4634,12 +4634,12 @@ Rigidbody:
   m_GameObject: {fileID: 1667556798118365017}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!136 &259247604172626953
 CapsuleCollider:
@@ -5032,12 +5032,12 @@ Rigidbody:
   m_GameObject: {fileID: 6833007012206893382}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &419423817017981439
 MeshFilter:
@@ -5086,12 +5086,12 @@ Rigidbody:
   m_GameObject: {fileID: 3303215065431083442}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &467441904360498576
 Rigidbody:
@@ -5102,12 +5102,12 @@ Rigidbody:
   m_GameObject: {fileID: 1563577034464307091}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &473229886232552070
 MeshRenderer:
@@ -5223,12 +5223,12 @@ Rigidbody:
   m_GameObject: {fileID: 4185091516910318670}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &525795048075698865
 MeshFilter:
@@ -5466,12 +5466,12 @@ Rigidbody:
   m_GameObject: {fileID: 5881994983945666015}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &618896949151989208
 MonoBehaviour:
@@ -5748,12 +5748,12 @@ Rigidbody:
   m_GameObject: {fileID: 8873689065614158877}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!135 &767475943549783488
 SphereCollider:
@@ -5943,12 +5943,12 @@ Rigidbody:
   m_GameObject: {fileID: 3515483712798257772}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &866935559203597326
 MeshFilter:
@@ -5967,12 +5967,12 @@ Rigidbody:
   m_GameObject: {fileID: 5468129546267206179}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!1 &881656390357935617
 GameObject:
@@ -6082,12 +6082,12 @@ Rigidbody:
   m_GameObject: {fileID: 840824508413771862}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &910674305824321509
 BoxCollider:
@@ -6158,12 +6158,12 @@ Rigidbody:
   m_GameObject: {fileID: 6032008372520638337}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &972398460255711370
 MonoBehaviour:
@@ -6352,12 +6352,12 @@ Rigidbody:
   m_GameObject: {fileID: 9158162204088855515}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &1109787619750616776
 MonoBehaviour:
@@ -6423,12 +6423,12 @@ Rigidbody:
   m_GameObject: {fileID: 6613356581277284703}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!1 &1201769050990873507
 GameObject:
@@ -6460,12 +6460,12 @@ Rigidbody:
   m_GameObject: {fileID: 3552585849478209369}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &1220092832494376149
 MeshRenderer:
@@ -6518,12 +6518,12 @@ Rigidbody:
   m_GameObject: {fileID: 1416074693586782019}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &1250664720838254533
 Rigidbody:
@@ -6534,12 +6534,12 @@ Rigidbody:
   m_GameObject: {fileID: 7650032565970822400}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &1264382008497937317
 MonoBehaviour:
@@ -6641,12 +6641,12 @@ Rigidbody:
   m_GameObject: {fileID: 5207386298501673997}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!1 &1295374852628274224
 GameObject:
@@ -6775,12 +6775,12 @@ Rigidbody:
   m_GameObject: {fileID: 4085909920001081184}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &1307735911052526039
 MeshFilter:
@@ -7027,6 +7027,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4339268114514637997, guid: 2079885b2c79bb241a0a14624655092e,
+        type: 3}
+      propertyPath: m_Drag
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339268114514637997, guid: 2079885b2c79bb241a0a14624655092e,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
     - target: {fileID: 4537591594513057165, guid: 2079885b2c79bb241a0a14624655092e,
         type: 3}
       propertyPath: m_Name
@@ -7105,12 +7115,12 @@ Rigidbody:
   m_GameObject: {fileID: 800036736341642744}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &1409494589386084411
 BoxCollider:
@@ -7255,12 +7265,12 @@ Rigidbody:
   m_GameObject: {fileID: 1791139900432682848}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!1 &1446155235963989443
 GameObject:
@@ -7361,7 +7371,7 @@ Rigidbody:
   m_GameObject: {fileID: 7149313502278979814}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -7565,12 +7575,12 @@ Rigidbody:
   m_GameObject: {fileID: 354250727607779608}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &1648285080221162996
 MonoBehaviour:
@@ -7602,12 +7612,12 @@ Rigidbody:
   m_GameObject: {fileID: 9156102479201504107}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!1 &1667556798118365017
 GameObject:
@@ -7639,12 +7649,12 @@ Rigidbody:
   m_GameObject: {fileID: 6944452700648822169}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &1673066375277288244
 MeshRenderer:
@@ -7809,12 +7819,12 @@ Rigidbody:
   m_GameObject: {fileID: 479910585527993033}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &1839445119072928196
 MeshRenderer:
@@ -8003,12 +8013,12 @@ Rigidbody:
   m_GameObject: {fileID: 1201769050990873507}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &2016388575832619645
 Rigidbody:
@@ -8019,12 +8029,12 @@ Rigidbody:
   m_GameObject: {fileID: 6493187929269192535}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &2025636556687231118
 Transform:
@@ -8216,12 +8226,12 @@ Rigidbody:
   m_GameObject: {fileID: 5815006959671254848}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &2112756644784531420
 MeshRenderer:
@@ -8295,12 +8305,12 @@ Rigidbody:
   m_GameObject: {fileID: 3770567228556731948}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &2135131102545673120
 Transform:
@@ -8368,7 +8378,7 @@ Rigidbody:
   m_GameObject: {fileID: 1438619940938890163}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -8589,7 +8599,7 @@ Rigidbody:
   m_GameObject: {fileID: 7202481278593429202}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -8722,12 +8732,12 @@ Rigidbody:
   m_GameObject: {fileID: 6024293915643800720}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &2370813878373080200
 Transform:
@@ -8943,12 +8953,12 @@ Rigidbody:
   m_GameObject: {fileID: 6890706139216822349}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &2484203327094838607
 Transform:
@@ -9164,12 +9174,12 @@ Rigidbody:
   m_GameObject: {fileID: 7807957945896601245}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &2662787562983846930
 MeshFilter:
@@ -9202,12 +9212,12 @@ Rigidbody:
   m_GameObject: {fileID: 6337646561593221466}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &2701770214404842369
 MeshFilter:
@@ -9346,12 +9356,12 @@ Rigidbody:
   m_GameObject: {fileID: 72677766268175547}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &2739047349170886743
 Transform:
@@ -9377,12 +9387,12 @@ Rigidbody:
   m_GameObject: {fileID: 6997030081703971984}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &2772811021139321783
 MonoBehaviour:
@@ -9680,12 +9690,12 @@ Rigidbody:
   m_GameObject: {fileID: 6489483058876307445}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &3084285906246203137
 MeshFilter:
@@ -9774,12 +9784,12 @@ Rigidbody:
   m_GameObject: {fileID: 653064429519031668}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &3170813765600573661
 Transform:
@@ -9986,12 +9996,12 @@ Rigidbody:
   m_GameObject: {fileID: 5374836703832739184}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &3392163094600480590
 Rigidbody:
@@ -10002,12 +10012,12 @@ Rigidbody:
   m_GameObject: {fileID: 7995944211691600547}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &3394513144933545136
 MeshRenderer:
@@ -10066,12 +10076,12 @@ Rigidbody:
   m_GameObject: {fileID: 3565998182395072033}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!135 &3446395207860059172
 SphereCollider:
@@ -10152,12 +10162,12 @@ Rigidbody:
   m_GameObject: {fileID: 6595734114949478071}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &3524167547360615350
 MeshFilter:
@@ -10254,7 +10264,7 @@ Rigidbody:
   m_GameObject: {fileID: 8599917031346291093}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -10291,12 +10301,12 @@ Rigidbody:
   m_GameObject: {fileID: 8556224846655695957}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &3583526363456619003
 BoxCollider:
@@ -10382,12 +10392,12 @@ Rigidbody:
   m_GameObject: {fileID: 3198012008313080297}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &3654599383917917749 stripped
 Transform:
@@ -10545,12 +10555,12 @@ Rigidbody:
   m_GameObject: {fileID: 4029949042165490175}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &3713619026256152349
 Transform:
@@ -10584,12 +10594,12 @@ Rigidbody:
   m_GameObject: {fileID: 1268204035658741820}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &3741445291473115158
 Transform:
@@ -10737,12 +10747,12 @@ Rigidbody:
   m_GameObject: {fileID: 8201376501198374541}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &3797773699868083333
 MonoBehaviour:
@@ -10901,12 +10911,12 @@ Rigidbody:
   m_GameObject: {fileID: 1512291429899921814}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &3844828302347680671
 Transform:
@@ -11412,12 +11422,12 @@ Rigidbody:
   m_GameObject: {fileID: 4232083030994506143}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &4169470619094926892
 Rigidbody:
@@ -11428,12 +11438,12 @@ Rigidbody:
   m_GameObject: {fileID: 5043363826843656683}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &4174365084415382774
 Rigidbody:
@@ -11444,12 +11454,12 @@ Rigidbody:
   m_GameObject: {fileID: 4412070026663919635}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &4178479678021284836
 MeshRenderer:
@@ -11502,12 +11512,12 @@ Rigidbody:
   m_GameObject: {fileID: 6975605177209580832}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!1 &4185091516910318670
 GameObject:
@@ -11562,12 +11572,12 @@ Rigidbody:
   m_GameObject: {fileID: 8758434864884119671}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &4191221973132001351
 BoxCollider:
@@ -11730,12 +11740,12 @@ Rigidbody:
   m_GameObject: {fileID: 1346032046496573288}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &4261518852913716846
 BoxCollider:
@@ -11919,12 +11929,12 @@ Rigidbody:
   m_GameObject: {fileID: 2507122998756610116}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &4364809231523539392
 BoxCollider:
@@ -12002,12 +12012,12 @@ Rigidbody:
   m_GameObject: {fileID: 67312235723332231}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &4411270027976082651
 MeshRenderer:
@@ -12107,12 +12117,12 @@ Rigidbody:
   m_GameObject: {fileID: 7167446618996433111}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &4473726316302206689
 MonoBehaviour:
@@ -12176,12 +12186,12 @@ Rigidbody:
   m_GameObject: {fileID: 3760601434245516977}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &4519240799563311945
 BoxCollider:
@@ -12205,12 +12215,12 @@ Rigidbody:
   m_GameObject: {fileID: 190082207078101416}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &4539135605214817967
 MeshFilter:
@@ -12387,12 +12397,12 @@ Rigidbody:
   m_GameObject: {fileID: 385632662446629518}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &4672096560408630267
 MeshFilter:
@@ -12411,12 +12421,12 @@ Rigidbody:
   m_GameObject: {fileID: 2086863953392718522}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &4695108075203380205
 Transform:
@@ -12630,12 +12640,12 @@ Rigidbody:
   m_GameObject: {fileID: 6407361513722570845}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!136 &4875705666485566749
 CapsuleCollider:
@@ -12731,12 +12741,12 @@ Rigidbody:
   m_GameObject: {fileID: 1292850986531351569}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &4897996916541867539
 MeshFilter:
@@ -12947,12 +12957,12 @@ Rigidbody:
   m_GameObject: {fileID: 8760324548873199122}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!1 &5043363826843656683
 GameObject:
@@ -12992,12 +13002,12 @@ Rigidbody:
   m_GameObject: {fileID: 534618831019185701}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!136 &5070233467726707642
 CapsuleCollider:
@@ -13105,12 +13115,12 @@ Rigidbody:
   m_GameObject: {fileID: 8343997584774252864}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &5123383381056344377
 BoxCollider:
@@ -13410,12 +13420,12 @@ Rigidbody:
   m_GameObject: {fileID: 5519700138236205000}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &5265868774529136486
 MeshRenderer:
@@ -13476,12 +13486,12 @@ Rigidbody:
   m_GameObject: {fileID: 6734142322312149392}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &5335264239039365271
 Rigidbody:
@@ -13492,12 +13502,12 @@ Rigidbody:
   m_GameObject: {fileID: 6072357777707265273}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &5346077024197584473
 MeshRenderer:
@@ -13759,12 +13769,12 @@ Rigidbody:
   m_GameObject: {fileID: 3810723616692546981}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &5415855688110951361
 Transform:
@@ -13824,12 +13834,12 @@ Rigidbody:
   m_GameObject: {fileID: 2188418894945910871}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &5482994675600245438
 MonoBehaviour:
@@ -13861,12 +13871,12 @@ Rigidbody:
   m_GameObject: {fileID: 8003884305719100162}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &5508531888577788148
 MonoBehaviour:
@@ -14002,12 +14012,12 @@ Rigidbody:
   m_GameObject: {fileID: 8075726809617892926}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &5687694976827076263
 Transform:
@@ -14088,12 +14098,12 @@ Rigidbody:
   m_GameObject: {fileID: 887536140556392018}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &5723832848669544560
 MeshRenderer:
@@ -14227,12 +14237,12 @@ Rigidbody:
   m_GameObject: {fileID: 173750720730697071}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &5781843348785177106
 MeshFilter:
@@ -14259,7 +14269,7 @@ Rigidbody:
   m_GameObject: {fileID: 1324610062493024867}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -14805,12 +14815,12 @@ Rigidbody:
   m_GameObject: {fileID: 6866084065752012059}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &6047004357775094304
 Rigidbody:
@@ -14821,12 +14831,12 @@ Rigidbody:
   m_GameObject: {fileID: 5610245100641511582}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!1 &6064590429605984863
 GameObject:
@@ -14992,12 +15002,12 @@ Rigidbody:
   m_GameObject: {fileID: 6635837233362872138}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &6135934201698250692
 BoxCollider:
@@ -15021,12 +15031,12 @@ Rigidbody:
   m_GameObject: {fileID: 1491958749434609731}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &6191092339551423850
 BoxCollider:
@@ -15618,12 +15628,12 @@ Rigidbody:
   m_GameObject: {fileID: 3861031858180295232}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!1 &6479915319740674357
 GameObject:
@@ -15858,12 +15868,12 @@ Rigidbody:
   m_GameObject: {fileID: 6622451966798562638}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!135 &6564005621126192613
 SphereCollider:
@@ -15929,12 +15939,12 @@ Rigidbody:
   m_GameObject: {fileID: 7633321356574594886}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &6579046824976056082
 MeshRenderer:
@@ -16114,12 +16124,12 @@ Rigidbody:
   m_GameObject: {fileID: 1376475595578692557}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &6670737689430432411
 Transform:
@@ -16158,7 +16168,7 @@ Rigidbody:
   m_GameObject: {fileID: 4065689288669690288}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -16174,12 +16184,12 @@ Rigidbody:
   m_GameObject: {fileID: 6064590429605984863}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &6684289648797098047
 Transform:
@@ -16205,12 +16215,12 @@ Rigidbody:
   m_GameObject: {fileID: 3603213887034674324}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &6691868334343721530
 Rigidbody:
@@ -16221,12 +16231,12 @@ Rigidbody:
   m_GameObject: {fileID: 2966807138489842179}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &6710292092984508132
 MeshRenderer:
@@ -16633,12 +16643,12 @@ Rigidbody:
   m_GameObject: {fileID: 3825719398547126505}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &6827382965112193728
 MonoBehaviour:
@@ -16824,12 +16834,12 @@ Rigidbody:
   m_GameObject: {fileID: 7956120507467427356}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &6881348970242548739
 Rigidbody:
@@ -16840,7 +16850,7 @@ Rigidbody:
   m_GameObject: {fileID: 1905447907897923750}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -16856,12 +16866,12 @@ Rigidbody:
   m_GameObject: {fileID: 881656390357935617}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &6890671299946143024
 MeshFilter:
@@ -16935,12 +16945,12 @@ Rigidbody:
   m_GameObject: {fileID: 7471649790856814759}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &6921544523611353551
 MeshRenderer:
@@ -16993,12 +17003,12 @@ Rigidbody:
   m_GameObject: {fileID: 7839870345999881927}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &6937430035222904609
 Transform:
@@ -17157,7 +17167,7 @@ Rigidbody:
   m_GameObject: {fileID: 7737275034300945297}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -17287,7 +17297,7 @@ Rigidbody:
   m_GameObject: {fileID: 2275988516005318862}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -17303,12 +17313,12 @@ Rigidbody:
   m_GameObject: {fileID: 5998738109467985851}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!135 &7099389395850820734
 SphereCollider:
@@ -17353,12 +17363,12 @@ Rigidbody:
   m_GameObject: {fileID: 5742481900182691767}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!135 &7112015193486309293
 SphereCollider:
@@ -17865,7 +17875,7 @@ Rigidbody:
   m_GameObject: {fileID: 2948855646935359797}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -17902,12 +17912,12 @@ Rigidbody:
   m_GameObject: {fileID: 6506161998797766745}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &7299791304451620052
 Transform:
@@ -18045,12 +18055,12 @@ Rigidbody:
   m_GameObject: {fileID: 6268578251688054605}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &7415741437559136769
 MeshFilter:
@@ -18203,12 +18213,12 @@ Rigidbody:
   m_GameObject: {fileID: 1446155235963989443}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &7507753378373503209
 MeshFilter:
@@ -18250,12 +18260,12 @@ Rigidbody:
   m_GameObject: {fileID: 5126455956536365699}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &7544738542213838092
 Rigidbody:
@@ -18266,12 +18276,12 @@ Rigidbody:
   m_GameObject: {fileID: 3370778814303066007}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &7551983583055634032
 MonoBehaviour:
@@ -18316,12 +18326,12 @@ Rigidbody:
   m_GameObject: {fileID: 2428248097921094676}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &7604441863269773729
 Transform:
@@ -18459,12 +18469,12 @@ Rigidbody:
   m_GameObject: {fileID: 3974790050767605225}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &7662118501487735276
 Rigidbody:
@@ -18475,12 +18485,12 @@ Rigidbody:
   m_GameObject: {fileID: 605844632334953082}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &7662500575340945440
 BoxCollider:
@@ -18625,7 +18635,7 @@ Rigidbody:
   m_GameObject: {fileID: 3017472637434958845}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -19055,12 +19065,12 @@ Rigidbody:
   m_GameObject: {fileID: 233004506938586053}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &8085520648513824928
 MeshRenderer:
@@ -19126,7 +19136,7 @@ Rigidbody:
   m_GameObject: {fileID: 2074222728004069626}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -19234,12 +19244,12 @@ Rigidbody:
   m_GameObject: {fileID: 6479915319740674357}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &8196473237007413717
 MeshFilter:
@@ -19336,12 +19346,12 @@ Rigidbody:
   m_GameObject: {fileID: 5531678939438739497}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &8204708378640061793
 MeshFilter:
@@ -19428,12 +19438,12 @@ Rigidbody:
   m_GameObject: {fileID: 4308292230828855976}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &8290090407623502215
 MeshRenderer:
@@ -19499,12 +19509,12 @@ Rigidbody:
   m_GameObject: {fileID: 704612656860808983}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!4 &8327653506904116520
 Transform:
@@ -19598,12 +19608,12 @@ Rigidbody:
   m_GameObject: {fileID: 957086949139531237}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &8380719347211476307
 MeshRenderer:
@@ -19816,7 +19826,7 @@ Rigidbody:
   m_GameObject: {fileID: 3674897930751044737}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -19895,12 +19905,12 @@ Rigidbody:
   m_GameObject: {fileID: 71421221144742772}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!65 &8456546181270331282
 BoxCollider:
@@ -19953,7 +19963,7 @@ Rigidbody:
   m_GameObject: {fileID: 7321091713536523642}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -20089,12 +20099,12 @@ Rigidbody:
   m_GameObject: {fileID: 6904228096807060229}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!1 &8599917031346291093
 GameObject:
@@ -20202,12 +20212,12 @@ Rigidbody:
   m_GameObject: {fileID: 7689203412025855346}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!23 &8656880496882919437
 MeshRenderer:
@@ -20260,7 +20270,7 @@ Rigidbody:
   m_GameObject: {fileID: 3293625442381951206}
   serializedVersion: 2
   m_Mass: 3
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -20461,6 +20471,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KnightModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257138381498046326, guid: 0968a8230fa0395448e66ec0cdf8c00d,
+        type: 3}
+      propertyPath: m_Drag
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257138381498046326, guid: 0968a8230fa0395448e66ec0cdf8c00d,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 116
       objectReference: {fileID: 0}
     - target: {fileID: 5257138381498046330, guid: 0968a8230fa0395448e66ec0cdf8c00d,
         type: 3}
@@ -20733,12 +20753,12 @@ Rigidbody:
   m_GameObject: {fileID: 6406737386637346461}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!114 &8963687037361461787
 MonoBehaviour:
@@ -20762,12 +20782,12 @@ Rigidbody:
   m_GameObject: {fileID: 6794056232121122313}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!54 &8986657778950518718
 Rigidbody:
@@ -20778,12 +20798,12 @@ Rigidbody:
   m_GameObject: {fileID: 1991032266271887370}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &8988465159506276907
 MeshFilter:
@@ -20924,12 +20944,12 @@ Rigidbody:
   m_GameObject: {fileID: 5693063835812294544}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!135 &9066462648171302010
 SphereCollider:
@@ -20976,12 +20996,12 @@ Rigidbody:
   m_GameObject: {fileID: 3860598657606608543}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!33 &9132502890336293256
 MeshFilter:

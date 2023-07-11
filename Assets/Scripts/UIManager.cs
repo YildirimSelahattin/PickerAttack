@@ -23,6 +23,10 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.timer =GameManager.Instance.timer - Time.deltaTime;
         timerText.text =((int) GameManager.Instance.timer).ToString();
         fillObject.material.SetFloat("_Arc1", ((maxTimer - GameManager.Instance.timer) / maxTimer) * 360);
+        if (GameManager.Instance.timer < 0)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 
     public void sizeButtonClick()
