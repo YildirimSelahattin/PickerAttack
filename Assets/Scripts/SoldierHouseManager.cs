@@ -20,13 +20,10 @@ public class SoldierHouseManager : MonoBehaviour
     {
         if (collision.collider.gameObject.transform.CompareTag("In"))
         {
-            Debug.Log("yeap");
+                
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic= true;
-            collision.collider.gameObject.transform.DOMove(transform.parent.position + new Vector3(0.7f,4,0), 1).OnComplete(()=>{
-
-            collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic= false;
-            collision.collider.gameObject.GetComponent<Rigidbody>().constraints |= RigidbodyConstraints.FreezePositionY;
-
+            collision.collider.gameObject.transform.DOMove(transform.parent.position, 1).OnComplete(()=>{
+            Destroy(collision.collider.gameObject);
             });
 
 

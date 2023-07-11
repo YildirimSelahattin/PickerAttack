@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590057e0bc4f0464d95b0f5682172372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cube: {fileID: 7881500553889835300, guid: aa69b7e25c0d48d45899e45cc21fb932, type: 3}
-  sphere: {fileID: 8571724979617674267, guid: 3cd585571fd9b054ca1725ece8bdaf53, type: 3}
+  cube: {fileID: 4537591594513057165, guid: 2079885b2c79bb241a0a14624655092e, type: 3}
+  sphere: {fileID: 5257138381498046321, guid: 0968a8230fa0395448e66ec0cdf8c00d, type: 3}
   cylinder: {fileID: 6917037197630117016, guid: 3748eb4f072ed6f4a80611caf3f05167,
     type: 3}
 --- !u!4 &323504343
