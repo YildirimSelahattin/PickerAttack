@@ -1,6 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Xml.Schema;
 using Unity.Mathematics;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class GridSpawner : MonoBehaviour
@@ -23,10 +27,11 @@ public class GridSpawner : MonoBehaviour
     public static GridSpawner Instance;
     public int[] colCounter = new int [3];
 
-
-
-
-
+    public GameObject buttonPrefab;
+    public GameObject buttonPanelPrefab;
+    public Sprite archerSprite;
+    public Sprite knightSprite;
+    public Sprite smasherSprite;
     void Start()
     {
         if (Instance == null)
@@ -48,17 +53,17 @@ public class GridSpawner : MonoBehaviour
     public void StartGame()
     {
         //float distanceBetweenX = Mathf.Abs(leftLimit.transform.position.x - rightLimit.transform.position.x);
-       // float distanceBetweenY = Mathf.Abs(topLimit.transform.position.z - botLimit.transform.position.z);
-       // xSize = (distanceBetweenX / 5);
-       // ySize = (distanceBetweenY / 5);
-        gridHeight =30;
-        gridWidth = 30;
-        CreateGrid();
+        // float distanceBetweenY = Mathf.Abs(topLimit.transform.position.z - botLimit.transform.position.z);
+        // xSize = (distanceBetweenX / 5);
+        // ySize = (distanceBetweenY / 5);
+        CreateGrid(); 
+        CreateButtons();
     }
 
     public void CreateGrid()
     {
         // for elevator grid
+        CalculateGridAmount();
         for (int y = 0; y < gridHeight; y++)
         {
             for (int x = 0; x < gridWidth; x++)
@@ -70,11 +75,9 @@ public class GridSpawner : MonoBehaviour
                 gridList.Add(currGrid);
             }
         }
-
-        spawnPeople();
-
     }
 
+    /*
     public void spawnPeople()
     {
         foreach (int index in GameManager.Instance.objectList)
@@ -95,4 +98,62 @@ public class GridSpawner : MonoBehaviour
             colCounter[index]++;
         }
     }
+    */
+    public void CreateButtons()
+    {
+        if (GameManager.Instance.archerCount > 0)
+        {
+            GameObject buttonObject =  Instantiate(buttonPrefab,buttonPanelPrefab.transform);
+            buttonObject.GetComponent<ButtonManager>().soldierImage.sprite= archerSprite;
+            buttonObject.GetComponent<ButtonManager>().count= GameManager.Instance.archerCount;
+            buttonObject.GetComponent<ButtonManager>().soldierIndex= 0;
+        }
+        if (GameManager.Instance.knightCount > 0)
+        {
+            GameObject buttonObject = Instantiate(buttonPrefab, buttonPanelPrefab.transform);
+            buttonObject.GetComponent<ButtonManager>().soldierImage.sprite = knightSprite;
+            buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.knightCount;
+            buttonObject.GetComponent<ButtonManager>().soldierIndex = 1;
+        }
+        if (GameManager.Instance.smasherCount > 0)
+        {
+            GameObject buttonObject = Instantiate(buttonPrefab, buttonPanelPrefab.transform);
+            buttonObject.GetComponent<ButtonManager>().soldierImage.sprite = smasherSprite;
+            buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.smasherCount;
+            buttonObject.GetComponent<ButtonManager>().soldierIndex = 2;
+        }
+        
+    }
+    public void CalculateGridAmount()
+    {
+        int maxRow = (GameManager.Instance.archerCount/5) + GameManager.Instance.archerCount%5;
+        if((GameManager.Instance.knightCount / 5) + 5> maxRow)
+        {
+            maxRow =(GameManager.Instance.knightCount / 5) + 5;
+        }
+        if ((GameManager.Instance.smasherCount / 5) + 5> maxRow)
+        {
+            maxRow = (GameManager.Instance.smasherCount / 5) + 5;
+        }
+        gridHeight = 3;
+        if (maxRow <= 5)
+        {
+            maxRow = 5;
+        }
+        gridWidth = maxRow;
+        
+    }
+    public int GiveEmptyGridByRow(int rowIndex)
+    {
+        for (int counter = rowIndex*gridWidth;counter<(rowIndex+1)*gridWidth;counter++)
+        {
+            if (gridList[counter].transform.childCount == 1)
+            {
+                return counter;
+            }
+        }
+        return -1;
+    }
+
+
 }

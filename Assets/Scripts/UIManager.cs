@@ -42,7 +42,10 @@ public class UIManager : MonoBehaviour
         timerText.text = GameManager.Instance.timer.ToString();
 
     }
-
+    public void AddArcher()
+    {
+        
+    }
     public void sceneChange()
     {
         SceneManager.LoadScene(1);

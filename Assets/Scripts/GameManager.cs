@@ -11,7 +11,9 @@ public class GameManager : MonoBehaviour
     public float speed=2;
     public float timer=2;
     public Vector3 scale = new Vector3(1,1,1);
-    public List<int> objectList;
+    public int archerCount; 
+    public int knightCount; 
+    public int smasherCount; 
    
     
     private void Awake()
@@ -26,9 +28,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        scale = new Vector3(1, 1, 1);
-        speed = 2;
-        timer = 10;
+       
     }
 
     // Update is called once per frame
