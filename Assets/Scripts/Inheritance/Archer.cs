@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 public class Archer : Army
 {
@@ -9,7 +10,6 @@ public class Archer : Army
     public float fireRate;
     public bool canShoot = true;
     public Animator animator;
-
     
     protected override void Die()
     {
@@ -42,6 +42,7 @@ public class Archer : Army
     private IEnumerator Shoot()
     {
         animator.ResetTrigger("Shoot");
+       
         yield return new WaitForSeconds(fireRate);
         canShoot = true;
         animator.SetTrigger("Shoot");
