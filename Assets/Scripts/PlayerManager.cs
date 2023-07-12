@@ -64,8 +64,11 @@ public class PlayerManager : MonoBehaviour
                 transform.DOLookAt(targetPos,0.1f);
                 forwardAmount = 1;
                 rigidBody.velocity = transform.forward * forwardAmount * GameManager.Instance.speed;
+                if (Vector3.Distance(curTouchPosition,touchStartPos)>3)
+                {
+                    touchStartPos += dir * (Vector3.Distance(curTouchPosition, touchStartPos)-3);
+                }
             }
-          
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
                 touchStartPos = Vector3.zero;
