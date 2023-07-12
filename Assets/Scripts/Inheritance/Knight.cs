@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.SceneManagement;
 public class Knight : Army
 {
     public int speed;
@@ -19,16 +18,20 @@ public class Knight : Army
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("boss"))
         {
+           transform.GetComponent<Animator>().SetTrigger("boss"); 
            other.GetComponent<BossManager>().health -= damage;
            TakeDamage(damageTake);
         }
 
     }
     private void Start() {
+<<<<<<< Updated upstream
+=======
         if (SceneManager.GetActiveScene().name == "BossScene")
         {
-        transform.DOMove(BossManager.Instance.arena.transform.position, speed).SetSpeedBased(true);
+           transform.GetComponent<Animator>().SetTrigger("run"); 
             
-        }
+>>>>>>> Stashed changes
+        transform.DOMove(BossManager.Instance.arena.transform.position, speed).SetSpeedBased(true);
     }
 }
