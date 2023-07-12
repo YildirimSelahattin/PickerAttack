@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 using DG.Tweening;
 public class Knight : Army
 {
@@ -25,13 +27,11 @@ public class Knight : Army
 
     }
     private void Start() {
-<<<<<<< Updated upstream
-=======
         if (SceneManager.GetActiveScene().name == "BossScene")
         {
            transform.GetComponent<Animator>().SetTrigger("run"); 
-            
->>>>>>> Stashed changes
-        transform.DOMove(BossManager.Instance.arena.transform.position, speed).SetSpeedBased(true);
+           transform.DOMove(BossManager.Instance.arena.transform.position, speed).SetSpeedBased(true);
+        }  
+        
     }
 }
