@@ -11,7 +11,7 @@ public class Archer : Army
     public float fireRate;
     public bool canShoot = true;
     public Animator animator;
-
+    private bool played = true ;
     protected override void Die()
     {
         Debug.Log("archer died");
@@ -25,13 +25,9 @@ public class Archer : Army
 
         if (SceneManager.GetActiveScene().name == "BossScene")
         {
-            if (GameManager.Instance.archerCount <= 0)
-            {
-                bulDMG = damage;
-                canShoot = false;
-                animator.SetTrigger("Shoot");
-                StartCoroutine(Shoot());
-            }
+
+           
+
         }
     }
 
@@ -64,5 +60,23 @@ public class Archer : Army
         {
             TakeDamage(damageTake);
         }
+    }
+    private void Update()
+    {
+
+        if (SceneManager.GetActiveScene().name == "BossScene")
+        {
+            if (GameManager.Instance.archerCount <= 0 && played)
+            {
+                bulDMG = damage;
+                canShoot = false;
+                animator.SetTrigger("Shoot");
+                StartCoroutine(Shoot());
+                played = false;
+            }
+
+
+        }
+
     }
 }

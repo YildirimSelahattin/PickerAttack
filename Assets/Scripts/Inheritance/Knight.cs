@@ -7,6 +7,7 @@ using DG.Tweening;
 public class Knight : Army
 {
     public int speed;
+    bool played = true;
 
     // Custom properties for MobA
 
@@ -31,13 +32,22 @@ public class Knight : Army
     {
         if (SceneManager.GetActiveScene().name == "BossScene")
         {
-            if (GameManager.Instance.knightCount <= 0)
-            {
-                transform.GetComponent<Animator>().SetTrigger("run");
-                transform.LookAt(BossManager.Instance.arena.transform);
-                transform.DOMove(BossManager.Instance.arena.transform.position, speed).SetSpeedBased(true);
-            }
+              
         }
 
+    }
+    private void Update() {
+        if (SceneManager.GetActiveScene().name == "BossScene")
+        {
+            if (GameManager.Instance.knightCount <= 0 && played)
+            {
+                 transform.GetComponent<Animator>().SetTrigger("run");
+                transform.LookAt(BossManager.Instance.arena.transform);
+                transform.DOMove(BossManager.Instance.arena.transform.position, speed).SetSpeedBased(true);
+                played = false;
+            }
+
+
+        }
     }
 }

@@ -72,6 +72,19 @@ public class ButtonManager : MonoBehaviour
             MergeSoldiers();
         }
         count--;
+        switch (soldierIndex)
+{
+    case 1:
+        GameManager.Instance.knightCount--;
+        break;
+
+    case 0:
+        GameManager.Instance.archerCount--;
+        break;
+
+  
+}
+
         if (count == 0)
         {
             buttonPressed = false;
