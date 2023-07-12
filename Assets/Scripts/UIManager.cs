@@ -8,10 +8,18 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-
+    public static UIManager Instance;
     public TextMeshPro timerText;
     public SpriteRenderer fillObject;
+    public TextMeshProUGUI archCount;
+    public TextMeshProUGUI knightCount;
 
+private void Awake() {
+    if (Instance == null)
+    {
+        Instance =this;
+    }
+}
     private void Start()
     {
         timerText.text = GameManager.Instance.timer.ToString();

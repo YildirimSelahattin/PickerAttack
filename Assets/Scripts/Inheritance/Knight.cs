@@ -39,7 +39,7 @@ public class Knight : Army
     private void Update() {
         if (SceneManager.GetActiveScene().name == "BossScene")
         {
-            if (GameManager.Instance.knightCount <= 0 && played)
+            if (GameManager.Instance.knightCount <= 0 && GameManager.Instance.archerCount <= 0 && played)
             {
                  transform.GetComponent<Animator>().SetTrigger("run");
                 transform.LookAt(BossManager.Instance.arena.transform);
