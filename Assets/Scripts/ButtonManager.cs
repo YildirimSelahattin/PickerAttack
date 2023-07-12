@@ -2,10 +2,7 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Threading;
 using TMPro;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -54,8 +51,11 @@ public class ButtonManager : MonoBehaviour
 
     public void OnPushStarted()
     {
-        buttonPressed = true;
-        InstantiateInLoop();
+        if (count > 0)
+        {
+            buttonPressed = true;
+            InstantiateInLoop();
+        }
     }
 
     public void OnPushStop()
@@ -65,7 +65,7 @@ public class ButtonManager : MonoBehaviour
     }
     public void InstantiateInLoop()
     {
-        GameObject temp= Instantiate(soldierPrefabs[soldierIndex],GridSpawner.Instance.gridList[GridSpawner.Instance.GiveEmptyGridByRow(soldierIndex)].transform);
+        GameObject temp= Instantiate(soldierPrefabs[soldierIndex],GridSpawner.Instance.gridList[GridSpawner.Instance.GiveEmptyGridByRow()].transform);
         soldier5Grouped.Add(temp);
         if(soldier5Grouped.Count == 5)
         {
@@ -77,7 +77,6 @@ public class ButtonManager : MonoBehaviour
             buttonPressed = false;
             GetComponent<Button>().interactable = false;
         }
-        
     }
 
     public void ControlMerge()
@@ -87,7 +86,7 @@ public class ButtonManager : MonoBehaviour
 
     public void MergeSoldiers()
     {
-        for (int counter = 4; counter>0;counter--)
+        for (int counter = 4; counter>=0;counter--)
         {
             MoveToFirst(counter);
         }
@@ -100,7 +99,7 @@ public class ButtonManager : MonoBehaviour
         movingObject.transform.DOJump(soldier5Grouped[0].transform.position, 1, 1, 0.2f).OnComplete(() =>
         {
             Destroy(movingObject);
-            if (index == 1)
+            if (index == 0)
             {
                 Instantiate(soldierPrefabs[soldierIndex], soldier5Grouped[0].transform.parent);
                 soldier5Grouped.Clear();

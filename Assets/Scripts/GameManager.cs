@@ -13,9 +13,9 @@ public class GameManager : MonoBehaviour
     public Vector3 scale = new Vector3(1,1,1);
     public int archerCount; 
     public int knightCount; 
-    public int smasherCount; 
-   
-    
+    public int smasherCount;
+    public float maxTimer;
+
     private void Awake()
     {
         if (Instance == null)

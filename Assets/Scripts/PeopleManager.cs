@@ -5,7 +5,6 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
-using UnityEditor.Search;
 
 public class PeopleManager : MonoBehaviour
 {

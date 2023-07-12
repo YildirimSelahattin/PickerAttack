@@ -65,6 +65,7 @@ public class PlayerManager : MonoBehaviour
                 forwardAmount = 1;
                 rigidBody.velocity = transform.forward * forwardAmount * GameManager.Instance.speed;
             }
+          
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
                 touchStartPos = Vector3.zero;

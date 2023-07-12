@@ -1,10 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data;
-using System.Xml.Schema;
-using Unity.Mathematics;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class GridSpawner : MonoBehaviour
@@ -26,7 +22,6 @@ public class GridSpawner : MonoBehaviour
     public GameObject gridParent;
     public static GridSpawner Instance;
     public int[] colCounter = new int [3];
-
     public GameObject buttonPrefab;
     public GameObject buttonPanelPrefab;
     public Sprite archerSprite;
@@ -126,26 +121,14 @@ public class GridSpawner : MonoBehaviour
     }
     public void CalculateGridAmount()
     {
-        int maxRow = (GameManager.Instance.archerCount/5) + GameManager.Instance.archerCount%5;
-        if((GameManager.Instance.knightCount / 5) + 5> maxRow)
-        {
-            maxRow =(GameManager.Instance.knightCount / 5) + 5;
-        }
-        if ((GameManager.Instance.smasherCount / 5) + 5> maxRow)
-        {
-            maxRow = (GameManager.Instance.smasherCount / 5) + 5;
-        }
-        gridHeight = 3;
-        if (maxRow <= 5)
-        {
-            maxRow = 5;
-        }
-        gridWidth = maxRow;
+        int maxGridNumber = (GameManager.Instance.archerCount/5) + GameManager.Instance.archerCount%5 + (GameManager.Instance.knightCount / 5) + 5 + (GameManager.Instance.smasherCount / 5) + 5 ;
+        gridWidth = 4;
+        gridHeight = 4;
         
     }
-    public int GiveEmptyGridByRow(int rowIndex)
+    public int GiveEmptyGridByRow()
     {
-        for (int counter = rowIndex*gridWidth;counter<(rowIndex+1)*gridWidth;counter++)
+        for (int counter = 0;counter<gridWidth*gridHeight;counter++)
         {
             if (gridList[counter].transform.childCount == 1)
             {
