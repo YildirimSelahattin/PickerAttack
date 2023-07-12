@@ -18,12 +18,20 @@ public class Knight : Army
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("boss"))
         {
+           transform.GetComponent<Animator>().SetTrigger("boss"); 
            other.GetComponent<BossManager>().health -= damage;
            TakeDamage(damageTake);
         }
 
     }
     private void Start() {
+<<<<<<< Updated upstream
+=======
+        if (SceneManager.GetActiveScene().name == "BossScene")
+        {
+           transform.GetComponent<Animator>().SetTrigger("run"); 
+            
+>>>>>>> Stashed changes
         transform.DOMove(BossManager.Instance.arena.transform.position, speed).SetSpeedBased(true);
     }
 }
