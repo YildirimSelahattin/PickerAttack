@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoldierList
 {
     // Start is called before the first frame update
-    public List<GameObject> soldiersList;
+    public List<GameObject> soldiersList = new List<GameObject>();
     void Start()
     {
         

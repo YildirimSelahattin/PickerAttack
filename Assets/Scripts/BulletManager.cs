@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletManager : MonoBehaviour
 {
-    public int damage;   
+    public float  damage;   
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class BulletManager : MonoBehaviour
         if (other.CompareTag("boss"))
         {
            Destroy(this.gameObject);
-           other.GetComponent<BossManager>().health -= damage;
+           other.GetComponent<BossManager>().health -= (int)damage;
         }
     }
 

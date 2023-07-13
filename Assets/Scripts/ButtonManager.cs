@@ -14,12 +14,12 @@ public class ButtonManager : MonoBehaviour
     public TextMeshProUGUI countText;
     private int _count;
     public int soldierIndex;
-    public List<GameObject> soldierPrefabs;
     public float timer;
     public bool buttonPressed;
     public float rate;
     public int instantiatedNumber;
-    public List<GameObject> soldier5Grouped;
+    public List<List<GameObject>>soldier5Grouped = new List<List<GameObject>>();
+    public List<GameObject> prefabList;
     public int count
     {
         get {
@@ -33,6 +33,9 @@ public class ButtonManager : MonoBehaviour
     void Start()
     {
         timer = rate;
+        soldier5Grouped.Add(new List<GameObject>());
+        soldier5Grouped.Add(new List<GameObject>());
+        soldier5Grouped.Add(new List<GameObject>());
     }
 
     // Update is called once per frame
@@ -65,9 +68,12 @@ public class ButtonManager : MonoBehaviour
     }
     public void InstantiateInLoop()
     {
-        GameObject temp= Instantiate(soldierPrefabs[soldierIndex],GridSpawner.Instance.gridList[GridSpawner.Instance.GiveEmptyGridByRow()].transform);
-        GridSpawner.Instance.soldierList.Add(temp);
-        GridSpawner.Instance.ControlMerge();
+        GameObject temp= Instantiate(prefabList[0],GridSpawner.Instance.gridList[GridSpawner.Instance.GiveEmptyGridByRow()].transform);
+        soldier5Grouped[0].Add(temp);
+        if (soldier5Grouped[0].Count == 5)
+        {
+            MergeSoldiers(0);
+        }
         count--;
         switch (soldierIndex)
 {
@@ -90,26 +96,36 @@ public class ButtonManager : MonoBehaviour
     }
 
    
-    public void MergeSoldiers()
+    public void MergeSoldiers(int levelIndex)
     {
         for (int counter = 4; counter>=0;counter--)
         {
-            MoveToFirst(counter);
+            MoveToFirst(counter,levelIndex);
         }
     }
 
-    public void MoveToFirst(int index)
+    public void MoveToFirst(int index,int levelIndex)
     {
-
-        GameObject movingObject = soldier5Grouped[index];
-        movingObject.transform.DOJump(soldier5Grouped[0].transform.position, 1, 1, 0.2f).OnComplete(() =>
+        GameObject movingObject = soldier5Grouped[levelIndex][index];
+        movingObject.transform.DOJump(soldier5Grouped[levelIndex][0].transform.position, 1, 1, rate/2).OnComplete(() =>
         {
             Destroy(movingObject);
             if (index == 0)
             {
-                Instantiate(soldierPrefabs[soldierIndex], soldier5Grouped[0].transform.parent);
-                soldier5Grouped.Clear();
+                
+                GameObject temp = Instantiate(prefabList[levelIndex+1], soldier5Grouped[levelIndex][0].transform.parent);
+                soldier5Grouped[levelIndex+1].Add(temp);
+                soldier5Grouped[levelIndex].Clear();
+                ControlUpperLevels();
             }
-            });
+        });
+
+    }
+    public void ControlUpperLevels()
+    {
+        if (soldier5Grouped[1].Count == 5)
+        {
+            MergeSoldiers(1);
+        }
     }
 }
