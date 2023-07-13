@@ -66,11 +66,8 @@ public class ButtonManager : MonoBehaviour
     public void InstantiateInLoop()
     {
         GameObject temp= Instantiate(soldierPrefabs[soldierIndex],GridSpawner.Instance.gridList[GridSpawner.Instance.GiveEmptyGridByRow()].transform);
-        soldier5Grouped.Add(temp);
-        if(soldier5Grouped.Count == 5)
-        {
-            MergeSoldiers();
-        }
+        GridSpawner.Instance.soldierList.Add(temp);
+        GridSpawner.Instance.ControlMerge();
         count--;
         switch (soldierIndex)
 {
@@ -92,11 +89,7 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
-    public void ControlMerge()
-    {
-
-    }
-
+   
     public void MergeSoldiers()
     {
         for (int counter = 4; counter>=0;counter--)
