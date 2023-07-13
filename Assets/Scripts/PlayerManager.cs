@@ -20,8 +20,6 @@ public class PlayerManager : MonoBehaviour
     public Vector3 curTouchPosition;
     public float prevXdif;
     public float prevYdif;
-    public GameObject curTouchImage;
-    public GameObject touchStartImage;
     [Header("AgentProperties")]
 
     private Rigidbody rb;
@@ -48,8 +46,6 @@ public class PlayerManager : MonoBehaviour
 
     private void DetectButtonPress()
     {
-        touchStartImage.transform.position = touchStartPos;
-        curTouchImage.transform.position = curTouchPosition;
         if (Input.touchCount > 0)
         {
             float forwardAmount = 0f;
@@ -68,11 +64,8 @@ public class PlayerManager : MonoBehaviour
                 transform.DOLookAt(targetPos,0.1f);
                 forwardAmount = 1;
                 rigidBody.velocity = transform.forward * forwardAmount * GameManager.Instance.speed;
-                if (Vector3.Distance(curTouchPosition,touchStartPos)>75)
-                {
-                    touchStartPos += dir * (Vector3.Distance(curTouchPosition, touchStartPos)-75);
-                }
             }
+          
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
                 touchStartPos = Vector3.zero;
