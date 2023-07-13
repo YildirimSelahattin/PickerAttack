@@ -23,12 +23,10 @@ public class SoldierHouseManager : MonoBehaviour
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 0)
             {
                 GameManager.Instance.knightCount++;
-                UIManager.Instance.knightCount.text = GameManager.Instance.knightCount.ToString(); 
             }
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 1)
             {
                 GameManager.Instance.archerCount++;
-                UIManager.Instance.archCount.text = GameManager.Instance.archerCount.ToString(); 
 
             }
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 2)
