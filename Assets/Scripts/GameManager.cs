@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public GameObject player;
     public int inCount = 0;
-    public float speed=2;
-    public float timer=2;
+    public float speed=4;
+    public float timer=30;
     public Vector3 scale = new Vector3(1,1,1);
     public int archerCount; 
     public int knightCount; 

@@ -34,7 +34,21 @@ public class PlayerManager : MonoBehaviour
         {
             Instance = this;
         }
+        if (PlayerPrefs.HasKey(GameDataManager.Instance.speedLevelKey))
+        {
+        GameManager.Instance.speed = GameManager.Instance.speed * Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1);
+        }
+        if (PlayerPrefs.HasKey(GameDataManager.Instance.sizeLevelKey))
+        {
+          GameManager.Instance.scale = GameManager.Instance.scale * Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1);
 
+        }
+        if (PlayerPrefs.HasKey(GameDataManager.Instance.timeLevelKey))
+        {
+       GameManager.Instance.maxTimer = GameManager.Instance.maxTimer * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1);
+       GameManager.Instance.timer = GameManager.Instance.timer * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1);
+        
+        }
 
 
     }
