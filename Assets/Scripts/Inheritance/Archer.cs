@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+
 public class Archer : Army
 {
     public GameObject bullet;
@@ -12,6 +13,7 @@ public class Archer : Army
     public bool canShoot = true;
     public Animator animator;
     private bool played = true ;
+
     protected override void Die()
     {
         Debug.Log("archer died");

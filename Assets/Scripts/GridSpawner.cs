@@ -1,4 +1,5 @@
 using Cinemachine;
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -31,16 +32,14 @@ public class GridSpawner : MonoBehaviour
     public Sprite knightSprite;
     public Sprite smasherSprite;
     public CinemachineVirtualCamera cam;
-    public List<SoldierList> knightAmountPerLevelArray;
-    public List<SoldierList> archerAmountPerLevelArray ;
-
+    public List<GameObject> archerPrefabs;
+    public List<GameObject> knightPrefabs;
+    public GameObject bossPrefab;
     void Start()
     {
         if (Instance == null)
         {
             Instance = this;
-            archerAmountPerLevelArray = new List<SoldierList>() { new SoldierList(), new SoldierList(), new SoldierList() };
-            archerAmountPerLevelArray = new List<SoldierList>() { new SoldierList(), new SoldierList(), new SoldierList() };
             StartGame();
         }
     }
@@ -76,24 +75,29 @@ public class GridSpawner : MonoBehaviour
 
         //fix camera 
         cam.transform.position = new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f, cam.transform.position.y, cam.transform.position.z);
-    }
-    public void AddSoldier(int soldierIndex, int soldierLevelIndex, GameObject gameObject)
-    {
-        List<SoldierList> listToAdd = null;
-        if (soldierIndex == 0)
-        {
-            listToAdd = knightAmountPerLevelArray;
-        }
-        else if (soldierIndex == 1)
-        {
-            listToAdd = archerAmountPerLevelArray;
-        }
-        listToAdd[soldierLevelIndex].soldiersList.Add(gameObject);
+        Instantiate(bossPrefab, new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f, 0, gridList[gridWidth * gridHeight - 1].transform.position.z + 5), Quaternion.identity);
     }
 
-    public void MergeInItCan(int levelOfSoldier, GameObject soldierListByLevel)
+    public void MoveToFirst(int index, int levelOfSoldier, List<SoldierList> soldierListByLevel, int soldierIndex)
     {
 
+        GameObject movingObject = soldierListByLevel[levelOfSoldier].soldiersList[index];
+        movingObject.transform.DOJump(soldierListByLevel[levelOfSoldier].soldiersList[0].transform.position, 1, 1, 0.2f).OnComplete(() =>
+        {
+            Destroy(movingObject);
+            if (index == 0)
+            {
+                if(soldierIndex == 0)
+                {
+                    Instantiate(archerPrefabs[levelOfSoldier + 1], soldierListByLevel[levelOfSoldier].soldiersList[0].transform.parent);
+                }
+                else if (soldierIndex == 1)
+                {
+                    Instantiate(knightPrefabs[levelOfSoldier + 1], soldierListByLevel[levelOfSoldier].soldiersList[0].transform.parent);
+                }
+                soldierListByLevel[levelOfSoldier].soldiersList.Clear();
+            }
+        });
     }
     /*
     public void spawnPeople()
@@ -125,6 +129,7 @@ public class GridSpawner : MonoBehaviour
             buttonObject.GetComponent<ButtonManager>().soldierImage.sprite = archerSprite;
             buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.archerCount;
             buttonObject.GetComponent<ButtonManager>().soldierIndex = 0;
+            buttonObject.GetComponent<ButtonManager>().prefabList = archerPrefabs;
         }
         if (GameManager.Instance.knightCount > 0)
         {
@@ -159,10 +164,6 @@ public class GridSpawner : MonoBehaviour
             }
         }
         return -1;
-    }
-    public void ControlMerge()
-    {
-
     }
 
 }
