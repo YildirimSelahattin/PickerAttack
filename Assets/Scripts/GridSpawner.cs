@@ -35,6 +35,8 @@ public class GridSpawner : MonoBehaviour
     public List<GameObject> archerPrefabs;
     public List<GameObject> knightPrefabs;
     public GameObject bossPrefab;
+    public List<GameObject> EnemyList = new List<GameObject>();
+
     void Start()
     {
         if (Instance == null)
