@@ -19,10 +19,14 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI timePrice;
     public TextMeshProUGUI speedL;
     public TextMeshProUGUI speedPrice;
-
-
+    public TextMeshProUGUI totalMoney;
+    public static UIManager Instance; 
     private void Start()
     {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
         upgradeScreen.SetActive(true);
         playScreen.SetActive(false);
         timerText.text = (GameManager.Instance.timer * PlayerPrefs.GetInt(GameDataManager.Instance.timeLevelKey)).ToString();
@@ -33,8 +37,7 @@ public class UIManager : MonoBehaviour
         sizePrice.text = (GameDataManager.Instance.sizePrice*Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1)).ToString();
         speedPrice.text =(GameDataManager.Instance.speedPrice*Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1)).ToString();
         timePrice.text = (GameDataManager.Instance.timePrice*Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1)).ToString();
-
-    
+        totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
     }
 
     private void Update()

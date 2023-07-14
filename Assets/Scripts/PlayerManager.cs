@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using DG.Tweening;
+using TMPro;
+
 public class PlayerManager : MonoBehaviour
 {
     [Header("MoveBoundaries")]
@@ -22,6 +24,8 @@ public class PlayerManager : MonoBehaviour
     public float prevYdif;
     public GameObject curTouchImage;
     public GameObject touchStartImage;
+    public GameObject coinEffectPrefab;
+    public GameObject coinEffectParent;
     [Header("AgentProperties")]
 
     private Rigidbody rb;
@@ -97,5 +101,13 @@ public class PlayerManager : MonoBehaviour
             }
            
         }
+    }
+
+    public void InstantiateCoinEffect(int coinAmount)
+    {
+        coinEffectPrefab.GetComponent<TextMeshPro>().text = "+ "+ coinAmount.ToString();
+        GameObject text = Instantiate(coinEffectPrefab,coinEffectParent.transform);
+        GameDataManager.Instance.totalMoney+= coinAmount; 
+        UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
     }
 }

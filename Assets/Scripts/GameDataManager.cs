@@ -14,7 +14,7 @@ public class GameDataManager : MonoBehaviour
     public string sizeLevelKey = "SizeLevel";
     public string speedLevelKey = "SpeedLevel";
     public string timeLevelKey = "TimeLevel";
-
+    public int totalMoney;
     private void Awake()
     {
         if (Instance == null)
@@ -66,6 +66,8 @@ public class GameDataManager : MonoBehaviour
             PlayerPrefs.SetInt(timeLevelKey, 1);
 
         }
+
+        totalMoney = PlayerPrefs.GetInt("TotalMoney",30);
     }
 
     // Call this method to update the values and save the data

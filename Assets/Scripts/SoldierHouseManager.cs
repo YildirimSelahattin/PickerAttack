@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SoldierHouseManager : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,10 +24,12 @@ public class SoldierHouseManager : MonoBehaviour
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 0)
             {
                 GameManager.Instance.knightCount++;
+                PlayerManager.Instance.InstantiateCoinEffect(10) ;
             }
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 1)
             {
                 GameManager.Instance.archerCount++;
+                PlayerManager.Instance.InstantiateCoinEffect(100);
             }
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 2)
             {
