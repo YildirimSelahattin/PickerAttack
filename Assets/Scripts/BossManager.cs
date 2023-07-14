@@ -20,7 +20,7 @@ public class BossManager : MonoBehaviour
 
     void Start()
     {
-        transform.DOMove(arena.transform.position,1f).OnComplete(attack);
+        attack();
     }
 
     // Update is called once per frame
@@ -33,8 +33,6 @@ public class BossManager : MonoBehaviour
     }
     public void attack(){
         transform.DOJump(transform.position,3f,1,1f).OnComplete(()=>{
-        
-
         attack();
         });
     }

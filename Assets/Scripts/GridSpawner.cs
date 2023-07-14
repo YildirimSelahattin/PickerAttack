@@ -75,7 +75,7 @@ public class GridSpawner : MonoBehaviour
 
         //fix camera 
         cam.transform.position = new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f, cam.transform.position.y, cam.transform.position.z);
-        Instantiate(bossPrefab, new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f, 0, gridList[gridWidth * gridHeight - 1].transform.position.z + 5), Quaternion.identity);
+        Instantiate(bossPrefab, new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f, 0, gridList[gridWidth * gridHeight - 1].transform.position.z - 15), Quaternion.identity);
     }
 
     public void MoveToFirst(int index, int levelOfSoldier, List<SoldierList> soldierListByLevel, int soldierIndex)
@@ -137,6 +137,7 @@ public class GridSpawner : MonoBehaviour
             buttonObject.GetComponent<ButtonManager>().soldierImage.sprite = knightSprite;
             buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.knightCount;
             buttonObject.GetComponent<ButtonManager>().soldierIndex = 1;
+            buttonObject.GetComponent<ButtonManager>().prefabList = knightPrefabs;
         }
         if (GameManager.Instance.smasherCount > 0)
         {

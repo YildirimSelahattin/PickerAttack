@@ -41,7 +41,7 @@ public class Knight : Army
         {
             if (GameManager.Instance.knightCount <= 0 && played)
             {
-                 transform.GetComponent<Animator>().SetTrigger("run");
+                transform.GetComponent<Animator>().SetTrigger("run");
                 transform.LookAt(BossManager.Instance.arena.transform);
                 transform.DOMove(BossManager.Instance.arena.transform.position, speed).SetSpeedBased(true);
                 played = false;
