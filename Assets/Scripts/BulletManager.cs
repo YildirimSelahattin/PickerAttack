@@ -19,14 +19,5 @@ public class BulletManager : MonoBehaviour
 
 
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("boss"))
-        {
-           Destroy(this.gameObject);
-           other.GetComponent<BossManager>().health -= (int)damage;
-        }
-    }
-
 
 }

@@ -32,7 +32,6 @@ public class SoldierHouseManager : MonoBehaviour
             {
                 GameManager.Instance.smasherCount++;
             }
-            Debug.Log("yeap");
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic= true;
             collision.collider.gameObject.transform.DOMove(transform.parent.position + new Vector3(0.7f,4,0), 1).OnComplete(()=>{
                 Destroy(collision.collider.gameObject);

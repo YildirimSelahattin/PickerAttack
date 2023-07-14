@@ -23,7 +23,7 @@ public class Knight : Army
         if (other.CompareTag("boss"))
         {
             transform.GetComponent<Animator>().SetTrigger("boss");
-            other.GetComponent<BossManager>().health -= damage;
+            other.GetComponent<BossManager>().curhealth -= damage;
             TakeDamage(damageTake);
         }
 
@@ -42,12 +42,19 @@ public class Knight : Army
             if (GameManager.Instance.knightCount <= 0 && played)
             {
                 transform.GetComponent<Animator>().SetTrigger("run");
-                transform.LookAt(BossManager.Instance.arena.transform);
-                transform.DOMove(BossManager.Instance.arena.transform.position, speed).SetSpeedBased(true);
+                transform.LookAt(BossManager.Instance.gameObject.transform);
+                transform.DOMove(BossManager.Instance.gameObject.transform.position, speed).SetSpeedBased(true).OnComplete(() =>
+                {
+                    transform.GetComponent<Animator>().SetTrigger("boss");
+                });
                 played = false;
             }
 
 
         }
+    }
+    public void DealDamage()
+    {
+        BossManager.Instance.TakeDamage(damage);
     }
 }
