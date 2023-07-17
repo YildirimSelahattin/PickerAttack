@@ -25,12 +25,7 @@ public class Archer : Army
     private void Start()
     {
 
-        if (SceneManager.GetActiveScene().name == "BossScene")
-        {
-
-           
-
-        }
+       
     }
 
     public void archerShoot()

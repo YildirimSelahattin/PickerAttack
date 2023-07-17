@@ -38,7 +38,7 @@ public class Army : MonoBehaviour
 
     private IEnumerator DestroyDelay()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         
         // Destroy the enemy
                 Destroy(gameObject);
