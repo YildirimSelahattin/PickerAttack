@@ -21,10 +21,13 @@ public class SoldierHouseManager : MonoBehaviour
     {
         if (collision.collider.gameObject.transform.CompareTag("In"))
         {
+            collision.collider.gameObject.GetComponent<Collider>().enabled = false;
+            collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 0)
             {
                 GameManager.Instance.knightCount++;
                 PlayerManager.Instance.InstantiateCoinEffect(10) ;
+                
             }
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 1)
             {
@@ -35,7 +38,6 @@ public class SoldierHouseManager : MonoBehaviour
             {
                 GameManager.Instance.smasherCount++;
             }
-            collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic= true;
             collision.collider.gameObject.transform.DOMove(transform.parent.position + new Vector3(0.7f,4,0), 1).OnComplete(()=>{
                 Destroy(collision.collider.gameObject);
 

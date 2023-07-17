@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 24d08098162f0744bae3ca0ecb360f6f
+guid: 8bf9953955f59aa41b481c9ace0706e7
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: picker
-    second: {fileID: 2100000, guid: ab900c6ce765dd34e9949faec6c8bd52, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

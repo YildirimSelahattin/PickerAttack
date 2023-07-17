@@ -5,6 +5,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class UIManager : MonoBehaviour
 
     public TextMeshPro timerText;
     public SpriteRenderer fillObject;
+    public GameObject speedButtonArrow;
+    public GameObject sizeButtonArrow;
+    public GameObject timeButtonArrow;
     public TextMeshProUGUI sizeL;
     public TextMeshProUGUI sizePrice;
     public TextMeshProUGUI timeL;
@@ -33,10 +37,9 @@ public class UIManager : MonoBehaviour
         sizeL.text = PlayerPrefs.GetInt(GameDataManager.Instance.sizeLevelKey).ToString();
         timeL.text = PlayerPrefs.GetInt(GameDataManager.Instance.timeLevelKey).ToString();
         speedL.text = PlayerPrefs.GetInt(GameDataManager.Instance.speedLevelKey).ToString();
-
-        sizePrice.text = (GameDataManager.Instance.sizePrice*Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1)).ToString();
-        speedPrice.text =(GameDataManager.Instance.speedPrice*Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1)).ToString();
-        timePrice.text = (GameDataManager.Instance.timePrice*Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1)).ToString();
+        sizePrice.text = ((int)(GameDataManager.Instance.sizePrice*Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1))).ToString();
+        speedPrice.text =((int)(GameDataManager.Instance.speedPrice*Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1))).ToString();
+        timePrice.text = ((int)(GameDataManager.Instance.timePrice*Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1))).ToString();
         totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
     }
 
@@ -54,43 +57,97 @@ public class UIManager : MonoBehaviour
     public void sizeButtonClick()
 
     {
-        GameDataManager.Instance.SizeLevel++;
-        GameDataManager.Instance.SaveData();
+
+        float sizeAwardToAdd; ;
+        if (GameDataManager.Instance.SpeedLevel % 5 == 0)
+        {
+            sizeAwardToAdd = 2;
+        }
+        else
+        {
+            sizeAwardToAdd = 1;
+
+        }
+        GameManager.Instance.speed = GameManager.Instance.speed * sizeAwardToAdd / 10f;
+        GameDataManager.Instance.SpeedLevel++;
+        if (GameDataManager.Instance.SpeedLevel % 5 == 0)
+        {
+            sizeAwardToAdd = 2;
+        }
+        else
+        {
+            sizeAwardToAdd = 1;
+
+        }
         sizeL.text = GameDataManager.Instance.SizeLevel.ToString();
         GameManager.Instance.scale = GameManager.Instance.scale * Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1);
         GameDataManager.Instance.sizePrice = GameDataManager.Instance.sizePrice*Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1);
         GameManager.Instance.player.transform.DOScale(GameManager.Instance.scale, 1f);
         sizePrice.text = GameDataManager.Instance.sizePrice.ToString();
+        GameDataManager.Instance.SaveData();
+
     }
     public void speedButtonClick()
     {
+        float speedAwardToAdd;
+        if (GameDataManager.Instance.SpeedLevel % 5 == 0)
+        {
+            speedAwardToAdd = 2;
+        }
+        else
+        {
+            speedAwardToAdd = 1;
+
+        }
+        GameManager.Instance.speed = GameManager.Instance.speed * speedAwardToAdd / 10f;
         GameDataManager.Instance.SpeedLevel++;
-        GameDataManager.Instance.SaveData();
+        if (GameDataManager.Instance.SpeedLevel % 5 == 0)
+        {
+            speedAwardToAdd = 2;
+        }
+        else
+        {
+            speedAwardToAdd = 1;
 
+        }
         speedL.text = GameDataManager.Instance.SpeedLevel.ToString();
-
-        GameManager.Instance.speed = GameManager.Instance.speed * Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1);
-        GameDataManager.Instance.speedPrice = GameDataManager.Instance.speedPrice*Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1);
+        GameDataManager.Instance.speedPrice = (int)(GameDataManager.Instance.speedPrice*Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1));
         speedPrice.text = GameDataManager.Instance.speedPrice.ToString();
 
+        GameDataManager.Instance.SaveData();
     }
     public void timeButtonClick()
-
     {
-        Debug.Log("basti");
+        int timeAwardToAdd;
+        if (GameDataManager.Instance.TimeLevel % 5 == 0)
+        {
+            timeAwardToAdd = 2;
+        }
+        else
+        {
+            timeAwardToAdd = 1;
+
+        }
         GameDataManager.Instance.TimeLevel++;
-        GameDataManager.Instance.SaveData();
 
-        timeL.text = GameDataManager.Instance.TimeLevel.ToString();
-
-        GameManager.Instance.timer = GameManager.Instance.timer * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1);
-        GameDataManager.Instance.timePrice = GameDataManager.Instance.timePrice*Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1);
-
+        GameManager.Instance.timer +=timeAwardToAdd;
         GameManager.Instance.maxTimer = GameManager.Instance.timer;
+        GameDataManager.Instance.timePrice = (int)(GameDataManager.Instance.timePrice*Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1));
+
         timerText.text = GameManager.Instance.timer.ToString();
         timePrice.text = GameDataManager.Instance.timePrice.ToString();
+        timeL.text = GameDataManager.Instance.TimeLevel.ToString();
 
+        if (GameDataManager.Instance.TimeLevel % 5 == 0)
+        {
+            timeAwardToAdd = 2;
+        }
+        else
+        {
+            timeAwardToAdd = 1;
 
+        }
+        GameDataManager.Instance.SaveData();
     }
     public void StartGame(){
 
@@ -104,5 +161,10 @@ public class UIManager : MonoBehaviour
     public void sceneChange()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void ControlButtonInteractable()
+    {
+
     }
 }
