@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    public static ButtonManager Instance;
     public Image soldierImage;
     public TextMeshProUGUI countText;
     private int _count;
@@ -18,16 +18,25 @@ public class ButtonManager : MonoBehaviour
     public bool buttonPressed;
     public float rate;
     public int instantiatedNumber;
-    public List<List<GameObject>>soldier5Grouped = new List<List<GameObject>>();
+    public List<List<GameObject>> soldier5Grouped = new List<List<GameObject>>();
     public List<GameObject> prefabList;
     public int count
     {
-        get {
-           return _count;
-         }
+        get
+        {
+            return _count;
+        }
         set
-        { _count = value; 
-           countText.text = _count.ToString();
+        {
+            _count = value;
+            countText.text = _count.ToString();
+        }
+    }
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
         }
     }
     void Start()
@@ -68,7 +77,8 @@ public class ButtonManager : MonoBehaviour
     }
     public void InstantiateInLoop()
     {
-        GameObject temp= Instantiate(prefabList[0],GridSpawner.Instance.gridList[GridSpawner.Instance.GiveEmptyGridByRow()].transform);
+        GameObject temp = Instantiate(prefabList[0], GridSpawner.Instance.gridList[GridSpawner.Instance.GiveEmptyGridByRow()].transform);
+        GridSpawner.Instance.EnemyList.Add(temp);
         soldier5Grouped[0].Add(temp);
         if (soldier5Grouped[0].Count == 5)
         {
@@ -76,17 +86,17 @@ public class ButtonManager : MonoBehaviour
         }
         count--;
         switch (soldierIndex)
-{
-    case 1:
-        GameManager.Instance.knightCount--;
-        break;
+        {
+            case 1:
+                GameManager.Instance.knightCount--;
+                break;
 
-    case 0:
-        GameManager.Instance.archerCount--;
-        break;
+            case 0:
+                GameManager.Instance.archerCount--;
+                break;
 
-  
-}
+
+        }
 
         if (count == 0)
         {
@@ -95,26 +105,28 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
-   
+
     public void MergeSoldiers(int levelIndex)
     {
-        for (int counter = 4; counter>=0;counter--)
+        for (int counter = 4; counter >= 0; counter--)
         {
-            MoveToFirst(counter,levelIndex);
+            MoveToFirst(counter, levelIndex);
         }
     }
 
-    public void MoveToFirst(int index,int levelIndex)
+    public void MoveToFirst(int index, int levelIndex)
     {
         GameObject movingObject = soldier5Grouped[levelIndex][index];
-        movingObject.transform.DOJump(soldier5Grouped[levelIndex][0].transform.position, 1, 1, rate/2).OnComplete(() =>
+        movingObject.transform.DOJump(soldier5Grouped[levelIndex][0].transform.position, 1, 1, rate / 2).OnComplete(() =>
         {
+            GridSpawner.Instance.EnemyList.Remove(movingObject);
             Destroy(movingObject);
             if (index == 0)
             {
-                
-                GameObject temp = Instantiate(prefabList[levelIndex+1], soldier5Grouped[levelIndex][0].transform.parent);
-                soldier5Grouped[levelIndex+1].Add(temp);
+
+                GameObject temp = Instantiate(prefabList[levelIndex + 1], soldier5Grouped[levelIndex][0].transform.parent);
+                GridSpawner.Instance.EnemyList.Add(temp);
+                soldier5Grouped[levelIndex + 1].Add(temp);
                 soldier5Grouped[levelIndex].Clear();
                 ControlUpperLevels();
             }

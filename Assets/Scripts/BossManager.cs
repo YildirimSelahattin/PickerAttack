@@ -19,7 +19,6 @@ public class BossManager : MonoBehaviour
     {
         if (Instance == null)
         {
-            animationController.SetTrigger("kick");
             Instance = this;
         }
     }
@@ -29,10 +28,36 @@ public class BossManager : MonoBehaviour
         OnDamageTaken += OnBulletTakenUI;
 
 
-        attack();
+
 
     }
+    public void Anim()
+    {
+        float distance;
+        bool isHit;
+        foreach (GameObject enemy in GridSpawner.Instance.EnemyList)
+        {
+            if (enemy!=null)
+            {
+                distance = Vector3.Distance(transform.position, enemy.transform.position);
+            
+            if (distance < 10)
+            {
+                enemy.GetComponent<Army>().TakeDamage(enemy.GetComponent<Army>().damageTake);
 
+                enemy.GetComponent<Army>().healthbar.fillAmount = enemy.GetComponent<Army>().health / 100f;
+                isHit = true;
+            }
+            if (!checkDist())
+            {
+                transform.DOMove(GridSpawner.Instance.EnemyList[0].transform.position, 1f);
+                break;
+            }
+            }
+            
+        }
+
+    }
     // Update is called once per frame
     void Update()
     {
@@ -41,20 +66,35 @@ public class BossManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    public void attack()
+
+
+    public bool checkDist()
     {
-       
+        foreach (GameObject enemy in GridSpawner.Instance.EnemyList)
+        {
+            if (Vector3.Distance(transform.position, enemy.transform.position) <= 10)
+            {
+                return true;
+            }
+        }
+        return false;
     }
+
     public void AttackEnd()
     {
+        Anim();
         Debug.Log("a");
+
         StartCoroutine(CallAnotherAttack());
     }
 
     public void JumpingAttackDamage()
     {
+        Anim();
+
         Debug.Log("b");
-        
+        StartCoroutine(CallAnotherAttack());
+
     }
     public IEnumerator CallAnotherAttack()
     {
@@ -71,14 +111,16 @@ public class BossManager : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        animationController.SetTrigger("kick");
+
         if (other.CompareTag("bullet"))
         {
-           
+
             OnDamageTaken?.Invoke((int)other.gameObject.GetComponent<BulletManager>().damage);
             Destroy(other.gameObject);
         }
 
-        
+
     }
 
     public void OnBulletTakenUI(float damage)

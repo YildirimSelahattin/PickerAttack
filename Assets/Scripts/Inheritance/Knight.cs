@@ -22,18 +22,15 @@ public class Knight : Army
     {
         if (other.CompareTag("boss"))
         {
-            transform.GetComponent<Animator>().SetTrigger("boss");
-            other.GetComponent<BossManager>().curhealth -= damage;
-            TakeDamage(damageTake);
+           // transform.GetComponent<Animator>().SetTrigger("boss");
+           // other.GetComponent<BossManager>().curhealth -= damage;
+            //TakeDamage(damageTake);
         }
 
     }
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == "BossScene")
-        {
-              
-        }
+       
 
     }
     private void Update() {

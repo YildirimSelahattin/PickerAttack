@@ -26,6 +26,8 @@ public class Army : MonoBehaviour
     protected virtual void Die()
     {
         // Base implementation for dying behavior
+        transform.GetComponent<Animator>().SetTrigger("death");
+        GridSpawner.Instance.EnemyList.Remove(this.gameObject);
         Destroy(gameObject);
     }
 
