@@ -19,7 +19,7 @@ public class SoldierHouseManager : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.transform.CompareTag("In"))
+        if (collision.collider.gameObject.transform.CompareTag("In")|| collision.collider.gameObject.transform.CompareTag("Pick"))
         {
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 0)
             {
@@ -44,7 +44,7 @@ public class SoldierHouseManager : MonoBehaviour
                 Destroy(collision.collider.gameObject);
 
             });
-
+            UIManager.Instance.ControlButtonInteractable();
         }
     }
 

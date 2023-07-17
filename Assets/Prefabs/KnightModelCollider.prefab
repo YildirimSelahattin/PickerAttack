@@ -46,7 +46,7 @@ Rigidbody:
   m_GameObject: {fileID: 5257138381498046321}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 3
+  m_Drag: 7
   m_AngularDrag: 7
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -103,6 +103,7 @@ MonoBehaviour:
   damage: 15
   damageTake: 20
   healthbar: {fileID: 0}
+  deathMat: {fileID: 0}
   speed: 3
 --- !u!136 &6163089202454669241
 CapsuleCollider:

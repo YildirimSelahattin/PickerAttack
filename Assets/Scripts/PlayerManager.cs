@@ -38,21 +38,18 @@ public class PlayerManager : MonoBehaviour
         {
             Instance = this;
         }
-        if (PlayerPrefs.HasKey(GameDataManager.Instance.speedLevelKey))
-        {
-        GameManager.Instance.speed = GameManager.Instance.speed * Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1);
-        }
-        if (PlayerPrefs.HasKey(GameDataManager.Instance.sizeLevelKey))
-        {
-          GameManager.Instance.scale = GameManager.Instance.scale * Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1);
 
-        }
-        if (PlayerPrefs.HasKey(GameDataManager.Instance.timeLevelKey))
-        {
-       GameManager.Instance.maxTimer = GameManager.Instance.maxTimer * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1);
-       GameManager.Instance.timer = GameManager.Instance.timer * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1);
-        
-        }
+        GameManager.Instance.speed = GameManager.Instance.speed * Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel - 1);
+
+
+        GameManager.Instance.scale = GameManager.Instance.scale * Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel - 1);
+
+
+
+        GameManager.Instance.maxTimer = GameManager.Instance.maxTimer * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel - 1);
+        GameManager.Instance.timer = GameManager.Instance.timer * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel - 1);
+
+
 
 
     }
@@ -82,13 +79,13 @@ public class PlayerManager : MonoBehaviour
             {
                 curTouchPosition = Input.GetTouch(0).position;
                 Vector3 dir = (curTouchPosition - touchStartPos).normalized;
-                Vector3 targetPos = new Vector3(transform.position.x+dir.x,0,transform.position.z + dir.y);
-                transform.DOLookAt(targetPos,0.1f);
+                Vector3 targetPos = new Vector3(transform.position.x + dir.x, 0, transform.position.z + dir.y);
+                transform.DOLookAt(targetPos, 0.1f);
                 forwardAmount = 1;
                 rigidBody.velocity = transform.forward * forwardAmount * GameManager.Instance.speed;
-                if (Vector3.Distance(curTouchPosition,touchStartPos)>75)
+                if (Vector3.Distance(curTouchPosition, touchStartPos) > 75)
                 {
-                    touchStartPos += dir * (Vector3.Distance(curTouchPosition, touchStartPos)-75);
+                    touchStartPos += dir * (Vector3.Distance(curTouchPosition, touchStartPos) - 75);
                 }
             }
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
@@ -99,15 +96,15 @@ public class PlayerManager : MonoBehaviour
                 prevYdif = 0;
                 prevXdif = 0;
             }
-           
+
         }
     }
 
     public void InstantiateCoinEffect(int coinAmount)
     {
-        coinEffectPrefab.GetComponent<TextMeshPro>().text = "+ "+ coinAmount.ToString();
-        GameObject text = Instantiate(coinEffectPrefab,coinEffectParent.transform);
-        GameDataManager.Instance.totalMoney+= coinAmount; 
+        coinEffectPrefab.GetComponent<TextMeshPro>().text = "+ " + coinAmount.ToString();
+        GameObject text = Instantiate(coinEffectPrefab, coinEffectParent.transform);
+        GameDataManager.Instance.totalMoney += coinAmount;
         UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
     }
 }

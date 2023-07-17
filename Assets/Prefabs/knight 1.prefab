@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5257138381498046321}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.7, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -118,6 +118,12 @@ MonoBehaviour:
   damageTake: 20
   healthbar: {fileID: 4100838724167412067}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
+  meshRenderer: {fileID: 7818203676396019702}
+  resolveMatSet:
+  - {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
+  - {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
+  - {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
+  - {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
   speed: 3
 --- !u!1001 &2592964486673402402
 PrefabInstance:
@@ -503,6 +509,12 @@ Transform:
 --- !u!4 &7203236634276444974 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 622ce10aa379c8d4dbbf5ab1c2d4a630,
+    type: 3}
+  m_PrefabInstance: {fileID: 8809785548576867558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &7818203676396019702 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1602564128540957456, guid: 622ce10aa379c8d4dbbf5ab1c2d4a630,
     type: 3}
   m_PrefabInstance: {fileID: 8809785548576867558}
   m_PrefabAsset: {fileID: 0}

@@ -17,6 +17,10 @@ public class UIManager : MonoBehaviour
     public GameObject speedButtonArrow;
     public GameObject sizeButtonArrow;
     public GameObject timeButtonArrow;
+
+    public Button speedButton;
+    public Button timeButton;
+    public Button sizeButton;
     public TextMeshProUGUI sizeL;
     public TextMeshProUGUI sizePrice;
     public TextMeshProUGUI timeL;
@@ -33,14 +37,17 @@ public class UIManager : MonoBehaviour
         }
         upgradeScreen.SetActive(true);
         playScreen.SetActive(false);
+        /*
         timerText.text = (GameManager.Instance.timer * PlayerPrefs.GetInt(GameDataManager.Instance.timeLevelKey)).ToString();
         sizeL.text = PlayerPrefs.GetInt(GameDataManager.Instance.sizeLevelKey).ToString();
         timeL.text = PlayerPrefs.GetInt(GameDataManager.Instance.timeLevelKey).ToString();
         speedL.text = PlayerPrefs.GetInt(GameDataManager.Instance.speedLevelKey).ToString();
+        */
         sizePrice.text = ((int)(GameDataManager.Instance.sizePrice*Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1))).ToString();
         speedPrice.text =((int)(GameDataManager.Instance.speedPrice*Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1))).ToString();
         timePrice.text = ((int)(GameDataManager.Instance.timePrice*Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1))).ToString();
         totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
+        ControlButtonInteractable();
     }
 
     private void Update()
@@ -85,7 +92,7 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.player.transform.DOScale(GameManager.Instance.scale, 1f);
         sizePrice.text = GameDataManager.Instance.sizePrice.ToString();
         GameDataManager.Instance.SaveData();
-
+        ControlButtonInteractable();
     }
     public void speedButtonClick()
     {
@@ -115,6 +122,7 @@ public class UIManager : MonoBehaviour
         speedPrice.text = GameDataManager.Instance.speedPrice.ToString();
 
         GameDataManager.Instance.SaveData();
+        ControlButtonInteractable();
     }
     public void timeButtonClick()
     {
@@ -148,6 +156,7 @@ public class UIManager : MonoBehaviour
 
         }
         GameDataManager.Instance.SaveData();
+        ControlButtonInteractable();
     }
     public void StartGame(){
 
@@ -165,6 +174,38 @@ public class UIManager : MonoBehaviour
 
     public void ControlButtonInteractable()
     {
-
+        //speed up button
+        if(GameDataManager.Instance.totalMoney >= (int)(GameDataManager.Instance.speedPrice * Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel - 1)))
+        {
+            speedButton.interactable = true;
+            speedButtonArrow.SetActive(true);
+        }
+        else
+        {
+            speedButton.interactable = false;
+            speedButtonArrow.SetActive(false);
+        }
+        //size up button
+        if (GameDataManager.Instance.totalMoney >= (int)(GameDataManager.Instance.sizePrice * Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel - 1)))
+        {
+            sizeButton.interactable = true;
+            sizeButtonArrow.SetActive(true);
+        }
+        else
+        {
+            sizeButton.interactable = false;
+            sizeButtonArrow.SetActive(false);
+        }
+        //time up button
+        if (GameDataManager.Instance.totalMoney >= (int)(GameDataManager.Instance.timePrice * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel - 1)))
+        {
+            timeButton.interactable = true;
+            timeButtonArrow.SetActive(true);
+        }
+        else
+        {
+            timeButton.interactable = false;
+            timeButtonArrow.SetActive(false);
+        }
     }
 }
