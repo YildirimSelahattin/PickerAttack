@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public int smasherCount;
     public int totalCount;
     public float maxTimer;
-
+    public bool gameStarted;
     public List<GameObject> levelPrefabs;
     public List<GameObject> BossPrefabs;
 
