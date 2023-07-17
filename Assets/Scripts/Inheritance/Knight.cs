@@ -22,25 +22,29 @@ public class Knight : Army
     {
         if (other.CompareTag("boss"))
         {
-           // transform.GetComponent<Animator>().SetTrigger("boss");
-           // other.GetComponent<BossManager>().curhealth -= damage;
+           
+
+            // transform.GetComponent<Animator>().SetTrigger("boss");
+            // other.GetComponent<BossManager>().curhealth -= damage;
             //TakeDamage(damageTake);
         }
 
     }
     private void Start()
     {
-       
+
 
     }
-    private void Update() {
+    private void Update()
+    {
         if (SceneManager.GetActiveScene().name == "BossScene")
         {
-            if (GameManager.Instance.knightCount <= 0 && played)
+            if (GameManager.Instance.totalCount <= 0 && played)
             {
                 transform.GetComponent<Animator>().SetTrigger("run");
                 transform.LookAt(BossManager.Instance.gameObject.transform);
-                transform.DOMove(BossManager.Instance.gameObject.transform.position, speed).SetSpeedBased(true).OnComplete(() =>
+                int way = UnityEngine.Random.Range(0,11);
+                transform.DOMove(BossManager.Instance.waypoints[way].transform.position, speed).SetSpeedBased(true).OnComplete(() =>
                 {
                     transform.GetComponent<Animator>().SetTrigger("boss");
                 });

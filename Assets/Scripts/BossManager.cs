@@ -9,6 +9,7 @@ using Unity.VisualScripting;
 public class BossManager : MonoBehaviour
 {
     public static BossManager Instance;
+    public List<GameObject> waypoints;
     public int curhealth = 500;
     public int maxhealth = 500;
     public Animator animationController;
@@ -50,7 +51,8 @@ public class BossManager : MonoBehaviour
             }
             if (!checkDist())
             {
-                transform.DOMove(GridSpawner.Instance.EnemyList[0].transform.position, 1f);
+                transform.DOMove(GridSpawner.Instance.EnemyList[0].transform.position, 3f);
+                animationController.SetTrigger("run");
                 break;
             }
             }
@@ -111,7 +113,17 @@ public class BossManager : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        animationController.SetTrigger("kick");
+       int temp = UnityEngine.Random.Range(0,2);
+      if (temp==0)
+      {
+            animationController.SetTrigger("punch");
+        
+      }
+      else
+      {
+            animationController.SetTrigger("kick");
+        
+      }
 
         if (other.CompareTag("bullet"))
         {
@@ -131,6 +143,7 @@ public class BossManager : MonoBehaviour
     public void OnBulletTakenLogic(float damage)
     {
         curhealth -= (int)damage;
+        
     }
     public void TakeDamage(int damage)
     {
