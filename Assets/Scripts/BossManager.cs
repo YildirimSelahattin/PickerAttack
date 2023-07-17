@@ -15,6 +15,7 @@ public class BossManager : MonoBehaviour
     public Animator animationController;
     public static event Action<float> OnDamageTaken;
     public Image healthbar;
+    bool dead;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -22,6 +23,7 @@ public class BossManager : MonoBehaviour
         {
             Instance = this;
         }
+        dead = false;
     }
     void Start()
     {
@@ -38,37 +40,48 @@ public class BossManager : MonoBehaviour
         bool isHit;
         foreach (GameObject enemy in GridSpawner.Instance.EnemyList)
         {
-            if (enemy!=null)
+            if (enemy != null)
             {
                 distance = Vector3.Distance(transform.position, enemy.transform.position);
-            
-            if (distance < 10)
-            {
-                enemy.GetComponent<Army>().TakeDamage(enemy.GetComponent<Army>().damageTake);
 
-                enemy.GetComponent<Army>().healthbar.fillAmount = enemy.GetComponent<Army>().health / 100f;
-                isHit = true;
+                if (distance < 10)
+                {
+                    enemy.GetComponent<Army>().TakeDamage(enemy.GetComponent<Army>().damageTake);
+
+                    enemy.GetComponent<Army>().healthbar.fillAmount = enemy.GetComponent<Army>().health / 100f;
+                    isHit = true;
+                }
+                if (!checkDist())
+                {
+                    transform.DOMove(GridSpawner.Instance.EnemyList[0].transform.position, 3f);
+                    animationController.SetTrigger("run");
+                    break;
+                }
             }
-            if (!checkDist())
-            {
-                transform.DOMove(GridSpawner.Instance.EnemyList[0].transform.position, 3f);
-                animationController.SetTrigger("run");
-                break;
-            }
-            }
-            
+
         }
 
     }
     // Update is called once per frame
     void Update()
     {
-        if (curhealth <= 0)
+        if (curhealth <= 0 && dead == false)
         {
-            Destroy(this.gameObject);
+            StartCoroutine(DestroyDelay());
+            //CanvasManager.Instance.winScreen.SetActive(true);
+            dead = true;
         }
     }
+    private IEnumerator DestroyDelay()
+    {
+        animationController.SetTrigger("death");
+        yield return new WaitForSeconds(2);
 
+        // Destroy the enemy
+        Destroy(gameObject, 0.1f);
+
+        yield return new WaitForSeconds(1);
+    }
 
     public bool checkDist()
     {
@@ -113,17 +126,17 @@ public class BossManager : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-       int temp = UnityEngine.Random.Range(0,2);
-      if (temp==0)
-      {
+        int temp = UnityEngine.Random.Range(0, 2);
+        if (temp == 0)
+        {
             animationController.SetTrigger("punch");
-        
-      }
-      else
-      {
+
+        }
+        else
+        {
             animationController.SetTrigger("kick");
-        
-      }
+
+        }
 
         if (other.CompareTag("bullet"))
         {
@@ -143,10 +156,19 @@ public class BossManager : MonoBehaviour
     public void OnBulletTakenLogic(float damage)
     {
         curhealth -= (int)damage;
-        
+
     }
     public void TakeDamage(int damage)
     {
         OnDamageTaken?.Invoke(damage);
     }
+    private void OnDestroy() {
+        
+        foreach (GameObject enemy in GridSpawner.Instance.EnemyList)
+        {
+            Destroy(enemy);
+        }
+       // CanvasManager.Instance.winScreen.SetActive(true);
+    }
+    
 }

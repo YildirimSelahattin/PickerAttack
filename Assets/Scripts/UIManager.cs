@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
 {
     public GameObject playScreen;
     public GameObject upgradeScreen;
+    
 
     public TextMeshPro timerText;
     public SpriteRenderer fillObject;

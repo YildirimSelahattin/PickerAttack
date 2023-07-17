@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class BulletManager : MonoBehaviour
 {
-    public float  damage;   
+    public float damage;
     // Start is called before the first frame update
     void Start()
     {
-    
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (BossManager.Instance == null)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
 
