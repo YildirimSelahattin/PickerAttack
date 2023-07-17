@@ -89,9 +89,11 @@ public class ButtonManager : MonoBehaviour
         {
             case 1:
                 GameManager.Instance.knightCount--;
+                GameManager.Instance.totalCount--;
                 break;
 
             case 0:
+                GameManager.Instance.totalCount--;
                 GameManager.Instance.archerCount--;
                 break;
 

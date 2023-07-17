@@ -41,7 +41,7 @@ public class Archer : Army
             temp.transform.LookAt(BossManager.Instance.transform);
             temp.transform.Rotate(180f, 0f, 0f);
             temp.GetComponent<BulletManager>().damage = bulDMG;
-            temp.transform.DOMove(BossManager.Instance.transform.position, 5f).SetSpeedBased(true);
+            temp.transform.DOMove(BossManager.Instance.transform.position, 10f).SetSpeedBased(true);
             canShoot = false;
             StartCoroutine(Shoot());
         }
@@ -68,7 +68,7 @@ public class Archer : Army
 
         if (SceneManager.GetActiveScene().name == "BossScene")
         {
-            if (GameManager.Instance.archerCount <= 0 && played)
+            if (GameManager.Instance.totalCount <= 0 && played)
             {
                 bulDMG = damage;
                 canShoot = false;

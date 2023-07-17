@@ -8,9 +8,12 @@ public class Army : MonoBehaviour
     public int damage;
     public int damageTake;
     public Image healthbar;
+    public Material deathMat;
+    
 
     private void Start() {
         healthbar.fillAmount = (float)health / 100f;
+        
     }
     public void TakeDamage(int damage)
     {
@@ -27,11 +30,21 @@ public class Army : MonoBehaviour
     {
         // Base implementation for dying behavior
         transform.GetComponent<Animator>().SetTrigger("death");
-        GridSpawner.Instance.EnemyList.Remove(this.gameObject);
-        Destroy(gameObject);
+        StartCoroutine(DestroyDelay());
     }
 
 
+    private IEnumerator DestroyDelay()
+    {
+        yield return new WaitForSeconds(2);
+        
+        // Destroy the enemy
+                Destroy(gameObject);
+
+        
+        // Remove the enemy from the list
+        GridSpawner.Instance.EnemyList.Remove(this.gameObject);
+    }
 }
 
 

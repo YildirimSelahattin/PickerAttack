@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int archerCount; 
     public int knightCount; 
     public int smasherCount;
+    public int totalCount;
     public float maxTimer;
 
     private void Awake()
