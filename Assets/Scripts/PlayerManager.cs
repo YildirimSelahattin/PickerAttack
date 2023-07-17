@@ -27,7 +27,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject coinEffectPrefab;
     public GameObject coinEffectParent;
     [Header("AgentProperties")]
-
+    public List<GameObject> soldierInPickerList;
     private Rigidbody rb;
 
     public static PlayerManager Instance;
@@ -83,7 +83,7 @@ public class PlayerManager : MonoBehaviour
                 transform.DOLookAt(targetPos, 0.1f);
                 forwardAmount = 1;
                 rigidBody.velocity = transform.forward * forwardAmount * GameManager.Instance.speed;
-                if (Vector3.Distance(curTouchPosition, touchStartPos) > 75)
+                if (Vector3.Distance(curTouchPosition, touchStartPos) > 60)
                 {
                     touchStartPos += dir * (Vector3.Distance(curTouchPosition, touchStartPos) - 75);
                 }
@@ -93,6 +93,7 @@ public class PlayerManager : MonoBehaviour
                 touchStartPos = Vector3.zero;
                 curTouchPosition = Vector3.zero;
                 rigidBody.velocity = Vector3.zero;
+                DecreaseDragLevel();
                 prevYdif = 0;
                 prevXdif = 0;
             }
@@ -106,5 +107,10 @@ public class PlayerManager : MonoBehaviour
         GameObject text = Instantiate(coinEffectPrefab, coinEffectParent.transform);
         GameDataManager.Instance.totalMoney += coinAmount;
         UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
+    }
+
+    public void DecreaseDragLevel()
+    {
+
     }
 }

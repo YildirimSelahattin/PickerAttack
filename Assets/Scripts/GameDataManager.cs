@@ -21,13 +21,13 @@ public class GameDataManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            LoadData();
         }
     }
     private void Start()
     {
-        LoadData();
+        
     }
-
     public void SaveData()
     {
         PlayerPrefs.SetInt(sizeLevelKey, SizeLevel);
@@ -36,37 +36,11 @@ public class GameDataManager : MonoBehaviour
         PlayerPrefs.SetInt(totalMoneyKey, totalMoney);
         PlayerPrefs.Save();
     }
-
     public void LoadData()
     {
-
         SizeLevel = PlayerPrefs.GetInt(sizeLevelKey, 1);
-
-
-        PlayerPrefs.SetInt(sizeLevelKey, 1);
-
-
-
         SpeedLevel = PlayerPrefs.GetInt(speedLevelKey, 1);
-
-
-        PlayerPrefs.SetInt(speedLevelKey, 1);
-
-
-
         TimeLevel = PlayerPrefs.GetInt(timeLevelKey, 1);
-
-
         totalMoney = PlayerPrefs.GetInt("TotalMoney", 30);
-    }
-
-    // Call this method to update the values and save the data
-    public void UpdateData(int newSizeLevel, int newSpeedLevel, int newTimeLevel)
-    {
-        SizeLevel = newSizeLevel;
-        SpeedLevel = newSpeedLevel;
-        TimeLevel = newTimeLevel;
-
-        SaveData();
     }
 }

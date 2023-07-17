@@ -21,6 +21,7 @@ public class SoldierHouseManager : MonoBehaviour
     {
         if (collision.collider.gameObject.transform.CompareTag("In")|| collision.collider.gameObject.transform.CompareTag("Pick"))
         {
+            collision.collider.gameObject.GetComponent<Collider>().enabled= false;
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 0)
             {
                 GameManager.Instance.knightCount++;
