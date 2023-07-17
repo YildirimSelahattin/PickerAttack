@@ -53,9 +53,13 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        GameManager.Instance.timer = GameManager.Instance.timer - Time.deltaTime;
+        
         timerText.text = ((int)GameManager.Instance.timer).ToString();
         fillObject.material.SetFloat("_Arc1", ((GameManager.Instance.maxTimer - GameManager.Instance.timer) / GameManager.Instance.maxTimer) * 360);
+        if (GameManager.Instance.gameStarted == true)
+        {
+            GameManager.Instance.timer = GameManager.Instance.timer - Time.deltaTime;
+        }
         if (GameManager.Instance.timer < 0)
         {
             SceneManager.LoadScene(1);
@@ -76,7 +80,7 @@ public class UIManager : MonoBehaviour
             sizeAwardToAdd = 1;
 
         }
-        GameManager.Instance.speed = GameManager.Instance.speed * sizeAwardToAdd / 10f;
+        GameManager.Instance.scale += GameManager.Instance.scale * sizeAwardToAdd / 10f;
         GameDataManager.Instance.SpeedLevel++;
         if (GameDataManager.Instance.SpeedLevel % 5 == 0)
         {
@@ -107,7 +111,7 @@ public class UIManager : MonoBehaviour
             speedAwardToAdd = 1;
 
         }
-        GameManager.Instance.speed = GameManager.Instance.speed * speedAwardToAdd / 10f;
+        GameManager.Instance.speed += GameManager.Instance.speed * speedAwardToAdd / 10f;
         GameDataManager.Instance.SpeedLevel++;
         if (GameDataManager.Instance.SpeedLevel % 5 == 0)
         {
@@ -163,6 +167,7 @@ public class UIManager : MonoBehaviour
 
         playScreen.SetActive(true);
         upgradeScreen.SetActive(false);
+        GameManager.Instance.gameStarted = true;
     }
     public void AddArcher()
     {

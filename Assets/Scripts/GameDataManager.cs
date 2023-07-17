@@ -41,6 +41,6 @@ public class GameDataManager : MonoBehaviour
         SizeLevel = PlayerPrefs.GetInt(sizeLevelKey, 1);
         SpeedLevel = PlayerPrefs.GetInt(speedLevelKey, 1);
         TimeLevel = PlayerPrefs.GetInt(timeLevelKey, 1);
-        totalMoney = PlayerPrefs.GetInt("TotalMoney", 30);
+        totalMoney = PlayerPrefs.GetInt("TotalMoney", 100);
     }
 }
