@@ -7,6 +7,8 @@ public class GameDataManager : MonoBehaviour
     public int SpeedLevel = 1;
     public int TimeLevel = 1;
 
+    public int currentLevel = 1;
+
     public float sizePrice = 50;
     public float speedPrice = 50;
     public float timePrice = 50;
@@ -15,6 +17,8 @@ public class GameDataManager : MonoBehaviour
     string speedLevelKey = "SpeedLevel";
     string timeLevelKey = "TimeLevel";
     string totalMoneyKey = "TotalMoney";
+    string CurrentLevelKey = "CurrentLevel";
+    
     public int totalMoney;
     private void Awake()
     {
@@ -26,7 +30,7 @@ public class GameDataManager : MonoBehaviour
     }
     private void Start()
     {
-        
+
     }
     public void SaveData()
     {
@@ -34,6 +38,8 @@ public class GameDataManager : MonoBehaviour
         PlayerPrefs.SetInt(speedLevelKey, SpeedLevel);
         PlayerPrefs.SetInt(timeLevelKey, TimeLevel);
         PlayerPrefs.SetInt(totalMoneyKey, totalMoney);
+        PlayerPrefs.SetInt(CurrentLevelKey, currentLevel);
+
         PlayerPrefs.Save();
     }
     public void LoadData()
@@ -41,6 +47,7 @@ public class GameDataManager : MonoBehaviour
         SizeLevel = PlayerPrefs.GetInt(sizeLevelKey, 1);
         SpeedLevel = PlayerPrefs.GetInt(speedLevelKey, 1);
         TimeLevel = PlayerPrefs.GetInt(timeLevelKey, 1);
-        totalMoney = PlayerPrefs.GetInt("TotalMoney", 30);
-    }
+        totalMoney = PlayerPrefs.GetInt(totalMoneyKey, 30);
+        currentLevel = PlayerPrefs.GetInt(CurrentLevelKey,1);
+        }
 }

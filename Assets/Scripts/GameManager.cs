@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     public int totalCount;
     public float maxTimer;
 
+    public List<GameObject> levelPrefabs;
+    public List<GameObject> BossPrefabs;
+
     private void Awake()
     {
         if (Instance == null)
