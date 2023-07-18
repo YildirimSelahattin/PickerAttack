@@ -79,6 +79,7 @@ public class BossManager : MonoBehaviour
         if (GameManager.Instance.totalCount == 0 && GridSpawner.Instance.EnemyList.Count == 0 &&dead == false)
         {
             animationController.SetLayerWeight(1, 1);
+            animationController.SetTrigger("death");
             
             transform.DOKill();
             

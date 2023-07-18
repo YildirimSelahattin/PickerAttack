@@ -6696,7 +6696,6 @@ MonoBehaviour:
   BossPrefabs:
   - {fileID: 3588056229375598342, guid: 37b3a1c2977261948ab44bc8916937c1, type: 3}
   - {fileID: 3588056229375598342, guid: 75acb0ce31800a84b9003adde5dbe7bb, type: 3}
-  gameStarted: 0
 --- !u!4 &2061397678
 Transform:
   m_ObjectHideFlags: 0
