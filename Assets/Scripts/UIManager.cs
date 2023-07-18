@@ -60,6 +60,10 @@ public class UIManager : MonoBehaviour
         {
             GameManager.Instance.timer = GameManager.Instance.timer - Time.deltaTime;
         }
+        if (GameManager.Instance.timer < 5)
+        {
+            fillObject.GetComponent<SpriteRenderer>().color = Color.red;
+        }
         if (GameManager.Instance.timer < 0)
         {
             SceneManager.LoadScene(1);
@@ -214,5 +218,7 @@ public class UIManager : MonoBehaviour
             timeButtonArrow.SetActive(false);
         }
     }
-    
+ 
+
+   
 }
