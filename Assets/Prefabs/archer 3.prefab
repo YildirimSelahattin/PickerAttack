@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 45
-  damage: 50
+  damage: 28
   healthbar: {fileID: 2827863618683149457}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
   soundEffect: {fileID: 8300000, guid: 9311df8d9cded604e87b29ada3b192eb, type: 3}

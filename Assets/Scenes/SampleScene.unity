@@ -358,7 +358,10 @@ MonoBehaviour:
   sizePrice: 50
   speedPrice: 50
   timePrice: 50
+  CurrentLevelKey: CurrentLevel
   totalMoney: 1000
+  collectSound: {fileID: 0}
+  bossJumpSound: {fileID: 0}
 --- !u!4 &65112881
 Transform:
   m_ObjectHideFlags: 0
@@ -5297,7 +5300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643359035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08248638, y: -0, z: -0.14750648}
+  m_LocalPosition: {x: 0.08248638, y: -0, z: 32.7}
   m_LocalScale: {x: 12.221054, y: 12.221054, z: 12.221054}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6584,9 +6587,6 @@ MonoBehaviour:
   levelPrefabs:
   - {fileID: 722437849841687466, guid: 7d14d5c05440b9a4a98549475f4a3059, type: 3}
   - {fileID: 2123972160550207544, guid: 5b3f299e4880f654e8289ddf033196d1, type: 3}
-  BossPrefabs:
-  - {fileID: 3588056229375598342, guid: 37b3a1c2977261948ab44bc8916937c1, type: 3}
-  - {fileID: 3588056229375598342, guid: 75acb0ce31800a84b9003adde5dbe7bb, type: 3}
 --- !u!4 &2061397678
 Transform:
   m_ObjectHideFlags: 0
