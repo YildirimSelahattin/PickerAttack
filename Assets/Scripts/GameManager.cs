@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public bool gameStarted;
     public List<GameObject> levelPrefabs;
     public List<GameObject> BossPrefabs;
+    public bool gameStarted;
 
     private void Awake()
     {
