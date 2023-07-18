@@ -1082,9 +1082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winScreen: {fileID: 514511694}
-  finishGame:
-    m_PersistentCalls:
-      m_Calls: []
+  playScreen: {fileID: 383162495}
 --- !u!4 &1787263724
 Transform:
   m_ObjectHideFlags: 0

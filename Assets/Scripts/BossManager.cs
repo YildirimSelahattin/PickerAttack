@@ -166,7 +166,7 @@ public class BossManager : MonoBehaviour
         
         foreach (GameObject enemy in GridSpawner.Instance.EnemyList)
         {
-            Destroy(enemy);
+            enemy.GetComponent<Animator>().SetTrigger("win");
         }
        // CanvasManager.Instance.winScreen.SetActive(true);
     }
