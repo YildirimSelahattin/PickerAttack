@@ -9,6 +9,7 @@ public class Army : MonoBehaviour
     
     public Image healthbar;
     public Material deathMat;
+    public AudioClip soundEffect;
 
     private void Start() {
         healthbar.fillAmount = (float)health / 100f;

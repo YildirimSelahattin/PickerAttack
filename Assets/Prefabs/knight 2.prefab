@@ -113,17 +113,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a93369b71a64a2648bf7c0fc017e1e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 125
-  damage: 15
-  damageTake: 20
+  health: 50
+  damage: 3
   healthbar: {fileID: 4100838724167412067}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
-  meshRenderer: {fileID: 7818203676396019702}
-  resolveMatSet:
-  - {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
-  - {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
-  - {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
-  - {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
+  soundEffect: {fileID: 8300000, guid: 59921abeff8892845b0bec62e476f190, type: 3}
   speed: 3
 --- !u!1001 &2592964486673402402
 PrefabInstance:
@@ -503,12 +497,6 @@ Transform:
 --- !u!4 &7203236634276444974 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 622ce10aa379c8d4dbbf5ab1c2d4a630,
-    type: 3}
-  m_PrefabInstance: {fileID: 8809785548576867558}
-  m_PrefabAsset: {fileID: 0}
---- !u!137 &7818203676396019702 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 1602564128540957456, guid: 622ce10aa379c8d4dbbf5ab1c2d4a630,
     type: 3}
   m_PrefabInstance: {fileID: 8809785548576867558}
   m_PrefabAsset: {fileID: 0}

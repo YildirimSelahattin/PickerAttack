@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
+using UnityEngine.SceneManagement;
 
 public class CanvasManager : MonoBehaviour
 {
@@ -10,8 +10,7 @@ public class CanvasManager : MonoBehaviour
     public GameObject winScreen;
     public GameObject playScreen;
     public GameObject loseScreen;
-    public UnityEvent gameWin;
-    public UnityEvent gameLose;
+
 
 
     bool done;
@@ -24,7 +23,7 @@ public class CanvasManager : MonoBehaviour
         {
             Instance = this;
         }
-       
+
     }
     void Start()
     {
@@ -42,10 +41,10 @@ public class CanvasManager : MonoBehaviour
             StartCoroutine(Delay());
 
         }
-        if (GameManager.Instance.totalCount ==0&&GridSpawner.Instance.EnemyList.Count == 0 && done)
+        if (GameManager.Instance.totalCount == 0 && GridSpawner.Instance.EnemyList.Count == 0 && done)
         {
             StartCoroutine(loseDelay());
-            
+
         }
     }
 
@@ -56,11 +55,19 @@ public class CanvasManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         winScreen.SetActive(true);
     }
-    IEnumerator loseDelay(){
-        
-         done = false;
+    IEnumerator loseDelay()
+    {
+
+        done = false;
         playScreen.SetActive(false);
         yield return new WaitForSeconds(2);
         loseScreen.SetActive(true);
+    }
+    public void buttonClick()
+    {
+        GameDataManager.Instance.currentLevel++;
+        GameDataManager.Instance.SaveData();
+        
+        SceneManager.LoadScene(0);
     }
 }

@@ -32,6 +32,12 @@ public class Archer : Army
     {
         if (canShoot)
         {
+            GameObject sound = new GameObject("sound");
+        sound.AddComponent<AudioSource>();
+        sound.GetComponent<AudioSource>().volume = 1;
+        sound.GetComponent<AudioSource>().PlayOneShot(soundEffect);
+        Destroy(sound, soundEffect.length);
+        
             GameObject temp = Instantiate(bullet, transform.parent);
             temp.transform.LookAt(BossManager.Instance.transform);
             temp.transform.Rotate(180f, 0f, 0f);
