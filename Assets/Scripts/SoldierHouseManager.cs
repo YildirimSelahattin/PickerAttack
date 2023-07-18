@@ -30,13 +30,13 @@ public class SoldierHouseManager : MonoBehaviour
             {
                 GameManager.Instance.knightCount++;
                 GameManager.Instance.totalCount++;
-                PlayerManager.Instance.InstantiateCoinEffect(10);
+                PlayerManager.Instance.InstantiateCoinEffect(100);
             }
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 1)
             {
                 GameManager.Instance.totalCount++;
                 GameManager.Instance.archerCount++;
-                PlayerManager.Instance.InstantiateCoinEffect(100);
+                PlayerManager.Instance.InstantiateCoinEffect(10);
             }
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 2)
             {
