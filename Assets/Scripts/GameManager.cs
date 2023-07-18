@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
     public float maxTimer;
     public bool gameStarted;
     public List<GameObject> levelPrefabs;
-    public List<GameObject> BossPrefabs;
     
 
 
