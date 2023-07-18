@@ -6,8 +6,8 @@ using UnityEngine;
 public class PipeManager : MonoBehaviour
 {
     int stageKeyIndex;
-    float maxKeyValue = 120;
-    float tweenDuration = 1f;
+    float maxKeyValue = 70;
+    float tweenDuration = 0.4f;
     public float[] tweeningKeyVariables = new float[8];
     public SkinnedMeshRenderer skinnedMesh;
     public bool isInAnimation;
@@ -26,18 +26,19 @@ public class PipeManager : MonoBehaviour
     public void Animate(int index)
     {
         Tween keyTween = DOTween.To(() => tweeningKeyVariables[index],
-        x => tweeningKeyVariables[index] = x, 100, tweenDuration*3).OnComplete(() =>
+        x => tweeningKeyVariables[index] = x, maxKeyValue, tweenDuration).OnComplete(() =>
         {
             Tween expandTween = DOTween.To(() => tweeningKeyVariables[index],
-            x => tweeningKeyVariables[index] = x, 0, tweenDuration/2);
+            x => tweeningKeyVariables[index] = x, 0, tweenDuration);
             expandTween.OnUpdate(() => UpdateCannonMesh(index, tweeningKeyVariables[index])).OnComplete(() =>
             {
-                if (index == 8)
+                if (index == 7)
                 {
                     isInAnimation = false;
                 }
             });
         });
+        keyTween.OnUpdate(() => UpdateCannonMesh(index, tweeningKeyVariables[index]));
     }
 
     public void UpdateCannonMesh(int index, float tweeningKeyVariable)
@@ -45,14 +46,22 @@ public class PipeManager : MonoBehaviour
         skinnedMesh.SetBlendShapeWeight(index, tweeningKeyVariable);
     }
 
-    public IEnumerator StartMoveAfterTime(int index,float timer)
+    public IEnumerator StartMoveAfterTime(int index,bool timer)
     {
-        yield return new WaitForSeconds(timer);
+        if (timer == false)
+        {
+            yield return new WaitForSeconds(1);
+        }
+        else
+        {
+            yield return new WaitForSeconds(0.2f);
+
+        }
         isInAnimation = true;
         Animate(index);
         if (index < 8)
         {
-            StartCoroutine(StartMoveAfterTime(index + 1, 0.07f));
+            StartCoroutine(StartMoveAfterTime(index + 1, true));
         }
 
     }
