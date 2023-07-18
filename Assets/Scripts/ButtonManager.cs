@@ -10,7 +10,7 @@ public class ButtonManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public static ButtonManager Instance;
-    public Image soldierImage;
+    public Image buttonImage;
     public TextMeshProUGUI countText;
     private int _count;
     public int soldierIndex;

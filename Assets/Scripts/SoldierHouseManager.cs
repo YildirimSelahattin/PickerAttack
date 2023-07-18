@@ -22,10 +22,10 @@ public class SoldierHouseManager : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.transform.CompareTag("In")|| collision.collider.gameObject.transform.CompareTag("Pick"))
+        if (collision.collider.gameObject.transform.CompareTag("In") || collision.collider.gameObject.transform.CompareTag("Pick"))
         {
-            
-            collision.collider.gameObject.GetComponent<Collider>().enabled= false;
+
+            collision.collider.gameObject.GetComponent<Collider>().enabled = false;
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 0)
             {
                 GameManager.Instance.knightCount++;
@@ -44,18 +44,17 @@ public class SoldierHouseManager : MonoBehaviour
                 GameManager.Instance.smasherCount++;
             }
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            if (pipeScript.isInAnimation == false)
+
+            StartCoroutine(pipeScript.StartMoveAfterTime(0, false));
+
+            collision.collider.gameObject.transform.DOMove(targetPoint.transform.position, 1).OnComplete(() =>
             {
-                StartCoroutine(pipeScript.StartMoveAfterTime(0, false));
-            }
-            collision.collider.gameObject.transform.DOMove(targetPoint.transform.position,1).OnComplete(() =>
-            {
-               
+
                 Destroy(collision.collider.gameObject);
 
             });
             UIManager.Instance.ControlButtonInteractable();
-            
+
         }
     }
 

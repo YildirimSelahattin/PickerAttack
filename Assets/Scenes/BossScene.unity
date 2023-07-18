@@ -271,8 +271,8 @@ Camera:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.5509434, g: 0.87590724, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -313,7 +313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   m_LocalRotation: {x: 0, y: 0.99939084, z: -0.03489949, w: 0}
-  m_LocalPosition: {x: -13.200075, y: 9.3, z: 64.4}
+  m_LocalPosition: {x: -13.200075, y: 5.91, z: 64.4}
   m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1219,7 +1219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711602185}
   m_LocalRotation: {x: 0, y: 0.99939084, z: -0.03489949, w: 0}
-  m_LocalPosition: {x: -13.200075, y: 9.3, z: 64.4}
+  m_LocalPosition: {x: -13.200075, y: 5.91, z: 64.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1512,8 +1512,8 @@ MonoBehaviour:
   buttonPrefab: {fileID: 3182997618228684907, guid: c579602dd123fc948853f42eaf86d805,
     type: 3}
   buttonPanelPrefab: {fileID: 74789869}
-  archerSprite: {fileID: 21300000, guid: 4ec230fb12759d244b8048d4b453b4c1, type: 3}
-  knightSprite: {fileID: 21300000, guid: e0eafd43ada994c43bbd1f74afac634a, type: 3}
+  archerSprite: {fileID: 21300000, guid: e8d52adce3727d64db361225ed60a72b, type: 3}
+  knightSprite: {fileID: 21300000, guid: 65cdeac403f7f184cb67bef999e9877e, type: 3}
   smasherSprite: {fileID: 21300000, guid: e9c4cb72a4d5c7c48a603566398a89bd, type: 3}
   cam: {fileID: 1711602186}
   archerPrefabs:

@@ -128,7 +128,7 @@ public class GridSpawner : MonoBehaviour
         if (GameManager.Instance.archerCount > 0)
         {
             GameObject buttonObject = Instantiate(buttonPrefab, buttonPanelPrefab.transform);
-            buttonObject.GetComponent<ButtonManager>().soldierImage.sprite = archerSprite;
+            buttonObject.GetComponent<ButtonManager>().buttonImage.sprite = archerSprite;
             buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.archerCount;
             buttonObject.GetComponent<ButtonManager>().soldierIndex = 0;
             buttonObject.GetComponent<ButtonManager>().prefabList = archerPrefabs;
@@ -136,7 +136,7 @@ public class GridSpawner : MonoBehaviour
         if (GameManager.Instance.knightCount > 0)
         {
             GameObject buttonObject = Instantiate(buttonPrefab, buttonPanelPrefab.transform);
-            buttonObject.GetComponent<ButtonManager>().soldierImage.sprite = knightSprite;
+            buttonObject.GetComponent<ButtonManager>().buttonImage.sprite = knightSprite;
             buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.knightCount;
             buttonObject.GetComponent<ButtonManager>().soldierIndex = 1;
             buttonObject.GetComponent<ButtonManager>().prefabList = knightPrefabs;
@@ -144,7 +144,7 @@ public class GridSpawner : MonoBehaviour
         if (GameManager.Instance.smasherCount > 0)
         {
             GameObject buttonObject = Instantiate(buttonPrefab, buttonPanelPrefab.transform);
-            buttonObject.GetComponent<ButtonManager>().soldierImage.sprite = smasherSprite;
+            buttonObject.GetComponent<ButtonManager>().buttonImage.sprite = smasherSprite;
             buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.smasherCount;
             buttonObject.GetComponent<ButtonManager>().soldierIndex = 2;
         }
