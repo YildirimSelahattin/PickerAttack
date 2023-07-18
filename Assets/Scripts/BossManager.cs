@@ -12,9 +12,11 @@ public class BossManager : MonoBehaviour
     public List<GameObject> waypoints;
     public int curhealth = 500;
     public int maxhealth = 500;
+    public int damage = 20;
     public Animator animationController;
     public static event Action<float> OnDamageTaken;
     public Image healthbar;
+    bool end;
     bool dead;
     // Start is called before the first frame update
     private void Awake()
@@ -24,11 +26,14 @@ public class BossManager : MonoBehaviour
             Instance = this;
         }
         dead = false;
+        
+
     }
     void Start()
     {
         OnDamageTaken += OnBulletTakenLogic;
         OnDamageTaken += OnBulletTakenUI;
+        animationController.SetLayerWeight(1, 0);
 
 
 
@@ -46,7 +51,7 @@ public class BossManager : MonoBehaviour
 
                 if (distance < 10)
                 {
-                    enemy.GetComponent<Army>().TakeDamage(enemy.GetComponent<Army>().damageTake);
+                    enemy.GetComponent<Army>().TakeDamage(damage);
 
                     enemy.GetComponent<Army>().healthbar.fillAmount = enemy.GetComponent<Army>().health / 100f;
                     isHit = true;
@@ -70,6 +75,15 @@ public class BossManager : MonoBehaviour
             StartCoroutine(DestroyDelay());
             //CanvasManager.Instance.winScreen.SetActive(true);
             dead = true;
+        }
+        if (GameManager.Instance.totalCount == 0 && GridSpawner.Instance.EnemyList.Count == 0 &&dead == false)
+        {
+            animationController.SetLayerWeight(1, 1);
+            animationController.SetTrigger("death");
+            
+            transform.DOKill();
+            
+
         }
     }
     private IEnumerator DestroyDelay()
@@ -106,7 +120,7 @@ public class BossManager : MonoBehaviour
     public void JumpingAttackDamage()
     {
         Anim();
-
+        transform.GetChild(0).GetComponent<ParticleSystem>().Play();
         Debug.Log("b");
         StartCoroutine(CallAnotherAttack());
 
@@ -162,13 +176,16 @@ public class BossManager : MonoBehaviour
     {
         OnDamageTaken?.Invoke(damage);
     }
-    private void OnDestroy() {
-        
+    private void OnDestroy()
+    {
+
         foreach (GameObject enemy in GridSpawner.Instance.EnemyList)
         {
             enemy.GetComponent<Animator>().SetTrigger("win");
         }
-       // CanvasManager.Instance.winScreen.SetActive(true);
+        
+
+        // CanvasManager.Instance.winScreen.SetActive(true);
     }
-    
+
 }

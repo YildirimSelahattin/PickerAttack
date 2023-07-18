@@ -53,10 +53,7 @@ public class Archer : Army
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("boss"))
-        {
-            TakeDamage(damageTake);
-        }
+     
     }
     private void Update()
     {
