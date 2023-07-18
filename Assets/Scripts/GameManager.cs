@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> levelPrefabs;
     public List<GameObject> BossPrefabs;
-    public bool gameStarted;
 
     private void Awake()
     {

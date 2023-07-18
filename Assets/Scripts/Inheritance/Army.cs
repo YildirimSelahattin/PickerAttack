@@ -6,7 +6,7 @@ public class Army : MonoBehaviour
 {
     public int health;
     public int damage;
-    public int damageTake;
+    
     public Image healthbar;
     public Material deathMat;
     public SkinnedMeshRenderer meshRenderer;

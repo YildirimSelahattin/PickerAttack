@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 4339268114514637994}
   - component: {fileID: -4340220326375196695}
   m_Layer: 0
-  m_Name: archer1
+  m_Name: archer 1
   m_TagString: Pick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,9 +215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50d17448ee6ab44b8c588736433205f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  damage: 35
-  damageTake: 30
+  health: 80
+  damage: 20
   healthbar: {fileID: 2827863618683149457}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
   meshRenderer: {fileID: 372799937061406332}

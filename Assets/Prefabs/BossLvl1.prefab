@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 7809429054259650496}
   - component: {fileID: 4241035110153856486}
   m_Layer: 0
-  m_Name: Boss
+  m_Name: BossLvl1
   m_TagString: boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1123,6 +1123,7 @@ MonoBehaviour:
   - {fileID: 4932921744087279292}
   curhealth: 500
   maxhealth: 500
+  damage: 24
   animationController: {fileID: 7809429054259650502}
   healthbar: {fileID: 7021230157872697644}
 --- !u!54 &4241035110153856486

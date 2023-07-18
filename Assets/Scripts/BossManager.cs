@@ -12,6 +12,7 @@ public class BossManager : MonoBehaviour
     public List<GameObject> waypoints;
     public int curhealth = 500;
     public int maxhealth = 500;
+    public int damage=20;
     public Animator animationController;
     public static event Action<float> OnDamageTaken;
     public Image healthbar;
@@ -46,7 +47,7 @@ public class BossManager : MonoBehaviour
 
                 if (distance < 10)
                 {
-                    enemy.GetComponent<Army>().TakeDamage(enemy.GetComponent<Army>().damageTake);
+                    enemy.GetComponent<Army>().TakeDamage(damage);
 
                     enemy.GetComponent<Army>().healthbar.fillAmount = enemy.GetComponent<Army>().health / 100f;
                     isHit = true;

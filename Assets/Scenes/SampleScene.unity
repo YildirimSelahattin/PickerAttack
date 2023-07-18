@@ -1648,6 +1648,7 @@ GameObject:
   - component: {fileID: 652661058}
   - component: {fileID: 652661057}
   - component: {fileID: 652661056}
+  - component: {fileID: 652661060}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -1749,6 +1750,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652661054}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!138 &652661060
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652661054}
+  m_ConnectedBody: {fileID: 1423660683}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &655219041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,6 +1809,7 @@ GameObject:
   - component: {fileID: 663682294}
   - component: {fileID: 663682292}
   - component: {fileID: 663682291}
+  - component: {fileID: 663682296}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -1894,6 +1911,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663682289}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!138 &663682296
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663682289}
+  m_ConnectedBody: {fileID: 1423660683}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 1
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &663917902
 GameObject:
   m_ObjectHideFlags: 0
@@ -4960,6 +4992,7 @@ GameObject:
   - component: {fileID: 1816480078}
   - component: {fileID: 1816480076}
   - component: {fileID: 1816480075}
+  - component: {fileID: 1816480080}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -5061,6 +5094,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816480073}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!138 &1816480080
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816480073}
+  m_ConnectedBody: {fileID: 1423660683}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &1881071117
 GameObject:
   m_ObjectHideFlags: 0
@@ -5441,6 +5489,7 @@ MonoBehaviour:
   - {fileID: 722437849841687466, guid: 7d14d5c05440b9a4a98549475f4a3059, type: 3}
   BossPrefabs:
   - {fileID: 3588056229375598342, guid: 37b3a1c2977261948ab44bc8916937c1, type: 3}
+  gameStarted: 0
 --- !u!4 &2061397678
 Transform:
   m_ObjectHideFlags: 0
