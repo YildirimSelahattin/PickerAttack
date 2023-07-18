@@ -5439,8 +5439,10 @@ MonoBehaviour:
   maxTimer: 20
   levelPrefabs:
   - {fileID: 722437849841687466, guid: 7d14d5c05440b9a4a98549475f4a3059, type: 3}
+  - {fileID: 2123972160550207544, guid: 5b3f299e4880f654e8289ddf033196d1, type: 3}
   BossPrefabs:
   - {fileID: 3588056229375598342, guid: 37b3a1c2977261948ab44bc8916937c1, type: 3}
+  - {fileID: 3588056229375598342, guid: 75acb0ce31800a84b9003adde5dbe7bb, type: 3}
   gameStarted: 0
 --- !u!4 &2061397678
 Transform:

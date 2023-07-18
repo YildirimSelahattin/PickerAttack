@@ -9,8 +9,6 @@ public class Army : MonoBehaviour
     
     public Image healthbar;
     public Material deathMat;
-    public SkinnedMeshRenderer meshRenderer;
-    public Material[] resolveMatSet = new Material[4];
 
     private void Start() {
         healthbar.fillAmount = (float)health / 100f;
@@ -31,7 +29,7 @@ public class Army : MonoBehaviour
     {
         // Base implementation for dying behavior
         transform.GetComponent<Animator>().SetTrigger("death");
-        meshRenderer.materials = resolveMatSet;
+       
         StartCoroutine(DestroyDelay());
     }
 

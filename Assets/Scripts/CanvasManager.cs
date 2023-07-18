@@ -9,6 +9,10 @@ public class CanvasManager : MonoBehaviour
     public static CanvasManager Instance;
     public GameObject winScreen;
     public GameObject playScreen;
+    public GameObject loseScreen;
+    public UnityEvent gameWin;
+    public UnityEvent gameLose;
+
 
     bool done;
 
@@ -20,7 +24,7 @@ public class CanvasManager : MonoBehaviour
         {
             Instance = this;
         }
-        winScreen.SetActive(false);
+       
     }
     void Start()
     {
@@ -38,6 +42,11 @@ public class CanvasManager : MonoBehaviour
             StartCoroutine(Delay());
 
         }
+        if (GameManager.Instance.totalCount ==0&&GridSpawner.Instance.EnemyList.Count == 0 && done)
+        {
+            StartCoroutine(loseDelay());
+            
+        }
     }
 
     IEnumerator Delay()
@@ -46,5 +55,12 @@ public class CanvasManager : MonoBehaviour
         playScreen.SetActive(false);
         yield return new WaitForSeconds(2);
         winScreen.SetActive(true);
+    }
+    IEnumerator loseDelay(){
+        
+         done = false;
+        playScreen.SetActive(false);
+        yield return new WaitForSeconds(2);
+        loseScreen.SetActive(true);
     }
 }
