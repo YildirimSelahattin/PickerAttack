@@ -215,9 +215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50d17448ee6ab44b8c588736433205f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  damage: 35
-  damageTake: 30
+  health: 90
+  damage: 30
   healthbar: {fileID: 2827863618683149457}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
   meshRenderer: {fileID: 372799937061406332}
