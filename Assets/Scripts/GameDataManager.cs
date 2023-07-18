@@ -17,15 +17,18 @@ public class GameDataManager : MonoBehaviour
     string speedLevelKey = "SpeedLevel";
     string timeLevelKey = "TimeLevel";
     string totalMoneyKey = "TotalMoney";
-    string CurrentLevelKey = "CurrentLevel";
+    public string CurrentLevelKey = "CurrentLevel";
     
     public int totalMoney;
+    public AudioClip collectSound;
+    
+    public AudioClip bossJumpSound;
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-           // LoadData();
+           LoadData();
         }
     }
     private void Start()
@@ -41,6 +44,7 @@ public class GameDataManager : MonoBehaviour
         PlayerPrefs.SetInt(CurrentLevelKey, currentLevel);
 
         PlayerPrefs.Save();
+        LoadData();
     }
     public void LoadData()
     {

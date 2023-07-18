@@ -3,7 +3,12 @@ guid: a50d17448ee6ab44b8c588736433205f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - healthbar: {instanceID: 0}
+  - deathMat: {instanceID: 0}
+  - soundEffect: {fileID: 8300000, guid: 9311df8d9cded604e87b29ada3b192eb, type: 3}
+  - bullet: {instanceID: 0}
+  - animator: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

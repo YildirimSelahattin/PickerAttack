@@ -20,14 +20,7 @@ public class Knight : Army
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("boss"))
-        {
-           
-
-            // transform.GetComponent<Animator>().SetTrigger("boss");
-            // other.GetComponent<BossManager>().curhealth -= damage;
-            //TakeDamage(damageTake);
-        }
+        
 
     }
     private void Start()
@@ -56,6 +49,11 @@ public class Knight : Army
     }
     public void DealDamage()
     {
+        GameObject sound = new GameObject("sound");
+        sound.AddComponent<AudioSource>();
+        sound.GetComponent<AudioSource>().volume = 1;
+        sound.GetComponent<AudioSource>().PlayOneShot(soundEffect);
+        Destroy(sound, soundEffect.length);
         BossManager.Instance.TakeDamage(damage);
     }
 }
