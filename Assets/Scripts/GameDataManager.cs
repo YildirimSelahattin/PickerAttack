@@ -1,3 +1,4 @@
+using System.Drawing;
 using UnityEngine;
 
 public class GameDataManager : MonoBehaviour
@@ -13,22 +14,29 @@ public class GameDataManager : MonoBehaviour
     public float speedPrice = 50;
     public float timePrice = 50;
 
+    public float speed;
+    public Vector3 size = new Vector3(1, 1, 1);
+    public float maxTimer;
+
     string sizeLevelKey = "SizeLevel";
     string speedLevelKey = "SpeedLevel";
+    string sizeKey = "Size";
+    string timerKey = "Timer";
+    string speedKey = "Speed";
     string timeLevelKey = "TimeLevel";
     string totalMoneyKey = "TotalMoney";
     public string CurrentLevelKey = "CurrentLevel";
-    
+
     public int totalMoney;
     public AudioClip collectSound;
-    
+
     public AudioClip bossJumpSound;
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-           LoadData();
+            LoadData();
         }
     }
     private void Start()
@@ -43,6 +51,10 @@ public class GameDataManager : MonoBehaviour
         PlayerPrefs.SetInt(totalMoneyKey, totalMoney);
         PlayerPrefs.SetInt(CurrentLevelKey, currentLevel);
 
+        PlayerPrefs.SetFloat(timerKey, maxTimer);
+        PlayerPrefs.SetFloat(speedKey, speed);
+        PlayerPrefs.SetFloat(sizeKey, size.y);
+
         PlayerPrefs.Save();
         LoadData();
     }
@@ -52,6 +64,11 @@ public class GameDataManager : MonoBehaviour
         SpeedLevel = PlayerPrefs.GetInt(speedLevelKey, 1);
         TimeLevel = PlayerPrefs.GetInt(timeLevelKey, 1);
         totalMoney = PlayerPrefs.GetInt(totalMoneyKey, 30);
-        currentLevel = PlayerPrefs.GetInt(CurrentLevelKey,1);
-        }
+        currentLevel = PlayerPrefs.GetInt(CurrentLevelKey, 1);
+        
+        maxTimer = PlayerPrefs.GetFloat(timerKey, 30);
+        speed = PlayerPrefs.GetFloat(speedKey, 3);
+        size = PlayerPrefs.GetFloat(sizeKey, 1)*Vector3.one;
+
+    }
 }

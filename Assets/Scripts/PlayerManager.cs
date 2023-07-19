@@ -37,21 +37,8 @@ public class PlayerManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            transform.DOScale(GameDataManager.Instance.size,0.5f);
         }
-
-        GameManager.Instance.speed = GameManager.Instance.speed * Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel - 1);
-
-
-        GameManager.Instance.scale = GameManager.Instance.scale * Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel - 1);
-
-
-
-        GameManager.Instance.maxTimer = GameManager.Instance.maxTimer * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel - 1);
-        GameManager.Instance.timer = GameManager.Instance.timer * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel - 1);
-
-
-
-
     }
 
     void Update()
@@ -81,7 +68,7 @@ public class PlayerManager : MonoBehaviour
                 Vector3 targetPos = new Vector3(transform.position.x + dir.x, 0, transform.position.z + dir.y);
                 transform.DOLookAt(targetPos, 0.1f);
                 forwardAmount = 1;
-                rigidBody.velocity = transform.forward * forwardAmount * GameManager.Instance.speed;
+                rigidBody.velocity = transform.forward * forwardAmount * GameDataManager.Instance.speed;
                 if (Vector3.Distance(curTouchPosition, touchStartPos) > 60)
                 {
                     touchStartPos += dir * (Vector3.Distance(curTouchPosition, touchStartPos) - 75);
