@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class Cannon : Army
 {
-    public int firerate;
+    public int fireDelay;
     public int bulDMG;
 
     public GameObject bullet;
@@ -20,8 +20,7 @@ public class Cannon : Army
     protected override void Die()
     {
         Debug.Log("cannon died");
-        // Additional behavior specific to MobA when it dies
-        // For example, play a specific death animation or drop unique loot
+        
         base.Die(); // Call the base implementation as well
     }
     private void OnTriggerEnter(Collider other)
@@ -63,11 +62,17 @@ public class Cannon : Army
                 {
                     isInShootAnimation = false;
                     Shoot();
-                    StartCoroutine(StartMoveAfterTime(0));
+                    StartCoroutine(fireRateTime());
 
                 }
             });
         });
+    }
+    public IEnumerator fireRateTime()
+    {
+        yield return new WaitForSeconds(fireDelay);
+        StartCoroutine(StartMoveAfterTime(0));
+
     }
 
     public void UpdateCannonMesh(int index, float tweeningKeyVariable)

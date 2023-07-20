@@ -17,8 +17,7 @@ public class Archer : Army
     protected override void Die()
     {
         Debug.Log("archer died");
-        // Additional behavior specific to MobB when it dies
-        // For example, spawn additional enemies or trigger an event
+        
         base.Die(); // Call the base implementation as well
     }
 
