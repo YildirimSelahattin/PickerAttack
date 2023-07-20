@@ -54,7 +54,7 @@ public class BossManager : MonoBehaviour
                 {
                     enemy.GetComponent<Army>().TakeDamage(damage);
 
-                    enemy.GetComponent<Army>().healthbar.fillAmount = enemy.GetComponent<Army>().health / 100f;
+                    
                     isHit = true;
                 }
                 if (!checkDist())
