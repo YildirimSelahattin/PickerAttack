@@ -10,6 +10,7 @@ public class BossManager : MonoBehaviour
 {
     public static BossManager Instance;
     public List<GameObject> waypoints;
+    public List<GameObject> arrowPoints;
     public int curhealth = 500;
     public int maxhealth = 500;
     public int damage = 20;

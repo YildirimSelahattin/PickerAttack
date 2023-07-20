@@ -16,7 +16,8 @@ public class ForceBack : MonoBehaviour
     {
         if (other.collider.CompareTag("In"))
         {
-            other.collider.gameObject.GetComponent<Rigidbody>().AddForce(transform.right * forceAmount * GameDataManager.Instance.speed / 2f) ;
+            //other.collider.gameObject.GetComponent<Rigidbody>().AddForce(transform.right * forceAmount * GameDataManager.Instance.speed / 2f) ;
+            other.collider.gameObject.transform.position += -0.1f * transform.right;
         }
         
     }

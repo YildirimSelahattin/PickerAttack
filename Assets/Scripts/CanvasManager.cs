@@ -65,7 +65,6 @@ public class CanvasManager : MonoBehaviour
     }
     public void buttonClick()
     {
-        GameDataManager.Instance.currentLevel++;
         GameDataManager.Instance.SaveData();
         
         SceneManager.LoadScene(0);

@@ -53,26 +53,31 @@ public class PlayerManager : MonoBehaviour
         curTouchImage.transform.position = curTouchPosition;
         if (Input.touchCount > 0)
         {
-            float forwardAmount = 0f;
             Vector3 localRotationParent = transform.localEulerAngles;
             Vector3 localRotationBody = transform.localEulerAngles;
 
-            if (Input.GetTouch(0).phase == TouchPhase.Began)                // This is actions when finger/cursor hit screen
+            if (Input.GetTouch(0).phase == TouchPhase.Began)     // This is actions when finger/cursor hit screen
             {
                 touchStartPos = Input.GetTouch(0).position;
             }
-            if (Input.GetTouch(0).phase == TouchPhase.Moved)
+            if (Input.GetTouch(0).phase == TouchPhase.Moved|| Input.GetTouch(0).phase == TouchPhase.Stationary)
             {
                 curTouchPosition = Input.GetTouch(0).position;
                 Vector3 dir = (curTouchPosition - touchStartPos).normalized;
-                Vector3 targetPos = new Vector3(transform.position.x + dir.x, 0, transform.position.z + dir.y);
-                transform.DOLookAt(targetPos, 0.1f);
-                forwardAmount = 1;
-                rigidBody.velocity = transform.forward * forwardAmount * GameDataManager.Instance.speed;
+
                 if (Vector3.Distance(curTouchPosition, touchStartPos) > 60)
                 {
-                    touchStartPos += dir * (Vector3.Distance(curTouchPosition, touchStartPos) - 75);
+                    touchStartPos += dir * (Vector3.Distance(curTouchPosition, touchStartPos) - 60);
+                    dir = (curTouchPosition - touchStartPos).normalized;
                 }
+                Vector3 targetPos = new Vector3(transform.position.x + dir.x, 0, transform.position.z + dir.y);
+                float angle = Vector3.Angle(dir, transform.forward);
+                if (angle > 10)
+                {
+                    transform.LookAt(targetPos);
+                }
+                rigidBody.velocity = transform.forward  * GameDataManager.Instance.speed;
+               
             }
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {

@@ -30,7 +30,11 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI speedL;
     public TextMeshProUGUI speedPrice;
     public TextMeshProUGUI totalMoney;
-    public static UIManager Instance; 
+    public static UIManager Instance;
+    public GameObject playerGameObject;
+    public TextMeshPro fpsText;
+
+    public GameObject speedUpParticle;
     private void Start()
     {
         if(Instance == null)
@@ -56,7 +60,6 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        
 
         if (GameManager.Instance.gameStarted == true)
         {
@@ -75,9 +78,7 @@ public class UIManager : MonoBehaviour
     }
 
     public void sizeButtonClick()
-
     {
-
         float sizeAwardToAdd; ;
         if (GameDataManager.Instance.SpeedLevel % 5 == 0)
         {
@@ -103,9 +104,15 @@ public class UIManager : MonoBehaviour
         sizeL.text = "LV " + GameDataManager.Instance.SizeLevel.ToString();
         GameDataManager.Instance.sizePrice = (int)(GameDataManager.Instance.sizePrice*Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1));
         sizePrice.text = GameDataManager.Instance.sizePrice.ToString();
-        GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size, 0.5f);
-        GameDataManager.Instance.SaveData();
+        GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size*1.5f, 0.2f).OnComplete(() =>
+        {
+            GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size, 0.5f);
+
+        });
+
         ControlButtonInteractable();
+
+        GameDataManager.Instance.SaveData();
     }
     public void speedButtonClick()
     {
@@ -130,11 +137,12 @@ public class UIManager : MonoBehaviour
             speedAwardToAdd = 1;
 
         }
+        speedUpParticle.SetActive(true);
         speedL.text = "LV " + GameDataManager.Instance.SpeedLevel.ToString();
         GameDataManager.Instance.speedPrice = (int)(GameDataManager.Instance.speedPrice*Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1));
         speedPrice.text = GameDataManager.Instance.speedPrice.ToString();
-        GameDataManager.Instance.SaveData();
         ControlButtonInteractable();
+        GameDataManager.Instance.SaveData();
     }
     public void timeButtonClick()
     {
@@ -152,7 +160,7 @@ public class UIManager : MonoBehaviour
         GameDataManager.Instance.maxTimer += timeAwardToAdd;
 
         GameDataManager.Instance.timePrice = (int)(GameDataManager.Instance.timePrice*Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1));
-
+        timerText.gameObject.transform.parent.DOPunchScale(new Vector3(0.2f,0.2f,0.2f),0.5f,1);
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
         timePrice.text = GameDataManager.Instance.timePrice.ToString();
         timeL.text = "LV " + GameDataManager.Instance.TimeLevel.ToString();
@@ -165,8 +173,8 @@ public class UIManager : MonoBehaviour
             timeAwardToAdd = 1;
 
         }
-        GameDataManager.Instance.SaveData();
         ControlButtonInteractable();
+        GameDataManager.Instance.SaveData();
     }
     public void StartGame(){
 
@@ -174,6 +182,7 @@ public class UIManager : MonoBehaviour
         upgradeScreen.SetActive(false);
         GameManager.Instance.gameStarted = true;
         GameManager.Instance.timer = GameDataManager.Instance.maxTimer;
+        playerGameObject.GetComponent<PlayerManager>().enabled = true;
     }
     public void AddArcher()
     {

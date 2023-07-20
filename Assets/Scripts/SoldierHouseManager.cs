@@ -47,7 +47,7 @@ public class SoldierHouseManager : MonoBehaviour
 
             StartCoroutine(pipeScript.StartMoveAfterTime(0, false));
 
-            collision.collider.gameObject.transform.DOMove(targetPoint.transform.position, 1).OnComplete(() =>
+            collision.collider.gameObject.transform.DOJump(targetPoint.transform.position,5,1,1).OnComplete(() =>
             {
 
                 Destroy(collision.collider.gameObject);
