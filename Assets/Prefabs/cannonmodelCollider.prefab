@@ -97,9 +97,9 @@ GameObject:
   - component: {fileID: 1655840479910553448}
   - component: {fileID: 4093258667195723754}
   - component: {fileID: 1910317812463793238}
-  - component: {fileID: 5443586122253852488}
+  - component: {fileID: 7073272967848995840}
   m_Layer: 0
-  m_Name: cannon1
+  m_Name: cannonmodelCollider
   m_TagString: Pick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,7 +119,6 @@ Transform:
   m_Children:
   - {fileID: 4596098425773368137}
   - {fileID: 1952528834802270173}
-  - {fileID: 54527328833216534}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -153,7 +152,7 @@ CapsuleCollider:
   m_Height: 4.68
   m_Direction: 1
   m_Center: {x: 0, y: 2.52, z: 0.69}
---- !u!114 &5443586122253852488
+--- !u!114 &7073272967848995840
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,30 +161,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2330023426797932241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a8ff556efbae4842b796d3abef3bddb, type: 3}
+  m_Script: {fileID: 11500000, guid: ac0089ef983973b4ab9864a4f4ee4313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
-  maxHealth: 30
-  damage: 30
-  healthbar: {fileID: 0}
-  deathMat: {fileID: 0}
-  soundEffect: {fileID: 0}
-  firerate: 30
-  bulDMG: 30
-  bullet: {fileID: 5257138381498046321, guid: 0968a8230fa0395448e66ec0cdf8c00d, type: 3}
-  skinnedMeshCannon: {fileID: 8237039271164370096}
-  partToRotate: {fileID: 1655840479910553448}
-  firePoint: {fileID: 54527328833216534}
-  isInShootAnimation: 0
-  tweeningKeyVariables:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  index: 2
 --- !u!1 &3783955550447106547
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,34 +251,3 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00021720259, y: -0.008323839, z: 0.026583973}
     m_Extent: {x: 0.015523387, y: 0.022689246, z: 0.01978917}
   m_DirtyAABB: 0
---- !u!1 &7902214628890349456
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 54527328833216534}
-  m_Layer: 0
-  m_Name: firePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &54527328833216534
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7902214628890349456}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000000019273335, y: 3.55, z: 2.34}
-  m_LocalScale: {x: 1.881326, y: 1.881326, z: 1.881326}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1655840479910553448}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
