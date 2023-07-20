@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class Army : MonoBehaviour
 {
     public int health;
+    public int maxHealth;
     public int damage;
     
     public Image healthbar;
@@ -12,13 +13,14 @@ public class Army : MonoBehaviour
     public AudioClip soundEffect;
 
     private void Start() {
-        healthbar.fillAmount = (float)health / 100f;
+        healthbar.fillAmount = 1f;
+        maxHealth = health;
         
     }
     public void TakeDamage(int damage)
     {
         health -= damage;
-        healthbar.fillAmount = (float)health / 100f;
+        healthbar.fillAmount = (float) health / (float) maxHealth;
         if (health <= 0)
         {
             Die();
