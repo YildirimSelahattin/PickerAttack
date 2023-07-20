@@ -34,6 +34,7 @@ public class GridSpawner : MonoBehaviour
     public CinemachineVirtualCamera cam;
     public List<GameObject> archerPrefabs;
     public List<GameObject> knightPrefabs;
+    public List<GameObject> cannonPrefabs;
     public GameObject bossPrefab;
     public List<GameObject> EnemyList = new List<GameObject>();
     public List<GameObject> BossPrefabs;
@@ -142,18 +143,18 @@ public class GridSpawner : MonoBehaviour
             buttonObject.GetComponent<ButtonManager>().soldierIndex = 1;
             buttonObject.GetComponent<ButtonManager>().prefabList = knightPrefabs;
         }
-        if (GameManager.Instance.smasherCount > 0)
+        if (GameManager.Instance.cannonCount > 0)
         {
             GameObject buttonObject = Instantiate(buttonPrefab, buttonPanelPrefab.transform);
             buttonObject.GetComponent<ButtonManager>().buttonImage.sprite = smasherSprite;
-            buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.smasherCount;
+            buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.cannonCount;
             buttonObject.GetComponent<ButtonManager>().soldierIndex = 2;
         }
 
     }
     public void CalculateGridAmount()
     {
-        int maxGridNumber = (GameManager.Instance.archerCount / 5) + GameManager.Instance.archerCount % 5 + (GameManager.Instance.knightCount / 5) + 5 + (GameManager.Instance.smasherCount / 5) + 5;
+        int maxGridNumber = (GameManager.Instance.archerCount / 5) + GameManager.Instance.archerCount % 5 + (GameManager.Instance.knightCount / 5) + 5 + (GameManager.Instance.cannonCount / 5) + 5;
         gridWidth = 4;
         gridHeight = 4;
 

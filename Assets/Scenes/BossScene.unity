@@ -1760,6 +1760,10 @@ MonoBehaviour:
   - {fileID: 5257138381498046321, guid: 0968a8230fa0395448e66ec0cdf8c00d, type: 3}
   - {fileID: 5257138381498046321, guid: 525d6b752a3dd7945bf91d47d87d4630, type: 3}
   - {fileID: 5257138381498046321, guid: 671dc0e3b33ecfb46b41e6b26d0cd187, type: 3}
+  cannonPrefabs:
+  - {fileID: 2330023426797932241, guid: e3e403b5892ef9043844cece297e6eb8, type: 3}
+  - {fileID: 2330023426797932241, guid: c019da640addd8e4e8986037db863d53, type: 3}
+  - {fileID: 2330023426797932241, guid: d4c0448eb3669ff41bd849cec4284ba6, type: 3}
   bossPrefab: {fileID: 3588056229375598342, guid: 37b3a1c2977261948ab44bc8916937c1,
     type: 3}
   EnemyList: []

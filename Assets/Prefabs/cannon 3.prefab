@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 1910317812463793238}
   - component: {fileID: 7073272967848995840}
   m_Layer: 0
-  m_Name: cannon
+  m_Name: cannon 3
   m_TagString: Pick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

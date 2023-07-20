@@ -41,7 +41,8 @@ public class SoldierHouseManager : MonoBehaviour
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 2)
             {
                 GameManager.Instance.totalCount++;
-                GameManager.Instance.smasherCount++;
+                GameManager.Instance.cannonCount++;
+                PlayerManager.Instance.InstantiateCoinEffect(200);
             }
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
 
