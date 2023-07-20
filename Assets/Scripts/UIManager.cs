@@ -197,7 +197,6 @@ public class UIManager : MonoBehaviour
         upgradeScreen.SetActive(false);
         GameManager.Instance.gameStarted = true;
         GameManager.Instance.timer = GameDataManager.Instance.maxTimer;
-        playerGameObject.GetComponent<PlayerManager>().enabled = true;
     }
     public void AddArcher()
     {

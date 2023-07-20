@@ -43,7 +43,10 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        DetectButtonPress();
+        if (GameManager.Instance.gameStarted)
+        {
+            DetectButtonPress();
+        }
         counterObject.transform.position = transform.position;
     }
 

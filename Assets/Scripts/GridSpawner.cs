@@ -149,6 +149,7 @@ public class GridSpawner : MonoBehaviour
             buttonObject.GetComponent<ButtonManager>().buttonImage.sprite = smasherSprite;
             buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.cannonCount;
             buttonObject.GetComponent<ButtonManager>().soldierIndex = 2;
+            buttonObject.GetComponent<ButtonManager>().prefabList = cannonPrefabs;
         }
 
     }
