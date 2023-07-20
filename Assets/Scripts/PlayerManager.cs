@@ -71,7 +71,7 @@ public class PlayerManager : MonoBehaviour
                     dir = (curTouchPosition - touchStartPos).normalized;
                 }
                 float angle = Vector3.Angle(new Vector3(dir.x,0,dir.y), transform.forward);
-                if (angle > 5)
+                if (angle > 3)
                 {
                     Vector3 targetPos = new Vector3(transform.position.x + dir.x, 0, transform.position.z + dir.y);
                     transform.LookAt(targetPos);

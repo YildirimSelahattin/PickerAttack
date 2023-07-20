@@ -5,6 +5,8 @@ using Cinemachine;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
+using UnityEngine.Rendering.Universal.Internal;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -34,9 +36,9 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance;
     public GameObject playerGameObject;
     public TextMeshPro fpsText;
-
     public GameObject speedUpParticle;
     public CinemachineVirtualCamera cam;
+    public Camera mainCamera;
     private void Start()
     {
         if(Instance == null)
@@ -73,10 +75,12 @@ public class UIManager : MonoBehaviour
         }
         if (GameManager.Instance.timer < 5)
         {
-            fillObject.GetComponent<SpriteRenderer>().color = Color.red;
+            
+            ShineLoop();
         }
         if (GameManager.Instance.timer < 0)
         {
+            TimeUp();
             SceneManager.LoadScene(1);
         }
     }
@@ -241,6 +245,23 @@ public class UIManager : MonoBehaviour
         }
     }
  
+    public void ShineLoop()
+    {
+        fillObject.color= Color.red;
+        fillObject.GetComponent<SpriteRenderer>().DOFade(1, 0.2F).OnComplete(() =>
+        {
+            fillObject.GetComponent<SpriteRenderer>().DOFade(0.2f, 0.2f).OnComplete(() =>ShineLoop());
+        });
+    }
 
-   
+    public void TimeUp()
+    {
+        Destroy(cam.gameObject);
+        mainCamera.transform.DOMoveY(10, 1f).OnComplete(() =>
+        {
+            SceneManager.LoadScene(0);
+        });
+        
+    }
+
 }
