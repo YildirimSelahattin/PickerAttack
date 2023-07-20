@@ -70,10 +70,10 @@ public class PlayerManager : MonoBehaviour
                     touchStartPos += dir * (Vector3.Distance(curTouchPosition, touchStartPos) - 60);
                     dir = (curTouchPosition - touchStartPos).normalized;
                 }
-                Vector3 targetPos = new Vector3(transform.position.x + dir.x, 0, transform.position.z + dir.y);
-                float angle = Vector3.Angle(dir, transform.forward);
-                if (angle > 10)
+                float angle = Vector3.Angle(new Vector3(dir.x,0,dir.y), transform.forward);
+                if (angle > 5)
                 {
+                    Vector3 targetPos = new Vector3(transform.position.x + dir.x, 0, transform.position.z + dir.y);
                     transform.LookAt(targetPos);
                 }
                 rigidBody.velocity = transform.forward  * GameDataManager.Instance.speed;

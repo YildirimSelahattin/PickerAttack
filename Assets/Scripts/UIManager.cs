@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -35,6 +36,7 @@ public class UIManager : MonoBehaviour
     public TextMeshPro fpsText;
 
     public GameObject speedUpParticle;
+    public CinemachineVirtualCamera cam;
     private void Start()
     {
         if(Instance == null)
@@ -49,12 +51,14 @@ public class UIManager : MonoBehaviour
         timeL.text = "LV " + GameDataManager.Instance.TimeLevel.ToString();
         speedL.text = "LV " + GameDataManager.Instance.SpeedLevel.ToString();
         
-        sizePrice.text = ((int)(GameDataManager.Instance.sizePrice*Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1))).ToString();
-        speedPrice.text =((int)(GameDataManager.Instance.speedPrice*Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1))).ToString();
-        timePrice.text = ((int)(GameDataManager.Instance.timePrice*Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1))).ToString();
+        sizePrice.text = ((int)GameDataManager.Instance.sizePrice).ToString();
+        speedPrice.text =((int)GameDataManager.Instance.speedPrice).ToString();
+        timePrice.text = ((int)GameDataManager.Instance.timePrice).ToString();
 
         totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
 
+        playerGameObject.transform.DOScale(GameDataManager.Instance.size,0.2f);
+        cam.m_Lens.FieldOfView = GameDataManager.Instance.cameraLens;
         ControlButtonInteractable();
     }
 
@@ -90,6 +94,8 @@ public class UIManager : MonoBehaviour
 
         }
         GameDataManager.Instance.size += (sizeAwardToAdd*Vector3.one )/10f;
+        GameDataManager.Instance.totalMoney -= (int)GameDataManager.Instance.sizePrice;
+        UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
         GameDataManager.Instance.SizeLevel++;
         if (GameDataManager.Instance.SizeLevel % 5 == 0)
         {
@@ -98,18 +104,19 @@ public class UIManager : MonoBehaviour
         else
         {
             sizeAwardToAdd = 1;
-
         }
 
         sizeL.text = "LV " + GameDataManager.Instance.SizeLevel.ToString();
-        GameDataManager.Instance.sizePrice = (int)(GameDataManager.Instance.sizePrice*Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel-1));
+        GameDataManager.Instance.sizePrice = (int)(GameDataManager.Instance.sizePrice*1.25f);
         sizePrice.text = GameDataManager.Instance.sizePrice.ToString();
+        GameDataManager.Instance.cameraLens += sizeAwardToAdd / 2f;
+        cam.m_Lens.FieldOfView = GameDataManager.Instance.cameraLens;
         GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size*1.5f, 0.2f).OnComplete(() =>
         {
             GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size, 0.5f);
 
-        });
 
+        });
         ControlButtonInteractable();
 
         GameDataManager.Instance.SaveData();
@@ -127,6 +134,8 @@ public class UIManager : MonoBehaviour
 
         }
         GameDataManager.Instance.speed += speedAwardToAdd / 10f;
+        GameDataManager.Instance.totalMoney -= (int)GameDataManager.Instance.sizePrice;
+        UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
         GameDataManager.Instance.SpeedLevel++;
         if (GameDataManager.Instance.SpeedLevel % 5 == 0)
         {
@@ -139,7 +148,7 @@ public class UIManager : MonoBehaviour
         }
         speedUpParticle.SetActive(true);
         speedL.text = "LV " + GameDataManager.Instance.SpeedLevel.ToString();
-        GameDataManager.Instance.speedPrice = (int)(GameDataManager.Instance.speedPrice*Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel-1));
+        GameDataManager.Instance.speedPrice = (int)(GameDataManager.Instance.speedPrice *1.25f);
         speedPrice.text = GameDataManager.Instance.speedPrice.ToString();
         ControlButtonInteractable();
         GameDataManager.Instance.SaveData();
@@ -156,10 +165,12 @@ public class UIManager : MonoBehaviour
             timeAwardToAdd = 1;
 
         }
+        GameDataManager.Instance.totalMoney -= (int)GameDataManager.Instance.sizePrice;
+        UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
         GameDataManager.Instance.TimeLevel++;
         GameDataManager.Instance.maxTimer += timeAwardToAdd;
 
-        GameDataManager.Instance.timePrice = (int)(GameDataManager.Instance.timePrice*Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel-1));
+        GameDataManager.Instance.timePrice = (int)(GameDataManager.Instance.timePrice*1.25f);
         timerText.gameObject.transform.parent.DOPunchScale(new Vector3(0.2f,0.2f,0.2f),0.5f,1);
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
         timePrice.text = GameDataManager.Instance.timePrice.ToString();
@@ -196,7 +207,7 @@ public class UIManager : MonoBehaviour
     public void ControlButtonInteractable()
     {
         //speed up button
-        if(GameDataManager.Instance.totalMoney >= (int)(GameDataManager.Instance.speedPrice * Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel - 1)))
+        if (GameDataManager.Instance.totalMoney >= (int)GameDataManager.Instance.speedPrice)
         {
             speedButton.interactable = true;
             speedButtonArrow.SetActive(true);
@@ -207,7 +218,7 @@ public class UIManager : MonoBehaviour
             speedButtonArrow.SetActive(false);
         }
         //size up button
-        if (GameDataManager.Instance.totalMoney >= (int)(GameDataManager.Instance.sizePrice * Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel - 1)))
+        if (GameDataManager.Instance.totalMoney >= (int)GameDataManager.Instance.sizePrice )
         {
             sizeButton.interactable = true;
             sizeButtonArrow.SetActive(true);
@@ -218,7 +229,7 @@ public class UIManager : MonoBehaviour
             sizeButtonArrow.SetActive(false);
         }
         //time up button
-        if (GameDataManager.Instance.totalMoney >= (int)(GameDataManager.Instance.timePrice * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel - 1)))
+        if (GameDataManager.Instance.totalMoney >= (int)GameDataManager.Instance.timePrice)
         {
             timeButton.interactable = true;
             timeButtonArrow.SetActive(true);

@@ -26,7 +26,9 @@ public class GameDataManager : MonoBehaviour
     string timeLevelKey = "TimeLevel";
     string totalMoneyKey = "TotalMoney";
     public string CurrentLevelKey = "CurrentLevel";
+    public string cameraLensKey= "CameraLens";
 
+    public float cameraLens;
     public int totalMoney;
     public AudioClip collectSound;
 
@@ -55,6 +57,8 @@ public class GameDataManager : MonoBehaviour
         PlayerPrefs.SetFloat(speedKey, speed);
         PlayerPrefs.SetFloat(sizeKey, size.y);
 
+        PlayerPrefs.SetFloat(cameraLensKey, cameraLens);
+
         PlayerPrefs.Save();
         LoadData();
     }
@@ -69,6 +73,12 @@ public class GameDataManager : MonoBehaviour
         maxTimer = PlayerPrefs.GetFloat(timerKey, 30);
         speed = PlayerPrefs.GetFloat(speedKey, 3);
         size = PlayerPrefs.GetFloat(sizeKey, 1)*Vector3.one;
+
+        cameraLens = PlayerPrefs.GetFloat(cameraLensKey, 30);
+
+        sizePrice = (int)(sizePrice * Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel - 1));
+        speedPrice = (int)(speedPrice * Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel - 1));
+        timePrice = (int)(timePrice * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel - 1));
 
     }
 }

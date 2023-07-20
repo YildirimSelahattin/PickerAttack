@@ -2103,6 +2103,7 @@ MonoBehaviour:
   playerGameObject: {fileID: 1423660680}
   fpsText: {fileID: 0}
   speedUpParticle: {fileID: 5532730183262570705}
+  cam: {fileID: 1711602186}
 --- !u!4 &527725091
 Transform:
   m_ObjectHideFlags: 0
@@ -5374,7 +5375,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8aafb7c9ca037f54b8d500f044fe4206, type: 2}
+  - {fileID: 2100000, guid: b73563fd9807691499ee59f2333931cc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
