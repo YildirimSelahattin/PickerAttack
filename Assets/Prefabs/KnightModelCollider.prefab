@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5257138381498046330}
   - component: {fileID: 5257138381498046326}
   - component: {fileID: 8499696805684383636}
-  - component: {fileID: 2564063649546422167}
   - component: {fileID: 6163089202454669241}
+  - component: {fileID: 1772480435869398128}
   m_Layer: 0
   m_Name: KnightModelCollider
   m_TagString: Pick
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5257138381498046321}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 9063525288821269261}
@@ -45,9 +45,9 @@ Rigidbody:
   m_GameObject: {fileID: 5257138381498046321}
   serializedVersion: 2
   m_Mass: 0.002
-  m_Drag: 7
+  m_Drag: 0
   m_AngularDrag: 7
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
@@ -65,25 +65,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
---- !u!114 &2564063649546422167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5257138381498046321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a93369b71a64a2648bf7c0fc017e1e3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 0
-  damage: 15
-  healthbar: {fileID: 0}
-  deathMat: {fileID: 0}
-  soundEffect: {fileID: 0}
-  speed: 3
 --- !u!136 &6163089202454669241
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -97,7 +78,20 @@ CapsuleCollider:
   m_Radius: 0.31
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.61, z: 0}
+--- !u!114 &1772480435869398128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5257138381498046321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90e07d3bb410f9f42b532248a08d184c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 5257138381498046326}
 --- !u!1001 &6716983045285364279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -327,7 +321,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f6ce18721170a0b43b3d22b65384963e, type: 2}
+      objectReference: {fileID: 2100000, guid: daf5ddfd637c31547a69333da9718bcd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 622ce10aa379c8d4dbbf5ab1c2d4a630, type: 3}
 --- !u!4 &2341521680740503845 stripped
