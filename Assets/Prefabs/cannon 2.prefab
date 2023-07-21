@@ -210,7 +210,7 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   fireDelay: 2
   bulDMG: 30
-  bullet: {fileID: 5257138381498046321, guid: 0968a8230fa0395448e66ec0cdf8c00d, type: 3}
+  bullet: {fileID: 1438024851799903079, guid: f04fb7ba902f77e40a0a664212e3abda, type: 3}
   skinnedMeshCannon: {fileID: 8237039271164370096, guid: e3e403b5892ef9043844cece297e6eb8,
     type: 3}
   partToRotate: {fileID: 1655840479910553448, guid: e3e403b5892ef9043844cece297e6eb8,

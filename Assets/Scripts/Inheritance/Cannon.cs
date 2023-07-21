@@ -41,9 +41,9 @@ public class Cannon : Army
     void Shoot()
     {
         GameObject bulletGO = Instantiate(bullet, firePoint.position, firePoint.rotation);
-        GameObject sound = new GameObject("sound");
-        sound.AddComponent<AudioSource>();
-        sound.GetComponent<AudioSource>().volume = 1;
+       // GameObject sound = new GameObject("sound");
+        //sound.AddComponent<AudioSource>();
+        //sound.GetComponent<AudioSource>().volume = 1;
         //sound.GetComponent<AudioSource>().PlayOneShot(GameDataManager.Instance.boomEffect);
         //Destroy(sound, GameDataManager.Instance.boomEffect.length); // Creates new object, add to it audio source, play sound, destroy this object after playing is done
         //bulletGO.transform.DOMove(BossManager.Instance.transform.position, 3f);

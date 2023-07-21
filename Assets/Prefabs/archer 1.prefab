@@ -221,7 +221,7 @@ MonoBehaviour:
   healthbar: {fileID: 2827863618683149457}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
   soundEffect: {fileID: 8300000, guid: 9311df8d9cded604e87b29ada3b192eb, type: 3}
-  bullet: {fileID: 1996506627620010015, guid: ca7893f842c0b0149911536197e7c6de, type: 3}
+  bullet: {fileID: 1996506627620010015, guid: 8b35cf49ee9dd0d43a5d524c0e98ab41, type: 3}
   bulDMG: 10
   fireRate: 3
   canShoot: 1
