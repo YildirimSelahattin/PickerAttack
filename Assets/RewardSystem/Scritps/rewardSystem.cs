@@ -18,7 +18,6 @@ public class rewardSystem : MonoBehaviour
     {
         handAnim = GetComponent<Animator>();
         rewardBtn.onClick.AddListener(GetTheReward);
-        noThxBtn.onClick.AddListener(NoThx);
     }
 
     private void OnTriggerStay(Collider other)

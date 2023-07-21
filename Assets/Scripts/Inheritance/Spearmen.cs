@@ -8,7 +8,8 @@ using System.Net.Http.Headers;
 
 public class Spearmen : Army
 {
-    public GameObject bullet;
+    public GameObject bulletPrefab;
+    public GameObject currentBullet;
     public float fireRate;
     public bool canShoot = true;
     public Animator animator;
@@ -38,13 +39,13 @@ public class Spearmen : Army
             sound.GetComponent<AudioSource>().PlayOneShot(soundEffect);
             Destroy(sound, soundEffect.length);
            */
-            GameObject temp = bullet;
-            temp.transform.LookAt(BossManager.Instance.transform);
-            temp.transform.Rotate(180f, 0f, 0f);
+            GameObject temp = currentBullet;
             temp.GetComponent<BulletManager>().damage = damage;
-            temp.transform.DOMove(BossManager.Instance.arrowPoints[Random.Range(0, 11)].transform.position, 10f).SetSpeedBased(true);
+            Vector3 middlePos = new Vector3(transform.position.x-Random.Range(-5,5),5,(BossManager.Instance.gameObject.transform.position.z-transform.position.z)/2f);
+            transform.parent = null;
+            currentBullet.transform.DOPath(new Vector3[] {middlePos,BossManager.Instance.gameObject.transform.position},10f,PathType.CatmullRom).SetSpeedBased(true);
             canShoot = false;
-            bullet = Instantiate(bullet, firePoint.position, firePoint.rotation);
+            currentBullet = Instantiate(bulletPrefab, firePoint.transform);
             StartCoroutine(Shoot());
         }
     }

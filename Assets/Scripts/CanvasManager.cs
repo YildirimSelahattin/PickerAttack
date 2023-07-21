@@ -58,7 +58,7 @@ public class CanvasManager : MonoBehaviour
     }
     IEnumerator loseDelay()
     {
-        hpLeft.text = "%" + (((float)BossManager.Instance.curhealth/(float)BossManager.Instance.maxhealth)*100).ToString();
+        hpLeft.text = "%" + (100-(int)((float)BossManager.Instance.curhealth/(float)BossManager.Instance.maxhealth)*100).ToString();
         done = false;
         playScreen.SetActive(false);
         yield return new WaitForSeconds(2);
