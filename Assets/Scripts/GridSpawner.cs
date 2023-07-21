@@ -42,6 +42,9 @@ public class GridSpawner : MonoBehaviour
     public List<GameObject> EnemyList = new List<GameObject>();
     public List<GameObject> BossPrefabs;
 
+    //[Header("Audio")]
+    //public AudioClip putting;
+
     void Start()
     {
         if (Instance == null)
@@ -87,7 +90,7 @@ public class GridSpawner : MonoBehaviour
 
     public void MoveToFirst(int index, int levelOfSoldier, List<SoldierList> soldierListByLevel, int soldierIndex)
     {
-
+       
         GameObject movingObject = soldierListByLevel[levelOfSoldier].soldiersList[index];
         movingObject.transform.DOJump(soldierListByLevel[levelOfSoldier].soldiersList[0].transform.position, 1, 1, 0.2f).OnComplete(() =>
         {
