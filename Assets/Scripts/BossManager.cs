@@ -182,7 +182,7 @@ public class BossManager : MonoBehaviour
 
         foreach (GameObject enemy in GridSpawner.Instance.EnemyList)
         {
-            enemy.GetComponent<Animator>().SetTrigger("win");
+            enemy.GetComponent<Animator>()?.SetTrigger("win");
         }
         
 

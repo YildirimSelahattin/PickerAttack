@@ -41,6 +41,11 @@ public class Cannon : Army
         {
             if (GameManager.Instance.totalCount <= 0 && played)
             {
+                if (BossManager.Instance == null)
+                {
+                    StopAllCoroutines();
+                    return;
+                }
                 StartCoroutine(StartMoveAfterTime(0, 0));
                 played = false;
             }
@@ -52,12 +57,13 @@ public class Cannon : Army
     void Shoot()
     {
         GameObject bulletGO = Instantiate(bullet, firePoint.position, firePoint.rotation);
-       // GameObject sound = new GameObject("sound");
+        // GameObject sound = new GameObject("sound");
         //sound.AddComponent<AudioSource>();
         //sound.GetComponent<AudioSource>().volume = 1;
         //sound.GetComponent<AudioSource>().PlayOneShot(GameDataManager.Instance.boomEffect);
         //Destroy(sound, GameDataManager.Instance.boomEffect.length); // Creates new object, add to it audio source, play sound, destroy this object after playing is done
-        bulletGO.transform.DOMove(BossManager.Instance.transform.position, 3f);
+        bulletGO.GetComponent<BulletManager>().damage = bulDMG;
+        bulletGO.transform.DOMove(BossManager.Instance.arrowPoints[Random.Range(0, 11)].transform.position, 10f).SetSpeedBased(true);
     }
 
     public void AnimateCannonExplosion(int index)

@@ -40,6 +40,7 @@ public class GameDataManager : MonoBehaviour
             Instance = this;
             LoadData();
         }
+        DontDestroyOnLoad(gameObject);
     }
     private void Start()
     {
