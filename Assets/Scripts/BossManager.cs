@@ -19,6 +19,13 @@ public class BossManager : MonoBehaviour
     public Image healthbar;
     bool end;
     bool dead;
+
+    [Header("Audio")]
+    public AudioClip bossJump;
+    public AudioClip youLose;
+    public AudioClip win;
+    public AudioClip death;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -56,7 +63,9 @@ public class BossManager : MonoBehaviour
 
                     
                     isHit = true;
+                    GetComponent<AudioSource>().PlayOneShot(bossJump);
                 }
+                if (!checkDist())
                 if (!checkDist())
                 {
                     transform.DOMove(GridSpawner.Instance.EnemyList[0].transform.position, 3f);
@@ -80,15 +89,23 @@ public class BossManager : MonoBehaviour
         if (GameManager.Instance.totalCount == 0 && GridSpawner.Instance.EnemyList.Count == 0 &&dead == false)
         {
             animationController.SetLayerWeight(1, 1);
+            //GetComponent<AudioSource>().PlayOneShot(bossJump);
+            Debug.Log("boss kazandý");
             animationController.SetTrigger("death");
-            
+            dead = true;
+            if (dead == true)
+            {
+                Debug.Log("boss sesi");
+                GetComponent<AudioSource>().PlayOneShot(youLose);
+            }
             transform.DOKill();
             
-
         }
     }
     private IEnumerator DestroyDelay()
     {
+
+        GetComponent<AudioSource>().PlayOneShot(death);
         animationController.SetTrigger("death");
         yield return new WaitForSeconds(2);
 
@@ -184,8 +201,10 @@ public class BossManager : MonoBehaviour
         {
             
             enemy.GetComponent<Animator>().SetTrigger("win");
+            GetComponent<AudioSource>().PlayOneShot(win);
+
         }
-        
+
 
         // CanvasManager.Instance.winScreen.SetActive(true);
     }

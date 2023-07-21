@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5257138381498046321}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.7, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 9063525288821269261}
@@ -118,7 +118,7 @@ MonoBehaviour:
   damage: 5
   healthbar: {fileID: 4100838724167412067}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
-  soundEffect: {fileID: 8300000, guid: 59921abeff8892845b0bec62e476f190, type: 3}
+  soundEffect: {fileID: 8300000, guid: 56a59f5e3f93d1e44b0c199ab8661c2e, type: 3}
   speed: 3
 --- !u!1001 &910537931411737633
 PrefabInstance:
