@@ -26,7 +26,7 @@ public class GameDataManager : MonoBehaviour
     string timeLevelKey = "TimeLevel";
     string totalMoneyKey = "TotalMoney";
     public string CurrentLevelKey = "CurrentLevel";
-    public string cameraLensKey= "CameraLens";
+    public string cameraLensKey = "CameraLens";
 
     public float cameraLens;
     public int totalMoney;
@@ -40,7 +40,11 @@ public class GameDataManager : MonoBehaviour
             Instance = this;
             LoadData();
         }
-        DontDestroyOnLoad(gameObject);
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+
+        }
     }
     private void Start()
     {
@@ -70,10 +74,10 @@ public class GameDataManager : MonoBehaviour
         TimeLevel = PlayerPrefs.GetInt(timeLevelKey, 1);
         totalMoney = PlayerPrefs.GetInt(totalMoneyKey, 1000);
         currentLevel = PlayerPrefs.GetInt(CurrentLevelKey, 1);
-        
+
         maxTimer = PlayerPrefs.GetFloat(timerKey, 30);
         speed = PlayerPrefs.GetFloat(speedKey, 3);
-        size = PlayerPrefs.GetFloat(sizeKey, 1)*Vector3.one;
+        size = PlayerPrefs.GetFloat(sizeKey, 1) * Vector3.one;
 
         cameraLens = PlayerPrefs.GetFloat(cameraLensKey, 30);
 

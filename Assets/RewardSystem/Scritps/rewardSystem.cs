@@ -67,13 +67,13 @@ public class rewardSystem : MonoBehaviour
     {
         noThxBtn.interactable = false;
         GameDataManager.Instance.currentLevel++;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(GameDataManager.Instance.currentLevel);
     }
 
     IEnumerator NextLevel()
     {
         yield return new WaitForSeconds(2f);
         GameDataManager.Instance.currentLevel++;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(GameDataManager.Instance.currentLevel);
     }
 }
