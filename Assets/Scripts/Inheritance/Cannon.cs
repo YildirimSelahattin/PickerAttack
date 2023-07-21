@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class Cannon : Army
 {
-    public int firerate;
+    public int fireDelay;
     public int bulDMG;
 
     public GameObject bullet;
@@ -20,8 +20,7 @@ public class Cannon : Army
     protected override void Die()
     {
         Debug.Log("cannon died");
-        // Additional behavior specific to MobA when it dies
-        // For example, play a specific death animation or drop unique loot
+        
         base.Die(); // Call the base implementation as well
     }
     private void OnTriggerEnter(Collider other)
@@ -31,7 +30,7 @@ public class Cannon : Army
     }
     private void Start()
     {
-        StartCoroutine(StartMoveAfterTime(0));
+        StartCoroutine(StartMoveAfterTime(0,0));
 
     }
     private void Update()
@@ -47,7 +46,7 @@ public class Cannon : Army
         sound.GetComponent<AudioSource>().volume = 1;
         //sound.GetComponent<AudioSource>().PlayOneShot(GameDataManager.Instance.boomEffect);
         //Destroy(sound, GameDataManager.Instance.boomEffect.length); // Creates new object, add to it audio source, play sound, destroy this object after playing is done
-        bulletGO.transform.DOMove(BossManager.Instance.transform.position, 3f);
+        //bulletGO.transform.DOMove(BossManager.Instance.transform.position, 3f);
     }
 
     public void AnimateCannonExplosion(int index)
@@ -63,25 +62,26 @@ public class Cannon : Army
                 {
                     isInShootAnimation = false;
                     Shoot();
-                    StartCoroutine(StartMoveAfterTime(0));
+                    StartCoroutine(StartMoveAfterTime(0,fireDelay));
 
                 }
             });
         });
     }
+    
 
     public void UpdateCannonMesh(int index, float tweeningKeyVariable)
     {
         skinnedMeshCannon.SetBlendShapeWeight(index, tweeningKeyVariable);
     }
 
-    public IEnumerator StartMoveAfterTime(int index)
+    public IEnumerator StartMoveAfterTime(int index,int timer)
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(timer);
         AnimateCannonExplosion(index);
         if (index < 7)
         {
-            StartCoroutine(StartMoveAfterTime(index + 1));
+            StartCoroutine(StartMoveAfterTime(index + 1,0));
         }
     }
 }

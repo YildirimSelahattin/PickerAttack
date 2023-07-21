@@ -14,13 +14,12 @@ public class Knight : Army
     protected override void Die()
     {
         Debug.Log("knight died");
-        // Additional behavior specific to MobA when it dies
-        // For example, play a specific death animation or drop unique loot
+
         base.Die(); // Call the base implementation as well
     }
     private void OnTriggerEnter(Collider other)
     {
-        
+
 
     }
     private void Start()
@@ -36,7 +35,7 @@ public class Knight : Army
             {
                 transform.GetComponent<Animator>().SetTrigger("run");
                 transform.LookAt(BossManager.Instance.gameObject.transform);
-                int way = UnityEngine.Random.Range(0,11);
+                int way = UnityEngine.Random.Range(0, 11);
                 transform.DOMove(BossManager.Instance.waypoints[way].transform.position, speed).SetSpeedBased(true).OnComplete(() =>
                 {
                     transform.GetComponent<Animator>().SetTrigger("boss");
