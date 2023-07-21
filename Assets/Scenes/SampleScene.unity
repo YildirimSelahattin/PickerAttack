@@ -6846,7 +6846,7 @@ MonoBehaviour:
   gameStarted: 0
   levelPrefabs:
   - {fileID: 722437849841687466, guid: 7d14d5c05440b9a4a98549475f4a3059, type: 3}
-  - {fileID: 2123972160550207544, guid: 5b3f299e4880f654e8289ddf033196d1, type: 3}
+  - {fileID: 722437849841687466, guid: 31dc299fb6b6b4947a41fe353bccca57, type: 3}
 --- !u!4 &2061397678
 Transform:
   m_ObjectHideFlags: 0

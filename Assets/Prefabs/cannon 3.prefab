@@ -414,6 +414,7 @@ GameObject:
   - component: {fileID: 1655840479910553448}
   - component: {fileID: 4093258667195723754}
   - component: {fileID: -5548897129550334782}
+  - component: {fileID: 1273608657867345144}
   m_Layer: 0
   m_Name: cannon 3
   m_TagString: Pick
@@ -490,6 +491,27 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+--- !u!95 &1273608657867345144
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330023426797932241}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bffd9c8fbf58ffa46925741950070e91, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2588828733683344898
 GameObject:
   m_ObjectHideFlags: 0
