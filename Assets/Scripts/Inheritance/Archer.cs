@@ -8,7 +8,7 @@ using DG.Tweening;
 public class Archer : Army
 {
     public GameObject bullet;
-    public int bulDMG;
+    
     public float fireRate;
     public bool canShoot = true;
     public Animator animator;
@@ -40,7 +40,7 @@ public class Archer : Army
             GameObject temp = Instantiate(bullet, transform.parent);
             temp.transform.LookAt(BossManager.Instance.transform);
             temp.transform.Rotate(180f, 0f, 0f);
-            temp.GetComponent<BulletManager>().damage = bulDMG;
+            temp.GetComponent<BulletManager>().damage = damage;
             temp.transform.DOMove(BossManager.Instance.arrowPoints[Random.Range(0,11)].transform.position,10f).SetSpeedBased(true);
             canShoot = false;
             StartCoroutine(Shoot());
@@ -67,7 +67,7 @@ public class Archer : Army
         {
             if (GameManager.Instance.totalCount <= 0 && played)
             {
-                bulDMG = damage;
+                
                 canShoot = false;
                 animator.SetTrigger("Shoot");
                 StartCoroutine(Shoot());

@@ -39,6 +39,7 @@ public class UIManager : MonoBehaviour
     public GameObject speedUpParticle;
     public CinemachineVirtualCamera cam;
     public Camera mainCamera;
+    public bool shineLoopStarted = false;
     private void Start()
     {
         if(Instance == null)
@@ -73,9 +74,10 @@ public class UIManager : MonoBehaviour
             timerText.text = ((int)GameManager.Instance.timer).ToString();
             fillObject.material.SetFloat("_Arc1", ((GameDataManager.Instance.maxTimer - GameManager.Instance.timer) / GameDataManager.Instance.maxTimer) * 360);
         }
-        if (GameManager.Instance.timer < 5)
+        if (GameManager.Instance.timer < 6 && shineLoopStarted == false)
         {
-            
+            shineLoopStarted= true;
+            TimerLoop();
             ShineLoop();
         }
         if (GameManager.Instance.timer < 0)
@@ -98,6 +100,7 @@ public class UIManager : MonoBehaviour
 
         }
         GameDataManager.Instance.size += (sizeAwardToAdd*Vector3.one )/10f;
+        
         GameDataManager.Instance.totalMoney -= (int)GameDataManager.Instance.sizePrice;
         UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
         GameDataManager.Instance.SizeLevel++;
@@ -118,6 +121,7 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size*1.5f, 0.2f).OnComplete(() =>
         {
             GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size, 0.5f);
+            PlayerManager.Instance.counterObject.transform.DOScale(GameDataManager.Instance.size, 0.5f);
 
 
         });
@@ -256,11 +260,21 @@ public class UIManager : MonoBehaviour
     public void TimeUp()
     {
         Destroy(cam.gameObject);
+
         mainCamera.transform.DOMoveY(10, 1f).OnComplete(() =>
         {
             SceneManager.LoadScene(0);
         });
         
+    }
+
+    public void TimerLoop()
+    {
+        timerText.color = Color.red;
+        timerText.gameObject.transform.DOScale(Vector3.one * 1.5f, 0.5f).OnComplete(() =>
+        {
+            timerText.gameObject.transform.DOScale(Vector3.one, 0.5f).OnComplete(()=>TimerLoop());
+        });
     }
 
 }

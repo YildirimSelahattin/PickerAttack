@@ -29,6 +29,7 @@ public class PlayerManager : MonoBehaviour
     [Header("AgentProperties")]
     public List<GameObject> soldierInPickerList;
     private Rigidbody rb;
+    public bool stopped = false;
 
     public static PlayerManager Instance;
 
@@ -58,7 +59,7 @@ public class PlayerManager : MonoBehaviour
         {
             Vector3 localRotationParent = transform.localEulerAngles;
             Vector3 localRotationBody = transform.localEulerAngles;
-
+            stopped = false;
             if (Input.GetTouch(0).phase == TouchPhase.Began)     // This is actions when finger/cursor hit screen
             {
                 touchStartPos = Input.GetTouch(0).position;
@@ -74,7 +75,7 @@ public class PlayerManager : MonoBehaviour
                     dir = (curTouchPosition - touchStartPos).normalized;
                 }
                 float angle = Vector3.Angle(new Vector3(dir.x,0,dir.y), transform.forward);
-                if (angle > 3)
+                if (angle > 20)
                 {
                     Vector3 targetPos = new Vector3(transform.position.x + dir.x, 0, transform.position.z + dir.y);
                     transform.LookAt(targetPos);
@@ -90,6 +91,7 @@ public class PlayerManager : MonoBehaviour
                 DecreaseDragLevel();
                 prevYdif = 0;
                 prevXdif = 0;
+                stopped = true;
             }
 
         }

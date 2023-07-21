@@ -16,10 +16,17 @@ public class ForceBack : MonoBehaviour
     {
         if (other.collider.CompareTag("In"))
         {
-            //other.collider.gameObject.GetComponent<Rigidbody>().AddForce(transform.right * forceAmount * GameDataManager.Instance.speed / 2f) ;
-            other.collider.gameObject.transform.position += -0.1f * transform.right;
+            other.collider.gameObject.GetComponent<Rigidbody>().drag = 7;
         }
         
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.collider.CompareTag("In"))
+        {
+            other.collider.gameObject.GetComponent<Rigidbody>().drag = 2;
+        }
     }
 
     // Update is called once per frame

@@ -222,8 +222,7 @@ MonoBehaviour:
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
   soundEffect: {fileID: 8300000, guid: 1fd7586af2288684395135096c00d525, type: 3}
   bullet: {fileID: 1996506627620010015, guid: ca7893f842c0b0149911536197e7c6de, type: 3}
-  bulDMG: 10
-  fireRate: 3
+  fireRate: 1
   canShoot: 1
   animator: {fileID: 4339268114514637994}
 --- !u!1 &7659626669652337482

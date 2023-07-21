@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5257138381498046321}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0.7, z: 0}
-  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 9063525288821269261}
@@ -118,8 +118,8 @@ MonoBehaviour:
   damage: 5
   healthbar: {fileID: 4100838724167412067}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
-  soundEffect: {fileID: 8300000, guid: 56a59f5e3f93d1e44b0c199ab8661c2e, type: 3}
-  speed: 3
+  soundEffect: {fileID: 8300000, guid: 59921abeff8892845b0bec62e476f190, type: 3}
+  speed: 7
 --- !u!1001 &910537931411737633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -560,7 +560,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f6ce18721170a0b43b3d22b65384963e, type: 2}
+      objectReference: {fileID: 2100000, guid: 2e138a948ae92264f8f13b7e92b1fca5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 622ce10aa379c8d4dbbf5ab1c2d4a630, type: 3}
 --- !u!4 &215541573875152224 stripped
