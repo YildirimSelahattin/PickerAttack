@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5257138381498046330}
   - component: {fileID: 5257138381498046326}
   - component: {fileID: 8499696805684383636}
-  - component: {fileID: 2564063649546422167}
   - component: {fileID: 6163089202454669241}
   m_Layer: 0
   m_Name: KnightModelCollider
@@ -65,25 +64,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
---- !u!114 &2564063649546422167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5257138381498046321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a93369b71a64a2648bf7c0fc017e1e3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 0
-  damage: 15
-  healthbar: {fileID: 0}
-  deathMat: {fileID: 0}
-  soundEffect: {fileID: 0}
-  speed: 3
 --- !u!136 &6163089202454669241
 CapsuleCollider:
   m_ObjectHideFlags: 0
