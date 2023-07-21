@@ -10,6 +10,7 @@ public class BossManager : MonoBehaviour
 {
     public static BossManager Instance;
     public List<GameObject> waypoints;
+    public List<GameObject> arrowPoints;
     public int curhealth = 500;
     public int maxhealth = 500;
     public int damage = 20;
@@ -53,7 +54,7 @@ public class BossManager : MonoBehaviour
                 {
                     enemy.GetComponent<Army>().TakeDamage(damage);
 
-                    enemy.GetComponent<Army>().healthbar.fillAmount = enemy.GetComponent<Army>().health / 100f;
+                    
                     isHit = true;
                 }
                 if (!checkDist())
@@ -181,6 +182,7 @@ public class BossManager : MonoBehaviour
 
         foreach (GameObject enemy in GridSpawner.Instance.EnemyList)
         {
+            
             enemy.GetComponent<Animator>().SetTrigger("win");
         }
         

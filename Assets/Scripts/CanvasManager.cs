@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 public class CanvasManager : MonoBehaviour
 {
     public static CanvasManager Instance;
     public GameObject winScreen;
     public GameObject playScreen;
     public GameObject loseScreen;
-
-
+    public TextMeshProUGUI hpLeft;
+    
+    
 
     bool done;
 
@@ -57,7 +58,7 @@ public class CanvasManager : MonoBehaviour
     }
     IEnumerator loseDelay()
     {
-
+        hpLeft.text = "%" + (((float)BossManager.Instance.curhealth/(float)BossManager.Instance.maxhealth)*100).ToString();
         done = false;
         playScreen.SetActive(false);
         yield return new WaitForSeconds(2);
@@ -65,7 +66,6 @@ public class CanvasManager : MonoBehaviour
     }
     public void buttonClick()
     {
-        GameDataManager.Instance.currentLevel++;
         GameDataManager.Instance.SaveData();
         
         SceneManager.LoadScene(0);

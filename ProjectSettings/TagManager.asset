@@ -9,6 +9,11 @@ TagManager:
   - boss
   - fight
   - bullet
+  - rewardNo
+  - 1.5x
+  - 2x
+  - 2.5x
+  - 3x
   layers:
   - Default
   - TransparentFX

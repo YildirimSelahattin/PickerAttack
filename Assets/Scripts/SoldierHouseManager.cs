@@ -41,13 +41,14 @@ public class SoldierHouseManager : MonoBehaviour
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 2)
             {
                 GameManager.Instance.totalCount++;
-                GameManager.Instance.smasherCount++;
+                GameManager.Instance.cannonCount++;
+                PlayerManager.Instance.InstantiateCoinEffect(200);
             }
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
 
             StartCoroutine(pipeScript.StartMoveAfterTime(0, false));
 
-            collision.collider.gameObject.transform.DOMove(targetPoint.transform.position, 1).OnComplete(() =>
+            collision.collider.gameObject.transform.DOJump(targetPoint.transform.position,5,1,1).OnComplete(() =>
             {
 
                 Destroy(collision.collider.gameObject);

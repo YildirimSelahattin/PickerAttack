@@ -17,8 +17,7 @@ public class Archer : Army
     protected override void Die()
     {
         Debug.Log("archer died");
-        // Additional behavior specific to MobB when it dies
-        // For example, spawn additional enemies or trigger an event
+        
         base.Die(); // Call the base implementation as well
     }
 
@@ -42,7 +41,7 @@ public class Archer : Army
             temp.transform.LookAt(BossManager.Instance.transform);
             temp.transform.Rotate(180f, 0f, 0f);
             temp.GetComponent<BulletManager>().damage = bulDMG;
-            temp.transform.DOMove(BossManager.Instance.transform.position, 10f).SetSpeedBased(true);
+            temp.transform.DOMove(BossManager.Instance.arrowPoints[Random.Range(0,11)].transform.position,10f).SetSpeedBased(true);
             canShoot = false;
             StartCoroutine(Shoot());
         }
