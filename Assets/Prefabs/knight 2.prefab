@@ -119,7 +119,7 @@ MonoBehaviour:
   healthbar: {fileID: 4100838724167412067}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
   soundEffect: {fileID: 8300000, guid: 59921abeff8892845b0bec62e476f190, type: 3}
-  speed: 3
+  speed: 5
 --- !u!1001 &2592964486673402402
 PrefabInstance:
   m_ObjectHideFlags: 0
