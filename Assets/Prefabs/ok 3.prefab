@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: -8852072870280873496}
   - component: {fileID: 5857606634201942905}
   m_Layer: 0
-  m_Name: ok
+  m_Name: ok 3
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14171210a34b10d49b263fa069044a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 35
+  damage: 28
 --- !u!65 &5857606634201942905
 BoxCollider:
   m_ObjectHideFlags: 0
