@@ -948,7 +948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1185406787
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3112,8 +3112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewardToShow: 0
   Hand: {fileID: 648914711556150044}
-  handAnim: {fileID: 0}
-  rewardBtn: {fileID: 0}
+  handAnim: {fileID: 648914711556150118}
+  rewardBtn: {fileID: 648914709664592624}
   noThxBtn: {fileID: 0}
 --- !u!222 &648914711556150042
 CanvasRenderer:
@@ -4423,8 +4423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewardToShow: 0
   Hand: {fileID: 7692717231497702627}
-  handAnim: {fileID: 0}
-  rewardBtn: {fileID: 0}
+  handAnim: {fileID: 7692717231497702553}
+  rewardBtn: {fileID: 7692717229606128911}
   noThxBtn: {fileID: 0}
 --- !u!54 &7692717231497702631
 Rigidbody:
