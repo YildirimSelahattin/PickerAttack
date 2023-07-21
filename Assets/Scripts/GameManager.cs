@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public float timer;
     public int knightCount; 
     public int cannonCount;
+    public int spearCount;
     public int totalCount;
     public bool gameStarted;
     public List<GameObject> levelPrefabs;

@@ -44,6 +44,12 @@ public class SoldierHouseManager : MonoBehaviour
                 GameManager.Instance.cannonCount++;
                 PlayerManager.Instance.InstantiateCoinEffect(200);
             }
+            if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 3)
+            {
+                GameManager.Instance.totalCount++;
+                GameManager.Instance.spearCount++;
+                PlayerManager.Instance.InstantiateCoinEffect(50);
+            }
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
 
             StartCoroutine(pipeScript.StartMoveAfterTime(0, false));

@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Rendering;
 
 public class GridSpawner : MonoBehaviour
@@ -31,10 +32,12 @@ public class GridSpawner : MonoBehaviour
     public Sprite archerSprite;
     public Sprite knightSprite;
     public Sprite smasherSprite;
+    public Sprite spearSprite;
     public CinemachineVirtualCamera cam;
     public List<GameObject> archerPrefabs;
     public List<GameObject> knightPrefabs;
     public List<GameObject> cannonPrefabs;
+    public List<GameObject> spearPrefabs;
     public GameObject bossPrefab;
     public List<GameObject> EnemyList = new List<GameObject>();
     public List<GameObject> BossPrefabs;
@@ -125,8 +128,49 @@ public class GridSpawner : MonoBehaviour
         }
     }
     */
+    public int GetSoldierCount()
+    {
+        int soldierVarietyNumber = 0;
+
+        if (GameManager.Instance.archerCount > 0)
+        {
+            soldierVarietyNumber++;
+        }
+        if (GameManager.Instance.knightCount > 0)
+        {
+            soldierVarietyNumber++;
+        }
+        if (GameManager.Instance.cannonCount > 0)
+        {
+            soldierVarietyNumber++;
+        }
+        if (GameManager.Instance.spearCount > 0)
+        {
+            soldierVarietyNumber++;
+        }
+        return soldierVarietyNumber;
+    }
     public void CreateButtons()
     {
+        switch (GetSoldierCount())
+        {
+            case 1:
+                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,350);
+                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,500);
+                break;
+            case 2:
+                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 350);
+                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 500);
+                break;
+            case 3:
+                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 350);
+                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 500);
+                break;
+            case 4:
+                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 261);
+                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 360);
+                break;
+        }
         if (GameManager.Instance.archerCount > 0)
         {
             GameObject buttonObject = Instantiate(buttonPrefab, buttonPanelPrefab.transform);
@@ -150,6 +194,14 @@ public class GridSpawner : MonoBehaviour
             buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.cannonCount;
             buttonObject.GetComponent<ButtonManager>().soldierIndex = 2;
             buttonObject.GetComponent<ButtonManager>().prefabList = cannonPrefabs;
+        }
+        if (GameManager.Instance.spearCount > 0)
+        {
+            GameObject buttonObject = Instantiate(buttonPrefab, buttonPanelPrefab.transform);
+            buttonObject.GetComponent<ButtonManager>().buttonImage.sprite = spearSprite;
+            buttonObject.GetComponent<ButtonManager>().count = GameManager.Instance.spearCount;
+            buttonObject.GetComponent<ButtonManager>().soldierIndex = 3;
+            buttonObject.GetComponent<ButtonManager>().prefabList = spearPrefabs;
         }
 
     }

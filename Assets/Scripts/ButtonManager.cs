@@ -87,6 +87,11 @@ public class ButtonManager : MonoBehaviour
         count--;
         switch (soldierIndex)
         {
+
+            case 3:
+                GameManager.Instance.spearCount--;
+                GameManager.Instance.totalCount--;
+                break;
             case 2:
                 GameManager.Instance.cannonCount--;
                 GameManager.Instance.totalCount--;
