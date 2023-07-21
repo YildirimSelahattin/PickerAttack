@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
+
 public class Cannon : Army
 {
     public int fireDelay;
@@ -16,7 +18,7 @@ public class Cannon : Army
     float tweenDuration = 0.2f;
     public bool isInShootAnimation = false;
     public float[] tweeningKeyVariables = new float[7];
-
+    private bool played = true;
     protected override void Die()
     {
         Debug.Log("cannon died");
@@ -30,12 +32,21 @@ public class Cannon : Army
     }
     private void Start()
     {
-        StartCoroutine(StartMoveAfterTime(0,0));
+       
 
     }
     private void Update()
     {
+        if (SceneManager.GetActiveScene().name == "BossScene")
+        {
+            if (GameManager.Instance.totalCount <= 0 && played)
+            {
+                StartCoroutine(StartMoveAfterTime(0, 0));
+                played = false;
+            }
 
+
+        }
     }
 
     void Shoot()
@@ -46,7 +57,7 @@ public class Cannon : Army
         //sound.GetComponent<AudioSource>().volume = 1;
         //sound.GetComponent<AudioSource>().PlayOneShot(GameDataManager.Instance.boomEffect);
         //Destroy(sound, GameDataManager.Instance.boomEffect.length); // Creates new object, add to it audio source, play sound, destroy this object after playing is done
-        //bulletGO.transform.DOMove(BossManager.Instance.transform.position, 3f);
+        bulletGO.transform.DOMove(BossManager.Instance.transform.position, 3f);
     }
 
     public void AnimateCannonExplosion(int index)
