@@ -12,9 +12,10 @@ public class CanvasManager : MonoBehaviour
     public GameObject loseScreen;
     public TextMeshProUGUI hpLeft;
     
-    
-
     bool done;
+
+    [Header("Audio")]
+    public AudioClip gameOver;
 
     // Start is called before the first frame update
 
@@ -63,6 +64,7 @@ public class CanvasManager : MonoBehaviour
         playScreen.SetActive(false);
         yield return new WaitForSeconds(2);
         loseScreen.SetActive(true);
+        GetComponent<AudioSource>().PlayOneShot(gameOver);
     }
     public void buttonClick()
     {

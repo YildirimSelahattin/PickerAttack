@@ -11,6 +11,10 @@ public class PipeManager : MonoBehaviour
     public float[] tweeningKeyVariables = new float[8];
     public SkinnedMeshRenderer skinnedMesh;
     public bool isInAnimation;
+
+    [Header("Audio")]
+    public AudioClip pipe;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +39,7 @@ public class PipeManager : MonoBehaviour
                 if (index == 7)
                 {
                     isInAnimation = false;
+
                 }
             });
         });
@@ -62,6 +67,8 @@ public class PipeManager : MonoBehaviour
         if (index < 8)
         {
             StartCoroutine(StartMoveAfterTime(index + 1, true));
+
+            GetComponent<AudioSource>().PlayOneShot(pipe);
         }
 
     }

@@ -220,7 +220,7 @@ MonoBehaviour:
   damage: 18
   healthbar: {fileID: 2827863618683149457}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
-  soundEffect: {fileID: 8300000, guid: 9311df8d9cded604e87b29ada3b192eb, type: 3}
+  soundEffect: {fileID: 8300000, guid: 1fd7586af2288684395135096c00d525, type: 3}
   bullet: {fileID: 1996506627620010015, guid: 3d41ddf7536c22946a208e0631812c1c, type: 3}
   fireRate: 1.5
   canShoot: 1

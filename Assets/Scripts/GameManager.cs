@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,9 +17,6 @@ public class GameManager : MonoBehaviour
     public int totalCount;
     public bool gameStarted;
     public List<GameObject> levelPrefabs;
-    
-
-
 
     private void Awake()
     {
@@ -30,7 +28,10 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-       
+        if (SceneManager.GetActiveScene().name == "SampleScene")
+        {
+            GetComponent<AudioSource>();
+        }
     }
 
     // Update is called once per frame

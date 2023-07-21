@@ -19,6 +19,10 @@ public class Cannon : Army
     public bool isInShootAnimation = false;
     public float[] tweeningKeyVariables = new float[7];
     private bool played = true;
+
+    [Header("Audio")]
+    public AudioClip cannon;
+
     protected override void Die()
     {
         Debug.Log("cannon died");
@@ -80,6 +84,7 @@ public class Cannon : Army
                     isInShootAnimation = false;
                     Shoot();
                     StartCoroutine(StartMoveAfterTime(0,fireDelay));
+                    GetComponent<AudioSource>().PlayOneShot(cannon);
 
                 }
             });
