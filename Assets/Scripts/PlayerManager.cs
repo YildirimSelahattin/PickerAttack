@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using DG.Tweening;
 using TMPro;
+using Cinemachine;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -32,7 +33,8 @@ public class PlayerManager : MonoBehaviour
     public bool stopped = false;
 
     public static PlayerManager Instance;
-
+    public CinemachineVirtualCamera endCamera;
+    private GameObject cameraLocation;
     void Start()
     {
         if (Instance == null)
@@ -40,6 +42,7 @@ public class PlayerManager : MonoBehaviour
             Instance = this;
             transform.DOScale(GameDataManager.Instance.size,0.5f);
         }
+
     }
 
     void Update()
