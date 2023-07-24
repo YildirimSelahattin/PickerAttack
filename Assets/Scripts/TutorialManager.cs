@@ -47,6 +47,10 @@ public class TutorialManager : MonoBehaviour
             }
             
         }
+        if(Vector3.Distance(originalPos.position, targetPos) < 8)
+        {
+            sensivity = 1;
+        }
         sensivity = Vector3.Distance(originalPos.position,targetPos)/3f;
     }
 }

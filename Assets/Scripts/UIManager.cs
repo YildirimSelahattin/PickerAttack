@@ -27,6 +27,7 @@ public class UIManager : MonoBehaviour
     public Button speedButton;
     public Button timeButton;
     public Button sizeButton;
+    public TextMeshProUGUI levelText;
     public TextMeshProUGUI sizeL;
     public TextMeshProUGUI sizePrice;
     public TextMeshProUGUI sizeInfo;
@@ -50,6 +51,7 @@ public class UIManager : MonoBehaviour
         {
             Instance = this;
         }
+        levelText.text = GameDataManager.Instance.currentLevel.ToString();
         upgradeScreen.SetActive(true);
         playScreen.SetActive(false);
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
