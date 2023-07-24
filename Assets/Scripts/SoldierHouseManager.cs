@@ -2,6 +2,7 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SoldierHouseManager : MonoBehaviour
@@ -12,9 +13,11 @@ public class SoldierHouseManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
+            TutorialManager.Instance.targetPos = new Vector3(transform.position.x,1,transform.position.z);
+            TutorialManager.Instance.startLoop = true;
         }
     }
 
@@ -27,7 +30,10 @@ public class SoldierHouseManager : MonoBehaviour
     {
         if (collision.collider.gameObject.transform.CompareTag("In") || collision.collider.gameObject.transform.CompareTag("Pick"))
         {
-
+            if(TutorialManager.Instance.IsDestroyed() == false)
+            {
+                Destroy(TutorialManager.Instance.gameObject);
+            }
             collision.collider.gameObject.GetComponent<Collider>().enabled = false;
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 0)
             {
@@ -57,7 +63,7 @@ public class SoldierHouseManager : MonoBehaviour
 
             StartCoroutine(pipeScript.StartMoveAfterTime(0, false));
 
-            collision.collider.gameObject.transform.DOJump(targetPoint.transform.position,5,1,1).OnComplete(() =>
+            collision.collider.gameObject.transform.DOJump(targetPoint.transform.position, 5, 1, 1).OnComplete(() =>
             {
                 pipeScript.gameObject.GetComponent<AudioSource>().PlayOneShot(pipeScript.pipe);
                 Destroy(collision.collider.gameObject);

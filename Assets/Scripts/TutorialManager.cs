@@ -7,37 +7,44 @@ public class TutorialManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    Vector3 originalPos;
-    Vector3 targetPos;
+    public Vector3 targetPos;
     public static TutorialManager Instance;
+    public Transform originalPos;
+    public bool startLoop = false;
+    public bool goingToTarget;
+
     void Start()
     {
-        if(Instance == null){
-            Instance= this;
+        if (Instance == null)
+        {
+            Instance = this;
         }
-        originalPos = transform.localPosition;
-        TutorialLoop();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(targetPos);
-    }
-    public void TutorialLoop()
-    {
-        if(SoldierHouseManager.Instance != null)
+        transform.LookAt(transform.position+(targetPos-originalPos.position).normalized);
+        if (startLoop == true)
         {
-            targetPos = SoldierHouseManager.Instance.gameObject.transform.position;
-            transform.DOMove(targetPos, 10).SetSpeedBased(true).OnComplete(() =>
+            if(goingToTarget == true)
             {
-                transform.DOLocalMove(originalPos, 10).SetSpeedBased(true).OnComplete(() => TutorialLoop());
-            });
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime * 6);
+                if (transform.position == targetPos)
+                {
+                    goingToTarget= false;
+                }
+            }
+            else
+            {
+                transform.position = Vector3.MoveTowards(transform.position, originalPos.position, Time.deltaTime * 10);
+                if (transform.position == originalPos.position)
+                {
+                    goingToTarget = true;
+                }
+            }
+            
         }
-        else
-        {
-            TutorialLoop();
-        }
-        
+
     }
 }

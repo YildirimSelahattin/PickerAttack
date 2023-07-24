@@ -29,10 +29,13 @@ public class UIManager : MonoBehaviour
     public Button sizeButton;
     public TextMeshProUGUI sizeL;
     public TextMeshProUGUI sizePrice;
+    public TextMeshProUGUI sizeInfo;
     public TextMeshProUGUI timeL;
     public TextMeshProUGUI timePrice;
+    public TextMeshProUGUI timeInfo;
     public TextMeshProUGUI speedL;
     public TextMeshProUGUI speedPrice;
+    public TextMeshProUGUI speedInfo;
     public TextMeshProUGUI totalMoney;
     public static UIManager Instance;
     public GameObject playerGameObject;
@@ -61,14 +64,36 @@ public class UIManager : MonoBehaviour
 
         totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
 
+        if(GameDataManager.Instance.SizeLevel%5 == 0)
+        {
+            sizeInfo.text = "+1";
+        }
+        else
+        {
+            sizeInfo.text = "+2";
+        }
+        if (GameDataManager.Instance.SpeedLevel % 5 == 0)
+        {
+            speedInfo.text = "+1 m/s";
+        }
+        else
+        {
+            speedInfo.text = "+2 m/s";
+        }
+        if (GameDataManager.Instance.TimeLevel % 5 == 0)
+        {
+            timeInfo.text = "+1 s";
+        }
+        else
+        {
+            timeInfo.text = "+2 s";
+        }
         playerGameObject.transform.DOScale(GameDataManager.Instance.size, 0.2f);
         cam.m_Lens.FieldOfView = GameDataManager.Instance.cameraLens;
         ControlButtonInteractable();
     }
-
     private void Update()
     {
-
         if (GameManager.Instance.gameStarted == true)
         {
             GameManager.Instance.timer = GameManager.Instance.timer - Time.deltaTime;
@@ -103,7 +128,6 @@ public class UIManager : MonoBehaviour
 
         GameDataManager.Instance.totalMoney -= (int)GameDataManager.Instance.sizePrice;
         UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
-        GameDataManager.Instance.SizeLevel++;
         if (GameDataManager.Instance.SizeLevel % 5 == 0)
         {
             sizeAwardToAdd = 2;
@@ -112,7 +136,15 @@ public class UIManager : MonoBehaviour
         {
             sizeAwardToAdd = 1;
         }
-
+        GameDataManager.Instance.SizeLevel++;
+        if (GameDataManager.Instance.SizeLevel % 5 == 0)
+        {
+            sizeInfo.text  = "+2";
+        }
+        else
+        {
+            sizeInfo.text = "+1";
+        }
         sizeL.text = "LV " + GameDataManager.Instance.SizeLevel.ToString();
         GameDataManager.Instance.sizePrice = (int)(GameDataManager.Instance.sizePrice * 1.25f);
         sizePrice.text = GameDataManager.Instance.sizePrice.ToString();
@@ -147,11 +179,11 @@ public class UIManager : MonoBehaviour
         GameDataManager.Instance.SpeedLevel++;
         if (GameDataManager.Instance.SpeedLevel % 5 == 0)
         {
-            speedAwardToAdd = 2;
+            speedInfo.text = "+2 m/s";
         }
         else
         {
-            speedAwardToAdd = 1;
+            speedInfo.text = "+1 m/s";
 
         }
         speedUpParticle.SetActive(true);
@@ -176,6 +208,15 @@ public class UIManager : MonoBehaviour
         GameDataManager.Instance.totalMoney -= (int)GameDataManager.Instance.sizePrice;
         UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
         GameDataManager.Instance.TimeLevel++;
+        if (GameDataManager.Instance.TimeLevel % 5 == 0)
+        {
+            timeInfo.text = "+2 s";
+        }
+        else
+        {
+            timeInfo.text = "+1 s";
+
+        }
         GameDataManager.Instance.maxTimer += timeAwardToAdd;
 
         GameDataManager.Instance.timePrice = (int)(GameDataManager.Instance.timePrice * 1.25f);
@@ -183,15 +224,6 @@ public class UIManager : MonoBehaviour
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
         timePrice.text = GameDataManager.Instance.timePrice.ToString();
         timeL.text = "LV " + GameDataManager.Instance.TimeLevel.ToString();
-        if (GameDataManager.Instance.TimeLevel % 5 == 0)
-        {
-            timeAwardToAdd = 2;
-        }
-        else
-        {
-            timeAwardToAdd = 1;
-
-        }
         ControlButtonInteractable();
         GameDataManager.Instance.SaveData();
     }
