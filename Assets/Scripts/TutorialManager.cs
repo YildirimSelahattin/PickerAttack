@@ -31,7 +31,7 @@ public class TutorialManager : MonoBehaviour
         {
             if(goingToTarget == true)
             {
-                transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime*10);
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime* sensivity);
                 if (Vector3.Distance(transform.position, targetPos) <6)
                 {
                     goingToTarget= false;
@@ -39,21 +39,14 @@ public class TutorialManager : MonoBehaviour
             }
             else
             {
-                transform.position = Vector3.MoveTowards(transform.position, originalPos.position, Time.deltaTime*10);
-                if (Vector3.Distance( transform.position,originalPos.position)<8)
+                transform.position = Vector3.MoveTowards(transform.position, originalPos.position, Time.deltaTime* sensivity);
+                if (Vector3.Distance( transform.position,originalPos.position)<6)
                 {
                     goingToTarget = true;
                 }
             }
             
         }
-        if (Vector3.Distance(originalPos.position, targetPos) < 18)
-        {
-            startLoop = false;
-        }
-        else
-        {
-            startLoop = true;
-        }
+        sensivity = Vector3.Distance(originalPos.position,targetPos)/3f;
     }
 }

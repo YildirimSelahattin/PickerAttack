@@ -65,27 +65,27 @@ public class UIManager : MonoBehaviour
 
         if(GameDataManager.Instance.SizeLevel%5 == 0)
         {
-            sizeInfo.text = "+1";
+            sizeInfo.text = "+2";
         }
         else
         {
-            sizeInfo.text = "+2";
+            sizeInfo.text = "+1";
         }
         if (GameDataManager.Instance.SpeedLevel % 5 == 0)
         {
-            speedInfo.text = "+1 m/s";
+            speedInfo.text = "+2 m/s";
         }
         else
         {
-            speedInfo.text = "+2 m/s";
+            speedInfo.text = "+1 m/s";
         }
         if (GameDataManager.Instance.TimeLevel % 5 == 0)
         {
-            timeInfo.text = "+1 s";
+            timeInfo.text = "+2 s";
         }
         else
         {
-            timeInfo.text = "+2 s";
+            timeInfo.text = "+1 s";
         }
         playerGameObject.transform.DOScale(GameDataManager.Instance.size, 0.2f);
         cam.m_Lens.FieldOfView = GameDataManager.Instance.cameraLens;
