@@ -68,7 +68,7 @@ public class PipeManager : MonoBehaviour
         {
             StartCoroutine(StartMoveAfterTime(index + 1, true));
 
-            GetComponent<AudioSource>().PlayOneShot(pipe);
+           
         }
 
     }

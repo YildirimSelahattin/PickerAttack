@@ -56,7 +56,7 @@ public class SoldierHouseManager : MonoBehaviour
 
             collision.collider.gameObject.transform.DOJump(targetPoint.transform.position,5,1,1).OnComplete(() =>
             {
-
+                pipeScript.gameObject.GetComponent<AudioSource>().PlayOneShot(pipeScript.pipe);
                 Destroy(collision.collider.gameObject);
 
             });
