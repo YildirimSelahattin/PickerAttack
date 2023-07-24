@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Cinemachine;
 using DG.Tweening;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.Rendering.Universal.Internal;
@@ -15,7 +16,7 @@ public class UIManager : MonoBehaviour
 
     public GameObject playScreen;
     public GameObject upgradeScreen;
-    
+
 
     public TextMeshPro timerText;
     public SpriteRenderer fillObject;
@@ -42,25 +43,25 @@ public class UIManager : MonoBehaviour
     public bool shineLoopStarted = false;
     private void Start()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
         upgradeScreen.SetActive(true);
         playScreen.SetActive(false);
-        
+
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
         sizeL.text = "LV " + GameDataManager.Instance.SizeLevel.ToString();
         timeL.text = "LV " + GameDataManager.Instance.TimeLevel.ToString();
         speedL.text = "LV " + GameDataManager.Instance.SpeedLevel.ToString();
-        
+
         sizePrice.text = ((int)GameDataManager.Instance.sizePrice).ToString();
-        speedPrice.text =((int)GameDataManager.Instance.speedPrice).ToString();
+        speedPrice.text = ((int)GameDataManager.Instance.speedPrice).ToString();
         timePrice.text = ((int)GameDataManager.Instance.timePrice).ToString();
 
         totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
 
-        playerGameObject.transform.DOScale(GameDataManager.Instance.size,0.2f);
+        playerGameObject.transform.DOScale(GameDataManager.Instance.size, 0.2f);
         cam.m_Lens.FieldOfView = GameDataManager.Instance.cameraLens;
         ControlButtonInteractable();
     }
@@ -76,7 +77,7 @@ public class UIManager : MonoBehaviour
         }
         if (GameManager.Instance.timer < 6 && shineLoopStarted == false)
         {
-            shineLoopStarted= true;
+            shineLoopStarted = true;
             TimerLoop();
             ShineLoop();
         }
@@ -98,8 +99,8 @@ public class UIManager : MonoBehaviour
             sizeAwardToAdd = 1;
 
         }
-        GameDataManager.Instance.size += (sizeAwardToAdd*Vector3.one )/10f;
-        
+        GameDataManager.Instance.size += (sizeAwardToAdd * Vector3.one) / 10f;
+
         GameDataManager.Instance.totalMoney -= (int)GameDataManager.Instance.sizePrice;
         UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
         GameDataManager.Instance.SizeLevel++;
@@ -113,11 +114,11 @@ public class UIManager : MonoBehaviour
         }
 
         sizeL.text = "LV " + GameDataManager.Instance.SizeLevel.ToString();
-        GameDataManager.Instance.sizePrice = (int)(GameDataManager.Instance.sizePrice*1.25f);
+        GameDataManager.Instance.sizePrice = (int)(GameDataManager.Instance.sizePrice * 1.25f);
         sizePrice.text = GameDataManager.Instance.sizePrice.ToString();
         GameDataManager.Instance.cameraLens += sizeAwardToAdd / 2f;
         cam.m_Lens.FieldOfView = GameDataManager.Instance.cameraLens;
-        GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size*1.5f, 0.2f).OnComplete(() =>
+        GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size * 1.5f, 0.2f).OnComplete(() =>
         {
             GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size, 0.5f);
             PlayerManager.Instance.counterObject.transform.DOScale(GameDataManager.Instance.size, 0.5f);
@@ -155,7 +156,7 @@ public class UIManager : MonoBehaviour
         }
         speedUpParticle.SetActive(true);
         speedL.text = "LV " + GameDataManager.Instance.SpeedLevel.ToString();
-        GameDataManager.Instance.speedPrice = (int)(GameDataManager.Instance.speedPrice *1.25f);
+        GameDataManager.Instance.speedPrice = (int)(GameDataManager.Instance.speedPrice * 1.25f);
         speedPrice.text = GameDataManager.Instance.speedPrice.ToString();
         ControlButtonInteractable();
         GameDataManager.Instance.SaveData();
@@ -177,8 +178,8 @@ public class UIManager : MonoBehaviour
         GameDataManager.Instance.TimeLevel++;
         GameDataManager.Instance.maxTimer += timeAwardToAdd;
 
-        GameDataManager.Instance.timePrice = (int)(GameDataManager.Instance.timePrice*1.25f);
-        timerText.gameObject.transform.parent.DOPunchScale(new Vector3(0.2f,0.2f,0.2f),0.5f,1);
+        GameDataManager.Instance.timePrice = (int)(GameDataManager.Instance.timePrice * 1.25f);
+        timerText.gameObject.transform.parent.DOPunchScale(new Vector3(0.2f, 0.2f, 0.2f), 0.5f, 1);
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
         timePrice.text = GameDataManager.Instance.timePrice.ToString();
         timeL.text = "LV " + GameDataManager.Instance.TimeLevel.ToString();
@@ -194,7 +195,8 @@ public class UIManager : MonoBehaviour
         ControlButtonInteractable();
         GameDataManager.Instance.SaveData();
     }
-    public void StartGame(){
+    public void StartGame()
+    {
 
         playScreen.SetActive(true);
         upgradeScreen.SetActive(false);
@@ -224,7 +226,7 @@ public class UIManager : MonoBehaviour
             speedButtonArrow.SetActive(false);
         }
         //size up button
-        if (GameDataManager.Instance.totalMoney >= (int)GameDataManager.Instance.sizePrice )
+        if (GameDataManager.Instance.totalMoney >= (int)GameDataManager.Instance.sizePrice)
         {
             sizeButton.interactable = true;
             sizeButtonArrow.SetActive(true);
@@ -246,25 +248,28 @@ public class UIManager : MonoBehaviour
             timeButtonArrow.SetActive(false);
         }
     }
- 
+
     public void ShineLoop()
     {
-        fillObject.color= Color.red;
+        fillObject.color = Color.red;
         fillObject.GetComponent<SpriteRenderer>().DOFade(1, 0.2F).OnComplete(() =>
         {
-            fillObject.GetComponent<SpriteRenderer>().DOFade(0.2f, 0.2f).OnComplete(() =>ShineLoop());
+            fillObject.GetComponent<SpriteRenderer>().DOFade(0.2f, 0.2f).OnComplete(() => ShineLoop());
         });
     }
-
+    public IEnumerator endGame()
+    {
+        yield return new  WaitForSeconds(0.9f);
+        SceneManager.LoadScene(1);
+    }
     public void TimeUp()
     {
-        Destroy(cam.gameObject);
+        PlayerManager.Instance.endCamera.Priority = 20;
 
-        mainCamera.transform.DOMoveY(10, 1f).SetEase(Ease.Linear).OnComplete(() =>
-        {
-            SceneManager.LoadScene(1);
-        });
-        
+       StartCoroutine(endGame());
+        PlayerManager.Instance.endCamera.transform.DOMoveY(-35, 1f).SetEase(Ease.Linear);
+
+
     }
 
     public void TimerLoop()
@@ -272,7 +277,7 @@ public class UIManager : MonoBehaviour
         timerText.color = Color.red;
         timerText.gameObject.transform.DOScale(Vector3.one * 1.5f, 0.5f).OnComplete(() =>
         {
-            timerText.gameObject.transform.DOScale(Vector3.one, 0.5f).OnComplete(()=>TimerLoop());
+            timerText.gameObject.transform.DOScale(Vector3.one, 0.5f).OnComplete(() => TimerLoop());
         });
     }
 
