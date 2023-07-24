@@ -83,7 +83,6 @@ public class UIManager : MonoBehaviour
         if (GameManager.Instance.timer < 0)
         {
             TimeUp();
-            SceneManager.LoadScene(1);
         }
     }
 
@@ -261,9 +260,9 @@ public class UIManager : MonoBehaviour
     {
         Destroy(cam.gameObject);
 
-        mainCamera.transform.DOMoveY(10, 1f).OnComplete(() =>
+        mainCamera.transform.DOMoveY(10, 1f).SetEase(Ease.Linear).OnComplete(() =>
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         });
         
     }
