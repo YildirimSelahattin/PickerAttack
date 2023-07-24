@@ -13,7 +13,7 @@ public class TriggerManager : MonoBehaviour
         if ( other.CompareTag("In"))
         {
             other.gameObject.tag = "Pick";
-            GameManager.Instance.inCount--;
+            
 
         }
 

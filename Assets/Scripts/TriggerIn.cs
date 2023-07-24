@@ -10,7 +10,7 @@ public class TriggerIn : MonoBehaviour
         if (other.CompareTag("Pick"))
         {
             other.gameObject.tag = "In";
-            GameManager.Instance.inCount++;
+            
         }
     }
 

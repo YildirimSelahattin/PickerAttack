@@ -130,7 +130,6 @@ public class BossManager : MonoBehaviour
     public void AttackEnd()
     {
         Anim();
-        Debug.Log("a");
 
         StartCoroutine(CallAnotherAttack());
     }
@@ -139,7 +138,7 @@ public class BossManager : MonoBehaviour
     {
         Anim();
         transform.GetChild(0).GetComponent<ParticleSystem>().Play();
-        Debug.Log("b");
+        
         StartCoroutine(CallAnotherAttack());
 
     }

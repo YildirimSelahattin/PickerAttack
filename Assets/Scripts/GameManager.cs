@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public GameObject player;
-    public int inCount = 0;
+    
     public int archerCount;
     public float timer;
     public int knightCount; 
