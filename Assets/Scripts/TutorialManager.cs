@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TutorialManager : MonoBehaviour
@@ -12,6 +13,7 @@ public class TutorialManager : MonoBehaviour
     public Transform originalPos;
     public bool startLoop = false;
     public bool goingToTarget;
+    public float sensivity;
 
     void Start()
     {
@@ -29,22 +31,29 @@ public class TutorialManager : MonoBehaviour
         {
             if(goingToTarget == true)
             {
-                transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime * 6);
-                if (transform.position == targetPos)
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime*10);
+                if (Vector3.Distance(transform.position, targetPos) <6)
                 {
                     goingToTarget= false;
                 }
             }
             else
             {
-                transform.position = Vector3.MoveTowards(transform.position, originalPos.position, Time.deltaTime * 10);
-                if (transform.position == originalPos.position)
+                transform.position = Vector3.MoveTowards(transform.position, originalPos.position, Time.deltaTime*10);
+                if (Vector3.Distance( transform.position,originalPos.position)<8)
                 {
                     goingToTarget = true;
                 }
             }
             
         }
-
+        if (Vector3.Distance(originalPos.position, targetPos) < 18)
+        {
+            startLoop = false;
+        }
+        else
+        {
+            startLoop = true;
+        }
     }
 }
