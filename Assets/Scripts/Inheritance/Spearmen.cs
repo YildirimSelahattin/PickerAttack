@@ -44,6 +44,7 @@ public class Spearmen : Army
             Vector3 middlePos = new Vector3(transform.position.x-Random.Range(-5,5),5,(BossManager.Instance.gameObject.transform.position.z-transform.position.z)/2f);
             transform.parent = null;
             currentBullet.transform.DOPath(new Vector3[] {middlePos,BossManager.Instance.gameObject.transform.position},10f,PathType.CatmullRom).SetSpeedBased(true);
+            currentBullet.transform.DOLookAt(BossManager.Instance.gameObject.transform.position,10f).SetSpeedBased(true);
             canShoot = false;
             currentBullet = Instantiate(bulletPrefab, firePoint.transform);
             StartCoroutine(Shoot());
