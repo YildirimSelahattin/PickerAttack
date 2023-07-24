@@ -49,7 +49,6 @@ public class UIManager : MonoBehaviour
         }
         upgradeScreen.SetActive(true);
         playScreen.SetActive(false);
-
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
         sizeL.text = "LV " + GameDataManager.Instance.SizeLevel.ToString();
         timeL.text = "LV " + GameDataManager.Instance.TimeLevel.ToString();
@@ -68,6 +67,7 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
+        PlayerManager.Instance.endCamera.LookAt = SoldierHouseManager.Instance.transform;
 
         if (GameManager.Instance.gameStarted == true)
         {
@@ -264,10 +264,12 @@ public class UIManager : MonoBehaviour
     }
     public void TimeUp()
     {
-        PlayerManager.Instance.endCamera.Priority = 20;
-
-       StartCoroutine(endGame());
-        PlayerManager.Instance.endCamera.transform.DOMoveY(-35, 1f).SetEase(Ease.Linear);
+        Destroy(cam.gameObject);
+        PlayerManager.Instance.endCamera.Priority = 11;
+        
+        PlayerManager.Instance.endCamera.transform.DOMove(new Vector3( SoldierHouseManager.Instance.transform.GetChild(1).transform.position.x, SoldierHouseManager.Instance.transform.GetChild(1).transform.position.y+5, SoldierHouseManager.Instance.transform.GetChild(1).transform.position.z), 1f);
+        StartCoroutine(endGame());
+        
 
 
     }
