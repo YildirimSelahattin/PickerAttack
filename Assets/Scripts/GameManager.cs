@@ -10,11 +10,12 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     
     public int archerCount;
-    public float timer;
     public int knightCount; 
     public int cannonCount;
     public int spearCount;
     public int totalCount;
+    public float timer;
+
     public bool gameStarted;
     public List<GameObject> levelPrefabs;
     public AudioSource tictocSound;

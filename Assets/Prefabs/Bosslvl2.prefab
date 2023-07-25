@@ -6056,7 +6056,7 @@ Transform:
   m_GameObject: {fileID: 3588056229375598342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.24, y: 2.94, z: 1.56}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1821210883170023043}
@@ -6139,11 +6139,12 @@ MonoBehaviour:
   - {fileID: 1455276456876182295}
   - {fileID: 1704138769599573507}
   - {fileID: 6626989495510269921}
-  curhealth: 2400
-  maxhealth: 2400
-  damage: 20
+  curhealth: 500
+  maxhealth: 500
+  damage: 8
   animationController: {fileID: 7809429054259650502}
   healthbar: {fileID: 7021230157872697644}
+  dead: 0
   bossJump: {fileID: 8300000, guid: 3d2a7627e05da2a4d8a668c45c1a5505, type: 3}
   youLose: {fileID: 8300000, guid: 4fa4cf01f12c2734198fee504c7f96f2, type: 3}
   win: {fileID: 8300000, guid: ae66b00833231064e8c9a8975ad437e1, type: 3}
