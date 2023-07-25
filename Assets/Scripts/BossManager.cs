@@ -18,7 +18,8 @@ public class BossManager : MonoBehaviour
     public static event Action<float> OnDamageTaken;
     public Image healthbar;
     bool end;
-    bool dead;
+   public bool dead;
+
 
     [Header("Audio")]
     public AudioClip bossJump;
@@ -209,5 +210,5 @@ public class BossManager : MonoBehaviour
 
         // CanvasManager.Instance.winScreen.SetActive(true);
     }
-
+    
 }
