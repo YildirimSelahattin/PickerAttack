@@ -20,6 +20,9 @@ public class GameDataManager : MonoBehaviour
 
     string sizeLevelKey = "SizeLevel";
     string speedLevelKey = "SpeedLevel";
+    string speedPriceKey = "SpeedPrice";
+    string sizePriceKey = "SizePrice";
+    string timePriceKey = "TimePrice";
     string sizeKey = "Size";
     string timerKey = "Timer";
     string speedKey = "Speed";
@@ -61,6 +64,9 @@ public class GameDataManager : MonoBehaviour
         PlayerPrefs.SetFloat(timerKey, maxTimer);
         PlayerPrefs.SetFloat(speedKey, speed);
         PlayerPrefs.SetFloat(sizeKey, size.y);
+        PlayerPrefs.SetFloat(sizePriceKey, sizePrice);
+        PlayerPrefs.SetFloat(speedPriceKey, speedPrice);
+        PlayerPrefs.SetFloat(timePriceKey, timePrice);
 
         PlayerPrefs.SetFloat(cameraLensKey, cameraLens);
 
@@ -81,9 +87,9 @@ public class GameDataManager : MonoBehaviour
 
         cameraLens = PlayerPrefs.GetFloat(cameraLensKey, 30);
 
-        sizePrice = (int)(sizePrice * Mathf.Pow(1.25f,SizeLevel - 1));
-        speedPrice = (int)(speedPrice * Mathf.Pow(1.25f, SpeedLevel - 1));
-        timePrice = (int)(timePrice * Mathf.Pow(1.25f, TimeLevel - 1));
+        sizePrice = PlayerPrefs.GetFloat(sizePriceKey, 50);
+        speedPrice = PlayerPrefs.GetFloat(speedPriceKey, 50);
+        timePrice = PlayerPrefs.GetFloat(timePriceKey, 50);
 
     }
 }
