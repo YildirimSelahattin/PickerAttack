@@ -20,6 +20,7 @@ public class ButtonManager : MonoBehaviour
     public int instantiatedNumber;
     public List<List<GameObject>> soldier5Grouped = new List<List<GameObject>>();
     public List<GameObject> prefabList;
+    public AudioClip putSound;
     public int count
     {
         get
@@ -77,6 +78,11 @@ public class ButtonManager : MonoBehaviour
     }
     public void InstantiateInLoop()
     {
+        GameObject sound = new GameObject("sound");
+        sound.AddComponent<AudioSource>();
+        sound.GetComponent<AudioSource>().volume = 1;
+        sound.GetComponent<AudioSource>().PlayOneShot(putSound);
+        Destroy(sound, putSound.length);
         GameObject temp = Instantiate(prefabList[0], GridSpawner.Instance.gridList[GridSpawner.Instance.GiveEmptyGridByRow()].transform);
         GridSpawner.Instance.EnemyList.Add(temp);
         soldier5Grouped[0].Add(temp);

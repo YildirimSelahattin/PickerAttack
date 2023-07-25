@@ -30,7 +30,8 @@ public class SoldierHouseManager : MonoBehaviour
     {
         if (collision.collider.gameObject.transform.CompareTag("In") || collision.collider.gameObject.transform.CompareTag("Pick"))
         {
-            if(TutorialManager.Instance.IsDestroyed() == false)
+            pipeScript.gameObject.GetComponent<AudioSource>().PlayOneShot(pipeScript.pipe);
+            if (TutorialManager.Instance.IsDestroyed() == false)
             {
                 Destroy(TutorialManager.Instance.gameObject);
             }
@@ -65,7 +66,6 @@ public class SoldierHouseManager : MonoBehaviour
 
             collision.collider.gameObject.transform.DOJump(targetPoint.transform.position, 5, 1, 1).OnComplete(() =>
             {
-                pipeScript.gameObject.GetComponent<AudioSource>().PlayOneShot(pipeScript.pipe);
                 Destroy(collision.collider.gameObject);
 
             });

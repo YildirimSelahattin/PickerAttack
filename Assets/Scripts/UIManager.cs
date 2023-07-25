@@ -51,7 +51,7 @@ public class UIManager : MonoBehaviour
         {
             Instance = this;
         }
-        levelText.text = GameDataManager.Instance.currentLevel.ToString();
+        levelText.text = "LV"+GameDataManager.Instance.currentLevel.ToString();
         upgradeScreen.SetActive(true);
         playScreen.SetActive(false);
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
@@ -235,7 +235,9 @@ public class UIManager : MonoBehaviour
 
         playScreen.SetActive(true);
         upgradeScreen.SetActive(false);
+        cam.gameObject.transform.DORotate(new Vector3(42.2f,transform.localEulerAngles.y,transform.localEulerAngles.z),0.5f);
         GameManager.Instance.gameStarted = true;
+        GameManager.Instance.tictocSound.Play();
         GameManager.Instance.timer = GameDataManager.Instance.maxTimer;
     }
     public void AddArcher()

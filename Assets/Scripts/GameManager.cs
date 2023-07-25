@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public int totalCount;
     public bool gameStarted;
     public List<GameObject> levelPrefabs;
+    public AudioSource tictocSound;
 
     private void Awake()
     {
@@ -28,10 +29,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "SampleScene")
-        {
-            GetComponent<AudioSource>();
-        }
+        
     }
 
     // Update is called once per frame

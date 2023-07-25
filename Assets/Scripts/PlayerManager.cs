@@ -60,6 +60,8 @@ public class PlayerManager : MonoBehaviour
         curTouchImage.transform.position = curTouchPosition;
         if (Input.touchCount > 0)
         {
+            curTouchImage.gameObject.SetActive(true);
+            touchStartImage.gameObject.SetActive(true);
             Vector3 localRotationParent = transform.localEulerAngles;
             Vector3 localRotationBody = transform.localEulerAngles;
             stopped = false;
@@ -95,6 +97,8 @@ public class PlayerManager : MonoBehaviour
                 prevYdif = 0;
                 prevXdif = 0;
                 stopped = true;
+                curTouchImage.gameObject.SetActive(false);
+                touchStartImage.gameObject.SetActive(false);
             }
 
         }
