@@ -65,14 +65,17 @@ public class rewardSystem : MonoBehaviour
     public void NoThx()
     {
         noThxBtn.interactable = false;
-        GameDataManager.Instance.currentLevel++;
-        SceneManager.LoadScene(GameDataManager.Instance.currentLevel);
+        StartCoroutine(NextLevel());
+        
     }
 
     IEnumerator NextLevel()
     {
-        yield return new WaitForSeconds(2f);
-        GameDataManager.Instance.currentLevel++;
-        SceneManager.LoadScene(GameDataManager.Instance.currentLevel);
+        yield return new WaitForSeconds(0.1f);
+        if (CanvasManager.Instance.winScreen.active)
+        {
+            GameDataManager.Instance.currentLevel++;
+        }
+        SceneManager.LoadScene(0);
     }
 }

@@ -27,6 +27,7 @@ public class UIManager : MonoBehaviour
     public Button speedButton;
     public Button timeButton;
     public Button sizeButton;
+    public TextMeshProUGUI levelText;
     public TextMeshProUGUI sizeL;
     public TextMeshProUGUI sizePrice;
     public TextMeshProUGUI sizeInfo;
@@ -50,6 +51,7 @@ public class UIManager : MonoBehaviour
         {
             Instance = this;
         }
+        levelText.text = GameDataManager.Instance.currentLevel.ToString();
         upgradeScreen.SetActive(true);
         playScreen.SetActive(false);
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
@@ -293,18 +295,16 @@ public class UIManager : MonoBehaviour
     public IEnumerator endGame()
     {
         yield return new  WaitForSeconds(0.9f);
-        SceneManager.LoadScene(1);
+       
     }
     public void TimeUp()
     {
-        Destroy(cam.gameObject);
         PlayerManager.Instance.endCamera.Priority = 11;
         
-        PlayerManager.Instance.endCamera.transform.DOMove(new Vector3( SoldierHouseManager.Instance.transform.GetChild(1).transform.position.x, SoldierHouseManager.Instance.transform.GetChild(1).transform.position.y+5, SoldierHouseManager.Instance.transform.GetChild(1).transform.position.z), 1f);
-        StartCoroutine(endGame());
-        
-
-
+        PlayerManager.Instance.endCamera.transform.DOMoveY(6f, 1f).OnComplete(() =>
+        {
+            SceneManager.LoadScene(1);
+        });
     }
 
     public void TimerLoop()
