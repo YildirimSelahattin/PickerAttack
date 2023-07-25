@@ -3,7 +3,22 @@ guid: 759ba6b933ada6d4a909e02f24cddc45
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - gridPrefab: {instanceID: 0}
+  - leftLimit: {instanceID: 0}
+  - rightLimit: {instanceID: 0}
+  - topLimit: {instanceID: 0}
+  - botLimit: {instanceID: 0}
+  - gridParent: {instanceID: 0}
+  - buttonPrefab: {instanceID: 0}
+  - buttonPanelPrefab: {instanceID: 0}
+  - archerSprite: {instanceID: 0}
+  - knightSprite: {instanceID: 0}
+  - smasherSprite: {instanceID: 0}
+  - spearSprite: {instanceID: 0}
+  - cam: {instanceID: 0}
+  - bossPrefab: {instanceID: 0}
+  - putting: {fileID: 8300000, guid: 5a6ccd010ee872e40b6663d28692e521, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

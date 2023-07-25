@@ -6146,6 +6146,7 @@ MonoBehaviour:
   bossJump: {fileID: 8300000, guid: 3d2a7627e05da2a4d8a668c45c1a5505, type: 3}
   youLose: {fileID: 8300000, guid: 4fa4cf01f12c2734198fee504c7f96f2, type: 3}
   win: {fileID: 8300000, guid: ae66b00833231064e8c9a8975ad437e1, type: 3}
+  death: {fileID: 8300000, guid: 50a908dec99900b43b3063b0b5e05733, type: 3}
 --- !u!54 &4241035110153856486
 Rigidbody:
   m_ObjectHideFlags: 0
