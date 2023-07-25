@@ -477,7 +477,7 @@ MonoBehaviour:
   deathMat: {fileID: 0}
   soundEffect: {fileID: 0}
   fireDelay: 1
-  bulDMG: 30
+  bulDMG: 100
   bullet: {fileID: 1438024851799903079, guid: 6734e49694b0e3142b9ea8335005d2b0, type: 3}
   skinnedMeshCannon: {fileID: 8237039271164370096, guid: e3e403b5892ef9043844cece297e6eb8,
     type: 3}
