@@ -33,6 +33,7 @@ public class PlayerManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.localPosition.z - 0.2f * GameDataManager.Instance.SizeLevel, 0.2f);
             transform.DOScale(GameDataManager.Instance.size,0.5f);
         }
 
@@ -100,7 +101,7 @@ public class PlayerManager : MonoBehaviour
     public void InstantiateCoinEffect(int coinAmount)
     {
         coinEffectPrefab.GetComponent<TextMeshPro>().text = "+ " + coinAmount.ToString();
-        GameObject text = Instantiate(coinEffectPrefab, coinEffectParent.transform);
+        GameObject text = Instantiate(coinEffectPrefab, coinEffectParent.transform.position,coinEffectPrefab.transform.rotation);
         GameDataManager.Instance.totalMoney += coinAmount;
         UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
     }

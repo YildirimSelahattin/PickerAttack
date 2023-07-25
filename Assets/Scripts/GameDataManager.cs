@@ -75,15 +75,15 @@ public class GameDataManager : MonoBehaviour
         totalMoney = PlayerPrefs.GetInt(totalMoneyKey, 1000);
         currentLevel = PlayerPrefs.GetInt(CurrentLevelKey, 1);
 
-        maxTimer = PlayerPrefs.GetFloat(timerKey, 30);
+        maxTimer = PlayerPrefs.GetFloat(timerKey, 15);
         speed = PlayerPrefs.GetFloat(speedKey, 3);
-        size = PlayerPrefs.GetFloat(sizeKey, 1) * Vector3.one;
+        size = PlayerPrefs.GetFloat(sizeKey, 1f) * Vector3.one;
 
         cameraLens = PlayerPrefs.GetFloat(cameraLensKey, 30);
 
-        sizePrice = (int)(sizePrice * Mathf.Pow(1.25f, GameDataManager.Instance.SizeLevel - 1));
-        speedPrice = (int)(speedPrice * Mathf.Pow(1.25f, GameDataManager.Instance.SpeedLevel - 1));
-        timePrice = (int)(timePrice * Mathf.Pow(1.25f, GameDataManager.Instance.TimeLevel - 1));
+        sizePrice = (int)(sizePrice * Mathf.Pow(1.25f,SizeLevel - 1));
+        speedPrice = (int)(speedPrice * Mathf.Pow(1.25f, SpeedLevel - 1));
+        timePrice = (int)(timePrice * Mathf.Pow(1.25f, TimeLevel - 1));
 
     }
 }
