@@ -144,6 +144,7 @@ MonoBehaviour:
   rate: 0.1
   instantiatedNumber: 0
   prefabList: []
+  putSound: {fileID: 8300000, guid: 5a6ccd010ee872e40b6663d28692e521, type: 3}
 --- !u!114 &-2655884274062404714
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public int totalCount;
     public bool gameStarted;
     public List<GameObject> levelPrefabs;
+    public AudioSource tictocSound;
 
     private void Awake()
     {
