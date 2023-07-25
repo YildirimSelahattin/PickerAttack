@@ -42,12 +42,10 @@ public class GameDataManager : MonoBehaviour
         {
             Instance = this;
             LoadData();
-        }
-        else
-        {
             DontDestroyOnLoad(gameObject);
 
         }
+
     }
     private void Start()
     {

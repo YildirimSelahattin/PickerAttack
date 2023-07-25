@@ -6040,7 +6040,7 @@ GameObject:
   - component: {fileID: 4241035110153856486}
   - component: {fileID: -7028899878126141379}
   m_Layer: 0
-  m_Name: Bosslvl3
+  m_Name: Bosslvl4
   m_TagString: boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6055,7 +6055,7 @@ Transform:
   m_GameObject: {fileID: 3588056229375598342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.24, y: 2.94, z: 1.56}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1821210883170023043}
@@ -6138,9 +6138,9 @@ MonoBehaviour:
   - {fileID: 1455276456876182295}
   - {fileID: 1704138769599573507}
   - {fileID: 6626989495510269921}
-  curhealth: 2000
-  maxhealth: 2000
-  damage: 18
+  curhealth: 9999
+  maxhealth: 9999
+  damage: 25
   animationController: {fileID: 7809429054259650502}
   healthbar: {fileID: 7021230157872697644}
   dead: 0
@@ -8172,7 +8172,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1bd7b80ff9e2faf469fa057a129b47bf, type: 2}
+  - {fileID: 2100000, guid: 6b15cef0ca9c83b4cb47ce109e0a957a, type: 2}
   - {fileID: 2100000, guid: e964e8a0f36affd48b3c32b43a362191, type: 2}
   - {fileID: 2100000, guid: f225c9a07496a404abc9e35d9b0c86c7, type: 2}
   - {fileID: 2100000, guid: 419c854f4603be3469929619847c2392, type: 2}

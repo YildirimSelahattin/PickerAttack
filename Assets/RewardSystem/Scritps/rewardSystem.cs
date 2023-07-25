@@ -13,11 +13,11 @@ public class rewardSystem : MonoBehaviour
     public Button rewardBtn;
     public Button noThxBtn;
     float rewardMoney;
-
     void Start()
     {
         handAnim = GetComponent<Animator>();
         rewardBtn.onClick.AddListener(GetTheReward);
+      
     }
 
     private void OnTriggerStay(Collider other)
@@ -65,6 +65,7 @@ public class rewardSystem : MonoBehaviour
     public void NoThx()
     {
         noThxBtn.interactable = false;
+        
         StartCoroutine(NextLevel());
         
     }
@@ -72,9 +73,10 @@ public class rewardSystem : MonoBehaviour
     IEnumerator NextLevel()
     {
         yield return new WaitForSeconds(0.1f);
-        if (CanvasManager.Instance.winScreen.active)
+        if (BossManager.Instance.gameObject == null)
         {
             GameDataManager.Instance.currentLevel++;
+            GameDataManager.Instance.SaveData();
         }
         SceneManager.LoadScene(0);
     }

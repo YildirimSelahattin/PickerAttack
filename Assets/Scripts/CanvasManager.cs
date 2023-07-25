@@ -56,6 +56,7 @@ public class CanvasManager : MonoBehaviour
         playScreen.SetActive(false);
         yield return new WaitForSeconds(2);
         winScreen.SetActive(true);
+        GameDataManager.Instance.currentLevel++;
     }
     IEnumerator loseDelay()
     {
