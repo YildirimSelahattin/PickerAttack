@@ -5892,8 +5892,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d4137965ef4a04c8a1c76c78d77e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftLimit: {fileID: 0}
-  rightLimit: {fileID: 0}
   rigidBody: {fileID: 1423660683}
   rotationSpeed: 3
   counterObject: {fileID: 921707150}
@@ -8158,7 +8156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1423660680}
-  inCount: 0
   archerCount: 0
   timer: 20
   knightCount: 0
@@ -8170,7 +8167,7 @@ MonoBehaviour:
   - {fileID: 4691921792515367832, guid: 37bd198c5a5dc78479235642f175c40b, type: 3}
   - {fileID: 4691921792515367832, guid: 73fc6905b0707694e8cf2634e3934edb, type: 3}
   - {fileID: 4691921792515367832, guid: 57a9fd7069a312142967579fcad0694b, type: 3}
-  - {fileID: 4691921792515367832, guid: 57a9fd7069a312142967579fcad0694b, type: 3}
+  - {fileID: 4691921792515367832, guid: 430c6e9ce08458a44852c83e68d2b50a, type: 3}
 --- !u!4 &2061397678
 Transform:
   m_ObjectHideFlags: 0

@@ -1895,13 +1895,12 @@ MonoBehaviour:
   - {fileID: 6461141859124604598, guid: c2c631c52a3c52149bbc15f0a0930094, type: 3}
   - {fileID: 6461141859124604598, guid: ba640236ac38942499fbbd475c7331f4, type: 3}
   - {fileID: 6461141859124604598, guid: 6cc13aa973dd05d47ab6965c9d26618d, type: 3}
-  bossPrefab: {fileID: 3588056229375598342, guid: 37b3a1c2977261948ab44bc8916937c1,
-    type: 3}
   EnemyList: []
   BossPrefabs:
   - {fileID: 3588056229375598342, guid: 37b3a1c2977261948ab44bc8916937c1, type: 3}
   - {fileID: 3588056229375598342, guid: 07a7b5ae483528a4b83fe6ad963738c6, type: 3}
-  putting: {fileID: 8300000, guid: 5a6ccd010ee872e40b6663d28692e521, type: 3}
+  - {fileID: 3588056229375598342, guid: 5ce2b26f518eb4b43a09a108c5da0bb9, type: 3}
+  - {fileID: 3588056229375598342, guid: 5ce2b26f518eb4b43a09a108c5da0bb9, type: 3}
 --- !u!4 &1964711152
 Transform:
   m_ObjectHideFlags: 0

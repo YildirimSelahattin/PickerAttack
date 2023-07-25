@@ -14,10 +14,7 @@ public class GridSpawner : MonoBehaviour
     public List<int> gridIsEmptyList = new List<int>();
     public GameObject gridPrefab;
     public List<GameObject> soldierList;
-    public GameObject leftLimit;
-    public GameObject rightLimit;
-    public GameObject topLimit;
-    public GameObject botLimit;
+    
     public float xSize;
     public float ySize;
     public int xIndex;
@@ -26,7 +23,6 @@ public class GridSpawner : MonoBehaviour
     public int gridHeight;
     public GameObject gridParent;
     public static GridSpawner Instance;
-    public int[] colCounter = new int[3];
     public GameObject buttonPrefab;
     public GameObject buttonPanelPrefab;
     public Sprite archerSprite;
@@ -38,7 +34,6 @@ public class GridSpawner : MonoBehaviour
     public List<GameObject> knightPrefabs;
     public List<GameObject> cannonPrefabs;
     public List<GameObject> spearPrefabs;
-    public GameObject bossPrefab;
     public List<GameObject> EnemyList = new List<GameObject>();
     public List<GameObject> BossPrefabs;
 
@@ -60,17 +55,14 @@ public class GridSpawner : MonoBehaviour
     }
     public void StartGame()
     {
-        //float distanceBetweenX = Mathf.Abs(leftLimit.transform.position.x - rightLimit.transform.position.x);
-        // float distanceBetweenY = Mathf.Abs(topLimit.transform.position.z - botLimit.transform.position.z);
-        // xSize = (distanceBetweenX / 5);
-        // ySize = (distanceBetweenY / 5);
+     
         CreateGrid();
         CreateButtons();
     }
 
     public void CreateGrid()
     {
-        // for elevator grid
+        
         CalculateGridAmount();
         for (int y = 0; y < gridHeight; y++)
         {

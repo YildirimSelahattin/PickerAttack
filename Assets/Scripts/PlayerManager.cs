@@ -9,13 +9,6 @@ using Cinemachine;
 public class PlayerManager : MonoBehaviour
 {
     [Header("MoveBoundaries")]
-    //   public  Transform rightLimit;
-    //    public  Transform leftLimit;
-
-    private bool moveRight = false;
-    private bool moveLeft = false;
-    public GameObject leftLimit;
-    public GameObject rightLimit;
     public Rigidbody rigidBody;
     public float rotationSpeed;
     public GameObject counterObject;
