@@ -32,7 +32,7 @@ public class TutorialManager : MonoBehaviour
             if(goingToTarget == true)
             {
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime* sensivity);
-                if (Vector3.Distance(transform.position, targetPos) <6)
+                if (Vector3.Distance(transform.position, targetPos) <9)
                 {
                     goingToTarget= false;
                 }
@@ -40,16 +40,20 @@ public class TutorialManager : MonoBehaviour
             else
             {
                 transform.position = Vector3.MoveTowards(transform.position, originalPos.position, Time.deltaTime* sensivity);
-                if (Vector3.Distance( transform.position,originalPos.position)<6)
+                if (Vector3.Distance( transform.position,originalPos.position)<9)
                 {
                     goingToTarget = true;
                 }
             }
             
         }
-        if(Vector3.Distance(originalPos.position, targetPos) < 8)
+        if(Vector3.Distance(originalPos.position, targetPos) < 19)
         {
-            sensivity = 1;
+            transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else
+        {
+            transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = true;
         }
         sensivity = Vector3.Distance(originalPos.position,targetPos)/3f;
     }

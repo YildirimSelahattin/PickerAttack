@@ -71,7 +71,7 @@ public class rewardSystem : MonoBehaviour
 
     IEnumerator NextLevel()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         if (CanvasManager.Instance.winScreen.active)
         {
             GameDataManager.Instance.currentLevel++;
