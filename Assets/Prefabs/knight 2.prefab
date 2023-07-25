@@ -133,7 +133,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -228,6 +228,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8574653710151873875, guid: 7decd59d046165b48b6b92cc9e1792cc,
+        type: 3}
+      propertyPath: m_text
+      value: 'LV 2
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 8827956995062287497, guid: 7decd59d046165b48b6b92cc9e1792cc,
         type: 3}

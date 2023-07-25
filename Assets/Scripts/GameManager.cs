@@ -28,15 +28,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "SampleScene")
-        {
-            GetComponent<AudioSource>();
-        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (SceneManager.GetActiveScene().name == "SampleScene" && gameStarted && GetComponent<AudioSource>().enabled == false)
+        {
+            GetComponent<AudioSource>().enabled = true;
+            
+        }
     }
 }

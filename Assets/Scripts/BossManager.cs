@@ -63,7 +63,7 @@ public class BossManager : MonoBehaviour
 
                     
                     isHit = true;
-                    GetComponent<AudioSource>().PlayOneShot(bossJump);
+                   
                 }
                 if (!checkDist())
                 if (!checkDist())
@@ -89,7 +89,7 @@ public class BossManager : MonoBehaviour
         if (GameManager.Instance.totalCount == 0 && GridSpawner.Instance.EnemyList.Count == 0 &&dead == false)
         {
             animationController.SetLayerWeight(1, 1);
-            //GetComponent<AudioSource>().PlayOneShot(bossJump);
+           
             Debug.Log("boss kazandý");
             animationController.SetTrigger("death");
             dead = true;
@@ -138,7 +138,9 @@ public class BossManager : MonoBehaviour
     {
         Anim();
         transform.GetChild(0).GetComponent<ParticleSystem>().Play();
-        
+        GetComponent<AudioSource>().PlayOneShot(bossJump);
+        StartCoroutine(ShakeCam.Instance.Shake());
+
         StartCoroutine(CallAnotherAttack());
 
     }
