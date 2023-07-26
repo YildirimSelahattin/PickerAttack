@@ -90,6 +90,7 @@ public class ButtonManager : MonoBehaviour
         {
             MergeSoldiers(0);
         }
+      
         count--;
         switch (soldierIndex)
         {
@@ -114,7 +115,10 @@ public class ButtonManager : MonoBehaviour
 
 
         }
-
+        if (GameManager.Instance.totalCount == 0)
+        {
+            GridSpawner.Instance.DestroyEmptyGrids();
+        }
         if (count == 0)
         {
             buttonPressed = false;

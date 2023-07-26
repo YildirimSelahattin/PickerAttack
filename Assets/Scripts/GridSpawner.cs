@@ -36,7 +36,6 @@ public class GridSpawner : MonoBehaviour
     public List<GameObject> spearPrefabs;
     public List<GameObject> EnemyList = new List<GameObject>();
     public List<GameObject> BossPrefabs;
-
     //[Header("Audio")]
     //public AudioClip putting;
 
@@ -77,7 +76,7 @@ public class GridSpawner : MonoBehaviour
 
         //fix camera 
         cam.transform.DOMove(new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f,10.69f, cam.transform.position.z),1F);
-        Instantiate(BossPrefabs[GameDataManager.Instance.currentLevel-1], new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f, 0, gridList[gridWidth * gridHeight - 1].transform.position.z - 15), Quaternion.identity);
+        Instantiate(BossPrefabs[GameDataManager.Instance.currentLevel-1], new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f, 0, gridList[gridWidth * gridHeight - 1].transform.position.z - 2), Quaternion.identity);
     }
 
     public void MoveToFirst(int index, int levelOfSoldier, List<SoldierList> soldierListByLevel, int soldierIndex)
@@ -151,14 +150,18 @@ public class GridSpawner : MonoBehaviour
         {
             case 1:
                 buttonPrefab.transform.localScale = Vector3.one ;
+                buttonPanelPrefab.GetComponent<HorizontalLayoutGroup>().spacing =10;
                 break;
             case 2:
                 buttonPrefab.transform.localScale = Vector3.one ;
+                buttonPanelPrefab.GetComponent<HorizontalLayoutGroup>().spacing = 10;
                 break;
             case 3:
                 buttonPrefab.transform.localScale = Vector3.one ;
+                buttonPanelPrefab.GetComponent<HorizontalLayoutGroup>().spacing = 10;
                 break;
             case 4:
+                buttonPanelPrefab.GetComponent<HorizontalLayoutGroup>().spacing =-90;
                 buttonPrefab.transform.localScale = Vector3.one * 0.80f;
                 break;
         }
@@ -216,7 +219,8 @@ public class GridSpawner : MonoBehaviour
     }
     public void DestroyEmptyGrids()
     {
-        for(int i = gridList.Count; i >= 0; i++)
+        
+        for(int i = gridList.Count-1; i >= 0; i--)
         {
             if (gridList[i].transform.childCount == 1)
             {

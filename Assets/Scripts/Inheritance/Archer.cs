@@ -67,7 +67,6 @@ public class Archer : Army
         {
             if (GameManager.Instance.totalCount <= 0 && played)
             {
-                GridSpawner.Instance.DestroyEmptyGrids();
                 canShoot = false;
                 animator.SetTrigger("Shoot");
                 StartCoroutine(Shoot());
