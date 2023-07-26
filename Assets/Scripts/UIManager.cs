@@ -220,11 +220,7 @@ public class UIManager : MonoBehaviour
         }
         GameDataManager.Instance.maxTimer += timeAwardToAdd;
         GameDataManager.Instance.timePrice = (int)(GameDataManager.Instance.timePrice * 1.25f);
-        timeButton.interactable = false;
-        timerText.gameObject.transform.parent.DOPunchScale(new Vector3(0.2f, 0.2f, 0.2f), 0.5f, 1).OnComplete(() =>
-        {
-            timeButton.interactable = true;
-        });
+        timerText.gameObject.transform.parent.DOPunchScale(new Vector3(0.2f, 0.2f, 0.2f), 0.5f, 1);
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
         timePrice.text = GameDataManager.Instance.timePrice.ToString();
         timeL.text = "LV " + GameDataManager.Instance.TimeLevel.ToString();

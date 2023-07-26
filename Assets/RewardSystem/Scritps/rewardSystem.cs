@@ -76,6 +76,10 @@ public class rewardSystem : MonoBehaviour
         if (BossManager.Instance.gameObject == null)
         {
             GameDataManager.Instance.currentLevel++;
+            if (GameDataManager.Instance.currentLevel == 5)
+            {
+                GameDataManager.Instance.currentLevel = 1;
+            }
             GameDataManager.Instance.SaveData();
         }
         SceneManager.LoadScene(0);
