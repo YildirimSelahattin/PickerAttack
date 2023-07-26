@@ -33,7 +33,7 @@ public class PlayerManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.localPosition.z - 0.5f * GameDataManager.Instance.SizeLevel, 0.2f);
+            PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.localPosition.z - 0.9f * GameDataManager.Instance.SizeLevel, 0.2f);
             transform.DOScale(GameDataManager.Instance.size,0.5f);
         }
 

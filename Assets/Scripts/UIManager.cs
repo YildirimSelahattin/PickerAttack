@@ -154,7 +154,7 @@ public class UIManager : MonoBehaviour
        
         GameDataManager.Instance.cameraLens += 3;
         cam.m_Lens.FieldOfView = GameDataManager.Instance.cameraLens;
-        PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.localPosition.z-0.3f,0.2f);
+        PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.localPosition.z-0.9f,0.2f);
         GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size * 1.5f, 0.2f).OnComplete(() =>
         {
             GameManager.Instance.player.transform.DOScale(GameDataManager.Instance.size, 0.5f);
@@ -220,16 +220,18 @@ public class UIManager : MonoBehaviour
         }
         GameDataManager.Instance.maxTimer += timeAwardToAdd;
         GameDataManager.Instance.timePrice = (int)(GameDataManager.Instance.timePrice * 1.25f);
-        timerText.gameObject.transform.parent.DOPunchScale(new Vector3(0.2f, 0.2f, 0.2f), 0.5f, 1);
+        timeButton.interactable = false;
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
         timePrice.text = GameDataManager.Instance.timePrice.ToString();
         timeL.text = "LV " + GameDataManager.Instance.TimeLevel.ToString();
-        ControlButtonInteractable();
-        GameDataManager.Instance.SaveData();
+        timerText.gameObject.transform.parent.DOScale(Vector3.one * 1.2f, 0.2f).OnComplete(() => {
+            timerText.gameObject.transform.parent.DOScale(Vector3.one , 0.2f);
+            ControlButtonInteractable();
+            GameDataManager.Instance.SaveData();
+        });
     }
     public void StartGame()
     {
-
         playScreen.SetActive(true);
         upgradeScreen.SetActive(false);
         cam.gameObject.transform.DORotate(new Vector3(42.2f, transform.localEulerAngles.y, transform.localEulerAngles.z), 0.5f);
@@ -239,7 +241,6 @@ public class UIManager : MonoBehaviour
     }
     public void AddArcher()
     {
-
     }
     public void sceneChange()
     {

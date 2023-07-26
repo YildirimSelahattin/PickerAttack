@@ -150,20 +150,16 @@ public class GridSpawner : MonoBehaviour
         switch (GetSoldierCount())
         {
             case 1:
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,350);
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,500);
+                buttonPrefab.transform.localScale = Vector3.one ;
                 break;
             case 2:
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 350);
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 500);
+                buttonPrefab.transform.localScale = Vector3.one ;
                 break;
             case 3:
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 350);
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 500);
+                buttonPrefab.transform.localScale = Vector3.one ;
                 break;
             case 4:
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 261);
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 360);
+                buttonPrefab.transform.localScale = Vector3.one * 0.80f;
                 break;
         }
         if (GameManager.Instance.archerCount > 0)
@@ -204,7 +200,7 @@ public class GridSpawner : MonoBehaviour
     {
         int maxGridNumber = (GameManager.Instance.archerCount / 5) + GameManager.Instance.archerCount % 5 + (GameManager.Instance.knightCount / 5) + 5 + (GameManager.Instance.cannonCount / 5) + 5;
         gridWidth = 4;
-        gridHeight = 4;
+        gridHeight = 6;
 
     }
     public int GiveEmptyGridByRow()
