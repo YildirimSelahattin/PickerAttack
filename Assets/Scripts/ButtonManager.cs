@@ -118,6 +118,7 @@ public class ButtonManager : MonoBehaviour
         if (GameManager.Instance.totalCount == 0)
         {
             GridSpawner.Instance.DestroyEmptyGrids();
+            CanvasManager.Instance.tapAndHoldText.gameObject.SetActive(false);
         }
         if (count == 0)
         {

@@ -11,6 +11,7 @@ public class CanvasManager : MonoBehaviour
     public GameObject playScreen;
     public GameObject loseScreen;
     public TextMeshProUGUI hpLeft;
+    public TextMeshProUGUI tapAndHoldText;
     
     bool done;
 
