@@ -41,7 +41,10 @@ public class Archer : Army
             temp.transform.LookAt(BossManager.Instance.transform);
             temp.transform.Rotate(180f, 0f, 0f);
             temp.GetComponent<BulletManager>().damage = damage;
-            temp.transform.DOMove(BossManager.Instance.arrowPoints[Random.Range(0,11)].transform.position,10f).SetSpeedBased(true);
+            temp.transform.DOMove(BossManager.Instance.arrowPoints[Random.Range(0,11)].transform.position,10f).SetSpeedBased(true).OnComplete(() =>
+            {
+                Destroy(temp);
+            });
             canShoot = false;
             StartCoroutine(Shoot());
         }

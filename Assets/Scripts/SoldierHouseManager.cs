@@ -40,25 +40,25 @@ public class SoldierHouseManager : MonoBehaviour
             {
                 GameManager.Instance.knightCount++;
                 GameManager.Instance.totalCount++;
-                PlayerManager.Instance.InstantiateCoinEffect(100);
+                PlayerManager.Instance.InstantiateCoinEffect(50);
             }
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 1)
             {
                 GameManager.Instance.totalCount++;
                 GameManager.Instance.archerCount++;
-                PlayerManager.Instance.InstantiateCoinEffect(10);
+                PlayerManager.Instance.InstantiateCoinEffect(5);
             }
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 2)
             {
                 GameManager.Instance.totalCount++;
                 GameManager.Instance.cannonCount++;
-                PlayerManager.Instance.InstantiateCoinEffect(200);
+                PlayerManager.Instance.InstantiateCoinEffect(100);
             }
             if (collision.collider.gameObject.GetComponent<PeopleManager>().index == 3)
             {
                 GameManager.Instance.totalCount++;
                 GameManager.Instance.spearCount++;
-                PlayerManager.Instance.InstantiateCoinEffect(50);
+                PlayerManager.Instance.InstantiateCoinEffect(25);
             }
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
 
