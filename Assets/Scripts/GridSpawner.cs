@@ -200,7 +200,7 @@ public class GridSpawner : MonoBehaviour
     {
         int maxGridNumber = (GameManager.Instance.archerCount / 5) + GameManager.Instance.archerCount % 5 + (GameManager.Instance.knightCount / 5) + 5 + (GameManager.Instance.cannonCount / 5) + 5;
         gridWidth = 4;
-        gridHeight = 6;
+        gridHeight = 10;
 
     }
     public int GiveEmptyGridByRow()
@@ -214,5 +214,14 @@ public class GridSpawner : MonoBehaviour
         }
         return -1;
     }
-
+    public void DestroyEmptyGrids()
+    {
+        for(int i = gridList.Count; i >= 0; i++)
+        {
+            if (gridList[i].transform.childCount == 1)
+            {
+                Destroy(gridList[i].gameObject);
+            }
+        }
+    }
 }
