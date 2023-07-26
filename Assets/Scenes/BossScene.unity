@@ -2085,10 +2085,10 @@ MonoBehaviour:
   - {fileID: 6461141859124604598, guid: 6cc13aa973dd05d47ab6965c9d26618d, type: 3}
   EnemyList: []
   BossPrefabs:
-  - {fileID: 3588056229375598342, guid: 37b3a1c2977261948ab44bc8916937c1, type: 3}
-  - {fileID: 3588056229375598342, guid: 07a7b5ae483528a4b83fe6ad963738c6, type: 3}
-  - {fileID: 3588056229375598342, guid: 5ce2b26f518eb4b43a09a108c5da0bb9, type: 3}
-  - {fileID: 3588056229375598342, guid: 19011d3d82be6c64d8adaaee06697f8c, type: 3}
+  - {fileID: 6999291180305111701, guid: 37b3a1c2977261948ab44bc8916937c1, type: 3}
+  - {fileID: 7677798385985417202, guid: 07a7b5ae483528a4b83fe6ad963738c6, type: 3}
+  - {fileID: 5204146089307051344, guid: 5ce2b26f518eb4b43a09a108c5da0bb9, type: 3}
+  - {fileID: 196601249178452890, guid: 19011d3d82be6c64d8adaaee06697f8c, type: 3}
 --- !u!4 &1964711152
 Transform:
   m_ObjectHideFlags: 0
