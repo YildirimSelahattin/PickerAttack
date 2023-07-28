@@ -61,7 +61,6 @@ public class GridSpawner : MonoBehaviour
 
     public void CreateGrid()
     {
-        
         CalculateGridAmount();
         for (int y = 0; y < gridHeight; y++)
         {
