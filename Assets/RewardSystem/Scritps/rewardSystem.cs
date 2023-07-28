@@ -73,7 +73,7 @@ public class rewardSystem : MonoBehaviour
     IEnumerator NextLevel()
     {
         yield return new WaitForSeconds(0.1f);
-        if (BossManager.Instance.gameObject == null)
+        if (GridSpawner.Instance.tempBoss == null)
         {
             GameDataManager.Instance.currentLevel++;
             GameDataManager.Instance.SaveData();
