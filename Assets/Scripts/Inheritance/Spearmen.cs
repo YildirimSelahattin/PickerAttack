@@ -46,7 +46,7 @@ public class Spearmen : Army
             temp.transform.LookAt(BossManager.Instance.gameObject.transform.position);
             temp.transform.Rotate(180, 0, 0);
             temp.transform.DOScale(currentBullet.transform.localScale * 2, 1f);
-            temp.transform.DOPath(new Vector3[] {middlePos,BossManager.Instance.gameObject.transform.position},10f,PathType.CatmullRom).SetSpeedBased(true).OnComplete(() =>
+            temp.transform.DOMove(BossManager.Instance.arrowPoints[Random.Range(0, 11)].transform.position, 10f).SetSpeedBased(true).OnComplete(() =>
             {
                 Destroy(temp);
             });
