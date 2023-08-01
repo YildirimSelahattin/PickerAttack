@@ -2219,27 +2219,18 @@ MonoBehaviour:
   spearSprite: {fileID: 21300000, guid: b209d3627c495f8498045c4f70e6cf53, type: 3}
   cam: {fileID: 1711602186}
   archerPrefabs:
-  - {fileID: 4537591594513057165, guid: 2079885b2c79bb241a0a14624655092e, type: 3}
-  - {fileID: 4537591594513057165, guid: c3d13f2c6b9c73747b8761d7591098a9, type: 3}
-  - {fileID: 4537591594513057165, guid: 18a81472b3a0c704e80d6a5b0f1c84e4, type: 3}
+  - {fileID: 3526301239982282216, guid: 16e8e34dd611c4d4f8f9b4b64c050793, type: 3}
   knightPrefabs:
-  - {fileID: 5257138381498046321, guid: 0968a8230fa0395448e66ec0cdf8c00d, type: 3}
-  - {fileID: 5257138381498046321, guid: 525d6b752a3dd7945bf91d47d87d4630, type: 3}
-  - {fileID: 5257138381498046321, guid: 671dc0e3b33ecfb46b41e6b26d0cd187, type: 3}
+  - {fileID: 3117353499056388701, guid: 64778c6d0714b324e9374bd31b7b3cbf, type: 3}
   cannonPrefabs:
   - {fileID: 2330023426797932241, guid: e3e403b5892ef9043844cece297e6eb8, type: 3}
   - {fileID: 2330023426797932241, guid: c019da640addd8e4e8986037db863d53, type: 3}
   - {fileID: 2330023426797932241, guid: d4c0448eb3669ff41bd849cec4284ba6, type: 3}
   spearPrefabs:
-  - {fileID: 6461141859124604598, guid: c2c631c52a3c52149bbc15f0a0930094, type: 3}
-  - {fileID: 6461141859124604598, guid: ba640236ac38942499fbbd475c7331f4, type: 3}
-  - {fileID: 6461141859124604598, guid: 6cc13aa973dd05d47ab6965c9d26618d, type: 3}
+  - {fileID: 2086856718023010792, guid: cd4efd3577beb1a40bc9e4fff0de2c55, type: 3}
   EnemyList: []
   BossPrefabs:
-  - {fileID: 6999291180305111701, guid: 37b3a1c2977261948ab44bc8916937c1, type: 3}
-  - {fileID: 7677798385985417202, guid: 07a7b5ae483528a4b83fe6ad963738c6, type: 3}
-  - {fileID: 5204146089307051344, guid: 5ce2b26f518eb4b43a09a108c5da0bb9, type: 3}
-  - {fileID: 196601249178452890, guid: 19011d3d82be6c64d8adaaee06697f8c, type: 3}
+  - {fileID: 547463500138988043, guid: dcc10bf05ebc86c47b74cdf16be0768b, type: 3}
 --- !u!4 &1964711152
 Transform:
   m_ObjectHideFlags: 0

@@ -138,8 +138,8 @@ public class BossManager : MonoBehaviour
     public void JumpingAttackDamage()
     {
         Anim();
-        transform.GetChild(0).GetComponent<ParticleSystem>().Play();
-        GetComponent<AudioSource>().PlayOneShot(bossJump);
+        //transform.GetChild(0).GetComponent<ParticleSystem>().Play();
+        //GetComponent<AudioSource>().PlayOneShot(bossJump);
         StartCoroutine(ShakeCam.Instance.Shake());
 
         StartCoroutine(CallAnotherAttack());
