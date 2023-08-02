@@ -2219,18 +2219,27 @@ MonoBehaviour:
   spearSprite: {fileID: 21300000, guid: b209d3627c495f8498045c4f70e6cf53, type: 3}
   cam: {fileID: 1711602186}
   archerPrefabs:
-  - {fileID: 3526301239982282216, guid: 16e8e34dd611c4d4f8f9b4b64c050793, type: 3}
+  - {fileID: 215692023903595871, guid: b281c9f8aa1b6524498ed26cbb6059db, type: 3}
+  - {fileID: 215692023903595871, guid: 4a17bed5003d512418d440a34f69f79e, type: 3}
+  - {fileID: 215692023903595871, guid: 77e0405ec5dbae146b0d8967bebf04c4, type: 3}
   knightPrefabs:
-  - {fileID: 3117353499056388701, guid: 64778c6d0714b324e9374bd31b7b3cbf, type: 3}
+  - {fileID: 5379772530968391301, guid: a5aa5810324f35d4ba1196c091da0e95, type: 3}
+  - {fileID: 5379772530968391301, guid: 8e8b16b074f496647b99fce56d8e9088, type: 3}
+  - {fileID: 5379772530968391301, guid: a50c4a54023a5be4fad21235404c9978, type: 3}
   cannonPrefabs:
   - {fileID: 2330023426797932241, guid: e3e403b5892ef9043844cece297e6eb8, type: 3}
   - {fileID: 2330023426797932241, guid: c019da640addd8e4e8986037db863d53, type: 3}
   - {fileID: 2330023426797932241, guid: d4c0448eb3669ff41bd849cec4284ba6, type: 3}
   spearPrefabs:
-  - {fileID: 2086856718023010792, guid: cd4efd3577beb1a40bc9e4fff0de2c55, type: 3}
+  - {fileID: 3288562996582982846, guid: c48fdba0699712e43866e8697f0f2661, type: 3}
+  - {fileID: 3288562996582982846, guid: 020be67f7d0d76a4886e591692f4b859, type: 3}
+  - {fileID: 3288562996582982846, guid: 8fe6c5378f1f7b147821a3c7da310c08, type: 3}
   EnemyList: []
   BossPrefabs:
-  - {fileID: 547463500138988043, guid: dcc10bf05ebc86c47b74cdf16be0768b, type: 3}
+  - {fileID: 547463500138988043, guid: 48c31c53ebebead48ac956ef4b366836, type: 3}
+  - {fileID: 547463500138988043, guid: 64deedffd6bc44c4b8e5594b68c1390f, type: 3}
+  - {fileID: 547463500138988043, guid: d3c35dc018ec777428393e6c5c8e7377, type: 3}
+  - {fileID: 547463500138988043, guid: 0a7aeef1d39d3c4489c30be570b997a8, type: 3}
 --- !u!4 &1964711152
 Transform:
   m_ObjectHideFlags: 0
@@ -2239,7 +2248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964711150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.200075, y: 0.79990566, z: 30.527126}
+  m_LocalPosition: {x: 0, y: -0.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
