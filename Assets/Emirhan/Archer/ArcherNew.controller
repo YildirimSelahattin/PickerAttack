@@ -20,7 +20,7 @@ AnimatorStateMachine:
     m_Position: {x: 620, y: 300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 644038745375108190}
-    m_Position: {x: 323.00372, y: 501.75677, z: 0}
+    m_Position: {x: 320, y: 500, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -269,7 +269,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Idle
-  m_Speed: 3
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -3919927723474820192}
