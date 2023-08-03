@@ -67,7 +67,10 @@ public class Cannon : Army
         //sound.GetComponent<AudioSource>().PlayOneShot(GameDataManager.Instance.boomEffect);
         //Destroy(sound, GameDataManager.Instance.boomEffect.length); // Creates new object, add to it audio source, play sound, destroy this object after playing is done
         bulletGO.GetComponent<BulletManager>().damage = bulDMG;
-        bulletGO.transform.DOMove(BossManager.Instance.arrowPoints[Random.Range(0, 11)].transform.position, 10f).SetSpeedBased(true);
+        bulletGO.transform.DOMove(BossManager.Instance.arrowPoints[Random.Range(0, 11)].transform.position, 10f).SetSpeedBased(true).OnComplete(() =>
+        {
+            Destroy(bulletGO);
+        });
     }
 
     public void AnimateCannonExplosion(int index)

@@ -11,6 +11,7 @@ public class CanvasManager : MonoBehaviour
     public GameObject playScreen;
     public GameObject loseScreen;
     public TextMeshProUGUI hpLeft;
+    public TextMeshProUGUI tapAndHoldText;
     
     bool done;
 
@@ -60,7 +61,7 @@ public class CanvasManager : MonoBehaviour
     }
     IEnumerator loseDelay()
     {
-        hpLeft.text = "%" + (100-(int)((float)BossManager.Instance.curhealth/(float)BossManager.Instance.maxhealth)*100).ToString();
+        hpLeft.text = "%" +((int)(((BossManager.Instance.maxhealth - BossManager.Instance.curhealth) / (float)BossManager.Instance.maxhealth) * 100)).ToString();
         done = false;
         playScreen.SetActive(false);
         yield return new WaitForSeconds(2);

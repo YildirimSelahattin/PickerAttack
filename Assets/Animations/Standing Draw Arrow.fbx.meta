@@ -116,12 +116,7 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton:
-    - name: stickchild(Clone)
-      parentName: 
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 100, y: 100, z: 100}
+    skeleton: []
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -134,7 +129,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: fec1b935608417142ad16cde413937ab,
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: d1ebc73373f83d74bbdde9f77a58f6be,
     type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2

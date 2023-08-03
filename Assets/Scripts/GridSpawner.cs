@@ -36,7 +36,6 @@ public class GridSpawner : MonoBehaviour
     public List<GameObject> spearPrefabs;
     public List<GameObject> EnemyList = new List<GameObject>();
     public List<GameObject> BossPrefabs;
-
     //[Header("Audio")]
     //public AudioClip putting;
 
@@ -62,7 +61,6 @@ public class GridSpawner : MonoBehaviour
 
     public void CreateGrid()
     {
-        
         CalculateGridAmount();
         for (int y = 0; y < gridHeight; y++)
         {
@@ -77,7 +75,7 @@ public class GridSpawner : MonoBehaviour
 
         //fix camera 
         cam.transform.DOMove(new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f,10.69f, cam.transform.position.z),1F);
-        Instantiate(BossPrefabs[GameDataManager.Instance.currentLevel-1], new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f, 0, gridList[gridWidth * gridHeight - 1].transform.position.z - 15), Quaternion.identity);
+        Instantiate(BossPrefabs[GameDataManager.Instance.currentLevel-1], new Vector3((gridList[gridWidth * gridHeight - 1].transform.position.x + gridList[0].transform.position.x) / 2f, 0, gridList[gridWidth * gridHeight - 1].transform.position.z - 2), Quaternion.identity);
     }
 
     public void MoveToFirst(int index, int levelOfSoldier, List<SoldierList> soldierListByLevel, int soldierIndex)
@@ -150,20 +148,20 @@ public class GridSpawner : MonoBehaviour
         switch (GetSoldierCount())
         {
             case 1:
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,350);
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical,500);
+                buttonPrefab.transform.localScale = Vector3.one ;
+                buttonPanelPrefab.GetComponent<HorizontalLayoutGroup>().spacing =10;
                 break;
             case 2:
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 350);
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 500);
+                buttonPrefab.transform.localScale = Vector3.one ;
+                buttonPanelPrefab.GetComponent<HorizontalLayoutGroup>().spacing = 10;
                 break;
             case 3:
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 350);
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 500);
+                buttonPrefab.transform.localScale = Vector3.one ;
+                buttonPanelPrefab.GetComponent<HorizontalLayoutGroup>().spacing = 10;
                 break;
             case 4:
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 261);
-                buttonPrefab.GetComponent<Image>().rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 360);
+                buttonPanelPrefab.GetComponent<HorizontalLayoutGroup>().spacing =-90;
+                buttonPrefab.transform.localScale = Vector3.one * 0.80f;
                 break;
         }
         if (GameManager.Instance.archerCount > 0)
@@ -204,7 +202,7 @@ public class GridSpawner : MonoBehaviour
     {
         int maxGridNumber = (GameManager.Instance.archerCount / 5) + GameManager.Instance.archerCount % 5 + (GameManager.Instance.knightCount / 5) + 5 + (GameManager.Instance.cannonCount / 5) + 5;
         gridWidth = 4;
-        gridHeight = 4;
+        gridHeight = 10;
 
     }
     public int GiveEmptyGridByRow()
@@ -218,5 +216,15 @@ public class GridSpawner : MonoBehaviour
         }
         return -1;
     }
-
+    public void DestroyEmptyGrids()
+    {
+        
+        for(int i = gridList.Count-1; i >= 0; i--)
+        {
+            if (gridList[i].transform.childCount == 1)
+            {
+                Destroy(gridList[i].gameObject);
+            }
+        }
+    }
 }

@@ -96,8 +96,8 @@ public class BossManager : MonoBehaviour
             dead = true;
             if (dead == true)
             {
-                Debug.Log("boss sesi");
-                GetComponent<AudioSource>().PlayOneShot(youLose);
+                //Debug.Log("boss sesi");
+                //GetComponent<AudioSource>().PlayOneShot(youLose);
             }
             transform.DOKill();
             
@@ -106,7 +106,7 @@ public class BossManager : MonoBehaviour
     private IEnumerator DestroyDelay()
     {
 
-        GetComponent<AudioSource>().PlayOneShot(death);
+        //GetComponent<AudioSource>().PlayOneShot(death);
         animationController.SetTrigger("death");
         yield return new WaitForSeconds(2);
 
@@ -138,8 +138,8 @@ public class BossManager : MonoBehaviour
     public void JumpingAttackDamage()
     {
         Anim();
-        transform.GetChild(0).GetComponent<ParticleSystem>().Play();
-        GetComponent<AudioSource>().PlayOneShot(bossJump);
+        //transform.GetChild(0).GetComponent<ParticleSystem>().Play();
+        //GetComponent<AudioSource>().PlayOneShot(bossJump);
         StartCoroutine(ShakeCam.Instance.Shake());
 
         StartCoroutine(CallAnotherAttack());
@@ -203,7 +203,7 @@ public class BossManager : MonoBehaviour
         {
             
             enemy.GetComponent<Animator>().SetTrigger("win");
-            GetComponent<AudioSource>().PlayOneShot(win);
+            //GetComponent<AudioSource>().PlayOneShot(win);
 
         }
 

@@ -76,7 +76,7 @@ public class GameDataManager : MonoBehaviour
         SizeLevel = PlayerPrefs.GetInt(sizeLevelKey, 1);
         SpeedLevel = PlayerPrefs.GetInt(speedLevelKey, 1);
         TimeLevel = PlayerPrefs.GetInt(timeLevelKey, 1);
-        totalMoney = PlayerPrefs.GetInt(totalMoneyKey, 1000);
+        totalMoney = PlayerPrefs.GetInt(totalMoneyKey, 100);
         currentLevel = PlayerPrefs.GetInt(CurrentLevelKey, 1);
 
         maxTimer = PlayerPrefs.GetFloat(timerKey, 15);
