@@ -96,8 +96,8 @@ public class BossManager : MonoBehaviour
             dead = true;
             if (dead == true)
             {
-                Debug.Log("boss sesi");
-                GetComponent<AudioSource>().PlayOneShot(youLose);
+                //Debug.Log("boss sesi");
+                //GetComponent<AudioSource>().PlayOneShot(youLose);
             }
             transform.DOKill();
             
