@@ -48,11 +48,13 @@ public class Knight : Army
     }
     public void DealDamage()
     {
+        /*
         GameObject sound = new GameObject("sound");
         sound.AddComponent<AudioSource>();
         sound.GetComponent<AudioSource>().volume = 1;
         sound.GetComponent<AudioSource>().PlayOneShot(soundEffect);
         Destroy(sound, soundEffect.length);
-        BossManager.Instance.TakeDamage(damage);
+       
+        */BossManager.Instance.TakeDamage(damage);
     }
 }

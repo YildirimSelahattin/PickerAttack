@@ -106,7 +106,7 @@ public class BossManager : MonoBehaviour
     private IEnumerator DestroyDelay()
     {
 
-        GetComponent<AudioSource>().PlayOneShot(death);
+        //GetComponent<AudioSource>().PlayOneShot(death);
         animationController.SetTrigger("death");
         yield return new WaitForSeconds(2);
 
@@ -203,7 +203,7 @@ public class BossManager : MonoBehaviour
         {
             
             enemy.GetComponent<Animator>().SetTrigger("win");
-            GetComponent<AudioSource>().PlayOneShot(win);
+            //GetComponent<AudioSource>().PlayOneShot(win);
 
         }
 
