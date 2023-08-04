@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class HoleManager : MonoBehaviour
@@ -28,8 +29,7 @@ public class HoleManager : MonoBehaviour
     {
         if (collision.collider.gameObject.transform.CompareTag("In") || collision.collider.gameObject.transform.CompareTag("Pick"))
         {
-            pipeScript.gameObject.GetComponent<AudioSource>().PlayOneShot(pipeScript.pipe);
-            if (TutorialManager.Instance.gameObject.IsDestroyed() == false)
+            if (TutorialManager.Instance.IsDestroyed() == false)
             {
                 Destroy(TutorialManager.Instance.gameObject);
             }
@@ -59,7 +59,9 @@ public class HoleManager : MonoBehaviour
                 PlayerManager.Instance.InstantiateCoinEffect(25);
             }
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            collision.collider.gameObject.transform.DOLocalMoveY(-5,0.2f);
+            collision.collider.gameObject.transform.DOLocalMoveY(-5,1.5f);
+            collision.collider.gameObject.transform.DOShakeRotation(2,30,3,90,true);
+            
             //StartCoroutine(pipeScript.StartMoveAfterTime(0, false));
             UIManager.Instance.ControlButtonInteractable();
 
