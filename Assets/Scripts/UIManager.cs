@@ -218,7 +218,7 @@ public class UIManager : MonoBehaviour
             .Instance
             .player
             .transform
-            .DOScale(GameDataManager.Instance.size * 1.5f, 0.2f)
+            .DOScale(GameDataManager.Instance.size * 1f, 0.2f)
             .OnComplete(() =>
             {
                 GameManager

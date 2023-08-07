@@ -6512,7 +6512,7 @@ Transform:
   m_GameObject: {fileID: 1643359035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.08248638, y: -0, z: 32.7}
-  m_LocalScale: {x: 12.221054, y: 12.221054, z: 12.221054}
+  m_LocalScale: {x: 25, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7988,6 +7988,7 @@ MonoBehaviour:
   - {fileID: 4691921792515367832, guid: 73fc6905b0707694e8cf2634e3934edb, type: 3}
   - {fileID: 4691921792515367832, guid: 57a9fd7069a312142967579fcad0694b, type: 3}
   - {fileID: 4691921792515367832, guid: 430c6e9ce08458a44852c83e68d2b50a, type: 3}
+  - {fileID: 4691921792515367832, guid: ccd066cef8cbd9941b31e051e1555a08, type: 3}
   tictocSound: {fileID: 2061397679}
 --- !u!4 &2061397678
 Transform:
