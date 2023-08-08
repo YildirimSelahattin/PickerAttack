@@ -121,8 +121,8 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        PlayerManager.Instance.endCamera.LookAt = HoleManager.Instance.transform;
-
+        PlayerManager.Instance.endCamera.LookAt =
+            SoldierHouseManager.Instance.transform;
 
         if (GameManager.Instance.timer < 6 && shineLoopStarted == false)
         {
