@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 128721800228611467}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 1952528834802270173}
   - component: {fileID: 3222076168020144248}
   - component: {fileID: 816253784103011506}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cannon_tekerlek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 7609379230481312946}
   - component: {fileID: 8216260226802456028}
   - component: {fileID: 353305042597267633}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cannon 2
   m_TagString: Pick
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4596098425773368137}
   - component: {fileID: 8237039271164370096}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "2_cannon_g\xF6vde"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 7485648165414755682}
   - component: {fileID: 4923910391180771371}
   - component: {fileID: 6436418385724826862}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: levelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 1220140299451327816}
   - component: {fileID: 5885880323116431452}
   - component: {fileID: 9160809353876034587}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -640,7 +640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1705349246463904431}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +673,7 @@ GameObject:
   - component: {fileID: 835104147018023977}
   - component: {fileID: 6864560926569272047}
   - component: {fileID: 6020201402535710035}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 7674413242280249559}
   - component: {fileID: 2926887672621151583}
   - component: {fileID: 6165812713855978027}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

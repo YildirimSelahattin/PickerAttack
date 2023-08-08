@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7994358047255070602}
   - component: {fileID: 8817742527033746759}
   - component: {fileID: 5184734411143970777}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 5570626061342801082}
   - component: {fileID: 5088879688958916580}
   - component: {fileID: 5645981670189072439}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: levelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 1952528834802270173}
   - component: {fileID: 3222076168020144248}
   - component: {fileID: 816253784103011506}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cannon_tekerlek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 8246420377068897796}
   - component: {fileID: 7447053945724216851}
   - component: {fileID: 8738973385126618356}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2903683400457615091}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 5443586122253852488}
   - component: {fileID: -3806626706928629096}
   - component: {fileID: 6840392780474592612}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cannon 1
   m_TagString: Pick
   m_Icon: {fileID: 0}
@@ -628,7 +628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4596098425773368137}
   - component: {fileID: 8237039271164370096}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "2_cannon_g\xF6vde"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 9136249612320934824}
   - component: {fileID: 4896928723147922062}
   - component: {fileID: 2634614260028159300}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -822,7 +822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 54527328833216534}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: firePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
