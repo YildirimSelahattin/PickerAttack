@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 2882f2685da2516439692ba6ea732653, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 20a781a9117e3ea41a129ef7f337545e, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -382,7 +382,7 @@ MonoBehaviour:
   SizeLevel: 1
   SpeedLevel: 1
   TimeLevel: 1
-  currentLevel: 1
+  currentLevel: 2
   sizePrice: 50
   speedPrice: 50
   timePrice: 50
@@ -7989,9 +7989,9 @@ MonoBehaviour:
   gameStarted: 0
   levelPrefabs:
   - {fileID: 4691921792515367832, guid: 24a4a859f530d8441ad92da2a7c48dda, type: 3}
-  - {fileID: 4691921792515367832, guid: 73fc6905b0707694e8cf2634e3934edb, type: 3}
-  - {fileID: 4691921792515367832, guid: 57a9fd7069a312142967579fcad0694b, type: 3}
-  - {fileID: 4691921792515367832, guid: 430c6e9ce08458a44852c83e68d2b50a, type: 3}
+  - {fileID: 4691921792515367832, guid: 0e0cb465d0cb3864cb69edf221d4e5c1, type: 3}
+  - {fileID: 4691921792515367832, guid: 26a1c6b3a9aa7d7458f91b7723755f34, type: 3}
+  - {fileID: 4691921792515367832, guid: d3e4d82831058564599dca9cd5df1b2c, type: 3}
   tictocSound: {fileID: 2061397679}
 --- !u!4 &2061397678
 Transform:
