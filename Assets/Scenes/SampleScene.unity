@@ -383,7 +383,7 @@ MonoBehaviour:
   SpeedLevel: 1
   TimeLevel: 1
   currentLevel: 1
-  sizePrice: 50
+  sizePrice: 1
   speedPrice: 50
   timePrice: 50
   speed: 6

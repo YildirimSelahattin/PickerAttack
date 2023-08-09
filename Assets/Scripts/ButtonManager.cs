@@ -42,6 +42,7 @@ public class ButtonManager : MonoBehaviour
     }
     void Start()
     {
+        rate /= GameDataManager.Instance.currentLevel;
         timer = rate;
         soldier5Grouped.Add(new List<GameObject>());
         soldier5Grouped.Add(new List<GameObject>());
@@ -135,13 +136,13 @@ public class ButtonManager : MonoBehaviour
             MoveToFirst(counter, levelIndex);
         }
     }
-
+    //milmilim
     public void MoveToFirst(int index, int levelIndex)
     {
         GameObject movingObject = soldier5Grouped[levelIndex][index];
         movingObject.transform.DOJump(soldier5Grouped[levelIndex][0].transform.position, 1, 1, rate / 2).OnComplete(() =>
         {
-            GridSpawner.Instance.EnemyList.Remove(movingObject);
+            GridSpawner.Instance.EnemyList.Remove(movingObject); 
             Destroy(movingObject);
             if (index == 0)
             {

@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class rewardSystem : MonoBehaviour
 {
@@ -73,7 +74,7 @@ public class rewardSystem : MonoBehaviour
     IEnumerator NextLevel()
     {
         yield return new WaitForSeconds(0.1f);
-        if (BossManager.Instance.gameObject == null)
+        if (!BossManager.Instance.IsDestroyed())
         {
             GameDataManager.Instance.currentLevel++;
             GameDataManager.Instance.SaveData();
