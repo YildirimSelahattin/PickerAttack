@@ -59,11 +59,11 @@ public class HoleManager : MonoBehaviour
                 PlayerManager.Instance.InstantiateCoinEffect(25);
             }
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            collision.collider.gameObject.transform.DOLocalMoveY(-5, 1.5f).OnComplete(() =>
+            collision.collider.gameObject.transform.DOLocalMoveY(-5,1.5f);
+            collision.collider.gameObject.transform.DOShakeRotation(2,30,3,90,true).OnComplete(() =>
             {
                 Destroy(collision.collider.gameObject);
             });
-            collision.collider.gameObject.transform.DOShakeRotation(2,30,3,90,true);
             
             //StartCoroutine(pipeScript.StartMoveAfterTime(0, false));
             UIManager.Instance.ControlButtonInteractable();

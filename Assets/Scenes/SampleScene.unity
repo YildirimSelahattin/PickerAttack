@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.99999905, g: 0, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7894,8 +7894,8 @@ MonoBehaviour:
   - {fileID: 4691921792515367832, guid: 24a4a859f530d8441ad92da2a7c48dda, type: 3}
   - {fileID: 4691921792515367832, guid: 0e0cb465d0cb3864cb69edf221d4e5c1, type: 3}
   - {fileID: 4691921792515367832, guid: 26a1c6b3a9aa7d7458f91b7723755f34, type: 3}
+  - {fileID: 4691921792515367832, guid: bd1b7d8bbf1bcb24992fd37e0c202e12, type: 3}
   - {fileID: 4691921792515367832, guid: d3e4d82831058564599dca9cd5df1b2c, type: 3}
-  - {fileID: 4691921792515367832, guid: ccd066cef8cbd9941b31e051e1555a08, type: 3}
   tictocSound: {fileID: 2061397679}
 --- !u!4 &2061397678
 Transform:
