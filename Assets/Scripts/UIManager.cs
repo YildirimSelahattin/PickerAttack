@@ -84,10 +84,10 @@ public class UIManager : MonoBehaviour
         timeL.text = "LV " + GameDataManager.Instance.TimeLevel.ToString();
         speedL.text = "LV " + GameDataManager.Instance.SpeedLevel.ToString();
 
-        sizePrice.text = ((int) GameDataManager.Instance.sizePrice).ToString();
+        sizePrice.text = ((int)GameDataManager.Instance.sizePrice).ToString();
         speedPrice.text =
-            ((int) GameDataManager.Instance.speedPrice).ToString();
-        timePrice.text = ((int) GameDataManager.Instance.timePrice).ToString();
+            ((int)GameDataManager.Instance.speedPrice).ToString();
+        timePrice.text = ((int)GameDataManager.Instance.timePrice).ToString();
 
         totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
 
@@ -140,7 +140,7 @@ public class UIManager : MonoBehaviour
             {
                 GameManager.Instance.timer =
                     GameManager.Instance.timer - Time.deltaTime;
-                timerText.text = ((int) GameManager.Instance.timer).ToString();
+                timerText.text = ((int)GameManager.Instance.timer).ToString();
                 fillObject
                     .material
                     .SetFloat("_Arc1",
@@ -169,7 +169,7 @@ public class UIManager : MonoBehaviour
         }
         GameDataManager.Instance.size += (sizeAwardToAdd * Vector3.one) / 10f;
         GameDataManager.Instance.totalMoney -=
-            (int) GameDataManager.Instance.sizePrice;
+            (int)GameDataManager.Instance.sizePrice;
         UIManager.Instance.totalMoney.text =
             GameDataManager.Instance.totalMoney.ToString();
         if (GameDataManager.Instance.SizeLevel % 5 == 0)
@@ -244,7 +244,7 @@ public class UIManager : MonoBehaviour
         }
         GameDataManager.Instance.speed += speedAwardToAdd / 10f;
         GameDataManager.Instance.totalMoney -=
-            (int) GameDataManager.Instance.speedPrice;
+            (int)GameDataManager.Instance.speedPrice;
         UIManager.Instance.totalMoney.text =
             GameDataManager.Instance.totalMoney.ToString();
         GameDataManager.Instance.SpeedLevel++;
@@ -277,7 +277,7 @@ public class UIManager : MonoBehaviour
             timeAwardToAdd = 1;
         }
         GameDataManager.Instance.totalMoney -=
-            (int) GameDataManager.Instance.timePrice;
+            (int)GameDataManager.Instance.timePrice;
         UIManager.Instance.totalMoney.text =
             GameDataManager.Instance.totalMoney.ToString();
         GameDataManager.Instance.TimeLevel++;
@@ -301,11 +301,11 @@ public class UIManager : MonoBehaviour
             .OnComplete(() =>
             {
                 timeButton.interactable = true;
+                ControlButtonInteractable();
             });
         timerText.text = GameDataManager.Instance.maxTimer.ToString();
         timePrice.text = GameDataManager.Instance.timePrice.ToString();
         timeL.text = "LV " + GameDataManager.Instance.TimeLevel.ToString();
-        ControlButtonInteractable();
         GameDataManager.Instance.SaveData();
     }
 
@@ -339,7 +339,7 @@ public class UIManager : MonoBehaviour
         //speed up button
         if (
             GameDataManager.Instance.totalMoney >=
-            (int) GameDataManager.Instance.speedPrice
+            (int)GameDataManager.Instance.speedPrice
         )
         {
             speedButton.interactable = true;
@@ -354,7 +354,7 @@ public class UIManager : MonoBehaviour
         //size up button
         if (
             GameDataManager.Instance.totalMoney >=
-            (int) GameDataManager.Instance.sizePrice
+            (int)GameDataManager.Instance.sizePrice
         )
         {
             sizeButton.interactable = true;
@@ -369,7 +369,7 @@ public class UIManager : MonoBehaviour
         //time up button
         if (
             GameDataManager.Instance.totalMoney >=
-            (int) GameDataManager.Instance.timePrice
+            (int)GameDataManager.Instance.timePrice
         )
         {
             timeButton.interactable = true;

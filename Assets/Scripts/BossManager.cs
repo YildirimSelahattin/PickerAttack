@@ -43,10 +43,6 @@ public class BossManager : MonoBehaviour
         OnDamageTaken += OnBulletTakenLogic;
         OnDamageTaken += OnBulletTakenUI;
         animationController.SetLayerWeight(1, 0);
-
-
-
-
     }
     public void Anim()
     {
@@ -206,7 +202,8 @@ public class BossManager : MonoBehaviour
             //GetComponent<AudioSource>().PlayOneShot(win);
 
         }
-
+        OnDamageTaken -= OnBulletTakenLogic;
+        OnDamageTaken -= OnBulletTakenUI;
 
         // CanvasManager.Instance.winScreen.SetActive(true);
     }

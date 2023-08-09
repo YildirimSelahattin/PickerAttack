@@ -3481,8 +3481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a93369b71a64a2648bf7c0fc017e1e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  maxHealth: 10
+  health: 22
+  maxHealth: 22
   damage: 2
   healthbar: {fileID: 3020854888085713756}
   deathMat: {fileID: 2100000, guid: ed439a238dcb3b34cbff47e14001dcd1, type: 2}
