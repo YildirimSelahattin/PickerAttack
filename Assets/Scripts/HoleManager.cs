@@ -60,7 +60,10 @@ public class HoleManager : MonoBehaviour
             }
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             collision.collider.gameObject.transform.DOLocalMoveY(-5,1.5f);
-            collision.collider.gameObject.transform.DOShakeRotation(2,30,3,90,true);
+            collision.collider.gameObject.transform.DOShakeRotation(2,30,3,90,true).OnComplete(() =>
+            {
+                Destroy(collision.collider.gameObject);
+            });
             
             //StartCoroutine(pipeScript.StartMoveAfterTime(0, false));
             UIManager.Instance.ControlButtonInteractable();
