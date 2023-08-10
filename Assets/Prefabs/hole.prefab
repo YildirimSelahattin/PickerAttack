@@ -198,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipeScript: {fileID: 0}
   targetPoint: {fileID: 0}
+  clip: {fileID: 8300000, guid: ae5208813f097b74397f5c51c899cc77, type: 3}
 --- !u!1 &3180541395219389543
 GameObject:
   m_ObjectHideFlags: 0

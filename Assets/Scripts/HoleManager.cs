@@ -10,6 +10,7 @@ public class HoleManager : MonoBehaviour
     public PipeManager pipeScript;
     public GameObject targetPoint;
     public static HoleManager Instance;
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,8 +59,13 @@ public class HoleManager : MonoBehaviour
                 GameManager.Instance.spearCount++;
                 PlayerManager.Instance.InstantiateCoinEffect(25);
             }
+            GameObject sound = new GameObject("sound");
+            sound.AddComponent<AudioSource>();
+            sound.GetComponent<AudioSource>().volume = 1;
+            sound.GetComponent<AudioSource>().PlayOneShot(clip);
+            Destroy(sound, clip.length); 
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            collision.collider.gameObject.transform.DOLocalMoveY(-25,1.5f).SetEase(Ease.InBack);
+            collision.collider.gameObject.transform.DOLocalMoveY(-35,1.5f).SetEase(Ease.InBack);
             collision.collider.gameObject.transform.DOShakeRotation(2,30,3,90,true).OnComplete(() =>
             {
                 Destroy(collision.collider.gameObject);
