@@ -58,7 +58,8 @@ public class BossManager : MonoBehaviour
                 {
                     enemy.GetComponent<Army>().TakeDamage(damage);
 
-                    
+                    //single target için alttaki commenti aç
+                    //return;
                     isHit = true;
                    
                 }
