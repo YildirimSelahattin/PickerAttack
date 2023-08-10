@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18386552, g: 0.22871055, b: 0.3013536, a: 1}
+  m_IndirectSpecularColor: {r: 0.18386601, g: 0.22871092, b: 0.30135462, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2247,10 +2247,15 @@ MonoBehaviour:
   EnemyList: []
   BossPrefabs:
   - {fileID: 547463500138988043, guid: 48c31c53ebebead48ac956ef4b366836, type: 3}
+  - {fileID: 547463500138988043, guid: 026b70bb111454dd9ae98e5498cd30d2, type: 3}
   - {fileID: 547463500138988043, guid: 64deedffd6bc44c4b8e5594b68c1390f, type: 3}
   - {fileID: 547463500138988043, guid: d3c35dc018ec777428393e6c5c8e7377, type: 3}
   - {fileID: 547463500138988043, guid: 0a7aeef1d39d3c4489c30be570b997a8, type: 3}
   - {fileID: 92811026850664097, guid: a0f7d013fc4c446c8ae117b66b2a8a87, type: 3}
+  - {fileID: 547463500138988043, guid: 48c31c53ebebead48ac956ef4b366836, type: 3}
+  - {fileID: 547463500138988043, guid: 026b70bb111454dd9ae98e5498cd30d2, type: 3}
+  - {fileID: 547463500138988043, guid: 64deedffd6bc44c4b8e5594b68c1390f, type: 3}
+  - {fileID: 547463500138988043, guid: d3c35dc018ec777428393e6c5c8e7377, type: 3}
 --- !u!4 &1964711152
 Transform:
   m_ObjectHideFlags: 0

@@ -1722,8 +1722,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2374,7 +2374,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -27.3, y: -2.972}
+  m_AnchoredPosition: {x: -36.17, y: -2.972}
   m_SizeDelta: {x: 200, y: 77.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &399141433
@@ -6746,7 +6746,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -193.3, y: -162.8}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1706139460
 MonoBehaviour:
@@ -7812,7 +7812,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -162.8}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2055487330
 MonoBehaviour:
@@ -7891,10 +7891,15 @@ MonoBehaviour:
   timer: 20
   gameStarted: 0
   levelPrefabs:
+  - {fileID: 4691921792515367832, guid: 7e11c3940687245159a0fdd0236cb107, type: 3}
+  - {fileID: 4691921792515367832, guid: 894706b1721704ed9b8e131474790d5a, type: 3}
+  - {fileID: 4691921792515367832, guid: 73fc6905b0707694e8cf2634e3934edb, type: 3}
+  - {fileID: 4691921792515367832, guid: 57a9fd7069a312142967579fcad0694b, type: 3}
+  - {fileID: 4691921792515367832, guid: 430c6e9ce08458a44852c83e68d2b50a, type: 3}
+  - {fileID: 4691921792515367832, guid: ccd066cef8cbd9941b31e051e1555a08, type: 3}
   - {fileID: 4691921792515367832, guid: 24a4a859f530d8441ad92da2a7c48dda, type: 3}
   - {fileID: 4691921792515367832, guid: 0e0cb465d0cb3864cb69edf221d4e5c1, type: 3}
   - {fileID: 4691921792515367832, guid: 26a1c6b3a9aa7d7458f91b7723755f34, type: 3}
-  - {fileID: 4691921792515367832, guid: bd1b7d8bbf1bcb24992fd37e0c202e12, type: 3}
   - {fileID: 4691921792515367832, guid: d3e4d82831058564599dca9cd5df1b2c, type: 3}
   tictocSound: {fileID: 2061397679}
 --- !u!4 &2061397678
