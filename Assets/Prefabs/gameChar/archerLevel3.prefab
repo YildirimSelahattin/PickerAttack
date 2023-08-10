@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7290996619879985503}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5509653329329867101}
   - component: {fileID: 742028920968616229}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 001_skinned_Stickman_Woman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +869,7 @@ GameObject:
   - component: {fileID: 2452799139582443850}
   - component: {fileID: 6026569245355929184}
   - component: {fileID: 1836853208777603702}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_archerLevel3_combined_static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,7 +951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6975971653877353767}
   - component: {fileID: 3944783086548636658}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_archerLevel3_combined_skinned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1107,7 +1107,7 @@ GameObject:
   - component: {fileID: 4998078826119866190}
   - component: {fileID: 509984031455214043}
   - component: {fileID: 7822703501126432107}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 001_static_Weapon_Quiver_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1538,7 +1538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2436313330232822973}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1573,7 +1573,7 @@ GameObject:
   - component: {fileID: 5139934925525379561}
   - component: {fileID: 2366602571671018006}
   - component: {fileID: 7669890216640913157}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_archerLevel3_combined_static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1654,7 +1654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7850979549702592294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1996,7 +1996,7 @@ GameObject:
   - component: {fileID: 4269854014177278451}
   - component: {fileID: 5271393856039527349}
   - component: {fileID: 4833244087446493203}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_Weapon_Bow_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2078,7 +2078,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1394333116972066488}
   - component: {fileID: 2972672913511856552}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_Jarl_Woman_Body_Clothing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2464,7 +2464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8631640177972602256}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: _UMS_LODs_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2733,7 +2733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5658376182773281226}
   - component: {fileID: 4559202226328508543}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_archerLevel3_combined_skinned
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -474,7 +474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4594745932451350826}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1159,7 +1159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3682063281741577670}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1791,7 +1791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3301501583694992805}
   - component: {fileID: 4707630458386498769}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_Knightlv1_combined_skinned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2315,7 +2315,7 @@ GameObject:
   - component: {fileID: 7205575299880723939}
   - component: {fileID: 7388668845919023761}
   - component: {fileID: 4205699358055471325}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_Knightlv1_combined_static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3233,7 +3233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6579327656029988464}
   - component: {fileID: 3471421085712886866}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_Knightlv1_combined_skinned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3447,7 +3447,7 @@ GameObject:
   - component: {fileID: 8115124217965545786}
   - component: {fileID: 4613099905333708976}
   - component: {fileID: 4027781556224498275}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 001_static_Weapon_Sword_Two_Handed_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4204,7 +4204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1452127676719635464}
   - component: {fileID: 7951630538385227585}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_Beard_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4331,7 +4331,7 @@ GameObject:
   - component: {fileID: 6423424671531194715}
   - component: {fileID: 482056650764185827}
   - component: {fileID: 4252910618709695382}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_Knightlv1_combined_static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4856,7 +4856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7033986994939395306}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: _UMS_LODs_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4892,7 +4892,7 @@ GameObject:
   - component: {fileID: 1754320439060362589}
   - component: {fileID: 5661245601945081041}
   - component: {fileID: 4530893904238587420}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_Weapon_Shield_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5329,7 +5329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8014792705069247296}
   - component: {fileID: 5345704165573726997}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 002_skinned_Stickman_Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5547,7 +5547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6875255226400907952}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5881,7 +5881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7043723823089278321}
   - component: {fileID: 8133923006594743690}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 001_skinned_Priest_Body_Clothing
   m_TagString: Untagged
   m_Icon: {fileID: 0}

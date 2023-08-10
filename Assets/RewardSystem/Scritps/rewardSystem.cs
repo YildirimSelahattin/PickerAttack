@@ -74,7 +74,7 @@ public class rewardSystem : MonoBehaviour
     IEnumerator NextLevel()
     {
         yield return new WaitForSeconds(0.1f);
-        if (!BossManager.Instance.IsDestroyed())
+        if (BossManager.Instance.IsDestroyed())
         {
             GameDataManager.Instance.currentLevel++;
             GameDataManager.Instance.SaveData();

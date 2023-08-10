@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6727264137277301986}
   - component: {fileID: 768588571668809600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 001_skinned_Hair_Man_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1082,7 +1082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2945321805994546897}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1332,7 +1332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 57130778696805102}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1365,7 +1365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7406596935001049335}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1726,7 +1726,7 @@ GameObject:
   - component: {fileID: 6737100355262336463}
   - component: {fileID: 7354488204878445008}
   - component: {fileID: 6244448739563072932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_spearlv2_combined_static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2051,7 +2051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7082435916156021712}
   - component: {fileID: 3367378815535969749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_spearlv2_combined_skinned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2845,7 +2845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6418855893511656111}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: _UMS_LODs_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2880,7 +2880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 884903193452668427}
   - component: {fileID: 638416995976335107}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_spearlv2_combined_skinned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4197,7 +4197,7 @@ GameObject:
   - component: {fileID: 1141941847106139315}
   - component: {fileID: 8029590454233530973}
   - component: {fileID: 8400826676825380567}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_Weapon_Spear_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4384,7 +4384,7 @@ GameObject:
   - component: {fileID: 2018660958977148669}
   - component: {fileID: 4893974085879048772}
   - component: {fileID: 8178612818973035109}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_spearlv2_combined_static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5028,7 +5028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4353189896568418735}
   - component: {fileID: 5532054455198782677}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 002_skinned_Rune_cutter_Body_Clothing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5865,7 +5865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3930845224920849375}
   - component: {fileID: 5235241547823712720}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 003_skinned_Stickman_Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5977,7 +5977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3994742632009088661}
   - component: {fileID: 7562608967959898644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_Beard_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

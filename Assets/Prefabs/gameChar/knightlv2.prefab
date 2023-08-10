@@ -382,7 +382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8619162013352481386}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: _UMS_LODs_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -696,7 +696,7 @@ GameObject:
   - component: {fileID: 1020866970908745482}
   - component: {fileID: 7166871453960589416}
   - component: {fileID: 4904333021678878434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_Weapon_Shield_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5259253177151302894}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1965,7 +1965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2956755618151048039}
   - component: {fileID: 5085820024432364702}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 001_skinned_Hair_Man_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2056,7 +2056,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3860630027091637342}
   - component: {fileID: 1186963568954326391}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 002_skinned_Hunter_Outfit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2690,7 +2690,7 @@ GameObject:
   - component: {fileID: 3445072516267116536}
   - component: {fileID: 2050038825877464613}
   - component: {fileID: 1003380022245245266}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_knightlv2_combined_static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2803,7 +2803,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3610171181544621428}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2941,7 +2941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3447018105273872001}
   - component: {fileID: 3460359093340031090}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_knightlv2_combined_skinned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3060,7 +3060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5678392406005076351}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Level00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4151,7 +4151,7 @@ GameObject:
   - component: {fileID: 176788545827380065}
   - component: {fileID: 8821085006883589884}
   - component: {fileID: 4766254521653564682}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_static_knightlv2_combined_static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4911,7 +4911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1667531733024341654}
   - component: {fileID: 2677573698137980282}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_Beard_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5234,7 +5234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2759009145597806600}
   - component: {fileID: 8204395400762530469}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 003_skinned_Stickman_Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5439,7 +5439,7 @@ GameObject:
   - component: {fileID: 7158019308390105604}
   - component: {fileID: 661028297191627953}
   - component: {fileID: 4086320077019978117}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 001_static_Weapon_Sword_Two_Handed_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5553,7 +5553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2789075599237718191}
   - component: {fileID: 5278349906637797376}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 000_skinned_knightlv2_combined_skinned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
