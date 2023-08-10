@@ -76,7 +76,7 @@ public class UIManager : MonoBehaviour
             Instance = this;
         }
         levelText.text =
-            "LV" + GameDataManager.Instance.currentLevel.ToString();
+            "LV" + GameDataManager.Instance.TotalLevel.ToString();
         upgradeScreen.SetActive(true);
         playScreen.SetActive(false);
         timerText.text = GameDataManager.Instance.maxTimer.ToString();

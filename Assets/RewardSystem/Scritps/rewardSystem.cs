@@ -18,7 +18,7 @@ public class rewardSystem : MonoBehaviour
     {
         handAnim = GetComponent<Animator>();
         rewardBtn.onClick.AddListener(GetTheReward);
-      
+
     }
 
     private void OnTriggerStay(Collider other)
@@ -66,19 +66,17 @@ public class rewardSystem : MonoBehaviour
     public void NoThx()
     {
         noThxBtn.interactable = false;
-        
+
         StartCoroutine(NextLevel());
-        
+
     }
 
     IEnumerator NextLevel()
     {
         yield return new WaitForSeconds(0.1f);
-        if (BossManager.Instance.IsDestroyed())
-        {
-            GameDataManager.Instance.currentLevel++;
-            GameDataManager.Instance.SaveData();
-        }
+
+        GameDataManager.Instance.SaveData();
+
         SceneManager.LoadScene(0);
     }
 }

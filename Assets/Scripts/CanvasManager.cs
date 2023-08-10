@@ -58,6 +58,12 @@ public class CanvasManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         winScreen.SetActive(true);
         GameDataManager.Instance.currentLevel++;
+        GameDataManager.Instance.currentLevel%=11;
+        if(GameDataManager.Instance.currentLevel == 0)
+        {
+            GameDataManager.Instance.currentLevel = 1;
+        }
+        GameDataManager.Instance.TotalLevel++;
     }
     IEnumerator loseDelay()
     {

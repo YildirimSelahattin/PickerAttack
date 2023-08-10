@@ -1263,7 +1263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LV 1 '
+  m_text: LV 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7b600a35fd61fcf45a944df01ac63d94, type: 2}
   m_sharedMaterial: {fileID: -2914261996299045214, guid: 7b600a35fd61fcf45a944df01ac63d94,

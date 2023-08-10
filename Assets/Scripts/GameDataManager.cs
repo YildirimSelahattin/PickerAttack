@@ -9,6 +9,7 @@ public class GameDataManager : MonoBehaviour
     public int TimeLevel = 1;
 
     public int currentLevel = 1;
+    public int TotalLevel = 1;
 
     public float sizePrice = 50;
     public float speedPrice = 50;
@@ -29,6 +30,7 @@ public class GameDataManager : MonoBehaviour
     string timeLevelKey = "TimeLevel";
     string totalMoneyKey = "TotalMoney";
     public string CurrentLevelKey = "CurrentLevel";
+    public string TotalLevelKey = "TotalLevelKey";
     public string cameraLensKey = "CameraLens";
 
     public float cameraLens;
@@ -58,6 +60,7 @@ public class GameDataManager : MonoBehaviour
         PlayerPrefs.SetInt(timeLevelKey, TimeLevel);
         PlayerPrefs.SetInt(totalMoneyKey, totalMoney);
         PlayerPrefs.SetInt(CurrentLevelKey, currentLevel);
+        PlayerPrefs.SetInt(TotalLevelKey, TotalLevel);
 
         PlayerPrefs.SetFloat(timerKey, maxTimer);
         PlayerPrefs.SetFloat(speedKey, speed);
@@ -78,6 +81,7 @@ public class GameDataManager : MonoBehaviour
         TimeLevel = PlayerPrefs.GetInt(timeLevelKey, 1);
         totalMoney = PlayerPrefs.GetInt(totalMoneyKey, 100);
         currentLevel = PlayerPrefs.GetInt(CurrentLevelKey, 1);
+        TotalLevel = PlayerPrefs.GetInt(TotalLevelKey, 1);
 
         maxTimer = PlayerPrefs.GetFloat(timerKey, 15);
         speed = PlayerPrefs.GetFloat(speedKey, 3);

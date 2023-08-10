@@ -63,14 +63,20 @@ public class HoleManager : MonoBehaviour
             sound.AddComponent<AudioSource>();
             sound.GetComponent<AudioSource>().volume = 1;
             sound.GetComponent<AudioSource>().PlayOneShot(clip);
-            Destroy(sound, clip.length); 
+            Destroy(sound, clip.length);
             collision.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            collision.collider.gameObject.transform.DOLocalMoveY(-35,1.5f).SetEase(Ease.InBack);
-            collision.collider.gameObject.transform.DOShakeRotation(2,30,3,90,true).OnComplete(() =>
+            Vector3 WantedPos = (transform.position - collision.collider.gameObject.transform.position).normalized * (collision.collider.gameObject.transform.localScale.x * collision.collider.gameObject.GetComponent<CapsuleCollider>().radius * 2);
+            collision.collider.gameObject.transform.DOShakeRotation(2, 30, 3, 90, true);
+            collision.collider.gameObject.transform.DOJump(new Vector3(WantedPos.x, -1, WantedPos.z) + collision.collider.gameObject.transform.position,0.5f,1, 0.5f).OnComplete(() =>
             {
-                Destroy(collision.collider.gameObject);
+                collision.collider.gameObject.transform.DOMoveY(-35, 1f).OnComplete(() =>
+                {
+                    Destroy(collision.collider.gameObject);
+                });
+
             });
-            
+
+
             //StartCoroutine(pipeScript.StartMoveAfterTime(0, false));
             UIManager.Instance.ControlButtonInteractable();
 
