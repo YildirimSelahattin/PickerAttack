@@ -2247,6 +2247,7 @@ MonoBehaviour:
   EnemyList: []
   BossPrefabs:
   - {fileID: 547463500138988043, guid: 48c31c53ebebead48ac956ef4b366836, type: 3}
+  - {fileID: 547463500138988043, guid: 026b70bb111454dd9ae98e5498cd30d2, type: 3}
   - {fileID: 547463500138988043, guid: 64deedffd6bc44c4b8e5594b68c1390f, type: 3}
   - {fileID: 547463500138988043, guid: d3c35dc018ec777428393e6c5c8e7377, type: 3}
   - {fileID: 547463500138988043, guid: 0a7aeef1d39d3c4489c30be570b997a8, type: 3}
