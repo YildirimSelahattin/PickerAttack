@@ -99,7 +99,6 @@ public class ButtonManager : MonoBehaviour
             buttonPressed = false;
             GetComponent<Button>().interactable = false;
             GetComponent<ScaleUpDownLoop>().enabled = false;
-            transform.DOKill();
 
         }
         switch (soldierIndex)

@@ -64,6 +64,7 @@ public class CanvasManager : MonoBehaviour
             GameDataManager.Instance.currentLevel = 1;
         }
         GameDataManager.Instance.TotalLevel++;
+        MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Complete, GameDataManager.Instance.TotalLevel);
     }
     IEnumerator loseDelay()
     {
@@ -71,13 +72,15 @@ public class CanvasManager : MonoBehaviour
         done = false;
         playScreen.SetActive(false);
         yield return new WaitForSeconds(2);
+        MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Fail, GameDataManager.Instance.TotalLevel);
         loseScreen.SetActive(true);
         GetComponent<AudioSource>().PlayOneShot(gameOver);
     }
     public void buttonClick()
     {
+         
         GameDataManager.Instance.SaveData();
         
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

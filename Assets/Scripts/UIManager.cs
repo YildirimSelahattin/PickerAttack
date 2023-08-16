@@ -116,6 +116,9 @@ public class UIManager : MonoBehaviour
             timeInfo.text = "+1 s";
         }
         cam.m_Lens.FieldOfView = GameDataManager.Instance.cameraLens;
+
+        MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, GameDataManager.Instance.TotalLevel);
+
         ControlButtonInteractable();
     }
 
@@ -416,7 +419,7 @@ public class UIManager : MonoBehaviour
             .DOMoveY(6f, 1f)
             .OnComplete(() =>
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
             });
     }
 

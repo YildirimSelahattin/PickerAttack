@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Jobs;
 
 public class ScaleUpDownLoop : MonoBehaviour
 {
@@ -31,6 +32,8 @@ public class ScaleUpDownLoop : MonoBehaviour
     
     private void OnDisable()
     {
+        StopAllCoroutines();
         transform.DOKill();
+        transform.localScale = originalScale;
     }
 }
