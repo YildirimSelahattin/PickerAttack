@@ -34,7 +34,10 @@ public class PlayerManager : MonoBehaviour
         {
             Instance = this;
             PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.localPosition.z - 0.9f * GameDataManager.Instance.SizeLevel, 0.2f);
-            transform.DOScale(GameDataManager.Instance.size,0.5f);
+            transform.DOScale(GameDataManager.Instance.size, 0.5f);
+
+            coinEffectPrefab.transform.localScale = Vector3.one * 1.3f * Mathf.Ceil((float)GameDataManager.Instance.SizeLevel / 5f);
+            counterObject.transform.GetChild(0).gameObject.transform.DOScale(Vector3.one * 1.24f * Mathf.Ceil((float)GameDataManager.Instance.SizeLevel / 10f), 0.1f);
         }
 
     }
@@ -63,7 +66,7 @@ public class PlayerManager : MonoBehaviour
             {
                 touchStartPos = Input.GetTouch(0).position;
             }
-            if (Input.GetTouch(0).phase == TouchPhase.Moved|| Input.GetTouch(0).phase == TouchPhase.Stationary)
+            if (Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary)
             {
                 curTouchPosition = Input.GetTouch(0).position;
                 Vector3 dir = (curTouchPosition - touchStartPos).normalized;
@@ -73,14 +76,14 @@ public class PlayerManager : MonoBehaviour
                     touchStartPos += dir * (Vector3.Distance(curTouchPosition, touchStartPos) - 60);
                     dir = (curTouchPosition - touchStartPos).normalized;
                 }
-                float angle = Vector3.Angle(new Vector3(dir.x,0,dir.y), transform.forward);
+                float angle = Vector3.Angle(new Vector3(dir.x, 0, dir.y), transform.forward);
                 if (angle > 1.5f)
                 {
                     Vector3 targetPos = new Vector3(transform.position.x + dir.x, 0, transform.position.z + dir.y);
                     transform.LookAt(targetPos);
                 }
-                rigidBody.velocity = transform.forward  * GameDataManager.Instance.speed;
-               
+                rigidBody.velocity = transform.forward * GameDataManager.Instance.speed;
+
             }
             if (Input.GetTouch(0).phase == TouchPhase.Ended)
             {
@@ -101,7 +104,7 @@ public class PlayerManager : MonoBehaviour
     public void InstantiateCoinEffect(int coinAmount)
     {
         coinEffectPrefab.GetComponent<TextMeshPro>().text = "+ " + coinAmount.ToString();
-        GameObject text = Instantiate(coinEffectPrefab, coinEffectParent.transform.position,coinEffectPrefab.transform.rotation);
+        GameObject text = Instantiate(coinEffectPrefab, coinEffectParent.transform.position, coinEffectPrefab.transform.rotation);
         GameDataManager.Instance.totalMoney += coinAmount;
         UIManager.Instance.totalMoney.text = GameDataManager.Instance.totalMoney.ToString();
     }

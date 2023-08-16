@@ -125,6 +125,8 @@ public class ButtonManager : MonoBehaviour
         {
             buttonPressed = false;
             GetComponent<Button>().interactable = false;
+            transform.DOKill();
+            GetComponent<ScaleUpDownLoop>().enabled = false;
         }
     }
 

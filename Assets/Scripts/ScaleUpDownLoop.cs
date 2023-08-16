@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class ScaleUpDownLoop : MonoBehaviour
 {
+    public float time;
+    public Vector3 originalScale;
     // Start is called before the first frame update
     void Start()
     {
-        MoveLoop();
+        originalScale= transform.localScale;
+        StartCoroutine(MoveLoop(time));
     }
 
     // Update is called once per frame
@@ -16,11 +19,22 @@ public class ScaleUpDownLoop : MonoBehaviour
     {
         
     }
-    public void MoveLoop()
+    public IEnumerator MoveLoop(float timeWait)
     {
-        transform.DOScale(1.2f, 0.2f).OnComplete(() =>
+        yield return new WaitForSeconds(timeWait);
+        transform.DOScale(originalScale*1.08f, 0.2f).OnComplete(() =>
         {
-            transform.DOScale(1, 0.2f).OnComplete(() => MoveLoop());
+            transform.DOScale(originalScale, 0.2f).OnComplete(() => {
+
+                transform.DOScale(originalScale * 1.08f, 0.2f).OnComplete(() =>
+                {
+                    transform.DOScale(originalScale, 0.2f).OnComplete(() => StartCoroutine(MoveLoop(timeWait)));
+                });
+            });
         });
+    }
+    private void OnDisable()
+    {
+        transform.DOKill();
     }
 }

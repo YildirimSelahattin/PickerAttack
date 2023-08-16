@@ -383,6 +383,7 @@ MonoBehaviour:
   SpeedLevel: 1
   TimeLevel: 1
   currentLevel: 1
+  TotalLevel: 1
   sizePrice: 1
   speedPrice: 50
   timePrice: 50
@@ -390,6 +391,7 @@ MonoBehaviour:
   size: {x: 1, y: 1, z: 1}
   maxTimer: 30
   CurrentLevelKey: CurrentLevel
+  TotalLevelKey: TotalLevelKey
   cameraLensKey: CameraLens
   cameraLens: 0
   totalMoney: 1000
@@ -1258,7 +1260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286653524}
   m_LocalRotation: {x: 0.5075384, y: 0, z: 0, w: 0.8616291}
-  m_LocalPosition: {x: -0.054, y: 2.83, z: -5.19}
+  m_LocalPosition: {x: -0.054, y: 4.69, z: -9.16}
   m_LocalScale: {x: 1.24, y: 1.24, z: 1.24}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -7892,7 +7894,7 @@ MonoBehaviour:
   gameStarted: 0
   levelPrefabs:
   - {fileID: 4691921792515367832, guid: 7e11c3940687245159a0fdd0236cb107, type: 3}
-  - {fileID: 4691921792515367832, guid: 894706b1721704ed9b8e131474790d5a, type: 3}
+  - {fileID: 4691921792515367832, guid: bd1b7d8bbf1bcb24992fd37e0c202e12, type: 3}
   - {fileID: 4691921792515367832, guid: 73fc6905b0707694e8cf2634e3934edb, type: 3}
   - {fileID: 4691921792515367832, guid: 57a9fd7069a312142967579fcad0694b, type: 3}
   - {fileID: 4691921792515367832, guid: 430c6e9ce08458a44852c83e68d2b50a, type: 3}

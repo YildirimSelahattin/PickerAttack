@@ -227,6 +227,9 @@ public class UIManager : MonoBehaviour
                     .transform
                     .DOScale(GameDataManager.Instance.size, 0.5f);
             });
+        PlayerManager.Instance.coinEffectPrefab.transform.localScale = Vector3.one * 1.3f *Mathf.Ceil( (float)GameDataManager.Instance.SizeLevel / 5f);
+        PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.localPosition.z - 0.9f , 0.2f);
+        PlayerManager.Instance.counterObject.transform.GetChild(0).gameObject.transform.DOScale(Vector3.one*1.24f * Mathf.Ceil((float)GameDataManager.Instance.SizeLevel / 10f),0.1f);
         ControlButtonInteractable();
         GameDataManager.Instance.SaveData();
     }
@@ -236,11 +239,11 @@ public class UIManager : MonoBehaviour
         float speedAwardToAdd;
         if (GameDataManager.Instance.SpeedLevel % 5 == 0)
         {
-            speedAwardToAdd = 2;
+            speedAwardToAdd = 3;
         }
         else
         {
-            speedAwardToAdd = 1;
+            speedAwardToAdd = 2;
         }
         GameDataManager.Instance.speed += speedAwardToAdd / 10f;
         GameDataManager.Instance.totalMoney -=

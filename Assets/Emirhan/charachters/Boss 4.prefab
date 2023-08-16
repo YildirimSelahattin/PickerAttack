@@ -764,9 +764,9 @@ MonoBehaviour:
   - {fileID: 8903635547786308820}
   - {fileID: 436290457026223355}
   - {fileID: 3918370788418627971}
-  curhealth: 4000
-  maxhealth: 4000
-  damage: 20
+  curhealth: 2600
+  maxhealth: 2600
+  damage: 19
   animationController: {fileID: 6499546791871726283}
   healthbar: {fileID: 4465874857098198606}
   dead: 0

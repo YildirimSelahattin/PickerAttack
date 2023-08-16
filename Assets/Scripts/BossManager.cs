@@ -54,7 +54,7 @@ public class BossManager : MonoBehaviour
             {
                 distance = Vector3.Distance(transform.position, enemy.transform.position);
 
-                if (distance < 10)
+                if (distance < 7)
                 {
                     enemy.GetComponent<Army>().TakeDamage(damage);
 
@@ -116,7 +116,7 @@ public class BossManager : MonoBehaviour
     {
         foreach (GameObject enemy in GridSpawner.Instance.EnemyList)
         {
-            if (Vector3.Distance(transform.position, enemy.transform.position) <= 10)
+            if (Vector3.Distance(transform.position, enemy.transform.position) <= 7)
             {
                 return true;
             }
