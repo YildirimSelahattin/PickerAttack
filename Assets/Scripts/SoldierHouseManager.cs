@@ -21,11 +21,7 @@ public class SoldierHouseManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.transform.CompareTag("In") || collision.collider.gameObject.transform.CompareTag("Pick"))

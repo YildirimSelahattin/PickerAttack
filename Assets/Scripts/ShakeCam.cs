@@ -30,9 +30,5 @@ public class ShakeCam : MonoBehaviour
         m_Perlin.m_FrequencyGain = 0f;
 
     }
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
 }

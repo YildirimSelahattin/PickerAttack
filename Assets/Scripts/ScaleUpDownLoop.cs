@@ -14,11 +14,6 @@ public class ScaleUpDownLoop : MonoBehaviour
         StartCoroutine(MoveLoop(time));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public IEnumerator MoveLoop(float timeWait)
     {
         yield return new WaitForSeconds(timeWait);
@@ -33,6 +28,7 @@ public class ScaleUpDownLoop : MonoBehaviour
             });
         });
     }
+    
     private void OnDisable()
     {
         transform.DOKill();

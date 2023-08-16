@@ -15,11 +15,6 @@ public class MovingArrowManager : MonoBehaviour
         MoveLoop();    
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void MoveLoop()
     {
         transform.DOKill();

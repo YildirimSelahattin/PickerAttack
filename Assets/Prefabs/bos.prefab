@@ -119,7 +119,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: gride
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4742473837712756890, guid: ce4d49f763fa4414ab2f8a5d4334a8ba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ce4d49f763fa4414ab2f8a5d4334a8ba, type: 3}
 --- !u!4 &2868193847633895221 stripped
 Transform:

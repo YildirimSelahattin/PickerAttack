@@ -91,8 +91,17 @@ public class ButtonManager : MonoBehaviour
         {
             MergeSoldiers(0);
         }
-      
+
         count--;
+
+        if (count == 0)
+        {
+            buttonPressed = false;
+            GetComponent<Button>().interactable = false;
+            GetComponent<ScaleUpDownLoop>().enabled = false;
+            transform.DOKill();
+
+        }
         switch (soldierIndex)
         {
 
@@ -121,13 +130,6 @@ public class ButtonManager : MonoBehaviour
             GridSpawner.Instance.DestroyEmptyGrids();
             CanvasManager.Instance.tapAndHoldText.gameObject.SetActive(false);
         }
-        if (count == 0)
-        {
-            buttonPressed = false;
-            GetComponent<Button>().interactable = false;
-            transform.DOKill();
-            GetComponent<ScaleUpDownLoop>().enabled = false;
-        }
     }
 
 
@@ -144,7 +146,7 @@ public class ButtonManager : MonoBehaviour
         GameObject movingObject = soldier5Grouped[levelIndex][index];
         movingObject.transform.DOJump(soldier5Grouped[levelIndex][0].transform.position, 1, 1, rate / 2).OnComplete(() =>
         {
-            GridSpawner.Instance.EnemyList.Remove(movingObject); 
+            GridSpawner.Instance.EnemyList.Remove(movingObject);
             Destroy(movingObject);
             if (index == 0)
             {

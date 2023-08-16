@@ -13,10 +13,4 @@ public class CoinEffectScript : MonoBehaviour
             Destroy(gameObject);
         });
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

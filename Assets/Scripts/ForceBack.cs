@@ -6,10 +6,6 @@ using UnityEngine;
 public class ForceBack : MonoBehaviour
 {
     public float forceAmount;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
     
     private void OnCollisionEnter(Collision other)
     {
@@ -26,11 +22,5 @@ public class ForceBack : MonoBehaviour
         {
             other.collider.gameObject.GetComponent<Rigidbody>().drag = 2;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

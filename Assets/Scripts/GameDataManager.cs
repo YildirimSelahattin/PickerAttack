@@ -49,10 +49,7 @@ public class GameDataManager : MonoBehaviour
         }
 
     }
-    private void Start()
-    {
-
-    }
+    
     public void SaveData()
     {
         PlayerPrefs.SetInt(sizeLevelKey, SizeLevel);

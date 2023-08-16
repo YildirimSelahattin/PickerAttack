@@ -20,9 +20,4 @@ public class LevelManager : MonoBehaviour
       Instantiate(GameManager.Instance.levelPrefabs[GameDataManager.Instance.currentLevel-1],levelParent.transform);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
